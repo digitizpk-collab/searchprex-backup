@@ -145,7 +145,7 @@ export default function HeroV2() {
             </h1>
 
             <p className="mb-4 text-base leading-relaxed sm:text-lg" style={{ color: BODY }}>
-              SearchPrex is an SEO agency USA businesses trust for organic growth. Serving US small businesses, law firms and online stores with month-to-month SEO services measured in qualified calls and sales.
+              SearchPrex is a founder-led SEO agency for US small businesses, law firms and online stores: month-to-month SEO services, measured in qualified calls and sales.
             </p>
 
             {/* The five promises, every one confirmed and published on /pricing. */}

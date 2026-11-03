@@ -53,9 +53,9 @@ import PillForm from "@/components/home/PillForm";
 
 // Title, H1 and description use the same broad small-business SEO agency
 // positioning. Specialist phrases belong on the linked service pages.
-const HOME_TITLE = "SEO Agency USA: Month-to-Month SEO Services | SearchPrex";
+const HOME_TITLE = "SEO Agency USA: Month-to-Month, Free Audit in 24h";
 const HOME_DESCRIPTION =
-  "SearchPrex is an SEO agency USA businesses trust for month-to-month local, law firm and ecommerce SEO. Get a free competitor audit in 24 hours.";
+  "SearchPrex is a founder-led SEO agency in the USA for month-to-month local, law firm and ecommerce SEO. Free competitor audit in 24 hours.";
 
 const baseMetadata: Metadata = {
   title: HOME_TITLE,
@@ -142,7 +142,7 @@ const TABS: AudienceTab[] = [
   {
     id: "law",
     label: "Law firms",
-    title: "Law firm SEO: found for the cases you want",
+    title: "Found for the cases you want",
     problem:
       "People search by practice area and city, often at night, and call whoever answers first. Most firm sites have one practice page, a thin Business Profile and no answer to the questions clients actually type.",
     visual: {
@@ -168,7 +168,7 @@ const TABS: AudienceTab[] = [
   {
     id: "local",
     label: "Local businesses",
-    title: "Local SEO: the Map Pack, and the phone ringing",
+    title: "The Map Pack, and the phone ringing",
     problem:
       "When someone searches “near me”, they call one of the three businesses in the map pack. A profile set up as an afterthought and a single services page keep good businesses out of it.",
     visual: {
@@ -195,7 +195,7 @@ const TABS: AudienceTab[] = [
   {
     id: "ecommerce",
     label: "Ecommerce",
-    title: "Ecommerce SEO: every product page earning its keep",
+    title: "Every product page earning its keep",
     problem:
       "Large catalogues fail in the same places: thin manufacturer copy, thousands of pages Google never indexes, and templates that make every product slow at once.",
     visual: {
@@ -272,7 +272,7 @@ const FAQS = [
   },
   {
     q: "Where is SearchPrex based?",
-    a: "Remote-first SEO agency USA businesses hire, run from Daska, Pakistan, and working US business hours across Eastern, Central and Pacific time. Most client work is for US businesses.",
+    a: "Remote-first, run from Daska, Pakistan, and working US business hours across Eastern, Central and Pacific time. Most client work is for US businesses.",
   },
 ];
 
@@ -295,7 +295,7 @@ const SERVICES = [
   { icon: Scale, title: "Law Firm SEO: Found for the Cases You Want", body: "Practice-area and city pages, Business Profile and reviews within bar rules, measured in calls and signed cases.", href: "/services/law-firm-seo", price: `${formatRange(RETAINER_PLANS[1])}/mo` },
   { icon: MapPin, title: "Local SEO Services: The Map Pack and the Phone Ringing", body: "Google Business Profile, Map Pack visibility, service-area pages and reviews for contractors and local businesses.", href: "/services/local-seo", price: `${formatRange(RETAINER_PLANS[0])}/mo` },
   { icon: ShoppingCart, title: "Ecommerce SEO Services: Every Product Page Earning Its Keep", body: "Indexing recovery, product and collection pages, schema and site speed for stores with large catalogs.", href: "/services/ecommerce-seo", price: `${formatRange(RETAINER_PLANS[2])}/mo` },
-  { icon: Wrench, title: "SEO Services for Small Business, Local or Online", body: "Technical fixes, keyword research, content and reporting for small businesses — month to month, no long contract.", href: "/services/technical-seo", price: "Free 24-hour tear-down" },
+  { icon: Wrench, title: "Technical SEO & Indexing", body: "Crawling, indexing, Core Web Vitals, canonicals and structured data, as a ranked fix list or done for you.", href: "/services/technical-seo", price: "Free 24-hour tear-down" },
   { icon: Sparkles, title: "AI Search (GEO & AEO)", body: "Answer-ready pages, entity signals and crawler access so Google AI Overviews and ChatGPT can cite you.", href: "/ai-search", price: "Included in every plan" },
 ];
 
