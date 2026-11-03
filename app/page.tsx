@@ -50,6 +50,7 @@ import { SITE, founderRef, organizationRef, websiteRef } from "@/lib/site-schema
 import AudienceTabs, { type AudienceTab } from "@/components/home/AudienceTabs";
 import FaqAccordion from "@/components/home/FaqAccordion";
 import PillForm from "@/components/home/PillForm";
+import ServiceUsaMapAndMarkets from "@/components/service-wireframe/ServiceUsaMapAndMarkets";
 
 // Title, H1 and description use the same broad small-business SEO agency
 // positioning. Specialist phrases belong on the linked service pages.
@@ -158,7 +159,7 @@ const TABS: AudienceTab[] = [
       "An AI intake assistant, so a 2am enquiry is not lost",
     ],
     proof: {
-      text: "No law firm client has been published yet — which means the first firm I partner with in your city gets direct founder execution and market exclusivity while we build our flagship legal case study. Start with the free tear-down to test me on your firm first.",
+      text: "No law firm case study is published yet. So the first firm I work with in your city gets me on every page, and no competitor in your city. Test me first with the free tear-down.",
       href: "/services/law-firm-seo",
       honest: true,
     },
@@ -244,11 +245,11 @@ const FAQS = [
   },
   {
     q: "How much do small business SEO services cost?",
-    a: `${local ? `Local SEO runs ${formatRange(local)} a month` : ""}${law ? `, law firm SEO ${formatRange(law)}` : ""}${ecom ? ` and ecommerce SEO ${formatRange(ecom)}` : ""}, depending on how many pages, locations and practice areas the plan covers. It is month to month, and the free tear-down comes first.`,
+    a: `${local ? `Local SEO runs ${formatRange(local)} a month` : ""}${law ? `, law firm SEO ${formatRange(law)}` : ""}${ecom ? ` and ecommerce SEO ${formatRange(ecom)}` : ""}. The price depends on how many pages, locations or practice areas you need. It is month to month, and the free tear-down comes first.`,
   },
   {
     q: "How long does SEO take to show results?",
-    a: "Local results can move within weeks once the profile and pages are fixed — the HVAC client in the case studies reached the map pack's top three in 60 days. Competitive and ecommerce work usually takes three to six months. The tear-down gives you a realistic read for your market.",
+    a: "Local results can start moving within weeks once the profile and pages are fixed. One HVAC client was named in Google's AI Overview for its core search. Competitive and ecommerce work usually takes three to six months. The tear-down gives you a realistic read for your market.",
   },
   {
     q: "Who actually does the work?",
@@ -256,15 +257,15 @@ const FAQS = [
   },
   {
     q: "Can you get my business into Google's AI Overviews & ChatGPT Search?",
-    a: "Yes. SearchPrex structures content into self-contained 45–60 word answer capsules directly beneath question-formatted H2s, builds verified JSON-LD schema graphs linked to authoritative Wikidata entities, and maintains clean /llms.txt manifests so retrieval-augmented generation (RAG) pipelines and LLMs cite your domain.",
+    a: "Yes. I put a short, direct answer under each question on your pages, so ChatGPT, Gemini and Google AI Overviews can quote it. I add schema markup so they know who you are. And I keep an llms.txt file that points AI tools to your best pages.",
   },
   {
     q: "What free SEO intelligence and diagnostic tools does SearchPrex provide?",
-    a: "SearchPrex provides an open engineering ecosystem including a Free Domain Authority Checker, live Google SERP Simulator, Schema Markup Generator, an interactive 55-Point Technical SEO Audit Checklist, dated Industry News Desks, and a production Issues & Solutions Library at searchprex.com/resources.",
+    a: "Yes, all free. There is a domain authority checker, a SERP simulator and a schema generator. There are also SEO checklists, dated SEO news and a library of fixes for common problems.",
   },
   {
     q: "Do you guarantee rankings?",
-    a: "No, and nobody honestly can — Google decides rankings. What is guaranteed is progress: if you don't see measurable progress within 90 days, I either keep working at no extra cost until you do, or refund what you paid for those 90 days. And the process: the tear-down within 24 hours, the work done by me, and a plain report every Monday.",
+    a: "No, and nobody honestly can — Google decides rankings. What I do guarantee is progress. If you see no measurable progress in 90 days, I keep working for free, or refund those 90 days. You also get the tear-down in 24 hours, the work done by me, and a plain report every Monday.",
   },
   {
     q: "Do I have to sign a contract?",
@@ -683,7 +684,7 @@ export default function Home() {
               <div className="mt-5 rounded-2xl border border-white/10 bg-white/5 p-5">
                 <p className="text-xs font-bold uppercase tracking-[0.14em] text-emerald-300">Why I work with US businesses</p>
                 <p className="mt-2 text-[15px] leading-relaxed text-white/80">
-                  I work from Pakistan, on US business hours. I chose law firms, local businesses and online stores because I kept seeing the same thing: good businesses paying every month for SEO reports while the phone stayed quiet. I&apos;d rather do the work myself for fewer clients, be judged on calls and signed cases instead of rankings. If I can&apos;t show progress in 90 days, you don&apos;t pay for those 90 days.
+                  I work from Pakistan, on US business hours. I chose law firms, local businesses and online stores for one reason. I kept seeing good businesses pay for SEO reports every month while the phone stayed quiet. So I do the work myself, for fewer clients. Judge me on calls and signed cases, not rankings. If I can&apos;t show progress in 90 days, you don&apos;t pay for those 90 days.
                 </p>
               </div>
               <div className="mt-5 flex flex-wrap gap-2">
@@ -886,14 +887,18 @@ export default function Home() {
           </p>
         </div>
       </section>
+      {/* USA MAP — where SearchPrex works, with a market card per pin. */}
+      <ServiceUsaMapAndMarkets
+        serviceName="SEO Services"
+        answerCapsule={`SearchPrex works with law firms, local businesses and online stores across the US, with city pages in ${LOCATION_STATES.length} states and ${LOCATION_CITY_COUNT} cities. Pick a pin to see the market.`}
+      />
+
       {/* 10 · COVERAGE — every state and city page, compact */}
       <section className="border-y border-slate-200 bg-slate-50 px-4 py-16 sm:px-6">
         <div className="mx-auto max-w-6xl">
-          <Heading
-            eyebrow="Where"
-            title={`Law firm and local SEO in ${LOCATION_STATES.length} states, ${LOCATION_CITY_COUNT} cities`}
-            sub={`City pages for law firms and local businesses in ${LOCATION_STATES.map((s) => s.name).join(", ").replace(/, ([^,]*)$/, " and $1")}, each covering local courts, practice-area demand and the Map Pack.`}
-          />
+          <p className="mb-6 text-center text-sm font-bold uppercase tracking-[0.14em] text-slate-500">
+            Every state and city page
+          </p>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {LOCATION_STATES.map((s) => (
               <div key={s.slug} className="rounded-2xl border border-slate-200 bg-white px-5 py-4">
