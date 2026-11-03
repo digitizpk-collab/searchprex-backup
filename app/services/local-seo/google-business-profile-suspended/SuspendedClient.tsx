@@ -50,6 +50,7 @@ const RELATED = [
   { href: GUIDE, title: "Do it yourself: the reinstatement guide", body: "Five steps, in Google’s own words, with the mistakes that make it worse." },
   { href: "/blog/google-maps-ranking-drop", title: "Ranking dropped, not suspended?", body: "Check the profile before blaming an algorithm." },
   { href: "/services/local-seo/google-business-profile-optimization", title: "Google Business Profile optimization", body: "Once you’re back: a profile set up to bring calls." },
+  { href: "/resources/news/local-seo-updates", title: "Local SEO news", body: "Every dated Business Profile and Maps change, with its source." },
   { href: "/resources/google-business-profile-checklist", title: "Free GBP checklist", body: "23 checks written to Google’s own rules. No email." },
 ];
 

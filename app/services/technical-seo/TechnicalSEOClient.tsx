@@ -95,6 +95,7 @@ const related = [
   { href: CASE_STUDY, title: "Michigan Sports & Outdoor case study", body: "The de-indexing, the rebuild from ~3,000 to 11,549 indexed pages, and every screenshot." },
   { href: "/resources/technical-seo-checklist", title: "Technical SEO audit checklist", body: "26 checks you can run with free Google tools. No email." },
   { href: "/blog/crawl-budget-optimization-guide", title: "Crawl budget guide", body: "How to find and stop the URLs eating your crawl." },
+  { href: "/resources/gsc-regex-library", title: "GSC regex library", body: "Copy-paste Search Console filters for product, category and not-indexed URLs." },
   { href: "/tools/schema-generator", title: "Free schema generator", body: "JSON-LD for your page type, ready to paste." },
   { href: "/services/ecommerce-seo", title: "Ecommerce SEO services", body: "Technical SEO applied to catalogues of thousands of products." },
   { href: "/services/ecommerce-seo/woocommerce", title: "WooCommerce SEO", body: "Filter URLs, plugin weight and indexing on WooCommerce stores." },

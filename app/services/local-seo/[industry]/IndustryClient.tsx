@@ -279,6 +279,7 @@ export default function IndustryClient({ slug, guide: _guide }: { slug: string; 
         <RuleGrid>
           <RuleItem dark href="/services/local-seo" title="Local SEO services" body="The full local approach: Business Profile, citations, service-area pages and reviews." />
           <RuleItem dark href="/resources/google-business-profile-checklist" title="Google Business Profile checklist" body="23 checks, written to Google's own rules. Free, no email." />
+          <RuleItem dark href="/resources/news/local-seo-updates" title="Local SEO news" body="Every dated Business Profile and Maps change, with its source." />
           <RuleItem dark href="/case-studies" title="All case studies" body="Every client result, with the screenshots." />
         </RuleGrid>
         <div className="mt-10 flex flex-wrap justify-center gap-2">

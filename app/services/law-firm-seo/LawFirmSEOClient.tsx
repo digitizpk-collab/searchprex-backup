@@ -84,6 +84,12 @@ export default function LawFirmSEOClient({ guide: _guide }: { guide: Guide }) {
           >
             GBP for Lawyers
           </Link>
+          <Link
+            href="/resources/law-firm-seo-audit-checklist"
+            className="whitespace-nowrap text-slate-600 transition-colors hover:text-neutral-950"
+          >
+            Free law firm SEO audit checklist
+          </Link>
         </nav>
       </div>
 

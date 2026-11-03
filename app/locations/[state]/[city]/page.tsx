@@ -563,6 +563,14 @@ export default async function CityPage({
                   >
                     how law firm SEO works
                   </Link>
+                  . Checking your own listing first? Use the free{" "}
+                  <Link
+                    href="/resources/google-business-profile-checklist"
+                    className="font-semibold underline underline-offset-2"
+                    style={{ color: color.primary }}
+                  >
+                    Google Business Profile checklist for {page.city} firms
+                  </Link>
                   .
                 </p>
               </div>

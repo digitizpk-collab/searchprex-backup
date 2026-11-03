@@ -116,6 +116,7 @@ const RELATED = [
   { href: "/case-studies/ecommerce/michigan-outdoor-sports", title: "Michigan Sports & Outdoor case study", body: "A de-indexing setback, then about 3,000 to 11,549 indexed pages and +83% US clicks." },
   { href: "/resources/woocommerce-seo-checklist", title: "WooCommerce SEO checklist", body: "25 checks in the order the case-study work was done. Free, no email." },
   { href: "/services/technical-seo", title: "Technical SEO services", body: "Crawling, indexing and Core Web Vitals fixed at the template." },
+  { href: "/resources/gsc-regex-library", title: "GSC regex library", body: "Copy-paste Search Console filters for product, category and not-indexed URLs." },
   { href: "/blog/shopify-woocommerce-indexing-blueprint", title: "Shopify & WooCommerce indexing blueprint", body: "8 platform-specific fixes for Liquid canonicals, sitemaps and catalog scale." },
   { href: "/blog/ecommerce-product-page-seo", title: "Product page SEO at scale", body: "Product pages for 10,000+ SKUs without thin or duplicate copy." },
 ];

@@ -67,6 +67,9 @@ const RELATED = [
   { href: "/blog/fix-crawled-currently-not-indexed-ecommerce", title: "Fix “Crawled – currently not indexed”", body: "Why Google drops pages it has already read." },
   { href: "/blog/fix-discovered-currently-not-indexed-ecommerce", title: "Fix “Discovered – currently not indexed”", body: "When Google knows a page but won’t crawl it." },
   { href: "/blog/shopify-woocommerce-indexing-blueprint", title: "Shopify & WooCommerce indexing blueprint", body: "Platform by platform, where indexing breaks." },
+  { href: "/resources/gsc-regex-library", title: "GSC regex library", body: "Copy-paste Search Console filters for product, category and not-indexed URLs." },
+  { href: "/resources/technical-seo-checklist", title: "Technical SEO checklist", body: "26 checks you can run with free Google tools." },
+  { href: "/resources/woocommerce-seo-checklist", title: "WooCommerce SEO checklist", body: "25 checks for indexing, product pages and speed." },
   { href: "/blog/google-indexing-api-python", title: "The Indexing API is not a shortcut", body: "What it is really for, and what to do instead." },
 ];
 

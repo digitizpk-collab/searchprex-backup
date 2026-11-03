@@ -365,6 +365,7 @@ export default function IndustryClient({ slug, guide: _guide }: { slug: string; 
           ) : (
             <RuleItem dark href="/resources/woocommerce-seo-checklist" title="WooCommerce SEO checklist" body="25 checks for indexing, product pages, schema and speed. Free, no email." />
           )}
+          <RuleItem dark href="/resources/gsc-regex-library" title="GSC regex library" body="Search Console filters for product, category and not-indexed URLs." />
           <RuleItem dark href="/case-studies" title="All case studies" body="Every client result, with the screenshots." />
         </RuleGrid>
         <div className="mt-10 flex flex-wrap justify-center gap-2">
