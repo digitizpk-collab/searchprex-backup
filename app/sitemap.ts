@@ -60,6 +60,7 @@ type Entry = MetadataRoute.Sitemap[number];
 // Only real edits go here: a lastmod Google can't trust gets ignored.
 const ROUTE_UPDATED: Array<[string, string]> = [
   ["/services/law-firm-seo", "2026-10-31T12:00:00.000Z"],
+  ["/services/small-business-seo", "2026-11-03T12:00:00.000Z"],
 ];
 function routeUpdated(path: string): Date | undefined {
   if (path === "/") return new Date("2026-10-31T12:00:00.000Z");
@@ -83,6 +84,7 @@ const STATIC_ROUTES: Array<{ path: string; priority: number; changeFrequency: En
   { path: "/services/local-seo/google-business-profile-suspended", priority: 0.7, changeFrequency: "monthly" },
   { path: "/services/technical-seo", priority: 0.8, changeFrequency: "monthly" },
   { path: "/services/technical-seo/technical-seo-audit", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/services/small-business-seo", priority: 0.8, changeFrequency: "monthly" },
   { path: "/services/technical-seo/indexing-recovery", priority: 0.8, changeFrequency: "monthly" },
   { path: "/about", priority: 0.7, changeFrequency: "monthly" },
   { path: "/experts", priority: 0.6, changeFrequency: "monthly" },

@@ -23,7 +23,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  ArrowRight, Bot, Check, GraduationCap, Newspaper, Settings, Clock, ExternalLink, MapPin, PhoneOff, Scale, SearchX, ShieldAlert,
+  ArrowRight, Bot, Store, Check, GraduationCap, Newspaper, Settings, Clock, ExternalLink, MapPin, PhoneOff, Scale, SearchX, ShieldAlert,
   ShoppingCart, Sparkles, Star, TrendingDown, Wrench,
 } from "lucide-react";
 
@@ -296,6 +296,7 @@ const SERVICES = [
   { icon: MapPin, title: "Local SEO Services: The Map Pack and the Phone Ringing", body: "Google Business Profile, Map Pack visibility, service-area pages and reviews for contractors and local businesses.", href: "/services/local-seo", price: `${formatRange(RETAINER_PLANS[0])}/mo` },
   { icon: ShoppingCart, title: "Ecommerce SEO Services: Every Product Page Earning Its Keep", body: "Indexing recovery, product and collection pages, schema and site speed for stores with large catalogs.", href: "/services/ecommerce-seo", price: `${formatRange(RETAINER_PLANS[2])}/mo` },
   { icon: Wrench, title: "Technical SEO & Indexing", body: "Crawling, indexing, Core Web Vitals, canonicals and structured data, as a ranked fix list or done for you.", href: "/services/technical-seo", price: "Free 24-hour tear-down" },
+  { icon: Store, title: "SEO Services for Small Business, Local or Online", body: "Business Profile, technical fixes, keyword research and pages for small businesses, month to month, no long contract.", href: "/services/small-business-seo", price: `From ${formatUsd(RETAINER_PLANS[0].min)}/mo` },
   { icon: Sparkles, title: "AI Search (GEO & AEO)", body: "Answer-ready pages, entity signals and crawler access so Google AI Overviews and ChatGPT can cite you.", href: "/ai-search", price: "Included in every plan" },
 ];
 
