@@ -490,7 +490,7 @@ export default function LocalSEOClient({ guide: _guide }: { guide: Guide }) {
       {/* SEMANTIC LONG-TAIL KEYWORD CLUSTERS + CONTEXTUAL INTERNAL LINKING MATRIX */}
       <ServiceSemanticClusterAndLinks
         eyebrow="USA Local Search Psychology · Low-Hanging Long-Tail Keywords"
-        h2="High-Intent Local Keyword Clusters & Contextual Internal Linking Architecture"
+        h2="Local SEO services for the searches your customers make"
         answerCapsule="We pair high-intent 'near me' and emergency service queries with suburb-specific landing pages, GBP category precision, and 45–60 word Answer Capsules so your business captures both Map Pack calls and AI Overview citations."
         clusters={LOCAL_SEMANTIC_CLUSTERS}
       />
@@ -622,7 +622,7 @@ export default function LocalSEOClient({ guide: _guide }: { guide: Guide }) {
 
       {/* PROCESS */}
       <Band dark id="process">
-        <BandIntro dark eyebrow="How it works" title="From 7-Day Free Trial to the Map Pack Top 3" />
+        <BandIntro dark eyebrow="How it works" title="How our local SEO services work: from free trial to the Map Pack" />
         <Steps steps={process} cta={{ href: "#7-day-trial", label: "Start my 7-Day Free Trial & Tear-Down" }} />
       </Band>
 
@@ -631,7 +631,7 @@ export default function LocalSEOClient({ guide: _guide }: { guide: Guide }) {
         <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <div>
             <Eyebrow>Why SearchPrex</Eyebrow>
-            <H2>One founder, one local plan, a clear price</H2>
+            <H2>How much do local SEO services cost?</H2>
             <Lead>
               You work directly with the person who does the work. Every recommendation is built for your US market and your local competitors, so the budget goes where it brings phone calls.
             </Lead>

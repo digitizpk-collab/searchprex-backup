@@ -7,7 +7,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
-  ArrowRight, Scale, ShoppingCart, MapPin, Wrench, Sparkles,
+  ArrowRight, Scale, ShoppingCart, MapPin, Wrench, Sparkles, Store,
   CheckCircle, BarChart3, Phone,
 } from "lucide-react";
 
@@ -34,9 +34,9 @@ const SITE = "https://www.searchprex.com";
 
 const baseMetadata: Metadata = {
   // Kept in step with the CMS row for /services, which wins when published.
-  title: "SEO Services From $800/mo | Free Audit, 90-Day Guarantee",
+  title: "SEO Services USA From $800/mo | Free Audit, 90-Day Guarantee",
   description:
-    "Law firm, ecommerce, local, technical and AI search SEO, each with published prices and screenshot proof. Free audit in 24 hours, month to month.",
+    "SEO services in the USA for law firms, local and small businesses and online stores, each with published prices and screenshot proof. Month to month.",
   alternates: { canonical: `${SITE}/services` },
   openGraph: {
     title: "SEO Services USA — Law Firm, Ecommerce, Local, Technical & AI Search | SearchPrex",
@@ -160,6 +160,31 @@ const services = [
     },
     proofLink: "/case-studies/ecommerce/michigan-outdoor-sports",
     proofLabel: "Read the Michigan case study",
+  },
+  {
+    icon: Store,
+    name: "Small Business SEO",
+    slug: "/services/small-business-seo",
+    color: "#7c3aed",
+    bg: "#f3e8ff",
+    forWho: "For small businesses, local or online, that need calls and sales without an agency budget.",
+    includes: [
+      "Free audit of your site and competitors",
+      "Google Business Profile and Maps",
+      "Technical fixes and keyword research",
+      "A plain-English report every Monday",
+    ],
+    shot: {
+      src: "/images/proof/local-hvac-ai-overview.png",
+      alt: "Google AI Overview naming HVAC Services Team among businesses offering free AC installation estimates in Simi Valley, California.",
+      width: 717,
+      height: 292,
+      figure: "Named",
+      figureLabel: "in Google's AI Overview",
+      caption: "HVAC Services Team, Simi Valley — Google Search.",
+    },
+    proofLink: "/case-studies/hvac/local-hvac-services",
+    proofLabel: "Read the HVAC case study",
   },
   {
     icon: Sparkles,
@@ -310,7 +335,7 @@ export default function ServicesPage() {
         compactTop
         centered
         eyebrow="Every claim backed by GSC data"
-        title={<>SEO Services That <Accent>Show Their Receipts</Accent></>}
+        title={<>SEO Services USA That <Accent>Show Their Receipts</Accent></>}
         subtitle="Five core services. No bloated menus, no vanity packages — each one is tied to a real, verified result you can inspect before you spend a dollar."
         primaryCta={{
           href: "/free-audit",
@@ -387,7 +412,7 @@ export default function ServicesPage() {
         <SectionHeading
           variant="center"
           eyebrow="What we do"
-          title="Five Services. Real Proof for Each."
+          title="Six SEO services. Real proof for each."
         />
 
         <CardGrid variant="cards" columns={2}>
@@ -581,7 +606,7 @@ export default function ServicesPage() {
       <Section>
         <SectionHeading
           eyebrow="Law Firm SEO by city"
-          title="Which city do you practise in?"
+          title="Which city do you practice in?"
           intro="Local search is decided city by city, so each of these is a page in its own right — the courts you appear in, the practice areas with demand there, and what your state's law changes about the content you need."
         />
 
@@ -654,7 +679,7 @@ export default function ServicesPage() {
 
       {/* ── FAQ ── */}
       <Section width="reading">
-        <SectionHeading variant="center" eyebrow="FAQ" title="Before You Ask" />
+        <SectionHeading variant="center" eyebrow="FAQ" title="SEO services questions, answered" />
         <FaqList faqs={faqs} name="services-faq" />
       </Section>
 

@@ -593,7 +593,7 @@ export default function EcommerceSEOClient({ linkedinUrl, guide: _guide }: { lin
       {/* SEMANTIC LONG-TAIL KEYWORD CLUSTERS + CONTEXTUAL INTERNAL LINKING MATRIX */}
       <ServiceSemanticClusterAndLinks
         eyebrow="USA Commercial Search Psychology · Low-Hanging Long-Tail Keywords"
-        h2="High-Converting Ecommerce Keyword Clusters & Contextual Internal Linking"
+        h2="Ecommerce SEO services for the searches that sell"
         answerCapsule="We target commercial and transactional long-tail queries—pairing specific product attributes, SKUs, brand names, and buying-guide comparisons with clean Product and MerchantReturnPolicy schema so your store captures ready-to-buy US shoppers."
         clusters={ECOM_SEMANTIC_CLUSTERS}
       />

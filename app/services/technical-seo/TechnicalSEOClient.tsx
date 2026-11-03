@@ -487,7 +487,7 @@ export default function TechnicalSEOClient() {
       {/* SEMANTIC LONG-TAIL KEYWORD CLUSTERS + CONTEXTUAL INTERNAL LINKING MATRIX */}
       <ServiceSemanticClusterAndLinks
         eyebrow="USA Technical SEO Psychology · Low-Hanging Long-Tail Keywords"
-        h2="High-Intent Technical SEO Keyword Clusters & Contextual Internal Linking"
+        h2="Technical SEO services for the problems people search for"
         answerCapsule="We target the exact diagnostic queries CTOs, VPs of Marketing, and store owners search when traffic drops or pages fail to index—connecting every technical guide, free schema/llms.txt tool, and case study into a high-velocity internal linking loop."
         clusters={TECHNICAL_SEMANTIC_CLUSTERS}
       />
@@ -556,7 +556,7 @@ export default function TechnicalSEOClient() {
 
       {/* PROCESS */}
       <Band dark id="process">
-        <BandIntro dark eyebrow="How it works" title="7-Day Free Trial to template fixes live in four weeks" />
+        <BandIntro dark eyebrow="How it works" title="How our technical SEO services work: template fixes live in four weeks" />
         <Steps steps={process} cta={{ href: "#7-day-trial", label: "Start my 7-Day Free Trial & Technical Tear-Down" }} />
       </Band>
 
