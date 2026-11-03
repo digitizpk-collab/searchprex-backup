@@ -55,7 +55,7 @@ import PillForm from "@/components/home/PillForm";
 // positioning. Specialist phrases belong on the linked service pages.
 const HOME_TITLE = "SEO Agency USA: Month-to-Month, Free Audit in 24h";
 const HOME_DESCRIPTION =
-  "SearchPrex is a founder-led SEO agency in the USA for month-to-month local, law firm and ecommerce SEO. Free competitor audit in 24 hours.";
+  "Founder-led SEO agency in the USA for month-to-month local, law firm and ecommerce SEO. Free audit in 24 hours, 90-day money-back.";
 
 const baseMetadata: Metadata = {
   title: HOME_TITLE,
@@ -272,7 +272,7 @@ const FAQS = [
   },
   {
     q: "Where is SearchPrex based?",
-    a: "Remote-first, run from Daska, Pakistan, and working US business hours across Eastern, Central and Pacific time. Most client work is for US businesses.",
+    a: "SearchPrex is a remote-first SEO agency serving the USA, run from Daska, Pakistan, and working US business hours across Eastern, Central and Pacific time. Most client work is for US businesses.",
   },
 ];
 
@@ -296,7 +296,7 @@ const SERVICES = [
   { icon: MapPin, title: "Local SEO Services: The Map Pack and the Phone Ringing", body: "Google Business Profile, Map Pack visibility, service-area pages and reviews for contractors and local businesses.", href: "/services/local-seo", price: `${formatRange(RETAINER_PLANS[0])}/mo` },
   { icon: ShoppingCart, title: "Ecommerce SEO Services: Every Product Page Earning Its Keep", body: "Indexing recovery, product and collection pages, schema and site speed for stores with large catalogs.", href: "/services/ecommerce-seo", price: `${formatRange(RETAINER_PLANS[2])}/mo` },
   { icon: Wrench, title: "Technical SEO & Indexing", body: "Crawling, indexing, Core Web Vitals, canonicals and structured data, as a ranked fix list or done for you.", href: "/services/technical-seo", price: "Free 24-hour tear-down" },
-  { icon: Store, title: "SEO Services for Small Business, Local or Online", body: "Business Profile, technical fixes, keyword research and pages for small businesses, month to month, no long contract.", href: "/services/small-business-seo", price: `From ${formatUsd(RETAINER_PLANS[0].min)}/mo` },
+  { icon: Store, title: "SEO Services for Small Business, Local or Online", body: "The SEO agency for small business owners who need calls, not reports: Business Profile, technical fixes and pages, month to month.", href: "/services/small-business-seo", price: `From ${formatUsd(RETAINER_PLANS[0].min)}/mo` },
   { icon: Sparkles, title: "AI Search (GEO & AEO)", body: "Answer-ready pages, entity signals and crawler access so Google AI Overviews and ChatGPT can cite you.", href: "/ai-search", price: "Included in every plan" },
 ];
 
@@ -578,7 +578,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl">
           <Heading
             eyebrow="Recorded live"
-            title="Don't take the screenshots on trust — watch them"
+            title="SEO results on video: watch them live"
             sub="Screen recordings made inside each client's own accounts. A screenshot can be edited; a live session in the real account is far harder to fake."
           />
           <VideoGallery videos={RECORDED_VIDEOS} badge="Recorded live" columns={3} />
@@ -610,7 +610,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl">
           <Heading
             eyebrow="The SearchPrex philosophy"
-            title="You should always know who is doing the work—and what it changed."
+            title="Founder-led SEO: one person accountable"
             sub="SEO is a long-term investment. We keep the relationship direct, the reporting understandable, and the work tied to the searches and enquiries your business needs."
           />
           <div className="grid gap-4 md:grid-cols-3">
@@ -666,7 +666,7 @@ export default function Home() {
                 Founder · 5+ years in SEO · {certCount} Semrush certificates
               </p>
               <p className="mt-4 text-[15px] leading-relaxed text-white/80">
-                Every audit, page and Monday report is mine. No sales team, no account managers, no juniors — which is why SearchPrex takes one client per city. What I won&apos;t do: promise a ranking, or put a number on this site without a screenshot behind it.
+                SearchPrex is a founder-led SEO agency for US businesses: every audit, page and Monday report is mine. No sales team, no account managers, no juniors — which is why SearchPrex takes one client per city. What I won&apos;t do: promise a ranking, or put a number on this site without a screenshot behind it.
               </p>
               <div className="mt-5 rounded-2xl border border-white/10 bg-white/5 p-5">
                 <p className="text-xs font-bold uppercase tracking-[0.14em] text-emerald-300">Why I work with US businesses</p>
@@ -727,7 +727,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl">
           <Heading
             eyebrow="Pricing"
-            title="SEO services USA: straight monthly plans, no surprises"
+            title="How much do SEO services cost? Straight monthly plans"
             sub={`SearchPrex SEO retainers range from ${formatRange(RETAINER_PLANS[0])}/mo for local businesses, ${formatRange(RETAINER_PLANS[1])}/mo for law firms, and ${formatRange(RETAINER_PLANS[2])}/mo for ecommerce stores. Retainers are month-to-month, scoped by locations, practice areas or catalog size, and backed by our 90-day progress guarantee.`}
           />
 
