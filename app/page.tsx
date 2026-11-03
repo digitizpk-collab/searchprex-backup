@@ -325,6 +325,23 @@ const PLAN_WORK = [
   "Indexing, category and product pages, Merchant Center, site speed",
 ];
 
+const WHY_ROWS: [string, string, string, string][] = [
+  ["Who does the work", "The founder, every time", "Often a junior after the sale", "You manage it yourself"],
+  ["Contract", "Month to month", "Often 6 to 12 months", "None, but leads stop when spend stops"],
+  ["Price", "Published on the site", "Usually after a sales call", "Pay for every click"],
+  ["Reporting", "Every Monday, in plain English", "Often monthly, rankings only", "Clicks and cost"],
+  ["Proof", "Clients' own dashboards", "Often logos and claims", "Ad platform reports"],
+  ["Your competitors", "One client per city", "May work for your rival", "Bid against you"],
+  ["Risk", "7-day free trial, 90-day money-back", "Rarely a guarantee", "Spend is gone either way"],
+];
+
+// AI Overview citations that have screenshots in the case studies.
+const AI_PROOF = [
+  { client: "Doll's Cleaning", tag: "Local · Chesterfield, MI", line: "Named first in Google's AI Overview, #1 organic below it.", href: "/case-studies/cleaning/dolls-cleaning" },
+  { client: "HVAC Services Team", tag: "Local · Simi Valley, CA", line: "Named in the AI Overview for an AC installation search.", href: "/case-studies/hvac/local-hvac-services" },
+  { client: "Remit Choice", tag: "International · Fintech", line: "Named in the AI Overview for a money transfer search.", href: "/case-studies/fintech/remit-choice" },
+];
+
 const INDUSTRY_GROUPS = [
   { label: "Law firms", links: [
     { name: "Personal injury", href: "/services/law-firm-seo/personal-injury" },
@@ -586,6 +603,40 @@ export default function Home() {
         </div>
       </section>
 
+      {/* WHY CHOOSE — the comparison a buyer is making anyway. Fair to the
+          alternatives: "typical" describes the common model, not a named firm. */}
+      <section className="px-4 py-20 sm:px-6 lg:py-24">
+        <div className="mx-auto max-w-5xl">
+          <Heading
+            eyebrow="Why choose SearchPrex"
+            title="Why choose SearchPrex over a typical agency or more ads?"
+            sub="Short answer: you get the founder doing the work, published prices, no contract, and proof from clients' own dashboards."
+          />
+          <div className="overflow-x-auto rounded-3xl border border-slate-200 bg-white">
+            <table className="w-full min-w-[640px] text-left text-sm">
+              <thead>
+                <tr className="border-b border-slate-200 bg-slate-50 text-xs font-bold uppercase tracking-wider text-slate-500">
+                  <th className="px-5 py-4"> </th>
+                  <th className="px-5 py-4 text-neutral-950">SearchPrex</th>
+                  <th className="px-5 py-4">Typical SEO agency</th>
+                  <th className="px-5 py-4">Paid ads only</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100">
+                {WHY_ROWS.map((r) => (
+                  <tr key={r[0]}>
+                    <th scope="row" className="px-5 py-4 font-bold text-neutral-950">{r[0]}</th>
+                    <td className="px-5 py-4 font-semibold text-emerald-800">{r[1]}</td>
+                    <td className="px-5 py-4 text-slate-600">{r[2]}</td>
+                    <td className="px-5 py-4 text-slate-600">{r[3]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       {/* 7 · RECORDED LIVE */}
       <section className="border-y border-slate-200 bg-slate-50 px-4 py-20 sm:px-6 lg:py-24">
         <div className="mx-auto max-w-6xl">
@@ -595,6 +646,44 @@ export default function Home() {
             sub="Screen recordings made inside each client's own accounts. A screenshot can be edited; a live session in the real account is far harder to fake."
           />
           <VideoGallery videos={RECORDED_VIDEOS} badge="Recorded live" columns={3} />
+        </div>
+      </section>
+
+      {/* AI SEARCH — AEO/GEO, with the AI Overview citations already on file. */}
+      <section className="bg-neutral-950 px-4 py-20 text-white sm:px-6 lg:py-24">
+        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:items-center">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.16em] text-emerald-300">AI search · AEO &amp; GEO</p>
+            <h2 className={`${H} mt-3 text-3xl tracking-tight text-white sm:text-4xl`}>Get named in ChatGPT, Gemini and Google AI Overviews</h2>
+            <p className="mt-4 text-[15px] leading-relaxed text-white/75">
+              More buyers now ask an AI before they search. If it doesn&apos;t name you, you don&apos;t get the call. Every plan includes the work that gets you cited:
+            </p>
+            <ul className="mt-6 space-y-3 text-[15px] text-white/85">
+              {[
+                "A short, direct answer under each question on your pages",
+                "Schema markup so AI tools know who you are and where you work",
+                "Your business details kept the same everywhere online",
+                "An llms.txt file that points AI tools to your best pages",
+              ].map((t) => (
+                <li key={t} className="flex gap-3">
+                  <Check className="mt-0.5 h-5 w-5 shrink-0 text-emerald-300" aria-hidden />
+                  {t}
+                </li>
+              ))}
+            </ul>
+            <Link href="/ai-search" className="mt-7 inline-flex items-center gap-1.5 rounded-full bg-white px-5 py-3 text-sm font-bold text-neutral-950 hover:bg-emerald-100">
+              How AI search optimization works <ArrowRight className="h-4 w-4" aria-hidden />
+            </Link>
+          </div>
+          <div className="grid gap-4">
+            {AI_PROOF.map((p) => (
+              <Link key={p.client} href={p.href} className="rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:border-emerald-300/60">
+                <p className="text-xs font-bold uppercase tracking-widest text-emerald-300">{p.tag}</p>
+                <p className="mt-1 text-lg font-black">{p.client}</p>
+                <p className="mt-1 text-sm text-white/70">{p.line}</p>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

@@ -114,11 +114,6 @@ export default function HeroV2() {
         <div className="grid items-start gap-x-12 gap-y-8 lg:grid-cols-[1.15fr_1fr]">
           {/* ── Claim ── */}
           <div className="order-1 lg:order-none lg:col-start-1 lg:row-start-1">
-            <p
-              className="mb-3 text-[11px] font-bold uppercase tracking-[0.14em] text-neutral-600"
-            >
-              Hi, I&apos;m Mubashar · Founder-led · One client per city · 9 states
-            </p>
 
             {/* Primary category target: "SEO agency for small businesses", with
                 US-market intent. Keep law firm, local SEO and ecommerce specifics
@@ -132,7 +127,6 @@ export default function HeroV2() {
             {/* V2: the buyer's feeling first, the keyword phrase second, both
                 inside the one H1 so the emotional hook doesn't cost the page
                 its topic. */}
-            <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-emerald-800">Founder-Led SEO Agency</p>
             <h1 className="mb-4 font-black tracking-tight text-neutral-950">
               <span className="block text-[1.9rem] leading-[1.1] text-balance sm:text-5xl lg:text-[3.2rem]">
                 Tired of paying for leads that never come?
@@ -162,13 +156,6 @@ export default function HeroV2() {
               ))}
             </ul>
 
-            <p className="text-sm" style={{ color: BODY }}>
-              Led by{" "}
-              <Link href="/about" className="font-bold underline decoration-2 underline-offset-2" style={{ color: INK }}>
-                Mubashar Sharif
-              </Link>
-              , Semrush-certified. Written by me, not a tool.
-            </p>
           </div>
 
           {/* ── The one offer ── */}
