@@ -211,6 +211,22 @@ export default function Nav() {
             : "border-slate-200/60"
         }`}
       >
+        {/* Announcement bar: the trial and the two direct ways to reach the
+            founder. Shown at the top of the page only, so it never sits over
+            content while reading; the local news hub has its own bar. */}
+        {!showLocalSeoNewsSubscription && !isScrolled && (
+          <div className="bg-neutral-950 px-4 py-1.5 text-center text-[12px] font-semibold text-white sm:text-[13px]">
+            <span className="text-emerald-300">Free 7-day trial</span>
+            <span className="mx-2 text-white/40" aria-hidden>·</span>
+            <a href="https://wa.me/923059158010" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-emerald-200">
+              WhatsApp the founder
+            </a>
+            <span className="mx-2 hidden text-white/40 sm:inline" aria-hidden>·</span>
+            <a href="https://calendly.com/contact-searchprex/30min" target="_blank" rel="noopener noreferrer" className="hidden underline underline-offset-2 hover:text-emerald-200 sm:inline">
+              Book a 30-min call
+            </a>
+          </div>
+        )}
         {showLocalSeoNewsSubscription && !isScrolled && (
           <div className="lg:hidden">
             <LocalSeoNewsSubscriptionBar />

@@ -15,19 +15,22 @@
 
 import { Section, SectionHeading, VideoGallery, type GalleryVideo } from "@/components/layout";
 
-export const RECORDED_VIDEOS: GalleryVideo[] = [
+export const RECORDED_VIDEOS: (GalleryVideo & { uploadDate: string })[] = [
   {
     id: "Y5PxSECNGP0",
+    uploadDate: "2026-05-29T05:10:14-07:00",
     title: "Search Console, live: Michigan Sports & Outdoor",
     sub: "The store's own Performance report in Google Search Console, with the comparison ranges set on screen.",
   },
   {
     id: "g_1TfDU4YeA",
+    uploadDate: "2026-05-29T05:52:28-07:00",
     title: "A Google search, typed live: Local HVAC Services",
     sub: "The query “free cost estimation of ac installation in simi valley ca” typed in real time, and the result it returns.",
   },
   {
     id: "gFod-dTY-bg",
+    uploadDate: "2026-05-29T05:55:09-07:00",
     title: "WooCommerce admin, live: SMK Store",
     sub: "From the storefront into the store's own dashboard — where the monthly sales figures above come from.",
   },

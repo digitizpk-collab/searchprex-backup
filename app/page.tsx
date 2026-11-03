@@ -396,6 +396,18 @@ export default function Home() {
       proofImage("proof-revenue-before", "/images/proof/mso-revenue-1-jul20-v2.png", "Michigan Outdoor Sports WooCommerce net sales, 20 July 2026: $0.00 for the month.", "2026-07-20"),
       proofImage("proof-revenue-mid", "/images/proof/mso-revenue-2-aug06-v2.png", "Michigan Outdoor Sports WooCommerce net sales, 6 August 2026: $206.63 for the month.", "2026-08-06"),
       proofImage("proof-revenue-after", "/images/proof/mso-revenue-3-sep25-v2.png", "Michigan Outdoor Sports WooCommerce net sales, 25 September 2026: $523.49 month to date.", "2026-09-25"),
+      // The three recorded-live videos the page embeds.
+      ...RECORDED_VIDEOS.map((v) => ({
+        "@type": "VideoObject",
+        "@id": `${SITE}/#video-${v.id}`,
+        name: v.title,
+        description: v.sub,
+        thumbnailUrl: `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`,
+        uploadDate: v.uploadDate,
+        embedUrl: `https://www.youtube.com/embed/${v.id}`,
+        contentUrl: `https://www.youtube.com/watch?v=${v.id}`,
+        creator: founderRef,
+      })),
       {
         "@type": "FAQPage",
         "@id": `${SITE}/#faq`,
@@ -663,7 +675,7 @@ export default function Home() {
               <p className="text-xs font-bold uppercase tracking-[0.16em] text-slate-400">Meet your SEO strategist · Mubashar Sharif</p>
               <h2 className={`${H} mt-2 text-3xl tracking-tight text-white`}>You&apos;ll talk to me, not a sales team</h2>
               <p className="mt-1 text-sm text-white/65">
-                Founder · 5+ years in SEO · {certCount} Semrush certificates
+                Founder · 5+ years in SEO · {certCount} Semrush certificates · HubSpot certified
               </p>
               <p className="mt-4 text-[15px] leading-relaxed text-white/80">
                 SearchPrex is a founder-led SEO agency for US businesses: every audit, page and Monday report is mine. No sales team, no account managers, no juniors — which is why SearchPrex takes one client per city. What I won&apos;t do: promise a ranking, or put a number on this site without a screenshot behind it.
