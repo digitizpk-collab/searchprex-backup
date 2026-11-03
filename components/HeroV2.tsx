@@ -128,18 +128,13 @@ export default function HeroV2() {
                 inside the one H1 so the emotional hook doesn't cost the page
                 its topic. */}
             <h1 className="mb-4 font-black tracking-tight text-neutral-950">
-              <span className="block text-[1.9rem] leading-[1.1] text-balance sm:text-5xl lg:text-[3.2rem]">
-                Tired of paying for leads that never come?
-              </span>{" "}
-              <span
-                className="mt-3 block text-[1.15rem] font-extrabold leading-[1.3] text-balance text-neutral-700 sm:text-[1.5rem]"
-              >
-                SEO Agency USA for Law Firms, Local & Ecommerce
+              <span className="block text-[2rem] leading-[1.08] text-balance sm:text-5xl lg:text-[3.4rem]">
+                SEO Agency USA: More Calls, Less Ad Spend
               </span>
             </h1>
 
             <p className="mb-4 text-base leading-relaxed sm:text-lg" style={{ color: BODY }}>
-              SearchPrex is a founder-led SEO agency for US small businesses, law firms and online stores: month-to-month SEO services, measured in qualified calls and sales.
+              <strong className="text-neutral-950">Tired of paying for leads that never come?</strong> SearchPrex is a founder-led SEO agency for US small businesses, law firms and online stores: month-to-month SEO services, measured in qualified calls and sales.
             </p>
 
             {/* The five promises, every one confirmed and published on /pricing. */}

@@ -500,29 +500,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4 · FREE DOMAIN AUTHORITY & TECHNICAL SEO HEALTH CHECKER (NicheSEO Pro Replicated) */}
-      <section id="free-da-checker" className="border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white px-4 py-20 sm:px-6">
-        <div className="mx-auto max-w-5xl">
-          <Heading
-            eyebrow="Free tool"
-            title="Free Domain Authority Checker: How Strong Is Your Site?"
-            sub="Check your website's domain authority and technical health in seconds. No sign-up, no email needed."
-          />
-          <FreeDomainAuthorityChecker variant="home" />
-        </div>
-      </section>
-
-      {/* MID-PAGE FORM — after the free check, the offer to read it for them. */}
-      <section className="bg-neutral-950 px-4 py-14 text-center text-white sm:px-6">
-        <div className="mx-auto max-w-2xl">
-          <h2 className={`${H} text-2xl tracking-tight text-white sm:text-3xl`}>Got your score? Let me tell you what it means.</h2>
-          <p className="mt-3 text-sm text-white/70">Send your URL and email. I&apos;ll look at your site and competitors myself and reply within 24 hours.</p>
-          <div className="mx-auto mt-6 max-w-xl">
-            <PillForm source="homepage-da-cta" tone="dark" />
-          </div>
-        </div>
-      </section>
-
       {/* 6 · WHO IT'S FOR — AEO Direct Answer */}
       <section className="border-t border-slate-200 px-4 py-20 sm:px-6 lg:py-24">
         <div className="mx-auto max-w-6xl">
@@ -603,6 +580,18 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 7 · RECORDED LIVE */}
+      <section className="border-y border-slate-200 bg-slate-50 px-4 py-20 sm:px-6 lg:py-24">
+        <div className="mx-auto max-w-6xl">
+          <Heading
+            eyebrow="Recorded live"
+            title="SEO results on video: watch them live"
+            sub="Screen recordings made inside each client's own accounts. A screenshot can be edited; a live session in the real account is far harder to fake."
+          />
+          <VideoGallery videos={RECORDED_VIDEOS} badge="Recorded live" columns={3} />
+        </div>
+      </section>
+
       {/* WHY CHOOSE — the comparison a buyer is making anyway. Fair to the
           alternatives: "typical" describes the common model, not a named firm. */}
       <section className="px-4 py-20 sm:px-6 lg:py-24">
@@ -634,18 +623,6 @@ export default function Home() {
               </tbody>
             </table>
           </div>
-        </div>
-      </section>
-
-      {/* 7 · RECORDED LIVE */}
-      <section className="border-y border-slate-200 bg-slate-50 px-4 py-20 sm:px-6 lg:py-24">
-        <div className="mx-auto max-w-6xl">
-          <Heading
-            eyebrow="Recorded live"
-            title="SEO results on video: watch them live"
-            sub="Screen recordings made inside each client's own accounts. A screenshot can be edited; a live session in the real account is far harder to fake."
-          />
-          <VideoGallery videos={RECORDED_VIDEOS} badge="Recorded live" columns={3} />
         </div>
       </section>
 
@@ -704,49 +681,6 @@ export default function Home() {
               </li>
             ))}
           </ol>
-        </div>
-      </section>
-
-      {/* Client-care philosophy: set clear expectations and connect it to proof. */}
-      <section className="bg-white px-4 py-16 sm:px-6 lg:py-20">
-        <div className="mx-auto max-w-6xl">
-          <Heading
-            eyebrow="The SearchPrex philosophy"
-            title="Founder-led SEO: one person accountable"
-            sub="SEO is a long-term investment. We keep the relationship direct, the reporting understandable, and the work tied to the searches and enquiries your business needs."
-          />
-          <div className="grid gap-4 md:grid-cols-3">
-            {[
-              {
-                title: "One person accountable",
-                body: "You work directly with founder Mubashar Sharif on the audit, priorities, implementation and weekly review.",
-              },
-              {
-                title: "A clear view of progress",
-                body: "Monday reporting explains what changed in Search Console, local visibility and leads—and what is being worked on next.",
-              },
-              {
-                title: "A plan shaped around your market",
-                body: "The work starts with your site, competitors and service area. Law firms receive one-firm-per-city exclusivity to avoid local conflicts.",
-              },
-            ].map((item) => (
-              <article key={item.title} className="rounded-2xl border border-slate-200 bg-white p-6 sm:p-7">
-                <h3 className={`${H} text-lg text-neutral-950`}>{item.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-slate-600">{item.body}</p>
-              </article>
-            ))}
-          </div>
-          <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm font-bold">
-            <Link href="/case-studies" className="inline-flex items-center gap-1 text-neutral-950 hover:underline">
-              See the evidence in our case studies <ArrowRight className="h-4 w-4" aria-hidden />
-            </Link>
-            <Link href="/services/law-firm-seo" className="inline-flex items-center gap-1 text-neutral-950 hover:underline">
-              How we work with law firms <ArrowRight className="h-4 w-4" aria-hidden />
-            </Link>
-            <Link href="/locations" className="inline-flex items-center gap-1 text-neutral-950 hover:underline">
-              Explore our service locations <ArrowRight className="h-4 w-4" aria-hidden />
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -956,26 +890,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 13 · CLOSE — the last thing on the page is the offer */}
-      <section id="get-started" className="scroll-mt-24 bg-slate-50 px-4 pb-20 sm:px-6">
-        <div className="mx-auto max-w-5xl rounded-[2rem] bg-neutral-900 px-6 py-14 text-center sm:px-12">
-          <h2 className={`${H} mx-auto max-w-2xl text-3xl tracking-tight text-white sm:text-4xl`}>
-            Tell me your problem. I&apos;ll build the solution around you.
-          </h2>
-          <p className="mx-auto mt-4 max-w-xl text-[15px] leading-relaxed text-white/70">
-            A written tear-down of your site and the competitors above you, within 24 hours.
-          </p>
-          <div className="mt-8">
-            <PillForm source="homepage-close" tone="dark" />
-          </div>
-          <p className="mt-5 text-sm text-white/70">
-            I read every message myself. Prefer to talk?{" "}
-            <a href="https://calendly.com/contact-searchprex/30min" target="_blank" rel="noopener noreferrer" className="font-bold text-white underline underline-offset-2">Book 30 min</a>
-            {" · "}
-            <a href="https://wa.me/923059158010" target="_blank" rel="noopener noreferrer" className="font-bold text-white underline underline-offset-2">WhatsApp me</a>
-          </p>
+      {/* 4 · FREE DOMAIN AUTHORITY & TECHNICAL SEO HEALTH CHECKER (NicheSEO Pro Replicated) */}
+      <section id="free-da-checker" className="border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white px-4 py-20 sm:px-6">
+        <div className="mx-auto max-w-5xl">
+          <Heading
+            eyebrow="Free tool"
+            title="Free Domain Authority Checker: How Strong Is Your Site?"
+            sub="Check your website's domain authority and technical health in seconds. No sign-up, no email needed."
+          />
+          <FreeDomainAuthorityChecker variant="home" />
         </div>
       </section>
+
       {/* USA MAP — where SearchPrex works, with a market card per pin. */}
       <ServiceUsaMapAndMarkets
         serviceName="SEO Services"
@@ -1159,14 +1085,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CLOSING CTA — short, for readers who scrolled through the resources. */}
-      <section className="bg-neutral-950 px-4 py-14 text-center text-white sm:px-6">
-        <div className="mx-auto max-w-2xl">
-          <h2 className={`${H} text-2xl tracking-tight text-white sm:text-3xl`}>Ready for leads that don&apos;t stop when the ads do?</h2>
-          <p className="mt-3 text-sm text-white/70">Free audit within 24 hours. 7-day free trial. 90-day money-back guarantee.</p>
-          <div className="mx-auto mt-6 max-w-xl">
-            <PillForm source="homepage-footer-cta" tone="dark" />
+      {/* 13 · CLOSE — the last thing on the page is the offer */}
+      <section id="get-started" className="scroll-mt-24 bg-slate-50 px-4 pb-20 sm:px-6">
+        <div className="mx-auto max-w-5xl rounded-[2rem] bg-neutral-900 px-6 py-14 text-center sm:px-12">
+          <h2 className={`${H} mx-auto max-w-2xl text-3xl tracking-tight text-white sm:text-4xl`}>
+            Tell me your problem. I&apos;ll build the solution around you.
+          </h2>
+          <p className="mx-auto mt-4 max-w-xl text-[15px] leading-relaxed text-white/70">
+            A written tear-down of your site and the competitors above you, within 24 hours.
+          </p>
+          <div className="mt-8">
+            <PillForm source="homepage-close" tone="dark" />
           </div>
+          <p className="mt-5 text-sm text-white/70">
+            I read every message myself. Prefer to talk?{" "}
+            <a href="https://calendly.com/contact-searchprex/30min" target="_blank" rel="noopener noreferrer" className="font-bold text-white underline underline-offset-2">Book 30 min</a>
+            {" · "}
+            <a href="https://wa.me/923059158010" target="_blank" rel="noopener noreferrer" className="font-bold text-white underline underline-offset-2">WhatsApp me</a>
+          </p>
         </div>
       </section>
 

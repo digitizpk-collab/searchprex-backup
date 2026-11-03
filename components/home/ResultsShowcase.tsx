@@ -74,32 +74,47 @@ export default function ResultsShowcase({ cards }: { cards: ResultCard[] }) {
         </div>
       ) : (
         <div className="grid gap-5 md:grid-cols-2">
-          {shown.map((c) => (
-            <article key={c.client} className="flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white">
-              <div className="flex flex-1 flex-col p-6 sm:p-7">
-                <p className="text-xs font-bold uppercase tracking-widest text-emerald-800">{c.tag}</p>
-                <h3 className="mt-1 text-lg font-black text-neutral-950">{c.client}</h3>
-                <p className="mt-4 text-4xl font-black tabular-nums tracking-tight text-neutral-950">{c.figure}</p>
-                <p className="mt-1 text-sm font-semibold text-slate-600">{c.figureLabel}</p>
-                <dl className="mt-5 space-y-2 border-t border-slate-100 pt-4 text-sm">
-                  <div className="flex gap-2">
-                    <dt className="w-24 shrink-0 font-bold text-slate-500">Problem</dt>
-                    <dd className="text-slate-700">{c.problem}</dd>
+          {shown.map((c, i) => {
+            // The first card of the current tab leads, full width.
+            const lead = i === 0;
+            return (
+              <article
+                key={c.client}
+                className={`group grid overflow-hidden rounded-3xl border border-slate-200 bg-white transition hover:border-neutral-900 hover:shadow-lg ${
+                  lead ? "md:col-span-2 md:grid-cols-[1fr_1.15fr]" : ""
+                }`}
+              >
+                <div className={`flex flex-col p-6 sm:p-8 ${lead ? "" : "order-2"}`}>
+                  <p className="text-xs font-bold uppercase tracking-widest text-emerald-800">{c.tag}</p>
+                  <h3 className="mt-1 text-lg font-black text-neutral-950">{c.client}</h3>
+                  <div className="mt-5 rounded-2xl bg-emerald-50 px-5 py-4">
+                    <p className={`font-black tabular-nums tracking-tight text-emerald-900 ${lead ? "text-5xl" : "text-4xl"}`}>{c.figure}</p>
+                    <p className="mt-1 text-sm font-semibold text-emerald-900/80">{c.figureLabel}</p>
                   </div>
-                  <div className="flex gap-2">
-                    <dt className="w-24 shrink-0 font-bold text-slate-500">What I did</dt>
-                    <dd className="text-slate-700">{c.did}</dd>
-                  </div>
-                </dl>
-              </div>
-              <div className="border-t border-slate-100 bg-slate-50 p-4">
-                <ProofImage {...c.shot} frameAspect="16 / 9" sizes="(max-width: 768px) 100vw, 540px" />
-                <Link href={c.href} className="mt-3 inline-flex items-center gap-1 text-sm font-bold text-neutral-900 hover:underline">
-                  Read the {c.client} case study <ArrowRight className="h-4 w-4" aria-hidden />
-                </Link>
-              </div>
-            </article>
-          ))}
+                  <dl className="mt-5 grid gap-3 text-sm">
+                    <div>
+                      <dt className="text-xs font-bold uppercase tracking-wider text-slate-400">The problem</dt>
+                      <dd className="mt-0.5 text-slate-700">{c.problem}</dd>
+                    </div>
+                    <div>
+                      <dt className="text-xs font-bold uppercase tracking-wider text-slate-400">What I did</dt>
+                      <dd className="mt-0.5 text-slate-700">{c.did}</dd>
+                    </div>
+                  </dl>
+                  <Link href={c.href} className="mt-auto inline-flex items-center gap-1 pt-5 text-sm font-bold text-neutral-900 hover:underline">
+                    Read the {c.client} case study <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" aria-hidden />
+                  </Link>
+                </div>
+                <div className={`bg-slate-50 p-4 sm:p-5 ${lead ? "md:border-l md:border-slate-100" : "order-1 border-b border-slate-100"}`}>
+                  <ProofImage
+                    {...c.shot}
+                    frameAspect="16 / 9"
+                    sizes={lead ? "(max-width: 768px) 100vw, 620px" : "(max-width: 768px) 100vw, 540px"}
+                  />
+                </div>
+              </article>
+            );
+          })}
         </div>
       )}
     </div>
