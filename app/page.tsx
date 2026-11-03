@@ -936,7 +936,7 @@ export default function Home() {
           <Heading
             eyebrow="Free to use"
             title="Free SEO tools, playbooks and diagnostics"
-            sub="SearchPrex publishes verified search telemetry, production code fixes for Google Search Console crawl bottlenecks, interactive 20-module learning playbooks, and developer utilities designed for enterprise US SEO governance."
+            sub="Free tools, guides and dated SEO news. Use them yourself, no email needed."
           />
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             <Link
@@ -952,7 +952,7 @@ export default function Home() {
                   SEO &amp; Industry News
                 </h3>
                 <p className="mt-2 text-xs leading-relaxed text-slate-600">
-                  Dated, source-verified telemetry covering Law Firm GBP enforcement, Shopify Liquid canonical fixes, and AI Mode citation benchmarks.
+                  Dated Google changes for law firms, local businesses and online stores, each with its source.
                 </p>
               </div>
               <span className="mt-5 inline-flex items-center gap-1 text-xs font-bold text-neutral-950 group-hover:underline">
@@ -994,7 +994,7 @@ export default function Home() {
                   Interactive Learning Hub
                 </h3>
                 <p className="mt-2 text-xs leading-relaxed text-slate-600">
-                  20-module technical curriculum and interactive QA audit checklists across Core Technical SEO, Law Firms, Shopify, and WooCommerce.
+                  Step-by-step SEO lessons and checklists for technical SEO, law firms, Shopify and WooCommerce.
                 </p>
               </div>
               <span className="mt-5 inline-flex items-center gap-1 text-xs font-bold text-neutral-950 group-hover:underline">
@@ -1015,7 +1015,7 @@ export default function Home() {
                   Free SEO Tools Suite
                 </h3>
                 <p className="mt-2 text-xs leading-relaxed text-slate-600">
-                  Live SERP Simulator, Schema JSON-LD Generator, GSC Regex Library, and root /llms.txt manifest generator for AI search engines.
+                  Preview your Google result, make schema markup, filter Search Console, and build an llms.txt file.
                 </p>
               </div>
               <span className="mt-5 inline-flex items-center gap-1 text-xs font-bold text-neutral-950 group-hover:underline">
