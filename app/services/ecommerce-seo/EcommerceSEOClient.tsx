@@ -454,7 +454,7 @@ export default function EcommerceSEOClient({ linkedinUrl, guide: _guide }: { lin
         <BandIntro
           dark
           eyebrow="What’s included"
-          title="Six parts of an ecommerce SEO, AEO & GEO program"
+          title="What's included in our ecommerce SEO services"
           lead="Each one maps to a specific reason Google and AI shopping engines are under-serving your catalog. I start with the ones your store is missing."
         />
         <RuleGrid>
@@ -599,7 +599,7 @@ export default function EcommerceSEOClient({ linkedinUrl, guide: _guide }: { lin
 
       {/* PROCESS */}
       <Band dark id="process">
-        <BandIntro dark eyebrow="How it works" title="From 7-Day Free Trial to indexed, selling products" />
+        <BandIntro dark eyebrow="How it works" title="How our ecommerce SEO services work: from free trial to selling products" />
         <Steps steps={PROCESS} cta={{ href: "#7-day-trial", label: "Start my 7-Day Free Trial & Store Tear-Down" }} />
       </Band>
 
@@ -608,7 +608,7 @@ export default function EcommerceSEOClient({ linkedinUrl, guide: _guide }: { lin
         <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <div>
             <Eyebrow>Why SearchPrex</Eyebrow>
-            <H2>One founder, one revenue roadmap, a clear price</H2>
+            <H2>How much do ecommerce SEO services cost?</H2>
             <Lead>
               You work directly with the person who audits your store and ships the fixes. Priorities are ranked by what brings net sales and indexed SKU growth, and every change is logged.
             </Lead>

@@ -11,6 +11,13 @@ export interface DiagnosticItem {
   tool: string;
 }
 
+const SERVICE_NAMES: Record<ServiceAiDiagnosisAndTrialProps["serviceType"], string> = {
+  "law-firm-seo": "Law Firm SEO",
+  "ecommerce-seo": "Ecommerce SEO",
+  "local-seo": "Local SEO",
+  "technical-seo": "Technical SEO",
+};
+
 interface ServiceAiDiagnosisAndTrialProps {
   serviceType: "law-firm-seo" | "ecommerce-seo" | "local-seo" | "technical-seo";
   heading: string;
@@ -375,7 +382,7 @@ export default function ServiceAiDiagnosisAndTrial({
           </div>
 
           <h3 className="text-2xl sm:text-3xl font-black tracking-tight text-neutral-950">
-            Tell Us What You Are Looking For &amp; Test Our Law Firm SEO With a 7-Day Free Trial
+            Tell Us What You Are Looking For &amp; Test Our {SERVICE_NAMES[serviceType]} With a 7-Day Free Trial
           </h3>
 
           <p className="mt-3 text-sm sm:text-base text-slate-600 max-w-3xl leading-relaxed">

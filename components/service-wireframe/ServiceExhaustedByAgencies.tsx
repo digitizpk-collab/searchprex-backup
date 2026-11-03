@@ -192,7 +192,11 @@ export default function ServiceExhaustedByAgencies({
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-black text-neutral-950 leading-tight">
-                Ranked #1 on Google for &ldquo;law firm SEO Cleveland Ohio&rdquo; &amp; 5+ Years of Deep Technical Execution
+                {serviceLabel.includes("Law Firm") ? (
+                  <>Ranked #1 on Google for &ldquo;law firm SEO Cleveland Ohio&rdquo;, founder-led</>
+                ) : (
+                  <>Founder-led, Semrush &amp; HubSpot certified, every report written by me</>
+                )}
               </h3>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
