@@ -63,9 +63,9 @@ export default function LawFirmSemrushHero() {
 
             {/* H1 Headline: Solid Black Bold with Clean Underline Accent */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-neutral-950 leading-[1.14] tracking-tight">
-              USA Law Firm SEO Services Built to Win the{" "}
+              Law Firm SEO Services USA,{" "}
               <span className="underline decoration-slate-300 decoration-2 underline-offset-8">
-                Google Map Pack, AI Overviews &amp; Signed Cases.
+                built for signed cases
               </span>
             </h1>
 

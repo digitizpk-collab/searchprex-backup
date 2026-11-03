@@ -40,7 +40,6 @@ import LawFirmUspAndAuditSection from "@/components/service-wireframe/LawFirmUsp
 import LawFirmPracticeServicesSection from "@/components/service-wireframe/LawFirmPracticeServicesSection";
 import LawFirmReliefVideoSection from "@/components/service-wireframe/LawFirmReliefVideoSection";
 import ServiceAiDiagnosisAndTrial from "@/components/service-wireframe/ServiceAiDiagnosisAndTrial";
-import ServiceExhaustedByAgencies from "@/components/service-wireframe/ServiceExhaustedByAgencies";
 import ServiceUsaMapAndMarkets from "@/components/service-wireframe/ServiceUsaMapAndMarkets";
 import LawFirmRoiCalculator from "@/components/service-wireframe/LawFirmRoiCalculator";
 import LawFirmFounderSpotlight from "@/components/service-wireframe/LawFirmFounderSpotlight";
@@ -304,13 +303,6 @@ export default function LawFirmSEOClient({ guide: _guide }: { guide: Guide }) {
       <ServiceUsaMapAndMarkets
         serviceName="Law Firm SEO Services"
         answerCapsule='SearchPrex delivers one-firm-per-city Law Firm SEO across 9 core US states and 22+ pinpointed metropolitan and suburban venues—anchored by our #1 Google ranking for "law firm SEO Cleveland Ohio", and expanding across Sugar Land and The Woodlands (TX), Detroit and Grand Rapids (MI), Philadelphia (PA), Tempe and Scottsdale (AZ), San Jose (CA), Baton Rouge (LA), Albuquerque (NM), and Kansas.'
-      />
-
-      {/* 8. EXHAUSTED BY PREVIOUS SEO AGENCIES? + COMPARISON MATRIX */}
-      <ServiceExhaustedByAgencies
-        serviceLabel="USA Law Firm SEO"
-        answerCapsule='Managing partners leave traditional legal marketing agencies because of partial monthly PDFs, junior account hand-offs, and useless Domain Authority (DA/PA) backlink metrics. SearchPrex gives you direct access to Founder Mubashar Sharif (5+ years of hands-on SEO, ranked #1 on Google for "law firm SEO Cleveland Ohio"), weekly Monday consultation reports, and a 7-Day Free Trial.'
-        showLocationLink={true}
       />
 
       {/* 9. LIVE 24/7 AI LEGAL INTAKE DEMO */}
