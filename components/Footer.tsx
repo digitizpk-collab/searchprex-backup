@@ -141,7 +141,7 @@ export default function Footer() {
               <Logo size="lg" variant="light" />
             </Link>
             <p className="mb-6 max-w-sm text-sm text-white/70">
-              Founder-led SEO. No juniors. No fluff. Specializing in law firm SEO, ecommerce SEO, and local SEO for US businesses — senior-led execution with zero intermediaries.
+              Founder-led SEO for US law firms, local businesses and online stores. No juniors, no middlemen.
             </p>
  
             {/* Contact Info */}

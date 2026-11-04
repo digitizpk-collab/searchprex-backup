@@ -105,7 +105,7 @@ const indexingChecks = [
 const PROCESS = [
   { when: "Days 1–7", title: "7-Day Free Trial & Tear-Down", body: "Your store URL in, a written Sitemap-to-GSC indexing diagnosis within 24 hours, plus 7 days of initial quick-win fixes at zero cost." },
   { when: "Weeks 1–2", title: "Audit & revenue roadmap", body: "Crawl, Search Console and GA4 data, two US competitors benchmarked, and a 90-day plan ranked by revenue impact." },
-  { when: "Weekly sprints", title: "Batch execution", body: "Technical fixes shipped, product/category content published in measured batches, schema deployed and resubmitted — every change logged." },
+  { when: "Weekly sprints", title: "Batch execution", body: "Fixes shipped, product and category pages published in batches, and schema added. Every change is logged." },
   { when: "Every Monday", title: "Full Stat & Revenue Report", body: "Full reporting: indexed pages, Search Console clicks and store revenue, every Monday." },
 ];
 
@@ -125,7 +125,7 @@ const ECOM_SEMANTIC_CLUSTERS = [
   {
     tabName: "Shopify & Liquid Catalog SEO",
     coreEntities:
-      "Collection-Path Canonicalization · /collections/*/products/* Deduplication · Shopify robots.txt.liquid · App Script INP Optimization · Product & MerchantReturnPolicy JSON-LD",
+      "Duplicate product URLs fixed · Shopify robots rules · Faster app scripts · Product and returns schema",
     lowHangingKeywords: [
       "shopify collection page seo buying guide template usa",
       "fix duplicate product urls in shopify collections",
@@ -379,7 +379,7 @@ export default function EcommerceSEOClient({ linkedinUrl, guide: _guide }: { lin
           {
             n: "3. Thin Collection Grids Failing Commercial Buyers",
             why: "A collection page with only a product grid and an H1 gives Google and AI Overviews zero topical context to rank for high-volume commercial queries.",
-            fix: "I turn your best-selling category pages into buying guides, with short answers, comparison tables and buyer questions.",
+            fix: "I turn your best category pages into buying guides, with short answers, tables and buyer questions.",
             tool: "Category Buying Guides + Internal Link Graph",
           },
         ]}
@@ -437,7 +437,7 @@ export default function EcommerceSEOClient({ linkedinUrl, guide: _guide }: { lin
           alt="Ecommerce store owner in warehouse worried about unindexed product catalog and rising ad CAC"
           tag="The Reality · Inventory Stagnation"
           quote="“Thousands of product SKUs in the warehouse, rising ad CAC, and Google indexing less than half.”"
-          body="Large catalogues stall in the same places: thin manufacturer descriptions, crawl budget waste, and products trapped in duplicate parameter URLs. I unblock indexing so your catalogue earns organic sales across the United States."
+          body="Big catalogs get stuck in the same places: thin product copy, wasted crawling and duplicate filter URLs. I fix the indexing so your products can sell from Google."
         />
         <RuleGrid columns={2}>
           {PAIN_POINTS.map((p) => (
@@ -476,7 +476,7 @@ export default function EcommerceSEOClient({ linkedinUrl, guide: _guide }: { lin
               Most stuck stores do not have a backlink problem. They have an indexing and template problem. When Google ignores thousands of products, resubmitting the sitemap does not help. Fixing duplicate URLs, canonicals and thin product details does.
             </p>
             <Lead>
-              I sort every unindexed URL by the exact reason Search Console gives, fix the highest-revenue products first and re-measure before shipping the next batch.
+              I sort every missing page by the reason Search Console gives. I fix your best-selling products first, and check the results before the next batch.
             </Lead>
             <TextLink href="/services/technical-seo/indexing-recovery">Indexing recovery service</TextLink>
             <div><TextLink href="/services/ecommerce-seo/product-page-seo">Product page SEO at catalog scale</TextLink></div>

@@ -109,8 +109,8 @@ function FamilyLawWorkSamples() {
 function FamilyLawIncluded() {
   const items = [
     { title: "Matter pages", body: "Prioritized pages for the matters your firm accepts, such as divorce, custody, support and modifications. The written scope sets page volume." },
-    { title: "Local profile work", body: "Google Business Profile categories, attorney details and a review-request workflow aligned with firm policy." },
-    { title: "Privacy-safe conversion", body: "A discreet email option, tested contact paths and generic events that avoid personal details in analytics." },
+    { title: "Local profile work", body: "Your Business Profile categories, attorney details and a way to ask for reviews that fits your firm rules." },
+    { title: "Privacy-safe conversion", body: "A private email option, contact forms that are tested, and tracking that keeps personal details out." },
     { title: "A report every Monday", body: "Pages shipped, Search Console queries and clicks, plus agreed call or consultation enquiry events." },
   ];
   return (
