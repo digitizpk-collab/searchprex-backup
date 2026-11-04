@@ -28,9 +28,9 @@ function Card({ s, hidden }: { s: MarqueeState; hidden?: boolean }) {
       <div className="p-5 text-white">
         {(() => {
           const name = s.hubHref ? (
-            <Link href={s.hubHref} tabIndex={hidden ? -1 : undefined} className="hover:underline">{s.name}</Link>
+            <Link href={s.hubHref} tabIndex={hidden ? -1 : undefined} className="text-white hover:underline">{s.name}</Link>
           ) : s.name;
-          return hidden ? <p className="text-xl font-black sm:text-2xl">{name}</p> : <h3 className="text-xl font-black sm:text-2xl">{name}</h3>;
+          return hidden ? <p className="text-xl font-black text-white sm:text-2xl">{name}</p> : <h3 className="text-xl font-black text-white sm:text-2xl">{name}</h3>;
         })()}
         <p className="mt-1.5 flex flex-wrap gap-x-3 gap-y-1 text-sm text-white/80">
           {s.cities.map((c) => (
