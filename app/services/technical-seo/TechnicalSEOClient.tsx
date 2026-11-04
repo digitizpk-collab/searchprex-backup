@@ -115,7 +115,7 @@ const TECHNICAL_SEMANTIC_CLUSTERS = [
       "google search console indexing recovery audit usa",
     ],
     psychologyAndIntent:
-      "Engineering and marketing leaders come to us when thousands of revenue-generating URLs sit unindexed in Google Search Console. Fixing the template cause unlocks immediate organic impressions and clicks.",
+      "Teams come to us when thousands of pages sit unindexed in Search Console. Fixing the template behind them brings back impressions and clicks.",
     siloHref: "/services/technical-seo/indexing-recovery",
     siloLabel: "Explore Indexing Recovery Service",
   },
@@ -235,7 +235,7 @@ export default function TechnicalSEOClient() {
       <ServiceQuickAnswerBox
         eyebrow="Answer Engine (AEO) & Generative Engine Optimization (GEO) Summary"
         h2="How Does Technical SEO Resolve Indexing Exclusions and Power AI Search Citations?"
-        answerCapsule="Technical SEO resolves the architectural bottlenecks that prevent Googlebot and AI crawlers (OAI-SearchBot, GPTBot, PerplexityBot) from indexing and citing your site—fixing 'Crawled – currently not indexed' templates, parameter crawl waste, redirect chains, Core Web Vitals (INP, LCP, CLS), and connected JSON-LD / llms.txt graphs."
+        answerCapsule="Technical SEO fixes what stops Google and AI tools from indexing your site: pages stuck as not indexed, wasted crawling on filter URLs, redirect chains, slow pages and missing schema."
         contextParagraph={
           <>
             Verified in our published Google Search Console case studies: we rebuilt{" "}
@@ -290,7 +290,7 @@ export default function TechnicalSEOClient() {
       <ServiceAiDiagnosisAndTrial
         serviceType="technical-seo"
         heading="Traffic dropped? Diagnose your technical SEO"
-        answerCapsule="Enter your Google Search Console exclusion status, Core Web Vitals failure, or post-migration drop below, and our diagnostic engine will pinpoint the template bottleneck and how we fix it—starting with our 7-Day Free Trial."
+        answerCapsule="Describe your Search Console problem, slow pages or traffic drop below. You will see what is causing it and how I fix it, starting with a 7-day free trial."
         placeholder="e.g. 12,000 URLs stuck in 'Crawled - currently not indexed' or poor mobile INP after redesign..."
         painChips={[
           "Thousands of URLs in 'Crawled - currently not indexed'",
@@ -313,20 +313,20 @@ export default function TechnicalSEOClient() {
         initialItems={[
           {
             n: "1. 'Crawled / Discovered – Currently Not Indexed' Exclusions",
-            why: "Googlebot wastes its crawl budget on faceted URLs, duplicate sort parameters, and redirect chains, then drops your revenue-generating pages as low-value.",
-            fix: "We diff your XML sitemaps against Google Search Console API data, block parameter crawl traps, consolidate canonicals, and re-architect internal link depth.",
+            why: "Google wastes its time on filter URLs, duplicate sort pages and redirects, then drops the pages that make you money.",
+            fix: "I compare your sitemap with what Google has indexed, block crawl traps, fix canonicals, and make sure important pages are a few clicks from the homepage.",
             tool: "GSC Indexing Recovery + Crawl Budget Rules",
           },
           {
             n: "2. Core Web Vitals (INP > 200ms & LCP Bottlenecks)",
-            why: "Heavy third-party scripts, unoptimized hydration, and layout shifts fail Chrome User Experience Report (CrUX) thresholds on mobile and desktop.",
-            fix: "We defer non-critical main-thread JS, deploy Speculative Rules API prerendering, and fix template-level LCP/CLS.",
+            why: "Heavy scripts and jumping layouts make your pages fail Google speed tests on phones and desktops.",
+            fix: "I delay scripts that are not needed, preload the next page, and fix slow loading and layout jumps in your templates.",
             tool: "Template-Level INP & CrUX Engineering",
           },
           {
             n: "3. Broken Schema Graphs & AI Crawler Invisibility",
-            why: "Disconnected JSON-LD snippets and JavaScript-gated content prevent Google AI Overviews, ChatGPT (OAI-SearchBot), and Perplexity from citing your pages.",
-            fix: "We deploy unified @graph JSON-LD markup, server-side rendered HTML, and a clean /llms.txt entity architecture.",
+            why: "Broken schema and content hidden behind JavaScript stop AI Overviews, ChatGPT and Perplexity from quoting your pages.",
+            fix: "I add connected schema markup, make pages load as plain HTML, and set up an llms.txt file.",
             tool: "Schema Generator + llms.txt Builder",
           },
         ]}
@@ -390,7 +390,7 @@ export default function TechnicalSEOClient() {
           alt="Engineering lead and technical SEO specialist analyzing sudden organic traffic drop and crawl budget alerts in Google Search Console"
           tag="The Reality · The Indexing Cliff"
           quote="“Traffic dropped 60% after our redesign, and Google flagged 14,000 product pages as ‘Crawled - Currently Not Indexed’.”"
-          body="You spent months investing into content and backlinks, but if your canonical tags loop, faceted URLs create millions of duplicate parameters, or render-blocking scripts exhaust crawl budget, Google abandons your site before ever evaluating your pages."
+          body="You spent months on content and links. But if your canonicals loop, filters create endless duplicate URLs, or scripts slow everything down, Google gives up before it judges your pages."
         />
         <RuleGrid columns={2}>
           {SYMPTOMS.map((s) => (
@@ -489,7 +489,7 @@ export default function TechnicalSEOClient() {
       <ServiceSemanticClusterAndLinks
         eyebrow="USA Technical SEO Psychology · Low-Hanging Long-Tail Keywords"
         h2="Technical SEO services for the problems people search for"
-        answerCapsule="We target the exact diagnostic queries CTOs, VPs of Marketing, and store owners search when traffic drops or pages fail to index—connecting every technical guide, free schema/llms.txt tool, and case study into a high-velocity internal linking loop."
+        answerCapsule="I target the searches people make when traffic drops or pages will not index, and link every guide, free tool and case study together."
         clusters={TECHNICAL_SEMANTIC_CLUSTERS}
       />
 

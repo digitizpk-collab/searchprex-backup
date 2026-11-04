@@ -92,7 +92,7 @@ const trustItems = [
 
 const process = [
   { when: "Days 1–7", title: "7-Day Free Trial & Tear-Down", body: "Your URL in, a written diagnosis within 24 hours: your Business Profile, citations and the three competitors above you, plus 7 days of initial fixes." },
-  { when: "Weeks 1–4", title: "Profile & US citations", body: "Google Business Profile categories and services rebuilt; business NAP details made consistent everywhere they appear." },
+  { when: "Weeks 1–4", title: "Profile & US citations", body: "Your Business Profile categories and services are rebuilt, and your name, address and phone match everywhere online." },
   { when: "Weeks 5–8", title: "City pages & reviews", body: "Service and US suburb pages published live, with the review velocity routine running alongside." },
   { when: "Every Monday", title: "Full Stat & Call Report", body: "No partial reporting: Map Pack positions, phone calls, direction requests, and what happens next." },
 ];
@@ -241,7 +241,7 @@ export default function LocalSEOClient({ guide: _guide }: { guide: Guide }) {
       <ServiceQuickAnswerBox
         eyebrow="Answer Engine (AEO) & Generative Engine Optimization (GEO) Summary"
         h2="How Do USA Local SEO Services Win the Google Map Pack Top 3 and AI Overviews?"
-        answerCapsule="Local SEO in the United States aligns your Google Business Profile primary category, service-area suburb pages, NAP directory citations, genuine customer review velocity, and LocalBusiness JSON-LD schema—driving inbound phone calls and direction requests from both the Google Maps 3-Pack and AI Overviews."
+        answerCapsule="Local SEO gets your business into the Google Maps top 3 and AI Overviews. It sets the right Business Profile category, builds a page for each town you serve, keeps your details the same everywhere, and grows real reviews. The result is more calls and direction requests."
         contextParagraph={
           <>
             SearchPrex has taken US service businesses into both the #1 organic slot and Google&rsquo;s AI Overviews—including{" "}
@@ -296,7 +296,7 @@ export default function LocalSEOClient({ guide: _guide }: { guide: Guide }) {
       <ServiceAiDiagnosisAndTrial
         serviceType="local-seo"
         heading="Quiet phones? Diagnose your local SEO problem"
-        answerCapsule="Describe your Google Business Profile or local ranking problem below to discover why competitors are taking your 'near me' phone calls and how we move your business into the Map Pack Top 3 and AI Overviews—starting with a 7-Day Free Trial."
+        answerCapsule="Describe your Business Profile or ranking problem below. You will see why competitors get your calls, and how I move you into the Map Pack top 3. It starts with a 7-day free trial."
         placeholder="e.g. Our local service business is buried at #8 in Google Maps and not showing in AI Overviews..."
         painChips={[
           "Buried outside the Google Maps Top 3 for 'near me' searches",
@@ -319,20 +319,20 @@ export default function LocalSEOClient({ guide: _guide }: { guide: Guide }) {
         initialItems={[
           {
             n: "1. GBP Primary Category & Proximity Compression",
-            why: "Your Google Business Profile uses a broad primary category, lacks structured service items, or suffers from NAP mismatches across Apple Maps, Yelp, and BBB—dropping you below the Top 3.",
-            fix: "We benchmark the exact primary/secondary category stack of your city's Top 3 leaders, reconcile NAP citations to the character, and build genuine review velocity.",
+            why: "Your Business Profile has a vague category, no listed services, or different details on Apple Maps, Yelp and BBB. That drops you below the top 3.",
+            fix: "I copy what works for the top 3 businesses in your city: their categories. Then I fix your listings so every detail matches, and help you get steady, real reviews.",
             tool: "GBP Category Audit + Citation Sync",
           },
           {
             n: "2. Missing Suburb & Service-Area Landing Pages",
-            why: "A single homepage cannot rank in 10 surrounding US suburbs when Google compresses Map Pack radius around searcher proximity.",
-            fix: "We build dedicated, non-duplicate city and suburb pages with local job proof, driving directions, and LocalBusiness schema.",
+            why: "One homepage cannot rank in 10 nearby towns, because Google shows the closest businesses first.",
+            fix: "I build a separate page for each town, with real jobs, directions and schema markup.",
             tool: "Suburb Silo Architecture + LocalBusiness JSON-LD",
           },
           {
             n: "3. Invisible in Local AI Overviews & ChatGPT",
             why: "When homeowners ask AI engines 'who offers free estimates in [city]' or 'best contractor near me', thin pages without structured Answer Capsules are skipped.",
-            fix: "We add 45–60 word Answer Capsules under semantic H2 headings and wire FAQPage + LocalBusiness schema (the exact method behind our Michigan and California AI Overview citations).",
+            fix: "I add a short, direct answer under each question on your pages, plus schema markup. This is how our Michigan and California clients got named in AI Overviews.",
             tool: "AEO Answer Capsules + Schema Generator",
           },
         ]}
@@ -439,7 +439,7 @@ export default function LocalSEOClient({ guide: _guide }: { guide: Guide }) {
             <Eyebrow>Google Business Profile</Eyebrow>
             <H2>Your Business Profile is where most US local calls start</H2>
             <p className="mt-4 rounded-2xl border-l-4 border-l-neutral-900 bg-slate-50 p-4 text-sm font-semibold text-neutral-900 leading-relaxed">
-              For “near me” and city-specific searches across the USA, the Google Maps 3-Pack sits above organic links and captures the highest-intent mobile phone calls. Your Profile wins when its primary category, listed services, website HTML, and recent customer reviews all reinforce the exact same local entity.
+              For near me searches, the Google Maps top 3 sits above everything else and gets the most calls. Your profile wins when its category, services, website and recent reviews all tell Google the same story.
             </p>
             <Lead>
               I look at your Profile right next to the three businesses ranking above you in your city, so every change has a concrete reason behind it.
@@ -492,7 +492,7 @@ export default function LocalSEOClient({ guide: _guide }: { guide: Guide }) {
       <ServiceSemanticClusterAndLinks
         eyebrow="USA Local Search Psychology · Low-Hanging Long-Tail Keywords"
         h2="Local SEO services for the searches your customers make"
-        answerCapsule="We pair high-intent 'near me' and emergency service queries with suburb-specific landing pages, GBP category precision, and 45–60 word Answer Capsules so your business captures both Map Pack calls and AI Overview citations."
+        answerCapsule="I match urgent near me searches with a page for each town, the right Business Profile category, and short direct answers. That wins both Map Pack calls and AI Overview mentions."
         clusters={LOCAL_SEMANTIC_CLUSTERS}
       />
 

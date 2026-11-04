@@ -251,7 +251,7 @@ const faqs = [
   },
   {
     q: "What's included in the free SEO audit?",
-    a: "The free audit covers: technical SEO health check, on-page SEO analysis of your top 10 pages, competitor gap analysis, indexation status review, and a 90-day roadmap with prioritized recommendations. The founder personally reviews every audit.",
+    a: "The free audit covers your site health, your top 10 pages, your competitors, which pages Google has indexed, and a 90-day plan. The founder reads every one himself.",
   },
   {
     q: "Do you offer month-to-month SEO contracts?",
@@ -358,7 +358,7 @@ export default function ServicesPage() {
                 SearchPrex Engineering &amp; Solutions
               </p>
               <p className="text-sm font-semibold text-neutral-200">
-                Explore production-ready code fixes, canonical liquid templates, and diagnostic playbooks backing our client campaigns.
+                Code fixes, templates and step-by-step guides from real client work.
               </p>
             </div>
           </div>
@@ -403,7 +403,7 @@ export default function ServicesPage() {
             What SEO services does SearchPrex provide to US businesses?
           </h2>
           <p className="text-sm sm:text-base leading-relaxed text-neutral-700 bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
-            SearchPrex delivers five founder-executed SEO services across the United States: <strong>Law Firm SEO</strong> (local Map Pack and practice-area authority), <strong>Ecommerce &amp; Shopify SEO</strong> (mass indexation recovery and product schema), <strong>Local SEO</strong> (Google Business Profile optimization and suspension recovery), <strong>Technical SEO</strong> (Core Web Vitals and site architecture audits), and <strong>AI Search Optimization / GEO</strong> (Google AI Overviews, Perplexity, and ChatGPT search citations). Every campaign is led directly by founder Mubashar Sharif with transparent month-to-month retainers and verified Google Search Console proof.
+            SearchPrex offers six SEO services across the US: law firm, local, small business, ecommerce, technical and AI search SEO. The founder, Mubashar Sharif, does the work on every one. Plans are month to month, and every result is shown on a screenshot from the client account.
           </p>
         </div>
       </section>
@@ -487,7 +487,7 @@ export default function ServicesPage() {
           variant="center"
           eyebrow="Side-by-side breakdown"
           title="Compare SearchPrex SEO Services"
-          intro="Every tier is month-to-month with no lock-in contracts, led personally by founder Mubashar Sharif with one-client-per-market exclusivity."
+          intro="Every plan is month to month, with no long contract. The founder does the work, and you get one client per city."
         />
 
         <div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-xs">

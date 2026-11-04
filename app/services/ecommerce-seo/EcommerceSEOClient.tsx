@@ -106,7 +106,7 @@ const PROCESS = [
   { when: "Days 1–7", title: "7-Day Free Trial & Tear-Down", body: "Your store URL in, a written Sitemap-to-GSC indexing diagnosis within 24 hours, plus 7 days of initial quick-win fixes at zero cost." },
   { when: "Weeks 1–2", title: "Audit & revenue roadmap", body: "Crawl, Search Console and GA4 data, two US competitors benchmarked, and a 90-day plan ranked by revenue impact." },
   { when: "Weekly sprints", title: "Batch execution", body: "Technical fixes shipped, product/category content published in measured batches, schema deployed and resubmitted — every change logged." },
-  { when: "Every Monday", title: "Full Stat & Revenue Report", body: "No partial reporting: indexed pages, Search Console clicks, and WooCommerce/Shopify revenue reviewed every Monday." },
+  { when: "Every Monday", title: "Full Stat & Revenue Report", body: "Full reporting: indexed pages, Search Console clicks and store revenue, every Monday." },
 ];
 
 const TOOLING = ["Google Search Console", "GA4", "Screaming Frog", "Ahrefs", "Semrush", "Looker Studio", "PageSpeed Insights"];
@@ -133,7 +133,7 @@ const ECOM_SEMANTIC_CLUSTERS = [
       "shopify plus faceted navigation crawl budget optimization",
     ],
     psychologyAndIntent:
-      "US Shopify merchants lose organic margin when every product exists at multiple collection URLs and third-party apps drag mobile INP above 300ms. Fixing canonicals and collection buying guides unlocks high-intent commercial buyers.",
+      "Shopify stores lose sales when each product sits at several URLs and apps slow the site down on phones. Fixing canonicals and adding buying guides brings back ready-to-buy shoppers.",
     siloHref: "/services/ecommerce-seo/shopify",
     siloLabel: "Explore Shopify SEO Architecture",
   },
@@ -288,7 +288,7 @@ export default function EcommerceSEOClient({ linkedinUrl, guide: _guide }: { lin
       <ServiceQuickAnswerBox
         eyebrow="Answer Engine (AEO) & Generative Engine Optimization (GEO) Summary"
         h2="How Does Ecommerce SEO Recover Unindexed SKUs and Grow US Store Revenue?"
-        answerCapsule="Ecommerce SEO for US Shopify and WooCommerce stores eliminates faceted crawl waste, rewrites thin manufacturer copy at template scale, and deploys Product, Offer, and MerchantReturnPolicy JSON-LD schema—turning 'Crawled – currently not indexed' product catalogs into ranked commercial pages cited across Google Search, AI Overviews, and ChatGPT Shopping."
+        answerCapsule="Ecommerce SEO for Shopify and WooCommerce stores stops Google wasting time on filter pages, rewrites thin product copy across the whole catalog, and adds product schema. Products that Google ignored start to rank, and can be quoted in AI Overviews and ChatGPT Shopping."
         contextParagraph={
           <>
             Verified in our published case studies: on{" "}
@@ -343,7 +343,7 @@ export default function EcommerceSEOClient({ linkedinUrl, guide: _guide }: { lin
       <ServiceAiDiagnosisAndTrial
         serviceType="ecommerce-seo"
         heading="Products not indexed? Diagnose your store"
-        answerCapsule="Enter your Shopify or WooCommerce challenge below to see why Google Search Console flags your products as 'Crawled – currently not indexed' and how our template-level engineering unlocks organic US revenue—backed by our 7-Day Free Trial."
+        answerCapsule="Describe your Shopify or WooCommerce problem below. You will see why Google is not indexing your products and how I fix it, starting with a 7-day free trial."
         placeholder="e.g. 8,000 WooCommerce or Shopify products stuck in 'Crawled - currently not indexed'..."
         painChips={[
           "Thousands of SKUs stuck in 'Crawled - currently not indexed'",
@@ -366,20 +366,20 @@ export default function EcommerceSEOClient({ linkedinUrl, guide: _guide }: { lin
         initialItems={[
           {
             n: "1. Mass 'Crawled – Currently Not Indexed' Catalog Bloat",
-            why: "Googlebot crawls thousands of manufacturer-copy product pages and faceted filter combinations (?color=, ?size=, ?sort=), deems your templates low-value, and drops your high-margin SKUs from the index.",
-            fix: "We run daily Sitemap-to-GSC diffing, block low-value parameter permutations, and enrich product/category templates in measured batches (the exact method that took Michigan Sports & Outdoor from ~3,000 to 11,549 indexed pages).",
+            why: "Google crawls thousands of copied product pages and filter combinations, decides they are low value, and drops your best products from search.",
+            fix: "I check daily which pages Google has indexed, block useless filter URLs, and improve product and category templates in batches. That is how Michigan Sports and Outdoor went from about 3,000 to 11,549 indexed pages.",
             tool: "Sitemap-to-GSC Diffing + Canonical Rules",
           },
           {
             n: "2. Missing MerchantReturnPolicy & AI Shopping Schema",
-            why: "Without nested Product, Offer, AggregateRating, and 2026 MerchantReturnPolicy JSON-LD, your products lose rich price/stock snippets in Google Search and get ignored by ChatGPT Shopping.",
-            fix: "We deploy automated, template-level JSON-LD mapped directly to live inventory, pricing, shipping, and return data.",
+            why: "Without product schema, your listings lose price and stock details in Google, and ChatGPT Shopping skips them.",
+            fix: "I add schema markup to your templates, tied to your live stock, prices, shipping and returns.",
             tool: "Schema Generator + Merchant Center Sync",
           },
           {
             n: "3. Thin Collection Grids Failing Commercial Buyers",
             why: "A collection page with only a product grid and an H1 gives Google and AI Overviews zero topical context to rank for high-volume commercial queries.",
-            fix: "We transform top-revenue category templates into structured buying guides with 45–60 word Answer Capsules, comparison tables, and buyer FAQs.",
+            fix: "I turn your best-selling category pages into buying guides, with short answers, comparison tables and buyer questions.",
             tool: "Category Buying Guides + Internal Link Graph",
           },
         ]}
@@ -473,7 +473,7 @@ export default function EcommerceSEOClient({ linkedinUrl, guide: _guide }: { lin
             <Eyebrow>Indexing recovery</Eyebrow>
             <H2>A product Google won’t index can’t sell</H2>
             <p className="mt-4 rounded-2xl border-l-4 border-l-neutral-900 bg-slate-50 p-4 text-sm font-semibold text-neutral-900 leading-relaxed">
-              Most stuck ecommerce stores do not have a backlink problem—they have an indexing and template quality problem. When Google Search Console flags thousands of SKUs as “Crawled – currently not indexed”, resubmitting sitemaps fails; fixing duplicate parameters, canonicals, and thin product attributes solves the root cause.
+              Most stuck stores do not have a backlink problem. They have an indexing and template problem. When Google ignores thousands of products, resubmitting the sitemap does not help. Fixing duplicate URLs, canonicals and thin product details does.
             </p>
             <Lead>
               I sort every unindexed URL by the exact reason Search Console gives, fix the highest-revenue products first and re-measure before shipping the next batch.
@@ -595,7 +595,7 @@ export default function EcommerceSEOClient({ linkedinUrl, guide: _guide }: { lin
       <ServiceSemanticClusterAndLinks
         eyebrow="USA Commercial Search Psychology · Low-Hanging Long-Tail Keywords"
         h2="Ecommerce SEO services for the searches that sell"
-        answerCapsule="We target commercial and transactional long-tail queries—pairing specific product attributes, SKUs, brand names, and buying-guide comparisons with clean Product and MerchantReturnPolicy schema so your store captures ready-to-buy US shoppers."
+        answerCapsule="I target the specific searches buyers make: product features, model numbers, brands and comparisons. With clean product schema, your store reaches shoppers who are ready to buy."
         clusters={ECOM_SEMANTIC_CLUSTERS}
       />
 

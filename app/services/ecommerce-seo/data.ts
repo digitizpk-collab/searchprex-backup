@@ -35,11 +35,11 @@ export const CAPSULES: QA[] = [
 export const FAQS: QA[] = [
   {
     q: "How do you get Shopify and WooCommerce products cited in Google AI Overviews and ChatGPT Shopping?",
-    a: "AI Overviews and ChatGPT Shopping extract structured product specifications, pricing, availability, shipping, and return policies directly from clean HTML and JSON-LD. We deploy validated Product, Offer, AggregateRating, MerchantReturnPolicy, and OfferShippingDetails schema alongside 45–60 word buying-guide capsules on your category pages and an llms.txt product catalog index.",
+    a: "AI Overviews and ChatGPT Shopping read product details, prices, stock, shipping and returns straight from your pages. I add the right schema markup, short buying guides on category pages, and an llms.txt file that lists your catalog.",
   },
   {
     q: "Why are ecommerce brands exhausted by previous SEO agencies?",
-    a: "Most ecommerce agencies sell useless Domain Authority (DA/PA) backlink packages, send partial monthly PDFs that hide unindexed SKU counts, and hand your store to a junior account manager who never touches Liquid or PHP templates. At SearchPrex, you work directly with Founder Mubashar Sharif (5+ years of hands-on SEO), get weekly Monday Search Console and WooCommerce/Shopify revenue reviews, and can test us with a 7-Day Free Trial.",
+    a: "Many ecommerce agencies sell backlink packages, send monthly PDFs that hide how many products are missing from Google, and hand your store to a junior. With SearchPrex, you work with the founder, Mubashar Sharif, who has 5+ years in SEO. You get Search Console and revenue reviews every Monday, and you can try it free for 7 days.",
   },
   {
     q: "How long before our US store sees indexing and organic revenue movement?",
@@ -47,15 +47,15 @@ export const FAQS: QA[] = [
   },
   {
     q: "Do you work on Shopify, WooCommerce, and custom headless stores across the USA?",
-    a: "Yes. Our published ecommerce case studies are WooCommerce stores (SMK Store with 35,000+ products, and Michigan Sports & Outdoor), and we apply the exact same sitemap-to-GSC diffing, canonical consolidation, and programmatic content pipelines to Shopify, BigCommerce, and custom stacks across all US states and metros.",
+    a: "Yes. Our published store case studies are WooCommerce (SMK Store, with 35,000+ products, and Michigan Sports and Outdoor). I use the same method on Shopify, BigCommerce and custom stores.",
   },
   {
     q: "What if our catalog has 10,000+ SKUs with manufacturer copy?",
-    a: "We build programmatic content and attribute enrichment pipelines—unique HTML specifications per product, dynamic FAQ schema, internal category-to-SKU linking, and meta descriptions—published in controlled batches and measured in Google Search Console before shipping the next batch.",
+    a: "I give every product a unique description, specs, FAQ markup, links from its category and a meta description. The pages go live in batches, and I check Search Console before starting the next batch.",
   },
   {
     q: "How does the 7-Day Free Trial work for an ecommerce store?",
-    a: "During your limited-time 7-Day Free Trial, we run a full Sitemap-to-Search-Console indexing diff on your store, identify which templates are causing 'Crawled - currently not indexed' bloat, prepare Product/MerchantReturnPolicy JSON-LD for your top collection, and deliver a prioritized 90-day revenue roadmap before you pay anything.",
+    a: "During your 7-day free trial, I compare your sitemap with what Google has indexed, find the templates that keep products out, prepare schema for your top collection, and give you a 90-day plan. You pay nothing until then.",
   },
   {
     q: "How much does ecommerce SEO cost?",

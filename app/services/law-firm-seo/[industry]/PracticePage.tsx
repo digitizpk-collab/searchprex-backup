@@ -115,7 +115,7 @@ function FamilyLawIncluded() {
   ];
   return (
     <Band id="included">
-      <BandIntro eyebrow="Family law SEO services" title="What does family law SEO include?" lead="A practical scope for divorce and custody firms combines useful matter pages, local profile work, privacy-conscious measurement and a clear monthly review. SEO for family law attorneys is planned around your firm's practice, counties and review capacity." />
+      <BandIntro eyebrow="Family law SEO services" title="What does family law SEO include?" lead="A practical plan for divorce and custody firms combines useful matter pages, local profile work, private tracking and a weekly review. It is built around your practice, your counties and how much your attorneys can review." />
       <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {items.map((item, i) => <article key={item.title} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><p className="text-xs font-black tracking-[0.14em] text-slate-400">0{i + 1}</p><h3 className="mt-3 text-lg font-black text-slate-950">{item.title}</h3><p className="mt-2 text-sm leading-relaxed text-slate-600">{item.body}</p></article>)}
       </div>
@@ -359,7 +359,7 @@ export default function PracticePage({ page }: { page: IndustryPage }) {
       <ServiceProofStrip
         id="proof"
         title={page.slug === "family-law" ? "What we can show today" : "Relevant SEO work, shown with its actual industry and period"}
-        intro={page.slug === "family-law" ? "The sample county-guide and monthly-report formats above show the planned work. The examples below show local-service SEO execution only; they are not evidence of law-firm rankings, consultations or case volume." : "The examples below show SearchPrex work in local services, with the client type and reporting period named. They can demonstrate SEO execution and AI visibility in those industries, but they do not establish legal rankings, consultations or case volume."}
+        intro={page.slug === "family-law" ? "The sample county guide and Monday report above show the planned work. The examples below are local business results, not law firm rankings, consultations or cases." : "The examples below show SearchPrex work in local services, with the client type and reporting period named. They can demonstrate SEO execution and AI visibility in those industries, but they do not establish legal rankings, consultations or case volume."}
         moreHref="/case-studies"
         moreLabel={page.slug === "family-law" ? "See the source-labeled work" : "See the verified case studies"}
         shots={[

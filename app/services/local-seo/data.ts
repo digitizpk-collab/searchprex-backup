@@ -15,7 +15,7 @@ export interface QA {
 export const CAPSULES: QA[] = [
   {
     q: "How does Google decide Google Maps and Local Pack rankings in the USA?",
-    a: "Google states that local results are \"mainly based on relevance, distance, and popularity.\" Relevance is how closely your Google Business Profile primary category and services match the query, distance is proximity to the US searcher, and prominence reflects reviews, citations, and website authority. You cannot move your address, but you control relevance and prominence.",
+    a: "Google says local results depend on relevance, distance and popularity. Relevance means your category and services match the search. Distance is how close you are. Popularity comes from reviews, listings and your website. You cannot move your address, but you can improve the other two.",
   },
   {
     q: "What results have SearchPrex local SEO clients seen?",
@@ -23,22 +23,22 @@ export const CAPSULES: QA[] = [
   },
   {
     q: "Why did my Google Maps ranking suddenly drop or get suspended?",
-    a: "Check your Google Business Profile before blaming a broad algorithm shift. A virtual-office suspension, an unapproved Google suggested edit, a diluted primary category, or removed reviews can drop a listing overnight. Map Pack rankings and organic website rankings run on separate scoring systems, so we diagnose both during your 7-Day Free Trial.",
+    a: "Check your Business Profile before you blame an algorithm. A suspension, an unwanted edit, a vague category or removed reviews can drop you overnight. Maps rankings and website rankings work separately, so I check both during your 7-day free trial.",
   },
 ];
 
 export const FAQS: QA[] = [
   {
     q: "How do you rank service-area businesses in surrounding US suburbs when you only have one physical address?",
-    a: "When your physical office or shop is in one city and you dispatch crews to surrounding suburbs across your county or metro area, a single homepage cannot rank everywhere. We pair your Google Business Profile service-area configuration with dedicated, non-duplicate city and neighborhood pages containing local project proof and LocalBusiness JSON-LD.",
+    a: "If your office is in one town but you serve the towns around it, one homepage cannot rank everywhere. So I set up your service area on Google and build a separate page for each town, with real jobs from that area.",
   },
   {
     q: "What is Answer Engine Optimization (AEO) and AI Overview SEO for a local business?",
-    a: "Google AI Overviews and ChatGPT now answer local queries—such as 'free cost estimation for AC installation in Simi Valley' or 'post construction cleaning in Chesterfield MI'—above the Map Pack. Clear 45–60 word Answer Capsules, transparent pricing/estimate explanations, consistent NAP citations, and LocalBusiness schema make Google name your company first.",
+    a: "Google AI Overviews and ChatGPT now answer local searches above the Map Pack. Clear short answers, honest pricing, matching business details and schema help Google name your company first.",
   },
   {
     q: "Why are local business owners exhausted by previous SEO agencies?",
-    a: "Most local agencies sell automated directory packages, send partial monthly PDFs hiding call volume, and hand your Business Profile to a junior coordinator who never checks competitor categories. At SearchPrex, you work directly with Founder Mubashar Sharif (5+ years of hands-on SEO), get weekly Monday reports on Map Pack positions and phone calls, and can test our work with a 7-Day Free Trial.",
+    a: "Many local agencies sell directory packages, send monthly PDFs that hide your call numbers, and hand your profile to a junior. With SearchPrex, you work with the founder, Mubashar Sharif, who has 5+ years in SEO. You get a report every Monday on calls and Map Pack spots, and you can try it free for 7 days.",
   },
   {
     q: "What happens if a competitor or customer suggests a wrong edit to my Google Business Profile?",
@@ -46,7 +46,7 @@ export const FAQS: QA[] = [
   },
   {
     q: "How fast can a US business rank in the Google Maps Top 3?",
-    a: "Timelines depend on local competition and where your profile starts, so no honest strategist promises an exact date. However, fixing a wrong primary category, cleaning up NAP inconsistencies, and launching genuine review velocity and city pages typically produce measurable Map Pack movement within 45 to 90 days.",
+    a: "It depends on your competition and where your profile starts, so nobody honest can promise a date. But fixing your category, your listings, your reviews and your town pages usually moves you in the Map Pack within 45 to 90 days.",
   },
   {
     q: "Which local businesses do you work with, and is there a contract?",
@@ -68,12 +68,12 @@ export const PROBLEMS: Array<{ title: string; check: string; costs: string }> = 
   {
     title: "Business NAP details that disagree across US directories",
     check: "Search your business name and compare phone, suite number, and address on Google, Apple Maps, Yelp, BBB, and your website footer.",
-    costs: "Inconsistent NAP details weaken local prominence — and Google uses your website HTML to judge suggested profile edits.",
+    costs: "Different names, addresses or phone numbers online hurt your ranking. Google also checks your website before it accepts edits to your profile.",
   },
   {
     title: "Stale review velocity compared to the Map Pack Top 3",
     check: "Count how many genuine customer reviews you earned in the last 90 days versus the top three competitors in your city.",
-    costs: "Review recency and service-keyword mentions inside reviews move the Map Pack as heavily as your overall star rating.",
+    costs: "Recent reviews that mention your services help your Map Pack spot as much as your star rating.",
   },
   {
     title: "No dedicated page for the service or the US suburb you serve",

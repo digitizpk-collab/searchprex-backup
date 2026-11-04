@@ -53,6 +53,33 @@ const GENERAL_USA_SCOPE_OPTIONS = [
   "United States — Direct-to-Consumer (DTC) / Online Catalog",
 ];
 
+const TRIAL_STEPS: Record<ServiceAiDiagnosisAndTrialProps["serviceType"], { num: string; phase: string; title: string; desc: string }[]> = {
+  "law-firm-seo": [
+    { num: "01", phase: "Days 1–2", title: "Technical, YMYL & GBP audit", desc: "40-point crawl, ABA Rule 7.1 check, primary GBP category review and county competitor gap analysis." },
+    { num: "02", phase: "Days 3–5", title: "Quick-win fixes & schema", desc: "A short AI Overview answer for your main practice page, plus LegalService and Attorney schema." },
+    { num: "03", phase: "Day 7", title: "1-on-1 review with the founder", desc: "Walk through every finding and the 90-day plan with Mubashar Sharif, before you pay anything." },
+    { num: "04", phase: "Days 8–90", title: "Practice pages & Map Pack", desc: "County practice pages, State Bar details kept in sync, and a call report every Monday." },
+  ],
+  "local-seo": [
+    { num: "01", phase: "Days 1–2", title: "Business Profile & site audit", desc: "Your category, services and reviews checked against the top 3 businesses in your city." },
+    { num: "02", phase: "Days 3–5", title: "Quick-win fixes & schema", desc: "Profile fixes, matching business details, and LocalBusiness schema on your site." },
+    { num: "03", phase: "Day 7", title: "1-on-1 review with the founder", desc: "Walk through every finding and the 90-day plan with Mubashar Sharif, before you pay anything." },
+    { num: "04", phase: "Days 8–90", title: "Town pages & Map Pack", desc: "A page for each town you serve, steady reviews, and a call report every Monday." },
+  ],
+  "ecommerce-seo": [
+    { num: "01", phase: "Days 1–2", title: "Indexing & template audit", desc: "Your sitemap compared with what Google has indexed, and the templates keeping products out." },
+    { num: "02", phase: "Days 3–5", title: "Quick-win fixes & schema", desc: "Canonical and filter fixes, plus product schema for your top collection." },
+    { num: "03", phase: "Day 7", title: "1-on-1 review with the founder", desc: "Walk through every finding and the 90-day plan with Mubashar Sharif, before you pay anything." },
+    { num: "04", phase: "Days 8–90", title: "Products back in Google", desc: "Product and category pages improved in batches, with a revenue review every Monday." },
+  ],
+  "technical-seo": [
+    { num: "01", phase: "Days 1–2", title: "Crawl & indexing audit", desc: "Every URL crawled, indexing problems sorted by cause, and page speed checked." },
+    { num: "02", phase: "Days 3–5", title: "Quick-win fixes", desc: "The biggest blockers fixed first: canonicals, redirects, crawl traps and slow templates." },
+    { num: "03", phase: "Day 7", title: "1-on-1 review with the founder", desc: "Walk through every finding and the 90-day plan with Mubashar Sharif, before you pay anything." },
+    { num: "04", phase: "Days 8–90", title: "Template fixes live", desc: "Fixes shipped template by template and proven in Search Console every Monday." },
+  ],
+};
+
 export default function ServiceAiDiagnosisAndTrial({
   serviceType,
   heading,
@@ -386,37 +413,12 @@ export default function ServiceAiDiagnosisAndTrial({
           </h3>
 
           <p className="mt-3 text-sm sm:text-base text-slate-600 max-w-3xl leading-relaxed">
-            Do not get locked into another blind retainer. Come forward and test our engineering, local market precision, and direct communication for 7 days free—you keep the complete audit, keyword roadmap, and initial quick-win fixes regardless.
+            Do not sign another long contract blind. Try the work, the attention to your market and talking to me directly, free for 7 days. You keep the audit, the keyword plan and the first fixes either way.
           </p>
 
           {/* 4-Step "How Our 7-Day Free Trial & First 90 Days Work" Process Strip */}
           <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
-            {[
-              {
-                num: "01",
-                phase: "Days 1–2",
-                title: "Technical, YMYL & GBP Audit",
-                desc: "40-point crawl, ABA Rule 7.1 check, primary GBP category review & county competitor gap analysis.",
-              },
-              {
-                num: "02",
-                phase: "Days 3–5",
-                title: "Live Quick-Win Fixes & Schema",
-                desc: "We draft your 45–60 word AI Overview Answer Capsule and prepare LegalService & Attorney JSON-LD.",
-              },
-              {
-                num: "03",
-                phase: "Day 7",
-                title: "1-on-1 Review with Founder",
-                desc: "Walk through every finding and 90-day caseload roadmap live with Mubashar Sharif before paying $0.",
-              },
-              {
-                num: "04",
-                phase: "Days 8–90",
-                title: "Practice Silos & Map Pack Top 3",
-                desc: "Full county-court practice page deployment, State Bar citation sync, and weekly Monday call reports.",
-              },
-            ].map((step) => (
+            {TRIAL_STEPS[serviceType].map((step) => (
               <div
                 key={step.num}
                 className="rounded-xl border border-slate-200 bg-white p-4 shadow-2xs flex flex-col justify-between"

@@ -16,7 +16,7 @@ export interface QA {
 export const CAPSULES: QA[] = [
   {
     q: "What does a technical SEO service actually fix for US websites?",
-    a: "Technical SEO fixes the architectural reasons Googlebot and AI crawlers cannot find, render, or keep your pages: crawl budget wasted on faceted parameter URLs, pages stuck in “Crawled – currently not indexed”, broken canonicals and redirect chains, slow Core Web Vitals (INP, LCP, CLS), and missing JSON-LD or llms.txt entity architecture.",
+    a: "Technical SEO fixes why Google and AI tools cannot find or keep your pages: wasted crawling on filter URLs, pages stuck as not indexed, broken canonicals, redirect chains, slow pages and missing schema.",
   },
   {
     q: "How do I know if my site has a technical SEO and indexing problem?",
@@ -32,11 +32,11 @@ export const CAPSULES: QA[] = [
 export const FAQS: QA[] = [
   {
     q: "How do you optimize technical SEO for ChatGPT, Perplexity, and Google AI Overviews?",
-    a: "AI retrieval crawlers (OAI-SearchBot, GPTBot, PerplexityBot, and Google-Extended) have stricter timeout budgets than Googlebot and do not execute heavy client-side JavaScript reliably. We ensure server-side rendered HTML, sub-200ms INP responsiveness, validated @graph JSON-LD schema, and a structured /llms.txt manifest so answer engines index and cite your pages accurately.",
+    a: "AI crawlers like GPTBot and PerplexityBot give up faster than Google and often skip pages that need heavy JavaScript. I make sure your pages load fast as plain HTML, with clean schema and an llms.txt file, so AI tools can read and quote them.",
   },
   {
     q: "Why are engineering and marketing teams exhausted by traditional SEO agencies?",
-    a: "Most agencies hand you a 100-page automated Screaming Frog PDF full of minor warnings, sell useless Domain Authority (DA/PA) backlink metrics, and never ship a single template fix. At SearchPrex, you work directly with Founder Mubashar Sharif (5+ years of hands-on SEO), get template-level implementation or developer-ready tickets, and can test our work with a 7-Day Free Trial.",
+    a: "Many agencies hand you a 100-page tool report full of minor warnings and never fix anything. With SearchPrex, you work with the founder, Mubashar Sharif, who has 5+ years in SEO. You get the fixes done or tickets your developer can use, and you can try it free for 7 days.",
   },
   {
     q: "My site has 10,000+ pages — can you handle large-scale indexing recovery?",
@@ -52,7 +52,7 @@ export const FAQS: QA[] = [
   },
   {
     q: "How much does a technical SEO audit cost, and how does the 7-Day Free Trial work?",
-    a: "Your initial 24-hour tear-down and limited-time 7-Day Free Trial are free: we inspect your Search Console indexing exclusions, crawl waste, and Core Web Vitals and deliver a prioritized engineering plan. Full implementation is then quoted transparently as a project based on affected templates, with optional month-to-month monitoring afterward.",
+    a: "The 24-hour tear-down and the 7-day free trial cost nothing. I check your indexing problems, crawl waste and page speed, and give you a ranked plan. The full fix is then quoted as a project, with optional monthly monitoring after.",
   },
   {
     q: "Is there a long-term contract?",
@@ -78,7 +78,7 @@ export const SYMPTOMS: Array<{ status: string; means: string; costs: string }> =
   {
     status: "Duplicate without user-selected canonical",
     means: "Several URLs render the same content and none declares which is the authoritative canonical.",
-    costs: "Google picks a canonical for you—often the wrong parameter URL—splitting ranking signals across duplicates.",
+    costs: "When you do not set a canonical, Google picks one, often the wrong URL, and your ranking strength is split across copies.",
   },
   {
     status: "Core Web Vitals: Poor URLs (INP / LCP / CLS)",
