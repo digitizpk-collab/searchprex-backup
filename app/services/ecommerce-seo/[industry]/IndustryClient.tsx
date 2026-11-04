@@ -361,7 +361,7 @@ export default function IndustryClient({ slug, guide: _guide }: { slug: string; 
         </div>
       </Band>
 
-      <SpokeWhyAndAi service={`${industry.name.toLowerCase()} SEO`} rows={[["Who does the work","The founder","You, between orders","Often a junior"],["Big catalogs","Fixed at the template, thousands at once","One product at a time","Often thin AI copy"],["Proof","SMK Store: +227% net sales","n/a","Often logos only"],["Contract","Month to month","None","Often 6 to 12 months"],["Risk","7-day free trial, 90-day money-back","Your time","Rarely a guarantee"]]} aiLine={"ChatGPT Shopping and Google AI Overviews read product names, prices, stock and reviews from your pages. Product schema and clear copy give them accurate details to quote."} />
+      <SpokeWhyAndAi service={`${industry.name} SEO`} rows={[["Who does the work","The founder","You, between orders","Often a junior"],["Big catalogs","Fixed at the template, thousands at once","One product at a time","Often thin AI copy"],["Proof","SMK Store: +227% net sales","n/a","Often logos only"],["Contract","Month to month","None","Often 6 to 12 months"],["Risk","7-day free trial, 90-day money-back","Your time","Rarely a guarantee"]]} aiLine={"ChatGPT Shopping and Google AI Overviews read product names, prices, stock and reviews from your pages. Product schema and clear copy give them accurate details to quote."} />
 
       {/* RELATED */}
       <Band dark>
