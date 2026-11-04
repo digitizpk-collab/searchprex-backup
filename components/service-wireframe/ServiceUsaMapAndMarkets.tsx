@@ -62,7 +62,7 @@ export const USA_SERVED_MARKETS: UsaMarketPin[] = [
     state: "Ohio",
     stateAbbr: "OH",
     county: "Cuyahoga County",
-    badge: "#1 for Cleveland law firm SEO",
+    badge: "Cleveland & Cuyahoga County Hub",
     href: "/locations/ohio/cleveland",
     mapQuery: "Cuyahoga+County+Justice+Center+Cleveland+OH",
     demographics: "1.23M+ Cuyahoga County residents · High industrial, medical & suburban search density",
@@ -291,7 +291,7 @@ export default function ServiceUsaMapAndMarkets({
               num: "01",
               pinId: "cleveland-oh",
               city: "Cleveland, Ohio",
-              badge: "#1 for Cleveland law firm SEO",
+              badge: "Cleveland & Cuyahoga County Hub",
               courts: "Cuyahoga County Court of Common Pleas & Ohio BWC",
               focus:
                 "Personal Injury, Ohio BWC Workers' Comp, OVI & Family Law across Lakewood, Parma & Beachwood.",

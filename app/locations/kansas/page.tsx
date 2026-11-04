@@ -159,20 +159,20 @@ const SERVICES = [
 
 const WHY_POINTS = [
   {
-    title: "Attorney-Specific YMYL E-E-A-T",
-    body: "Every page is built to Google's legal YMYL standards — credential signals, statutory citations, and practitioner-led copy. Zero generic, mass-produced filler.",
+    title: "Pages written for law firms",
+    body: "Every page shows who the attorneys are, cites Kansas law correctly and is checked by your firm before it goes live. No mass-produced filler.",
   },
   {
-    title: "Google Map Pack Dominance",
-    body: "We optimize and actively manage your Google Business Profile to compete for a top-3 local position in the specific Kansas cities and counties you actually serve.",
+    title: "Map Pack work in your city",
+    body: "I manage your Google Business Profile to compete for a top-3 spot in the Kansas cities and counties you actually serve.",
   },
   {
-    title: "100% Founder-Executed, No Outsourcing",
-    body: "Strategy, content architecture, schema, and technical fixes are handled directly by founder Mubashar Sharif — never handed off to juniors or offshore contractors.",
+    title: "The founder does the work",
+    body: "Strategy, pages, schema and technical fixes are done by me, Mubashar Sharif. Nothing is handed to a junior.",
   },
   {
     title: "Transparent Weekly Reporting",
-    body: "A plain-English report every Monday morning detailing rankings, organic search clicks, Business Profile calls, and form leads — real business metrics, no vanity fluff.",
+    body: "A plain-English report every Monday morning detailing rankings, organic search clicks, Business Profile calls, and form leads — real business numbers, nothing for show.",
   },
 ];
 

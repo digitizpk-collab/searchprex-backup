@@ -5,6 +5,7 @@
 // founder E-E-A-T strip, repeated single CTA, floating Reality Check.
 
 import type { Metadata } from "next";
+import ServiceUsaMapAndMarkets from "@/components/service-wireframe/ServiceUsaMapAndMarkets";
 import { SpokeEssentials, SpokeWhyAndAi } from "@/components/service-wireframe/SpokeSections";
 import Link from "next/link";
 import {
@@ -610,7 +611,12 @@ export default function ServicesPage() {
           is to send those searches to the page that answers them. Hub, not
           competitor. */}
       <Section>
-        <SectionHeading
+        <ServiceUsaMapAndMarkets
+        serviceName="SEO Services"
+        answerCapsule="SearchPrex works with law firms, local businesses and online stores across the US, with city pages in 9 states. Pick a pin to see the market."
+      />
+
+      <SectionHeading
           eyebrow="Law Firm SEO by city"
           title="Which city do you practice in?"
           intro="Local search is decided city by city, so each of these is a page in its own right — the courts you appear in, the practice areas with demand there, and what your state's law changes about the content you need."
