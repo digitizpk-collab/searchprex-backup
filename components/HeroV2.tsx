@@ -120,7 +120,7 @@ export default function HeroV2() {
         .hero-underline { transform-origin: left; animation: hero-underline 0.9s 0.4s ease-out both; }
         @media (prefers-reduced-motion: reduce) { .hero-underline { animation: none; } }
       `}</style>
-      <div className="relative z-10 mx-auto max-w-7xl px-4 pb-10 pt-6 sm:px-6 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 pb-10 pt-12 sm:px-6 sm:pt-14 lg:px-8 lg:pt-16">
         {/* Explicit grid placement rather than source order, because the two
             orders differ. Desktop: claim top-left, detail bottom-left, form
             spanning both rows on the right. Mobile: claim -> FORM -> detail, so
