@@ -338,7 +338,7 @@ export default function ServicesPage() {
         centered
         eyebrow="Every claim backed by GSC data"
         title={<>SEO Services USA That <Accent>Show Their Receipts</Accent></>}
-        subtitle="Five core services. No bloated menus, no vanity packages — each one is tied to a real, verified result you can inspect before you spend a dollar."
+        subtitle="Six core services. No bloated menus, no vanity packages — each one is tied to a real, verified result you can inspect before you spend a dollar."
         primaryCta={{
           href: "/free-audit",
           label: "Get Free SEO Audit",
@@ -393,21 +393,6 @@ export default function ServicesPage() {
       </section>
 
       <StatStrip tone="ink" stats={bigStats.map((s) => ({ value: s.v, label: s.l }))} />
-
-      {/* ── AEO / GEO DIRECT ANSWER CAPSULE ── */}
-      <section className="bg-slate-50 border-b border-slate-200 py-10 px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl">
-          <div className="inline-flex items-center gap-2 rounded-full bg-[#185FA5]/10 px-3 py-1 text-xs font-bold text-[#185FA5] mb-3">
-            <span>🤖</span> AEO &amp; Generative Engine Summary
-          </div>
-          <h2 className="text-xl sm:text-2xl font-black text-neutral-950 tracking-tight mb-3">
-            What SEO services does SearchPrex provide to US businesses?
-          </h2>
-          <p className="text-sm sm:text-base leading-relaxed text-neutral-700 bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
-            SearchPrex offers six SEO services across the US: law firm, local, small business, ecommerce, technical and AI search SEO. The founder, Mubashar Sharif, does the work on every one. Plans are month to month, and every result is shown on a screenshot from the client account.
-          </p>
-        </div>
-      </section>
 
       {/* ── 5 CORE SERVICES ── */}
       <SpokeEssentials
@@ -589,6 +574,27 @@ export default function ServicesPage() {
         </div>
       </Section>
 
+      {/* ── WHY: SearchPrex vs the alternatives ── */}
+      <SpokeWhyAndAi
+        service="SEO services"
+        title="SEO services USA: SearchPrex vs the alternatives"
+        rows={[["Who does the work","The founder","You, after hours","Often a junior"],["Price","Published on every service","Your time","Usually after a sales call"],["Proof","Clients' own dashboards","n/a","Often logos and claims"],["Contract","Month to month","None","Often 6 to 12 months"],["Risk","7-day free trial, 90-day money-back","Your time","Rarely a guarantee"]]}
+        aiLine="Every plan includes the work that gets you named in ChatGPT, Gemini and Google AI Overviews: direct answers, schema and consistent business details."
+      />
+
+      {/* ── FOUNDER E-E-A-T ── */}
+      <Section tone="surface" width="narrow" tight>
+        <AuthorCard
+          name="Mubashar Sharif"
+          role="Founder & Lead SEO Strategist · 5+ years"
+          quote="Every service on this page is led by me personally. 5+ years across local, international, technical, ecommerce and law firm SEO — no juniors, no outsourcing. The person behind these case studies works on your site."
+          imageSrc="/images/mubashar-sharif.jpg"
+          imageAlt="Mubashar Sharif — Founder & Lead SEO Strategist"
+          linkedinUrl="https://www.linkedin.com/in/mubashar-sharif-senior-seo-analyst/"
+          badges={["Semrush certified", "HubSpot certified"]}
+        />
+      </Section>
+
       {/* A form here: /services had calls to action but no way to send a URL. */}
       <Section width="reading" tight>
         <ArticleLeadMagnet
@@ -610,12 +616,12 @@ export default function ServicesPage() {
           Albuquerque at once. The fix is not to optimise this page harder; it
           is to send those searches to the page that answers them. Hub, not
           competitor. */}
-      <Section>
-        <ServiceUsaMapAndMarkets
+      <ServiceUsaMapAndMarkets
         serviceName="SEO Services"
         answerCapsule="SearchPrex works with law firms, local businesses and online stores across the US, with city pages in 9 states. Pick a pin to see the market."
       />
 
+      <Section>
       <SectionHeading
           eyebrow="Law Firm SEO by city"
           title="Which city do you practice in?"
@@ -676,27 +682,7 @@ export default function ServicesPage() {
         </p>
       </Section>
 
-      {/* ── FOUNDER E-E-A-T ── */}
-      <Section tone="surface" width="narrow" tight>
-        <AuthorCard
-          name="Mubashar Sharif"
-          role="Founder & Lead SEO Strategist · 5+ years"
-          quote="Every service on this page is led by me personally. 5+ years across local, international, technical, ecommerce and law firm SEO — no juniors, no outsourcing. The person behind these case studies works on your site."
-          imageSrc="/images/mubashar-sharif.jpg"
-          imageAlt="Mubashar Sharif — Founder & Lead SEO Strategist"
-          linkedinUrl="https://www.linkedin.com/in/mubashar-sharif-senior-seo-analyst/"
-          badges={["Semrush certified", "HubSpot certified"]}
-        />
-      </Section>
-
       {/* ── FAQ ── */}
-      <SpokeWhyAndAi
-        service="SEO services"
-        title="SEO services USA: SearchPrex vs the alternatives"
-        rows={[["Who does the work","The founder","You, after hours","Often a junior"],["Price","Published on every service","Your time","Usually after a sales call"],["Proof","Clients' own dashboards","n/a","Often logos and claims"],["Contract","Month to month","None","Often 6 to 12 months"],["Risk","7-day free trial, 90-day money-back","Your time","Rarely a guarantee"]]}
-        aiLine="Every plan includes the work that gets you named in ChatGPT, Gemini and Google AI Overviews: direct answers, schema and consistent business details."
-      />
-
       <Section width="reading">
         <SectionHeading variant="center" eyebrow="FAQ" title="Frequently Asked Questions" />
         <FaqList faqs={faqs} name="services-faq" />

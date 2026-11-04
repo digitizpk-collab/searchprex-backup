@@ -148,17 +148,11 @@ export default function LawFirmSEOClient({ guide: _guide }: { guide: Guide }) {
         showLocationLink={true}
       />
 
-      {/* 3B. 6 CORE USPS (DEDICATED CLIENT CARE, WEEKLY REPORTS, 7-DAY TRIAL, TEAR-DOWN, AUDIT, GUARANTEE) + LEAD CAPTURE FORM */}
-      <LawFirmUspAndAuditSection />
+      {/* 4. 9-SECOND INTERACTIVE RELIEF VIDEO + 2 CLEAN NUMBERED PAIN CARDS */}
+      <LawFirmReliefVideoSection />
 
       {/* 3C. SPECIALIZED LAW FIRM SEO SERVICES & PRACTICE AREAS WE OFFER (6 SUB-SERVICES WITH CONTEXTUAL LINKS) */}
       <LawFirmPracticeServicesSection />
-
-      {/* 3D. DEDICATED FOUNDER SPOTLIGHT (WHO IS MANAGING YOUR LAW FIRM'S SEO) */}
-      <LawFirmFounderSpotlight />
-
-      {/* 4. 9-SECOND INTERACTIVE RELIEF VIDEO + 2 CLEAN NUMBERED PAIN CARDS */}
-      <LawFirmReliefVideoSection />
 
       {/* 5. UPLIFTED VERIFIED CASE STUDIES & PROOF STRIP */}
       <ServiceProofStrip
@@ -187,135 +181,11 @@ export default function LawFirmSEOClient({ guide: _guide }: { guide: Guide }) {
         footnote="Honesty & ABA Rule 7.1 Disclosure: These screenshots are from US local service businesses, not law firms — there is no published law firm case study on this site yet. The Map Pack, technical, and AI Overview engineering behind them is the exact system we execute for law firms."
       />
 
-      {/* 5B. INDEPENDENT E-E-A-T ENTITY VERIFICATION BAR (MATCHING JSON-LD SAMEAS PROFILES) */}
-      <section className="border-b border-slate-200 bg-white px-4 py-4 sm:px-6 lg:px-8">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4">
-          <div className="flex items-center gap-2.5">
-            <span className="h-2 w-2 rounded-full bg-neutral-950" />
-            <span className="text-xs font-black uppercase tracking-wider text-neutral-950">
-              Independent Entity &amp; Founder Verification:
-            </span>
-            <span className="text-xs text-slate-600 hidden sm:inline">
-              Verified agency profiles matching our structured knowledge graph
-            </span>
-          </div>
-          <div className="flex flex-wrap items-center gap-2.5 text-xs font-bold">
-            <a
-              href="https://clutch.co/profile/searchprex"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-slate-50 px-3 py-1.5 text-neutral-950 transition-colors hover:border-neutral-950 hover:bg-white"
-            >
-              <span className="h-1.5 w-1.5 rounded-full bg-neutral-950" />
-              <span>Clutch Verified Profile &#8599;</span>
-            </a>
-            <a
-              href="https://www.trustpilot.com/review/searchprex.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-slate-50 px-3 py-1.5 text-neutral-950 transition-colors hover:border-neutral-950 hover:bg-white"
-            >
-              <span className="h-1.5 w-1.5 rounded-full bg-neutral-950" />
-              <span>Trustpilot Reviews &#8599;</span>
-            </a>
-            <a
-              href="https://www.linkedin.com/company/searchprex"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-slate-50 px-3 py-1.5 text-neutral-950 transition-colors hover:border-neutral-950 hover:bg-white"
-            >
-              <span className="h-1.5 w-1.5 rounded-full bg-neutral-950" />
-              <span>SearchPrex LinkedIn &#8599;</span>
-            </a>
-            <a
-              href={LINKEDIN}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-slate-50 px-3 py-1.5 text-neutral-950 transition-colors hover:border-neutral-950 hover:bg-white"
-            >
-              <span className="h-1.5 w-1.5 rounded-full bg-neutral-950" />
-              <span>Mubashar Sharif (Founder) &#8599;</span>
-            </a>
-          </div>
-        </div>
-      </section>
+      {/* 3B. 6 CORE USPS (DEDICATED CLIENT CARE, WEEKLY REPORTS, 7-DAY TRIAL, TEAR-DOWN, AUDIT, GUARANTEE) + LEAD CAPTURE FORM */}
+      <LawFirmUspAndAuditSection />
 
-      {/* 6. INTERACTIVE GEMINI AI DIAGNOSTIC BAR + CARE REPRESENTATIVE + LIGHT-BLUE/WHITE 7-DAY FREE TRIAL FORM */}
-      <ServiceAiDiagnosisAndTrial
-        serviceType="law-firm-seo"
-        heading="Paying for clicks that never call? Diagnose your law firm SEO"
-        answerCapsule="Our interactive USA Law Firm SEO diagnostic engine evaluates why your practice is missing Google Map Pack calls and AI Overview citations across Family Law, Criminal Defense, and Personal Injury searches, then prescribes a verifiable fix you can test with our 7-Day Free Trial."
-        placeholder="e.g. Our Family Law or Criminal Defense firm in Cleveland or Sugar Land isn't in the Map Pack Top 3..."
-        painChips={[
-          "Paying $150–$300+ per Google Ads click with low retainer ROI",
-          "Buried below Map Pack Top 3 for Family Law / Criminal Defense / PI",
-          "One generic Practice Areas page failing to rank in US suburbs",
-          "Invisible in Google AI Overviews, ChatGPT & Perplexity",
-          "Google Business Profile suspended or filtered out in our city",
-          "Burned by a previous legal SEO agency selling vanity DA/backlinks",
-        ]}
-        lookingForOptions={[
-          "Family Law & Divorce SEO",
-          "Criminal Defense & DUI/OVI SEO",
-          "Personal Injury & Truck Accident SEO",
-          "Estate Planning & Probate SEO",
-          "Workers' Comp & Mass Tort SEO",
-          "Google Business Profile & Map Pack Top 3",
-          "AI Overviews & ChatGPT Citations (AEO/GEO)",
-          "7-Day Free Trial & Full Firm Audit",
-        ]}
-        initialItems={[
-          {
-            n: "1. Practice-Area & County Venue Silo Gap",
-            why: "Your website forces Family Law, Criminal Defense, and Personal Injury into one umbrella page instead of dedicated city and county courthouse silos (e.g. Cuyahoga County OH, Fort Bend County TX, Montgomery County TX).",
-            fix: "We engineer dedicated practice-by-city pages with statutory citations, local court procedures, and 45–60 word Answer Capsules above the fold.",
-            tool: "Practice Silos + Statutory AEO Copy",
-          },
-          {
-            n: "2. GBP Primary Category & Map Pack Proximity Dilution",
-            why: "Setting your Google Business Profile to generic 'Law Firm' or using an unverified virtual office suppresses your firm below the Map Pack Top 3 where high-intent callers tap.",
-            fix: "We align your primary GBP category to your highest-margin caseload, reconcile State Bar and Avvo/Justia NAP citations, and deploy a bar-compliant review workflow.",
-            tool: "GBP Category + State Bar Citation Sync",
-          },
-          {
-            n: "3. Missing Attorney E-E-A-T & AI Citation Graph",
-            why: "Google AI Overviews and ChatGPT skip legal pages that lack verifiable attorney bar numbers, admission years, and structured LegalService/Attorney JSON-LD.",
-            fix: "We wire verified attorney credentials, courtroom bio pages, FAQPage schema, and an llms.txt entity manifest into your site architecture.",
-            tool: "Schema Generator + llms.txt Builder",
-          },
-        ]}
-        initialRecommendation="Stop paying $200+ per click to rent traffic you never own. Let us build your practice-area city silos, align your Google Business Profile, and prove our execution during your 7-Day Free Trial."
-        trialDeliverablesLeft={[
-          "Complete 40-point Law Firm SEO, YMYL & ABA Model Rule 7.1 compliance audit",
-          "Google Business Profile primary category, service-tree & local competitor gap analysis",
-          "Practice-area keyword roadmap (Family Law, Criminal Defense, Personal Injury, Probate)",
-          "Live LegalService, Attorney & FAQPage JSON-LD schema prepared for your top page",
-        ]}
-        trialDeliverablesRight={[
-          "45–60 word AI Overview & ChatGPT Answer Capsule drafted for your primary practice page",
-          "State Bar, Avvo, Justia & local courthouse citation consistency check",
-          "Direct 1-on-1 strategy review with Founder Mubashar Sharif (5+ years mastery)",
-          "Full Monday Search Console & local rank baseline report — yours to keep",
-        ]}
-      />
-
-      {/* 7. INTERACTIVE USA MAP EMBED + VISUAL WEBP CITY CARDS (DUPLICATE LINKS REMOVED) */}
-      <ServiceUsaMapAndMarkets
-        serviceName="Law Firm SEO Services"
-        answerCapsule='SearchPrex delivers one-firm-per-city Law Firm SEO across 9 core US states and 22+ pinpointed metropolitan and suburban venues—anchored by our #1 Google ranking for "law firm SEO Cleveland Ohio", and expanding across Sugar Land and The Woodlands (TX), Detroit and Grand Rapids (MI), Philadelphia (PA), Tempe and Scottsdale (AZ), San Jose (CA), Baton Rouge (LA), Albuquerque (NM), and Kansas.'
-      />
-
-      {/* 9. LIVE 24/7 AI LEGAL INTAKE DEMO */}
-      <Band muted id="intake-demo">
-        <BandIntro
-          eyebrow="Live demo · 24/7 AI legal intake assistant"
-          title="Getting found is half the battle. Capturing every 2 a.m. legal caller is the other half."
-          lead="An urgent Criminal Defense, Family Law, or Personal Injury inquiry that hits voicemail is a signed retainer lost to the next firm on Google Maps. Test our 24/7 legal intake assistant below."
-        />
-        <div className="mx-auto mt-8 max-w-4xl">
-          <IntakeAssistant embedded />
-        </div>
-      </Band>
+      {/* 3D. DEDICATED FOUNDER SPOTLIGHT (WHO IS MANAGING YOUR LAW FIRM'S SEO) */}
+      <LawFirmFounderSpotlight />
 
       {/* 10. TRANSPARENT PRICING & INTERACTIVE ROI CALCULATOR */}
       <Band>
@@ -354,6 +224,24 @@ export default function LawFirmSEOClient({ guide: _guide }: { guide: Guide }) {
         </div>
       </Band>
 
+      {/* 9. LIVE 24/7 AI LEGAL INTAKE DEMO */}
+      <Band muted id="intake-demo">
+        <BandIntro
+          eyebrow="Live demo · 24/7 AI legal intake assistant"
+          title="Getting found is half the battle. Capturing every 2 a.m. legal caller is the other half."
+          lead="An urgent Criminal Defense, Family Law, or Personal Injury inquiry that hits voicemail is a signed retainer lost to the next firm on Google Maps. Test our 24/7 legal intake assistant below."
+        />
+        <div className="mx-auto mt-8 max-w-4xl">
+          <IntakeAssistant embedded />
+        </div>
+      </Band>
+
+      {/* 7. INTERACTIVE USA MAP EMBED + VISUAL WEBP CITY CARDS (DUPLICATE LINKS REMOVED) */}
+      <ServiceUsaMapAndMarkets
+        serviceName="Law Firm SEO Services"
+        answerCapsule='SearchPrex delivers one-firm-per-city Law Firm SEO across 9 core US states and 22+ pinpointed metropolitan and suburban venues—anchored by our #1 Google ranking for "law firm SEO Cleveland Ohio", and expanding across Sugar Land and The Woodlands (TX), Detroit and Grand Rapids (MI), Philadelphia (PA), Tempe and Scottsdale (AZ), San Jose (CA), Baton Rouge (LA), Albuquerque (NM), and Kansas.'
+      />
+
       {/* 11. LAW FIRM BLOG TEASER + FAQS + TELEMETRY STRAP + FINAL CTA */}
       <ServiceBlogTeaser topic="law-firm" />
 
@@ -368,43 +256,6 @@ export default function LawFirmSEOClient({ guide: _guide }: { guide: Guide }) {
         </div>
       </section>
 
-      {/* 2026 CONFIRMED LEGAL TELEMETRY & PLAYBOOK STRAP — POSITIONED ABOVE FINAL CTA (CLEAN LIGHT THEME) */}
-      <section className="border-y border-slate-200 bg-slate-50 px-4 py-4 sm:px-6 lg:px-8">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <span className="flex h-7 w-7 items-center justify-center rounded-md bg-neutral-950 text-xs font-black text-white shrink-0">
-              01
-            </span>
-            <div>
-              <p className="text-xs font-black uppercase tracking-wider text-neutral-950">
-                Confirmed 2026 USA Legal Search Telemetry
-              </p>
-              <p className="text-sm font-semibold text-slate-700">
-                Google Business Profile Virtual Office Suspension Enforcement &amp; State Bar Entity Verification
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-wrap items-center gap-3">
-            <Link
-              href="/resources/news/google-business-profile-law-firm-virtual-office-enforcement-2026"
-              className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-3.5 py-2 text-xs font-bold text-neutral-950 shadow-2xs transition-all hover:bg-slate-100"
-            >
-              <span>Read News Breakdown &rarr;</span>
-            </Link>
-            <Link
-              href="/resources/solutions"
-              className="inline-flex items-center gap-1.5 rounded-lg bg-neutral-950 px-3.5 py-2 text-xs font-bold text-white shadow-2xs transition-all hover:bg-neutral-800"
-            >
-              <span>View Reinstatement Playbook &rarr;</span>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <LawFirmStack />
-
-      {/* FLOATING "CHAT WITH MUBASHAR" FOUNDER WIDGET (RIGHT BOTTOM CORNER) */}
-      <ChatWithFounderWidget />
     </main>
   );
 }
