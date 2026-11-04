@@ -668,7 +668,7 @@ export default function Home() {
                 <li key={t} className="flex gap-3"><Check className="mt-0.5 h-5 w-5 shrink-0 text-rose-600" aria-hidden /> {t}</li>
               ))}
             </ul>
-            <a href="#get-started" className="mt-8 inline-flex items-center gap-2 rounded-full bg-neutral-950 px-6 py-3.5 text-sm font-bold text-white hover:bg-neutral-800">
+            <a href="#get-started" data-open-strategy className="mt-8 inline-flex items-center gap-2 rounded-full bg-neutral-950 px-6 py-3.5 text-sm font-bold text-white hover:bg-neutral-800">
               Let me take the stress off you <ArrowRight className="h-4 w-4" aria-hidden />
             </a>
           </div>
@@ -980,6 +980,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ONE CLIENT PER CITY — true scarcity, stated without naming cities we have not checked. */}
+      <section className="bg-[#b22234] px-4 py-8 text-white sm:px-6">
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
+          <div>
+            <p className="text-xl font-black sm:text-2xl">One client per city. Is yours still open?</p>
+            <p className="mt-1 text-sm text-white/85">I never work for two competitors in the same city and practice area. Once your city is taken, it&apos;s gone.</p>
+          </div>
+          <button type="button" data-open-strategy className="shrink-0 rounded-full bg-white px-6 py-3 text-sm font-bold text-[#b22234] hover:bg-red-50">
+            Check my city
+          </button>
+        </div>
+      </section>
+
       {/* 10 · PRICING — AEO & Semantic Comparison Table */}
       <section data-lead-hotspot className="px-4 py-20 sm:px-6 lg:py-24">
         <div className="mx-auto max-w-6xl">
@@ -1023,7 +1036,7 @@ export default function Home() {
                     ))}
                   </ul>
                   <a
-                    href="#get-started"
+                    href="#get-started" data-open-strategy
                     className={`mt-7 inline-flex items-center justify-center gap-1.5 rounded-full px-5 py-3 text-sm font-bold transition-colors ${
                       dark ? "bg-white text-neutral-950 hover:bg-emerald-100" : "bg-neutral-950 text-white hover:bg-neutral-800"
                     }`}
@@ -1275,26 +1288,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 13 · CLOSE — the last thing on the page is the offer */}
-      <section id="get-started" className="scroll-mt-24 bg-slate-50 px-4 pb-20 sm:px-6">
-        <div className="mx-auto max-w-5xl rounded-[2rem] bg-neutral-900 px-6 py-14 text-center sm:px-12">
-          <h2 className={`${H} mx-auto max-w-2xl text-3xl tracking-tight text-white sm:text-4xl`}>
-            Tell me your problem. I&apos;ll build the solution around you.
-          </h2>
-          <p className="mx-auto mt-4 max-w-xl text-[15px] leading-relaxed text-white/70">
-            A written tear-down of your site and the competitors above you, within 24 hours.
-          </p>
-          <div className="mt-8">
-            <PillForm source="homepage-close" tone="dark" />
-          </div>
-          <p className="mt-5 text-sm text-white/70">
-            I read every message myself. Prefer to talk?{" "}
-            <a href="https://calendly.com/contact-searchprex/30min" target="_blank" rel="noopener noreferrer" className="font-bold text-white underline underline-offset-2">Book 30 min</a>
-            {" · "}
-            <a href="https://wa.me/923059158010" target="_blank" rel="noopener noreferrer" className="font-bold text-white underline underline-offset-2">WhatsApp me</a>
-          </p>
-        </div>
-      </section>
 
       <StrategyPopup />
     </main>
