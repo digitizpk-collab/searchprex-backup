@@ -34,13 +34,11 @@ import { trackLead } from "@/lib/track";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { AlertCircle, CheckCircle, Globe, Mail, Phone, Star } from "lucide-react";
+import { AlertCircle, CheckCircle, Globe, Mail, Phone } from "lucide-react";
 
 import { CALL_HREF, OFFER_HREF } from "@/lib/offer";
 import {
   HERO_STATS,
-  TRUSTPILOT_REVIEW_COUNT,
-  TRUSTPILOT_URL,
 } from "@/lib/hero-content";
 
 const INK = "#0a0a0a";
@@ -51,11 +49,9 @@ const PURPLE = "#171717";
 const LINE = "#e2e8f0";
 
 const HERO_PILLARS = [
-  "Dedicated client care",
-  "Weekly SEO report",
-  "Month-to-month SEO",
-  "90-day money-back guarantee",
   "7-day free trial",
+  "90-day money-back guarantee",
+  "Weekly SEO report",
 ];
 
 type Status = "idle" | "loading" | "done" | "error";
@@ -105,8 +101,26 @@ export default function HeroV2() {
   }
 
   return (
-    <section id="hero" className="relative overflow-hidden border-b border-slate-200 bg-white pt-20">
-      <div className="relative z-10 mx-auto max-w-7xl px-4 pb-12 pt-8 sm:px-6 lg:px-8">
+    <section id="hero" className="relative overflow-hidden border-b border-slate-200 bg-gradient-to-br from-[#fdf8f3] via-white to-emerald-50/60 pt-20">
+      {/* A faint US skyline behind the claim: warmth and place, without
+          competing with the text. Decorative, so no alt text. */}
+      <div aria-hidden className="pointer-events-none absolute inset-0">
+        <Image
+          src="https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=1600&q=60"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-bottom opacity-[0.07]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/80" />
+      </div>
+      <style>{`
+        @keyframes hero-underline { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+        .hero-underline { transform-origin: left; animation: hero-underline 0.9s 0.4s ease-out both; }
+        @media (prefers-reduced-motion: reduce) { .hero-underline { animation: none; } }
+      `}</style>
+      <div className="relative z-10 mx-auto max-w-7xl px-4 pb-10 pt-6 sm:px-6 lg:px-8">
         {/* Explicit grid placement rather than source order, because the two
             orders differ. Desktop: claim top-left, detail bottom-left, form
             spanning both rows on the right. Mobile: claim -> FORM -> detail, so
@@ -129,7 +143,11 @@ export default function HeroV2() {
                 its topic. */}
             <h1 className="mb-4 font-black tracking-tight text-neutral-950">
               <span className="block text-[2rem] leading-[1.08] text-balance sm:text-5xl lg:text-[3.4rem]">
-                Affordable SEO Agency USA: More Calls, Less Stress
+                Affordable SEO Agency USA: More Calls,{" "}
+                <span className="relative inline-block whitespace-nowrap">
+                  Less Stress
+                  <span aria-hidden className="hero-underline absolute -bottom-1 left-0 h-[0.18em] w-full rounded-full bg-gradient-to-r from-emerald-500 to-emerald-300" />
+                </span>
               </span>
             </h1>
 
@@ -163,18 +181,21 @@ export default function HeroV2() {
                 <Image
                   src="/images/mubashar-sharif.jpg"
                   alt="Mubashar Sharif, founder of SearchPrex"
-                  width={56}
-                  height={56}
-                  className="h-14 w-14 flex-shrink-0 rounded-full object-cover"
-                  style={{ border: `2px solid ${LINE}` }}
+                  width={72}
+                  height={72}
+                  className="h-[72px] w-[72px] flex-shrink-0 rounded-full object-cover ring-4 ring-emerald-100"
                   priority
                 />
                 <div>
-                  <p className="text-sm font-bold" style={{ color: INK }}>
-                    Free SEO Audit &amp; Tear-Down
+                  <p className="flex items-center gap-1.5 text-xs font-bold text-emerald-700">
+                    <span className="relative flex h-2 w-2"><span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" /><span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" /></span>
+                    Replying today
                   </p>
-                  <p className="text-xs" style={{ color: BODY }}>
-                    I analyse it myself. Reply within 24 hours.
+                  <p className="mt-0.5 text-base font-black" style={{ color: INK }}>
+                    Hi, I&apos;m Mubashar.
+                  </p>
+                  <p className="text-sm" style={{ color: BODY }}>
+                    I&apos;ll check your site myself. Free audit within 24 hours.
                   </p>
                 </div>
               </div>
@@ -360,24 +381,13 @@ export default function HeroV2() {
                 a badge that cannot be checked invites the question why. The
                 count is stated rather than implied — five stars beside "verified
                 reviews" reads as an average across many. */}
-            <a
-              href={TRUSTPILOT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center gap-2 rounded-lg border bg-white px-3 py-2 text-xs transition-all hover:shadow-sm"
-              style={{ borderColor: LINE, color: BODY }}
-            >
-              <span className="flex" aria-hidden="true">
-                {[0, 1, 2, 3, 4].map((i) => (
-                  <Star key={i} className="h-3.5 w-3.5" fill="#00b67a" stroke="none" />
-                ))}
-              </span>
-              <span className="font-semibold" style={{ color: INK }}>
-                {TRUSTPILOT_REVIEW_COUNT === 1
-                  ? "1 verified review on Trustpilot"
-                  : `${TRUSTPILOT_REVIEW_COUNT} verified reviews on Trustpilot`}
-              </span>
-            </a>
+            <p className="mt-4 inline-flex flex-wrap items-center gap-x-3 gap-y-1 rounded-lg border bg-white/80 px-3 py-2 text-xs font-semibold" style={{ borderColor: LINE, color: INK }}>
+              <span>Semrush certified</span>
+              <span className="text-slate-300" aria-hidden>·</span>
+              <span>HubSpot certified</span>
+              <span className="text-slate-300" aria-hidden>·</span>
+              <span>5+ years in SEO</span>
+            </p>
           </div>
         </div>
       </div>
