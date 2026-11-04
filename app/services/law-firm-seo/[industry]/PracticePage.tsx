@@ -268,7 +268,7 @@ export default function PracticePage({ page }: { page: IndustryPage }) {
       </Band>
 
       <Band id="keyword-map" dark>
-        <BandIntro eyebrow={page.name} title={page.journeyTitle} lead={page.slug === "family-law" ? "A 90-day family law marketing plan sets a baseline, builds the agreed pages and reviews visibility and enquiries before the next quarter is scoped." : "This map turns a prospective client's questions into focused pages, accurate answers and contact options. It helps the firm plan useful content across the decision journey without assuming search volume, legal outcomes or guaranteed conversions."} />
+        <BandIntro eyebrow={page.name} title={page.journeyTitle} lead={page.slug === "family-law" ? "A 90-day family law marketing plan sets a baseline, builds the agreed pages and reviews visibility and enquiries before the next quarter is scoped." : "This map turns a client question into a focused page, a clear answer and a way to get in touch. It helps plan useful pages, without promising traffic, results or cases."} />
         <SectionCards items={page.journey} />
         <div className="mt-10 grid gap-4 md:grid-cols-3">
             {(page.slug === "family-law"

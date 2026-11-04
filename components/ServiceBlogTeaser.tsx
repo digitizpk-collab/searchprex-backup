@@ -57,7 +57,7 @@ const TOPIC_CONFIG: Record<
     eyebrow: "LAW FIRM SEO & LEGAL SEARCH BLUEPRINTS",
     defaultTitle: "Related Law Firm SEO Guides",
     defaultSubtitle:
-      "Practical blueprints on legal practice-area keyword research, YMYL authority, Map Pack calls, and AI Overviews.",
+      "Practical guides on keyword research for law firms, trust signals, Map Pack calls and AI Overviews.",
     slugs: [
       "law-firm-seo-2026-guide",
       "keyword-research-for-law-firms",
