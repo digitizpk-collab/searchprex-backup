@@ -20,6 +20,7 @@
 // proof components or lib/pricing — never typed here.
 
 import type { Metadata } from "next";
+import StrategyPopup from "@/components/home/StrategyPopup";
 import StrategyRequestForm from "@/components/home/StrategyRequestForm";
 import GuideMagnet from "@/components/GuideMagnet";
 import { ECOMMERCE_PLAYBOOK_GUIDE, GBP_CHECKLIST_GUIDE, LAW_CHECKLIST_GUIDE } from "@/lib/guides";
@@ -345,6 +346,29 @@ const AI_PROOF = [
   { client: "Remit Choice", tag: "International · Fintech", line: "Named in the AI Overview for a money transfer search.", href: "/case-studies/fintech/remit-choice" },
 ];
 
+const USA_PHOTOS = [
+ {
+  "src": "https://images.unsplash.com/photo-1508433957232-3107f5fd5995?auto=format&fit=crop&w=900&q=70",
+  "alt": "An American flag flying between city skyscrapers",
+  "place": "Main Street to downtown"
+ },
+ {
+  "src": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=900&q=70",
+  "alt": "The Chicago skyline beside Lake Michigan at dusk",
+  "place": "The Midwest"
+ },
+ {
+  "src": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=900&q=70",
+  "alt": "The Golden Gate Bridge in San Francisco on a clear day",
+  "place": "The West Coast"
+ },
+ {
+  "src": "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?auto=format&fit=crop&w=900&q=70",
+  "alt": "The Statue of Liberty under a blue sky",
+  "place": "The East Coast"
+ }
+];
+
 const CARE_CARDS = [
  {
   "tag": "Client care",
@@ -504,6 +528,23 @@ export default function Home() {
       {/* V2 order, written as the founder talking to the owner: reassurance
           and the problem list, which track they are on, proof, help and price,
           who does the work, doubts, the form — then the resources. */}
+      {/* USA — who we serve, coast to coast. Not a claim of a US office. */}
+      <section className="px-4 py-16 sm:px-6">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-center text-xs font-bold uppercase tracking-[0.16em] text-[#b22234]">Serving businesses across the USA</p>
+          <h2 className={`${H} mx-auto mt-3 max-w-3xl text-center text-3xl tracking-tight text-neutral-950 sm:text-4xl`}>From Main Street to the big city, helping American businesses get found</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-center text-[15px] leading-relaxed text-slate-600">Law firms, local trades and online stores in 9 states and counting. Same care, same honest prices, wherever you are.</p>
+          <div className="mt-10 grid grid-cols-2 gap-4 lg:grid-cols-4">
+            {USA_PHOTOS.map((u) => (
+              <figure key={u.src} className="group relative aspect-[4/5] overflow-hidden rounded-3xl">
+                <Image src={u.src} alt={u.alt} fill sizes="(max-width: 1024px) 50vw, 280px" className="object-cover transition duration-700 group-hover:scale-105" />
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-neutral-950/80 to-transparent p-4 text-sm font-bold text-white">{u.place}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* PROBLEMS WE SOLVE — the searches people make when something breaks. */}
       <section className="bg-neutral-950 px-4 py-20 text-white sm:px-6 lg:py-24">
         <div className="mx-auto max-w-6xl">
@@ -557,7 +598,7 @@ export default function Home() {
       </section>
 
       {/* CARE — the promise behind the work, said plainly. */}
-      <section className="bg-[#fdf8f3] px-4 py-20 sm:px-6 lg:py-24">
+      <section data-lead-hotspot className="bg-[#fdf8f3] px-4 py-20 sm:px-6 lg:py-24">
         <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2">
           <div className="grid grid-cols-2 gap-4">
             <figure className="relative col-span-2 aspect-[16/10] overflow-hidden rounded-3xl">
@@ -636,39 +677,11 @@ export default function Home() {
               </li>
             ))}
           </ol>
-          <div className="mt-10 rounded-3xl bg-slate-50 p-6 sm:p-8">
-            <p className="text-center text-sm font-bold uppercase tracking-[0.14em] text-slate-500">The tools behind every strategy</p>
-            <ul className="mt-5 flex flex-wrap justify-center gap-2">
-              {SEO_TOOLS.map((t) => (
-                <li key={t} className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-neutral-900">{t}</li>
-              ))}
-            </ul>
-            <p className="mx-auto mt-5 max-w-2xl text-center text-sm leading-relaxed text-slate-600">
-              Each strategy is shaped by how your customers think and search: local homeowners, online shoppers or people looking for a lawyer. Message us any time on chat or WhatsApp.
-            </p>
-          </div>
           <p className="mt-8 text-center">
-            <a href="#get-started" className="inline-flex items-center gap-2 rounded-full bg-neutral-950 px-6 py-3.5 text-sm font-bold text-white hover:bg-neutral-800">
+            <button type="button" data-open-strategy className="inline-flex items-center gap-2 rounded-full bg-neutral-950 px-6 py-3.5 text-sm font-bold text-white hover:bg-neutral-800">
               Tell me your goal <ArrowRight className="h-4 w-4" aria-hidden />
-            </a>
+            </button>
           </p>
-        </div>
-      </section>
-
-      {/* FREE STRATEGY REQUEST — five short questions, a written strategy back within 24 hours. */}
-      <section className="border-y border-slate-200 bg-slate-50 px-4 py-20 sm:px-6 lg:py-24">
-        <div className="mx-auto grid max-w-6xl items-start gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-          <div>
-            <p className="text-xs font-bold uppercase tracking-[0.16em] text-emerald-800">Free SEO strategy</p>
-            <h2 className={`${H} mt-3 text-3xl tracking-tight text-neutral-950 sm:text-4xl`}>Get a free SEO strategy written for your business</h2>
-            <p className="mt-4 text-lg leading-relaxed text-slate-700">Tell me where you are stuck and what you want. I&apos;ll send you a plain, step-by-step SEO strategy for your business within 24 hours, free.</p>
-            <ul className="mt-6 space-y-3 text-[15px] text-slate-800">
-              {["Written by me, not generated by a tool", "Built on your real goal and your competitors", "Yours to keep, even if we never work together"].map((t) => (
-                <li key={t} className="flex gap-3"><Check className="mt-0.5 h-5 w-5 shrink-0 text-emerald-600" aria-hidden /> {t}</li>
-              ))}
-            </ul>
-          </div>
-          <StrategyRequestForm source="homepage-strategy-request" />
         </div>
       </section>
 
@@ -741,7 +754,7 @@ export default function Home() {
       </section>
 
       {/* 3 · RESULTS BENTO */}
-      <section className="border-y border-slate-200 bg-slate-50 px-4 py-20 sm:px-6 lg:py-24">
+      <section data-lead-hotspot className="border-y border-slate-200 bg-slate-50 px-4 py-20 sm:px-6 lg:py-24">
         <div className="mx-auto max-w-6xl">
           <Heading
             eyebrow="Results"
@@ -931,7 +944,7 @@ export default function Home() {
       </section>
 
       {/* 10 · PRICING — AEO & Semantic Comparison Table */}
-      <section className="px-4 py-20 sm:px-6 lg:py-24">
+      <section data-lead-hotspot className="px-4 py-20 sm:px-6 lg:py-24">
         <div className="mx-auto max-w-6xl">
           <Heading
             eyebrow="Pricing"
@@ -1266,6 +1279,7 @@ export default function Home() {
         </div>
       </section>
 
+      <StrategyPopup />
     </main>
 
     <StickyMobileCTA />
