@@ -24,8 +24,8 @@ export const META = {
   title: "Business Profile Suspended? Reinstatement Help, Free Review",
   description:
     "Business Profile suspended? I find the real violation, fix the profile, match your evidence to it and handle the appeal. Free 24-hour review.",
-  h1: "Google Business Profile Suspension Help",
-  accent: "that fixes the cause first",
+  h1: "Google Business Profile Suspended?",
+  accent: "Reinstatement help that fixes the cause first",
 };
 
 /** The usual causes, each in Google's own words where it has them. */

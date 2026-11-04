@@ -33,7 +33,7 @@ function withCost(state: string, faqs: QA[]): QA[] {
 export const STATE_HUBS: StateHub[] = [
   {
     slug: "michigan",
-    metaTitle: "Michigan Law Firm SEO: Detroit & Grand Rapids",
+    metaTitle: "Michigan Law Firm SEO: Detroit & Grand Rapids | 1 Firm/City",
     metaDescription:
       "Law firm SEO for Michigan attorneys in Detroit and Grand Rapids: no-fault pages, map pack work and Michigan law explained correctly. One firm per city.",
     intro: [
@@ -89,7 +89,7 @@ export const STATE_HUBS: StateHub[] = [
   },
   {
     slug: "texas",
-    metaTitle: "Texas Law Firm SEO: Houston & Dallas Suburbs",
+    metaTitle: "Texas Law Firm SEO: Houston & Dallas Suburbs | 1 Firm/City",
     metaDescription:
       "Law firm SEO for Texas attorneys in Katy, The Woodlands, Sugar Land, Plano and Denton: county-level pages, map pack work and Texas rules explained.",
     intro: [
@@ -148,7 +148,7 @@ export const STATE_HUBS: StateHub[] = [
   },
   {
     slug: "louisiana",
-    metaTitle: "Louisiana Law Firm SEO: Baton Rouge, Shreveport",
+    metaTitle: "Louisiana Law Firm SEO: Baton Rouge, Shreveport | Free Audit",
     metaDescription:
       "Law firm SEO for Louisiana attorneys in Baton Rouge and Shreveport: civil law pages, the 2024 and 2026 rule changes and map pack work. One firm per city.",
     intro: [
@@ -204,7 +204,7 @@ export const STATE_HUBS: StateHub[] = [
   },
   {
     slug: "arizona",
-    metaTitle: "Arizona Law Firm SEO: Scottsdale & Tempe",
+    metaTitle: "Arizona Law Firm SEO: Scottsdale & Tempe | 7-Day Free Trial",
     metaDescription:
       "Law firm SEO for Arizona attorneys in Scottsdale and Tempe: DUI, divorce and injury pages that state Arizona law correctly, plus map pack work.",
     intro: [

@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "SEO by industry: HVAC, roofing, cleaning, home services, remodeling, WooCommerce, outdoor stores and law firms, with case studies where we have them.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "Industries We Serve | SearchPrex",
+    title: "SEO by Industry: Local Trades, Online Stores & Law Firms",
     description: "SEO by industry, each page backed by a real case study — or honest that it isn't yet.",
     url: PAGE_URL,
     siteName: "SearchPrex",
@@ -152,7 +152,7 @@ export default function IndustriesPage() {
         eyebrow="Industries"
         title={
           <>
-            Industries We Serve <Accent>— with the proof for each</Accent>
+            SEO by Industry: <Accent>Local Trades, Online Stores and Law Firms</Accent>
           </>
         }
         subtitle="A page for every industry SearchPrex has real results in, each linking to the case study behind it. Where there is no case study yet, the page says so."

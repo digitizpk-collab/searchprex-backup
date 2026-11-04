@@ -28,7 +28,7 @@ import ArticleLeadMagnet from "@/components/ArticleLeadMagnet";
 
 // ── Metadata ────────────────────────────────────────────────────────────────
 const baseMetadata: Metadata = {
-  title: "Law Firm SEO Kansas | Family Law & Attorney SEO",
+  title: "Kansas Law Firm SEO: Wichita & Overland Park | Free Audit",
   description:
     "Founder-led law firm SEO for Kansas attorneys in family law, personal injury and criminal defense — Wichita, Overland Park, Kansas City, Topeka and more.",
   alternates: { canonical: "https://www.searchprex.com/locations/kansas" },
