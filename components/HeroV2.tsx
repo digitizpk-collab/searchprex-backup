@@ -129,12 +129,12 @@ export default function HeroV2() {
                 its topic. */}
             <h1 className="mb-4 font-black tracking-tight text-neutral-950">
               <span className="block text-[2rem] leading-[1.08] text-balance sm:text-5xl lg:text-[3.4rem]">
-                SEO Agency USA: More Calls, Less Ad Spend
+                Affordable SEO Agency USA: More Calls, Less Stress
               </span>
             </h1>
 
             <p className="mb-4 text-base leading-relaxed sm:text-lg" style={{ color: BODY }}>
-              <strong className="text-neutral-950">Tired of paying for leads that never come?</strong> SearchPrex is a founder-led SEO agency for US small businesses, law firms and online stores: month-to-month SEO services, measured in qualified calls and sales.
+              <strong className="text-neutral-950">Tired of paying for leads that never come?</strong> SearchPrex is an affordable, budget-friendly SEO agency for US small businesses, law firms and online stores: month-to-month SEO services, measured in qualified calls and sales.
             </p>
 
             {/* The five promises, every one confirmed and published on /pricing. */}

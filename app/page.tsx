@@ -54,9 +54,9 @@ import ServiceUsaMapAndMarkets from "@/components/service-wireframe/ServiceUsaMa
 
 // Title, H1 and description use the same broad small-business SEO agency
 // positioning. Specialist phrases belong on the linked service pages.
-const HOME_TITLE = "SEO Agency USA: Month-to-Month, Free Audit in 24h";
+const HOME_TITLE = "Affordable SEO Agency USA: Budget-Friendly, From $800/mo";
 const HOME_DESCRIPTION =
-  "Founder-led SEO agency in the USA for month-to-month local, law firm and ecommerce SEO. Free audit in 24 hours, 90-day money-back.";
+  "Affordable, budget-friendly SEO agency in the USA. Month-to-month SEO from $800/mo, done by the founder. Free audit in 24h, 90-day money-back.";
 
 const baseMetadata: Metadata = {
   title: HOME_TITLE,
@@ -496,6 +496,44 @@ export default function Home() {
                 <p className="mt-2 pl-6 text-sm leading-relaxed text-slate-600">{x.detail}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CARE — the promise behind the work, said plainly. */}
+      <section className="bg-[#fdf8f3] px-4 py-20 sm:px-6 lg:py-24">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2">
+          <div className="grid grid-cols-2 gap-4">
+            <figure className="relative col-span-2 aspect-[16/10] overflow-hidden rounded-3xl">
+              <Image src="https://images.unsplash.com/photo-1531983412531-1f49a365ffed?auto=format&fit=crop&w=900&q=70" alt="A mother hugging her young son on a beach at sunset" fill sizes="(max-width: 1024px) 100vw, 560px" className="object-cover" />
+            </figure>
+            <figure className="relative col-span-2 aspect-[16/9] overflow-hidden rounded-3xl sm:col-span-1 sm:aspect-[4/3]">
+              <Image src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?auto=format&fit=crop&w=900&q=70" alt="A mother sitting on a sofa with her two young children" fill sizes="(max-width: 640px) 100vw, 280px" className="object-cover" />
+            </figure>
+            <div className="col-span-2 flex flex-col justify-center rounded-3xl bg-white p-5 sm:col-span-1">
+              <p className="text-3xl font-black text-neutral-950">From $800</p>
+              <p className="mt-1 text-sm text-slate-600">a month. Month to month, no long contract.</p>
+            </div>
+          </div>
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.16em] text-rose-700">Don&apos;t worry. We&apos;re here.</p>
+            <h2 className={`${H} mt-3 text-3xl tracking-tight text-neutral-950 sm:text-4xl`}>We care for your business the way a mother cares for her child</h2>
+            <p className="mt-5 text-lg leading-relaxed text-slate-700">
+              Running a business is stressful enough. You should not have to worry about Google too. SearchPrex is an affordable SEO agency for businesses across the USA, and I look after every client personally: patiently, honestly, and every single week.
+            </p>
+            <ul className="mt-6 space-y-3 text-[15px] text-slate-800">
+              {[
+                "I check on your site every week, so nothing slips.",
+                "I explain everything in plain words. No jargon, no surprises.",
+                "Budget-friendly plans with published prices, month to month.",
+                "If you see no progress in 90 days, you get those 90 days back.",
+              ].map((t) => (
+                <li key={t} className="flex gap-3"><Check className="mt-0.5 h-5 w-5 shrink-0 text-rose-600" aria-hidden /> {t}</li>
+              ))}
+            </ul>
+            <a href="#get-started" className="mt-8 inline-flex items-center gap-2 rounded-full bg-neutral-950 px-6 py-3.5 text-sm font-bold text-white hover:bg-neutral-800">
+              Let me take the stress off you <ArrowRight className="h-4 w-4" aria-hidden />
+            </a>
           </div>
         </div>
       </section>
