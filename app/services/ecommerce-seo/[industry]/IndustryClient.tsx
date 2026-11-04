@@ -62,6 +62,59 @@ const PROCESS = [
 ];
 
 // `guide` is still passed by page.tsx; the checklist is linked from the related band.
+
+// Per-page photos and lines, so no two industry pages share a picture.
+const PAGE_THEME: Record<string, { gap: string; images: [{ src: string; alt: string; caption: string }, { src: string; alt: string; caption: string }]; founder: string }> = {
+ "woocommerce": {
+  "gap": "WooCommerce stores grow big catalogs fast. Filter URLs and thin product copy quietly push half of them out of Google.",
+  "images": [
+   {
+    "src": "/images/audiences/ecommerce-inventory-stress.webp",
+    "alt": "Illustration: a stressed store owner at a laptop in a warehouse full of boxes",
+    "caption": "Illustration: full shelves, falling sales, and no idea why Google stopped sending buyers."
+   },
+   {
+    "src": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=70",
+    "alt": "A shopper holding a credit card over a laptop",
+    "caption": "The goal: shoppers who find your products and check out."
+   }
+  ],
+  "founder": "I took SMK Store from $5,832 to $19,100 a month on WooCommerce. I fix the templates and rewrite products in batches for your store too."
+ },
+ "outdoor-knife-stores": {
+  "gap": "Knife and outdoor buyers search by brand, steel and model. Generic product copy never matches what they type.",
+  "images": [
+   {
+    "src": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=900&q=70",
+    "alt": "The view from inside a tent looking out at a forest campsite",
+    "caption": "Your customers plan trips around the gear they buy. They search for it in detail."
+   },
+   {
+    "src": "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=900&q=70",
+    "alt": "A group of people sitting around a campfire at night",
+    "caption": "The goal: the store they trust for every trip."
+   }
+  ],
+  "founder": "Both of my store case studies are knife and outdoor stores. I know the brands, the specs and the searches, and I write for them."
+ },
+ "shopify": {
+  "gap": "Shopify makes duplicate collection URLs and slow app scripts by default. Most stores never notice until traffic stalls.",
+  "images": [
+   {
+    "src": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=900&q=70",
+    "alt": "A shop owner taking a card payment at a tablet checkout",
+    "caption": "Your store is open day and night. Google decides how many people walk in."
+   },
+   {
+    "src": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=900&q=70",
+    "alt": "Red and black shopping bags on a dark background",
+    "caption": "The goal: more orders from search, not just from ads."
+   }
+  ],
+  "founder": "There is no Shopify case study yet, and I will say so. What I bring is the same method that rebuilt two catalogs, applied to Shopify."
+ }
+};
+
 export default function IndustryClient({ slug, guide: _guide }: { slug: string; guide: Guide }) {
   const industry = getEcommerceIndustry(slug);
   if (!industry) return null;
@@ -131,7 +184,7 @@ export default function IndustryClient({ slug, guide: _guide }: { slug: string; 
       />
 
       <SpokeEssentials keyword={`${industry.name} SEO`} answer={"gets your products indexed and ranking: unique product copy, clean URLs, product schema and a fast store. From $1,500 a month, month to month, with a free store audit first."} />
-      <PracticeEmotionBand theme={{ gap: "You have the products and the stock, but Google ignores half the catalog, and ads eat the margin on the rest.", images: [{"src":"/images/audiences/ecommerce-inventory-stress.webp","alt":"Illustration: a stressed store owner at a laptop in a warehouse full of boxes","caption":"Illustration: full shelves, falling sales, and no idea why Google stopped sending buyers."},{"src":"https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=900&q=70","alt":"Two colleagues giving each other a high five at an office desk","caption":"The goal: products back in Google, and sales you can see on the dashboard."}] }} />
+      <PracticeEmotionBand theme={PAGE_THEME[industry.slug] ?? PAGE_THEME.woocommerce} />
 
       {/* PLATFORM-SPECIFIC 2026 TELEMETRY CALLOUT */}
       {industry.slug === "shopify" && (
@@ -314,7 +367,7 @@ export default function IndustryClient({ slug, guide: _guide }: { slug: string; 
         <Steps steps={PROCESS} cta={{ href: "#get-started", label: "Get my free store tear-down" }} />
       </Band>
 
-      <PracticeFounderSpotlight theme={{ founderLine: "I have rebuilt two store catalogs myself. I fix the templates, rewrite the product pages in batches, and show you the sales every Monday." }} slug={`industry-${industry.slug}`} role="Founder · SEO expert" heading="You work with Mubashar Sharif, not a sales team" />
+      <PracticeFounderSpotlight theme={{ founderLine: (PAGE_THEME[industry.slug] ?? PAGE_THEME.woocommerce).founder }} slug={`industry-${industry.slug}`} role="Founder · SEO expert" heading="You work with Mubashar Sharif, not a sales team" />
 
       {/* PRICE, GUARANTEE & WHO DOES THE WORK */}
       <Band>
@@ -382,8 +435,7 @@ export default function IndustryClient({ slug, guide: _guide }: { slug: string; 
             <Link
               key={i.slug}
               href={`/services/ecommerce-seo/${i.slug}`}
-              className="rounded-full border px-4 py-2 text-sm font-bold text-white transition hover:bg-white/10"
-              style={{ borderColor: "rgba(185,179,245,0.45)" }}
+              className="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-neutral-900 transition hover:border-neutral-900 hover:bg-slate-50"
             >
               {i.h1}
             </Link>

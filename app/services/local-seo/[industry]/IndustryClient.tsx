@@ -59,6 +59,91 @@ const process = [
 ];
 
 // `guide` is still passed by page.tsx; the checklist is linked from the related band.
+
+// Per-page photos and lines, so no two industry pages share a picture.
+const PAGE_THEME: Record<string, { gap: string; images: [{ src: string; alt: string; caption: string }, { src: string; alt: string; caption: string }]; founder: string }> = {
+ "hvac": {
+  "gap": "When the AC dies in a heatwave, people call the first HVAC company that looks open and trusted on Google Maps.",
+  "images": [
+   {
+    "src": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&q=70",
+    "alt": "A technician in a hard hat working on an electrical panel",
+    "caption": "Your techs are booked solid in summer. The question is who gets the calls in the slow months."
+   },
+   {
+    "src": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=70",
+    "alt": "Two people shaking hands in an office",
+    "caption": "The goal: homeowners who find you first and book the job."
+   }
+  ],
+  "founder": "An HVAC call is worth hundreds, a new system thousands. I build the pages and profile that win the heatwave searches, and show you the calls every Monday."
+ },
+ "roofing": {
+  "gap": "After a storm, every homeowner on the street searches for a roofer at once. The ones on page one get the jobs.",
+  "images": [
+   {
+    "src": "https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=900&q=70",
+    "alt": "A roofer standing on a house roof next to a ladder",
+    "caption": "One roof is worth thousands. Missing the storm searches costs real money."
+   },
+   {
+    "src": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=70",
+    "alt": "Construction workers in safety gear on a building site",
+    "caption": "Your crews are ready. SEO makes sure the work keeps coming."
+   }
+  ],
+  "founder": "Roofing jobs are big and searches spike after storms. I build service and town pages that rank before the storm, so the calls come to you."
+ },
+ "cleaning": {
+  "gap": "Cleaning customers compare a few names on Google Maps and pick the one with the best reviews and clear prices.",
+  "images": [
+   {
+    "src": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=70",
+    "alt": "A cleaner in gloves and a mask washing a window",
+    "caption": "Great cleaning wins repeat customers. Google decides who gets the first visit."
+   },
+   {
+    "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=70",
+    "alt": "A bright, tidy room with a sofa, plant and white dresser",
+    "caption": "The goal: a full schedule of repeat homes and offices."
+   }
+  ],
+  "founder": "I took Doll's Cleaning to first place in an AI Overview. I do the same work for you: profile, reviews and pages for each service."
+ },
+ "home-services": {
+  "gap": "When a garage door breaks, the homeowner calls straight from the Google listing. Most never visit your website.",
+  "images": [
+   {
+    "src": "/images/audiences/local-contractor-garage.webp",
+    "alt": "Illustration: a home service business owner checking a call on his phone in a garage while technicians prepare vans",
+    "caption": "Illustration: busy crews, but the owner still wonders where the next calls will come from."
+   },
+   {
+    "src": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=70",
+    "alt": "Two people shaking hands in an office",
+    "caption": "The goal: more calls straight from your Business Profile."
+   }
+  ],
+  "founder": "For home services, the call comes from the profile. I keep your Business Profile sharp and your service pages clear, and count the calls every Monday."
+ },
+ "remodeling": {
+  "gap": "Remodeling clients research for weeks. They want to see your projects and an honest idea of cost before they call.",
+  "images": [
+   {
+    "src": "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=70",
+    "alt": "A bright modern kitchen with white cabinets and a gas stove",
+    "caption": "A kitchen or bath job is a big decision. Your pages have to earn trust first."
+   },
+   {
+    "src": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=70",
+    "alt": "A person signing a document with a pen at a desk",
+    "caption": "The goal: signed projects, not just website visits."
+   }
+  ],
+  "founder": "Remodeling buyers want proof and honest prices. I build project pages and cost answers that bring in the clients ready to sign."
+ }
+};
+
 export default function IndustryClient({ slug, guide: _guide }: { slug: string; guide: Guide }) {
   const industry = getLocalIndustry(slug);
   if (!industry) return null;
@@ -129,7 +214,7 @@ export default function IndustryClient({ slug, guide: _guide }: { slug: string; 
       />
 
       <SpokeEssentials keyword={`${industry.name} SEO`} answer={"gets your business into the Google Maps top 3 and AI Overviews for the jobs you want: a strong Business Profile, a page for each service and town, and steady real reviews. From $800 a month, month to month."} />
-      <PracticeEmotionBand theme={{ gap: "You do great work, but the phone only rings when a customer can find you. Most of those calls now start on a phone, in the Map Pack.", images: [{"src":"/images/audiences/local-contractor-garage.webp","alt":"Illustration: a home service business owner checking a call on his phone in a garage while technicians prepare vans","caption":"Illustration: busy crews, but the owner still wonders where the next calls will come from."},{"src":"https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=70","alt":"Two people shaking hands in an office","caption":"The goal: customers who find you first, trust you, and book the job."}] }} />
+      <PracticeEmotionBand theme={PAGE_THEME[industry.slug] ?? PAGE_THEME.hvac} />
 
       {stripShots.length ? (
         <ServiceProofStrip
@@ -233,7 +318,7 @@ export default function IndustryClient({ slug, guide: _guide }: { slug: string; 
         <Steps steps={process} cta={{ href: "#get-started", label: `Get my free ${trade} tear-down` }} />
       </Band>
 
-      <PracticeFounderSpotlight theme={{ founderLine: "I know a missed call is a lost job. I build your profile and pages myself, and every Monday I show you the calls they brought in." }} slug={`industry-${industry.slug}`} role="Founder · SEO expert" heading="You work with Mubashar Sharif, not a sales team" />
+      <PracticeFounderSpotlight theme={{ founderLine: (PAGE_THEME[industry.slug] ?? PAGE_THEME.hvac).founder }} slug={`industry-${industry.slug}`} role="Founder · SEO expert" heading="You work with Mubashar Sharif, not a sales team" />
 
       {/* PRICE, GUARANTEE & WHO DOES THE WORK */}
       <Band>
@@ -296,8 +381,7 @@ export default function IndustryClient({ slug, guide: _guide }: { slug: string; 
             <Link
               key={i.slug}
               href={`/services/local-seo/${i.slug}`}
-              className="rounded-full border px-4 py-2 text-sm font-bold text-white transition hover:bg-white/10"
-              style={{ borderColor: "rgba(185,179,245,0.45)" }}
+              className="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-neutral-900 transition hover:border-neutral-900 hover:bg-slate-50"
             >
               {i.name} SEO
             </Link>
