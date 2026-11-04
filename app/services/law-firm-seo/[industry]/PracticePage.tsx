@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { PRACTICE_THEMES } from "@/lib/practice-themes";
+import { PracticeEmotionBand, PracticeFounderSpotlight, PracticeLongTails, PracticeUniqueSection } from "@/components/law/PracticeThemeSections";
 import { SpokeEssentials, SpokeWhyAndAi } from "@/components/service-wireframe/SpokeSections";
 import Image from "next/image";
 import { ArrowRight, MapPin } from "lucide-react";
@@ -124,6 +126,7 @@ function FamilyLawIncluded() {
 }
 
 export default function PracticePage({ page }: { page: IndustryPage }) {
+  const theme = PRACTICE_THEMES[page.slug];
   const source = `service:law-firm-seo/${page.slug}`;
   const sourcePage = `/services/law-firm-seo/${page.slug}`;
   const cities = page.locationsMentioned
@@ -181,9 +184,12 @@ export default function PracticePage({ page }: { page: IndustryPage }) {
       />
 
       <SpokeEssentials
-        keyword={`${page.name} SEO`}
-        answer={`builds the practice-area and county pages, Business Profile and reviews that bring ${page.name.toLowerCase()} enquiries, within bar advertising rules. From $${page.priceRange.min.toLocaleString("en-US")} a month, one firm per city, done by the founder.`}
+        keyword={theme ? theme.focusKeyword.charAt(0).toUpperCase() + theme.focusKeyword.slice(1) : `${page.name} SEO`}
+        answer={`builds the practice-area and county pages, Business Profile and reviews that bring ${page.name.toLowerCase()} enquiries, within bar advertising rules. From ${page.priceRange.min.toLocaleString("en-US")} a month, one firm per city, done by the founder.`}
       />
+
+      {theme ? <PracticeEmotionBand theme={theme} /> : null}
+      {theme ? <PracticeUniqueSection theme={theme} /> : null}
 
       <section id="quick-answer" className="border-b border-slate-200 bg-white px-4 py-8 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
@@ -287,6 +293,8 @@ export default function PracticePage({ page }: { page: IndustryPage }) {
         </p>
       </Band>
 
+      {theme ? <PracticeLongTails theme={theme} name={page.name} /> : null}
+
       {page.slug !== "family-law" ? <Band>
         <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
           <div>
@@ -383,6 +391,7 @@ export default function PracticePage({ page }: { page: IndustryPage }) {
         <p className="mt-5 text-sm text-slate-500">Month to month · 90-day money-back guarantee · No guaranteed rankings or case volume.</p>
       </Band>
 
+{theme ? <PracticeFounderSpotlight theme={theme} slug={page.slug} /> : (
       <Band>
         <BandIntro eyebrow="Why SearchPrex" title="One person accountable for the work" lead={page.slug === "family-law" ? "SearchPrex is remote-first, founder-led and works US business hours. You work directly with Mubashar on the audit and plan; the firm's attorney reviews legal copy before publication." : "SearchPrex is remote-first, founder-led and works US business hours. There is no published law-firm case study yet; the proof above is labeled by industry, and the attorney reviews legal copy before it goes live."} />
         <p className="mx-auto mt-6 max-w-3xl text-center text-lg font-semibold leading-relaxed text-slate-800">{page.founderAngle}</p>
@@ -395,6 +404,7 @@ export default function PracticePage({ page }: { page: IndustryPage }) {
           <AuthorCard name="Mubashar Sharif" role="Founder · SEO strategist" quote="I will show you the work and its source, and I will label results from other industries clearly. You work directly with me on the audit and plan." imageSrc="/images/mubashar-sharif.jpg" imageAlt="Mubashar Sharif, Founder of SearchPrex" linkedinUrl={LINKEDIN} badges={["Semrush certified", "HubSpot certified"]} />
         </div>
       </Band>
+      )}
 
       <Band id="pricing" dark>
         <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">

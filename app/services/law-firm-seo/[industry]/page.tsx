@@ -1,6 +1,7 @@
 // Law firm SEO pages by practice area. The narrative and conversion copy live
 // in lib/industry-pages.ts; this route keeps page copy, metadata and schema in sync.
 import type { Metadata } from "next";
+import { PRACTICE_THEMES } from "@/lib/practice-themes";
 import { notFound } from "next/navigation";
 
 import { INDUSTRY_PAGES } from "@/lib/industry-pages";
@@ -27,8 +28,8 @@ export async function generateMetadata({
 
   const url = `${SITE}/services/law-firm-seo/${page.slug}`;
   return {
-    title: page.metaTitle,
-    description: page.metaDescription,
+    title: (PRACTICE_THEMES[page.slug]?.metaTitle ?? page.metaTitle),
+    description: (PRACTICE_THEMES[page.slug]?.metaDescription ?? page.metaDescription),
     ...(page.slug !== "family-law" ? {
       keywords: [
         page.primaryKeyword,
@@ -40,14 +41,14 @@ export async function generateMetadata({
     } : {}),
     alternates: { canonical: url },
     openGraph: {
-      title: page.metaTitle,
-      description: page.metaDescription,
+      title: (PRACTICE_THEMES[page.slug]?.metaTitle ?? page.metaTitle),
+      description: (PRACTICE_THEMES[page.slug]?.metaDescription ?? page.metaDescription),
       url,
       siteName: "SearchPrex",
       type: "website",
       images: [{ url: `${SITE}/services/law-firm-seo/opengraph-image`, width: 1200, height: 630 }],
     },
-    twitter: { card: "summary_large_image", title: page.metaTitle, description: page.metaDescription },
+    twitter: { card: "summary_large_image", title: (PRACTICE_THEMES[page.slug]?.metaTitle ?? page.metaTitle), description: (PRACTICE_THEMES[page.slug]?.metaDescription ?? page.metaDescription) },
     robots: { index: true, follow: true },
   };
 }
@@ -108,7 +109,7 @@ export default async function IndustryPage({
               ]
             : { "@type": "Country", name: "United States" },
         audience: { "@type": "BusinessAudience", audienceType: `${page.name} law firms` },
-        description: page.metaDescription,
+        description: (PRACTICE_THEMES[page.slug]?.metaDescription ?? page.metaDescription),
         image: `${SITE}${page.visual.src}`,
         url,
         offers: {
