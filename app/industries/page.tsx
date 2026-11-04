@@ -13,6 +13,7 @@ import Link from "next/link";
 import { ArrowRight, Scale, ShoppingCart, MapPin } from "lucide-react";
 
 import ArticleLeadMagnet from "@/components/ArticleLeadMagnet";
+import { SpokeEssentials, SpokeWhyAndAi } from "@/components/service-wireframe/SpokeSections";
 import { Breadcrumb, CardGrid, FaqList, PageHero, Section, SectionHeading, Accent } from "@/components/layout";
 import { LOCAL_INDUSTRIES } from "@/lib/local-industries";
 import { ECOMMERCE_INDUSTRIES } from "@/lib/ecommerce-industries";
@@ -38,6 +39,7 @@ export const metadata: Metadata = {
     url: PAGE_URL,
     siteName: "SearchPrex",
     type: "website",
+    images: [{ url: "https://www.searchprex.com/opengraph-image", width: 1200, height: 630 }],
   },
   robots: { index: true, follow: true },
 };
@@ -155,7 +157,7 @@ export default function IndustriesPage() {
             SEO by Industry: <Accent>Local Trades, Online Stores and Law Firms</Accent>
           </>
         }
-        subtitle="A page for every industry SearchPrex has real results in, each linking to the case study behind it. Where there is no case study yet, the page says so."
+        subtitle="Every trade and practice searches differently, and generic SEO misses that. Pick yours: each page shows the work for your industry and the case study behind it, or says plainly when there isn't one yet."
         trustPoints={["Reply within 24 hours", "Month to month", "The founder does the work"]}
         aside={
           <ArticleLeadMagnet
@@ -168,6 +170,30 @@ export default function IndustriesPage() {
           />
         }
       />
+
+      <SpokeEssentials
+        keyword="SEO by industry"
+        answer="means pages, Business Profile work and fixes built around how your customers search: by trade and town for local businesses, by product for online stores, and by practice area for law firms. Month to month, from $800 a month."
+      />
+
+      {/* PROOF — one result per industry type, each with screenshots on its case study. */}
+      <Section tight>
+        <SectionHeading eyebrow="Results by industry" title="SEO results from clients' own dashboards" />
+        <div className="grid gap-4 md:grid-cols-3">
+          {[
+            { tag: "Online store · WooCommerce", figure: "+227%", line: "Net sales, $5,832 to $19,100 a month.", href: "/case-studies/ecommerce/smk-store", client: "SMK Store" },
+            { tag: "Local · HVAC", figure: "Named", line: "In Google's AI Overview for an AC installation search.", href: "/case-studies/hvac/local-hvac-services", client: "HVAC Services Team" },
+            { tag: "Local · Cleaning", figure: "#1", line: "Named first in the AI Overview, #1 organic below it.", href: "/case-studies/cleaning/dolls-cleaning", client: "Doll's Cleaning" },
+          ].map((r) => (
+            <Link key={r.client} href={r.href} className="rounded-3xl border border-slate-200 bg-white p-6 transition hover:border-neutral-900 hover:shadow-md">
+              <p className="text-xs font-bold uppercase tracking-widest text-emerald-800">{r.tag}</p>
+              <p className="mt-1 text-lg font-black text-neutral-950">{r.client}</p>
+              <p className="mt-3 text-4xl font-black tracking-tight text-neutral-950">{r.figure}</p>
+              <p className="mt-1 text-sm text-slate-600">{r.line}</p>
+            </Link>
+          ))}
+        </div>
+      </Section>
 
       {GROUPS.map((g, gi) => {
         const Icon = g.icon;
@@ -203,20 +229,21 @@ export default function IndustriesPage() {
         );
       })}
 
-      <Section tight>
-        <ArticleLeadMagnet
-          variant="banner"
-          source={SOURCE}
-          copy={{
-            eyebrow: "Industry not listed?",
-            headline: "The work carries over. Find out what it would look like for you.",
-            sub: "Send me your URL. A written tear-down of your site and your top competitors — free, within 24 hours.",
-          }}
-        />
-      </Section>
+      <SpokeWhyAndAi
+        service="SEO for your industry"
+        title="Industry SEO: SearchPrex vs the alternatives"
+        rows={[
+          ["Who does the work", "The founder", "You, after hours", "Often a junior"],
+          ["Knows your industry", "Pages built per trade, platform and practice", "You know it, SEO is the hard part", "Often one template for everyone"],
+          ["Proof", "Case studies with screenshots", "n/a", "Often logos only"],
+          ["Contract", "Month to month", "None", "Often 6 to 12 months"],
+          ["Risk", "7-day free trial, 90-day money-back", "Your time", "Rarely a guarantee"],
+        ]}
+        aiLine="AI tools answer by industry: 'best HVAC company near me', 'Shopify SEO help', 'divorce lawyer in Wichita'. Pages written for your industry give them the right answer to quote."
+      />
 
       <Section tone="surface" width="reading">
-        <SectionHeading eyebrow="FAQ" title="Industries, answered" />
+        <SectionHeading eyebrow="FAQ" title="SEO by industry: questions, answered" />
         <FaqList faqs={FAQS} name="industries-faq" />
       </Section>
 
