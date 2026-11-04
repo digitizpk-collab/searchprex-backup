@@ -1047,19 +1047,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 11 · FAQ */}
-      <section className="px-4 py-20 sm:px-6 lg:py-24">
-        <div className="mx-auto max-w-3xl">
-          <Heading eyebrow="FAQ" title="SEO questions business owners ask before hiring me" />
-          <FaqAccordion faqs={FAQS} />
-          <p className="mt-6 text-center">
-            <Link href="/faq" className="inline-flex items-center gap-1 text-sm font-bold text-neutral-900 hover:underline">
-              More questions <ArrowRight className="h-4 w-4" aria-hidden />
-            </Link>
-          </p>
-        </div>
-      </section>
-
       {/* 4 · FREE DOMAIN AUTHORITY & TECHNICAL SEO HEALTH CHECKER (NicheSEO Pro Replicated) */}
       <section id="free-da-checker" className="border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white px-4 py-20 sm:px-6">
         <div className="mx-auto max-w-5xl">
@@ -1211,6 +1198,19 @@ export default function Home() {
           <p className="mt-6 text-center text-sm text-slate-600">
             Tracking Google Maps and Business Profile changes? Read the dated{" "}
             <Link href="/resources/news/local-seo-updates" className="font-bold text-neutral-950 underline underline-offset-2">local SEO news and updates</Link>.
+          </p>
+        </div>
+      </section>
+
+      {/* 11 · FAQ */}
+      <section className="px-4 py-20 sm:px-6 lg:py-24">
+        <div className="mx-auto max-w-3xl">
+          <Heading eyebrow="FAQ" title="SEO questions business owners ask before hiring me" />
+          <FaqAccordion faqs={FAQS} />
+          <p className="mt-6 text-center">
+            <Link href="/faq" className="inline-flex items-center gap-1 text-sm font-bold text-neutral-900 hover:underline">
+              More questions <ArrowRight className="h-4 w-4" aria-hidden />
+            </Link>
           </p>
         </div>
       </section>
