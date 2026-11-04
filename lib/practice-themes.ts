@@ -123,7 +123,7 @@ export const PRACTICE_THEMES: Record<string, PracticeTheme> = {
   "mass-torts": {
     focusKeyword: "mass tort SEO",
     secondaryKeyword: "mass tort marketing",
-    metaTitle: "Mass Tort SEO: Sourced MDL Pages Published Fast | From $1,800",
+    metaTitle: "Mass Tort SEO: Sourced MDL Pages Live Fast | From $1,800",
     metaDescription: "Mass tort SEO for law firms: sourced pages for each tort and MDL, published fast and kept current, measured by cost per signed case. From $1,800/mo.",
     gap: "Big firms win active torts with budget. The gap is speed and trust: a sourced page for a new tort, live before the crowd, and kept current as the docket moves.",
     images: [
