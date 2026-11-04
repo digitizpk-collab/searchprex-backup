@@ -344,6 +344,51 @@ const AI_PROOF = [
   { client: "Remit Choice", tag: "International · Fintech", line: "Named in the AI Overview for a money transfer search.", href: "/case-studies/fintech/remit-choice" },
 ];
 
+const CARE_CARDS = [
+ {
+  "tag": "Client care",
+  "t": "One person who knows your business",
+  "d": "You deal with me, the founder, every time. No hand-offs, no new account manager each month.",
+  "src": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=70",
+  "alt": "Two people shaking hands in an office"
+ },
+ {
+  "tag": "Support",
+  "t": "Chat and WhatsApp, open 24/7",
+  "d": "Send a message whenever something worries you. I reply quickly during US business hours.",
+  "src": "/images/news/customer-using-phone-at-cafe.webp",
+  "alt": "A smiling woman reading a message on her phone at a cafe"
+ },
+ {
+  "tag": "Budget-friendly",
+  "t": "Prices you can plan around",
+  "d": "From $800 a month, published on the site. Month to month, no long contract.",
+  "src": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=70",
+  "alt": "A person sorting bills and paperwork with a calculator"
+ },
+ {
+  "tag": "Pain-free",
+  "t": "No jargon, no stress",
+  "d": "Plain-English answers and a short report every Monday. You always know what is happening.",
+  "src": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=70",
+  "alt": "A smiling professional woman standing in an office"
+ },
+ {
+  "tag": "Relief",
+  "t": "Calls and sales you can see",
+  "d": "The work is measured in calls, cases and revenue, so the relief is real, not just a ranking.",
+  "src": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=70",
+  "alt": "Two colleagues giving each other a high five at an office desk"
+ },
+ {
+  "tag": "Peace of mind",
+  "t": "A 90-day money-back guarantee",
+  "d": "Try it free for 7 days. If you see no progress in 90 days, you get those 90 days back.",
+  "src": "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&w=800&q=70",
+  "alt": "A group of friends laughing together outdoors"
+ }
+];
+
 const PACKAGE_STEPS = [
   { when: "Within 24 hours", t: "Free SEO audit", d: "Your site and your top competitors, checked by me. You see what is holding you back." },
   { when: "Within 3 days", t: "Free SEO strategy", d: "A plan built on your real goal: which pages, which searches, which fixes first." },
@@ -544,6 +589,31 @@ export default function Home() {
             <a href="#get-started" className="mt-8 inline-flex items-center gap-2 rounded-full bg-neutral-950 px-6 py-3.5 text-sm font-bold text-white hover:bg-neutral-800">
               Let me take the stress off you <ArrowRight className="h-4 w-4" aria-hidden />
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* CARE CARDS — what looking after a client means, in pictures. */}
+      <section className="px-4 py-20 sm:px-6 lg:py-24">
+        <div className="mx-auto max-w-6xl">
+          <Heading
+            eyebrow="Care at every step"
+            title="Affordable SEO, with care you can feel"
+            sub="No stress, no jargon, no surprises. Just someone looking after your business every week."
+          />
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {CARE_CARDS.map((c) => (
+              <figure key={c.t} className="group overflow-hidden rounded-3xl border border-slate-200 bg-white transition hover:-translate-y-0.5 hover:shadow-lg">
+                <div className="relative aspect-[16/10] overflow-hidden">
+                  <Image src={c.src} alt={c.alt} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px" className="object-cover transition duration-500 group-hover:scale-105" />
+                  <span className="absolute left-3 top-3 rounded-full bg-white/95 px-3 py-1 text-xs font-black uppercase tracking-wide text-rose-700">{c.tag}</span>
+                </div>
+                <figcaption className="p-6">
+                  <h3 className={`${H} text-lg text-neutral-950`}>{c.t}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-600">{c.d}</p>
+                </figcaption>
+              </figure>
+            ))}
           </div>
         </div>
       </section>
