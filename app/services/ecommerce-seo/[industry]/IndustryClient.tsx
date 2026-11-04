@@ -16,6 +16,8 @@
 // FAQPage schema from both arrays.
 
 import Link from "next/link";
+import { SpokeEssentials, SpokeWhyAndAi } from "@/components/service-wireframe/SpokeSections";
+import { PracticeEmotionBand, PracticeFounderSpotlight } from "@/components/law/PracticeThemeSections";
 import { ArrowRight, ShoppingCart } from "lucide-react";
 
 import ArticleLeadMagnet from "@/components/ArticleLeadMagnet";
@@ -127,6 +129,9 @@ export default function IndustryClient({ slug, guide: _guide }: { slug: string; 
           />
         }
       />
+
+      <SpokeEssentials keyword={`${industry.name} SEO`} answer={"gets your products indexed and ranking: unique product copy, clean URLs, product schema and a fast store. From $1,500 a month, month to month, with a free store audit first."} />
+      <PracticeEmotionBand theme={{ gap: "You have the products and the stock, but Google ignores half the catalog, and ads eat the margin on the rest.", images: [{"src":"/images/audiences/ecommerce-inventory-stress.webp","alt":"Illustration: a stressed store owner at a laptop in a warehouse full of boxes","caption":"Illustration: full shelves, falling sales, and no idea why Google stopped sending buyers."},{"src":"https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=900&q=70","alt":"Two colleagues giving each other a high five at an office desk","caption":"The goal: products back in Google, and sales you can see on the dashboard."}] }} />
 
       {/* PLATFORM-SPECIFIC 2026 TELEMETRY CALLOUT */}
       {industry.slug === "shopify" && (
@@ -305,16 +310,18 @@ export default function IndustryClient({ slug, guide: _guide }: { slug: string; 
 
       {/* PROCESS */}
       <Band dark id="process">
-        <BandIntro dark eyebrow="How it works" title="From free tear-down to indexed, selling products" />
+        <BandIntro dark eyebrow="How it works" title={`How ${industry.name} SEO works: from free audit to selling products`} />
         <Steps steps={PROCESS} cta={{ href: "#get-started", label: "Get my free store tear-down" }} />
       </Band>
+
+      <PracticeFounderSpotlight theme={{ founderLine: "I have rebuilt two store catalogs myself. I fix the templates, rewrite the product pages in batches, and show you the sales every Monday." }} slug={`industry-${industry.slug}`} role="Founder · SEO expert" heading="You work with Mubashar Sharif, not a sales team" />
 
       {/* PRICE, GUARANTEE & WHO DOES THE WORK */}
       <Band>
         <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <div>
             <Eyebrow>Why SearchPrex</Eyebrow>
-            <H2>One person, one roadmap, a clear price</H2>
+            <H2>{`How much does ${industry.name} SEO cost?`}</H2>
             <Lead>
               You work with the person who audits your store and ships the fixes. Priorities are ranked by what brings revenue, and every change is logged.
             </Lead>
@@ -353,6 +360,8 @@ export default function IndustryClient({ slug, guide: _guide }: { slug: string; 
           />
         </div>
       </Band>
+
+      <SpokeWhyAndAi service={`${industry.name.toLowerCase()} SEO`} rows={[["Who does the work","The founder","You, between orders","Often a junior"],["Big catalogs","Fixed at the template, thousands at once","One product at a time","Often thin AI copy"],["Proof","SMK Store: +227% net sales","n/a","Often logos only"],["Contract","Month to month","None","Often 6 to 12 months"],["Risk","7-day free trial, 90-day money-back","Your time","Rarely a guarantee"]]} aiLine={"ChatGPT Shopping and Google AI Overviews read product names, prices, stock and reviews from your pages. Product schema and clear copy give them accurate details to quote."} />
 
       {/* RELATED */}
       <Band dark>

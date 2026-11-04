@@ -11,7 +11,7 @@ import { ArrowRight, Check, Clock, Search } from "lucide-react";
 import PillForm from "@/components/home/PillForm";
 import type { PracticeTheme } from "@/lib/practice-themes";
 
-export function PracticeEmotionBand({ theme }: { theme: PracticeTheme }) {
+export function PracticeEmotionBand({ theme }: { theme: Pick<PracticeTheme, "gap" | "images"> }) {
   return (
     <section className="px-4 py-14 sm:px-6">
       <div className="mx-auto max-w-6xl">
@@ -129,22 +129,22 @@ export function PracticeLongTails({ theme, name }: { theme: PracticeTheme; name:
   );
 }
 
-export function PracticeFounderSpotlight({ theme, slug }: { theme: PracticeTheme; slug: string }) {
+export function PracticeFounderSpotlight({ theme, slug, role = "Founder · SEO expert for law firms", heading = "You work with Mubashar Sharif, not a sales team" }: { theme: Pick<PracticeTheme, "founderLine">; slug: string; role?: string; heading?: string }) {
   return (
     <section className="bg-neutral-950 px-4 py-20 text-white sm:px-6">
       <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="relative mx-auto w-full max-w-[280px] overflow-hidden rounded-3xl border border-white/10 sm:max-w-sm lg:max-w-md">
           <div className="relative aspect-[4/5]">
-            <Image src="/images/mubashar-sharif.jpg" alt="Mubashar Sharif, founder of SearchPrex and SEO expert for law firms" fill sizes="(max-width: 1024px) 90vw, 440px" className="object-cover" />
+            <Image src="/images/mubashar-sharif.jpg" alt="Mubashar Sharif, founder of SearchPrex and SEO expert" fill sizes="(max-width: 1024px) 90vw, 440px" className="object-cover" />
           </div>
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-neutral-950 to-transparent p-5">
             <p className="text-xl font-black">Mubashar Sharif</p>
-            <p className="text-sm text-white/75">Founder · SEO expert for law firms</p>
+            <p className="text-sm text-white/75">{role}</p>
           </div>
         </div>
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.16em] text-emerald-300">Your SEO expert</p>
-          <h2 className="mt-3 text-3xl font-black tracking-tight text-white sm:text-4xl">You work with Mubashar Sharif, not a sales team</h2>
+          <h2 className="mt-3 text-3xl font-black tracking-tight text-white sm:text-4xl">{heading}</h2>
           <p className="mt-4 text-lg leading-relaxed text-white/85">{theme.founderLine}</p>
           <ul className="mt-6 grid gap-2 text-[15px] text-white/85 sm:grid-cols-2">
             {["5+ years in SEO", "Semrush and HubSpot certified", "One firm per city", "A report every Monday", "7-day free trial", "90-day money-back guarantee"].map((c) => (
@@ -154,7 +154,7 @@ export function PracticeFounderSpotlight({ theme, slug }: { theme: PracticeTheme
           <div className="mt-8 rounded-2xl border border-white/10 bg-white/5 p-5">
             <p className="font-bold">Get a free audit of your firm&apos;s site, from me, within 24 hours</p>
             <div className="mt-4">
-              <PillForm source={`practice-${slug}-founder`} tone="dark" />
+              <PillForm source={`${slug}-founder`} tone="dark" />
             </div>
           </div>
         </div>

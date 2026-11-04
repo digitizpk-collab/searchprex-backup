@@ -391,7 +391,7 @@ export default function PracticePage({ page }: { page: IndustryPage }) {
         <p className="mt-5 text-sm text-slate-500">Month to month · 90-day money-back guarantee · No guaranteed rankings or case volume.</p>
       </Band>
 
-{theme ? <PracticeFounderSpotlight theme={theme} slug={page.slug} /> : (
+{theme ? <PracticeFounderSpotlight theme={theme} slug={`practice-${page.slug}`} /> : (
       <Band>
         <BandIntro eyebrow="Why SearchPrex" title="One person accountable for the work" lead={page.slug === "family-law" ? "SearchPrex is remote-first, founder-led and works US business hours. You work directly with Mubashar on the audit and plan; the firm's attorney reviews legal copy before publication." : "SearchPrex is remote-first, founder-led and works US business hours. There is no published law-firm case study yet; the proof above is labeled by industry, and the attorney reviews legal copy before it goes live."} />
         <p className="mx-auto mt-6 max-w-3xl text-center text-lg font-semibold leading-relaxed text-slate-800">{page.founderAngle}</p>

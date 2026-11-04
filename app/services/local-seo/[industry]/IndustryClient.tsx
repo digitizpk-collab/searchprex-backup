@@ -14,6 +14,8 @@
 // the FAQPage schema from both arrays.
 
 import Link from "next/link";
+import { SpokeEssentials, SpokeWhyAndAi } from "@/components/service-wireframe/SpokeSections";
+import { PracticeEmotionBand, PracticeFounderSpotlight } from "@/components/law/PracticeThemeSections";
 import { ArrowRight, MapPin } from "lucide-react";
 
 import ArticleLeadMagnet from "@/components/ArticleLeadMagnet";
@@ -126,6 +128,9 @@ export default function IndustryClient({ slug, guide: _guide }: { slug: string; 
         }
       />
 
+      <SpokeEssentials keyword={`${industry.name} SEO`} answer={"gets your business into the Google Maps top 3 and AI Overviews for the jobs you want: a strong Business Profile, a page for each service and town, and steady real reviews. From $800 a month, month to month."} />
+      <PracticeEmotionBand theme={{ gap: "You do great work, but the phone only rings when a customer can find you. Most of those calls now start on a phone, in the Map Pack.", images: [{"src":"/images/audiences/local-contractor-garage.webp","alt":"Illustration: a home service business owner checking a call on his phone in a garage while technicians prepare vans","caption":"Illustration: busy crews, but the owner still wonders where the next calls will come from."},{"src":"https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=70","alt":"Two people shaking hands in an office","caption":"The goal: customers who find you first, trust you, and book the job."}] }} />
+
       {stripShots.length ? (
         <ServiceProofStrip
           id="proof"
@@ -224,16 +229,18 @@ export default function IndustryClient({ slug, guide: _guide }: { slug: string; 
 
       {/* PROCESS */}
       <Band dark id="process">
-        <BandIntro dark eyebrow="How it works" title="From free tear-down to the map pack" />
+        <BandIntro dark eyebrow="How it works" title={`How ${trade} SEO works: from free audit to the Map Pack`} />
         <Steps steps={process} cta={{ href: "#get-started", label: `Get my free ${trade} tear-down` }} />
       </Band>
+
+      <PracticeFounderSpotlight theme={{ founderLine: "I know a missed call is a lost job. I build your profile and pages myself, and every Monday I show you the calls they brought in." }} slug={`industry-${industry.slug}`} role="Founder · SEO expert" heading="You work with Mubashar Sharif, not a sales team" />
 
       {/* PRICE, GUARANTEE & WHO DOES THE WORK */}
       <Band>
         <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <div>
             <Eyebrow>Why SearchPrex</Eyebrow>
-            <H2>One person, one plan, a clear price</H2>
+            <H2>{`How much does ${trade} SEO cost?`}</H2>
             <Lead>
               You work with the person who does the work. Every recommendation is built for your trade, your area and the businesses above you in the map pack.
             </Lead>
@@ -272,6 +279,8 @@ export default function IndustryClient({ slug, guide: _guide }: { slug: string; 
           />
         </div>
       </Band>
+
+      <SpokeWhyAndAi service={`${trade} SEO`} rows={[["Who does the work","The founder","You, after the job","Often a junior"],["Map Pack work","Profile, reviews and town pages together","Profile only, when you find time","Often citations software"],["Contract","Month to month","None","Often 6 to 12 months"],["Reporting","Calls and Map Pack spots, every Monday","n/a","Often rankings only"],["Risk","7-day free trial, 90-day money-back","Your time","Rarely a guarantee"]]} aiLine={"People now ask ChatGPT and Google AI Overviews who to call for a repair. A clear Business Profile, real reviews and short answers on your pages help them name you. Doll's Cleaning and an HVAC client were both named in AI Overviews."} />
 
       {/* RELATED */}
       <Band dark>
