@@ -20,6 +20,7 @@
 // proof components or lib/pricing — never typed here.
 
 import type { Metadata } from "next";
+import IndustryMarquee from "@/components/home/IndustryMarquee";
 import StateMarquee from "@/components/home/StateMarquee";
 import StrategyPopup from "@/components/home/StrategyPopup";
 import StrategyRequestForm from "@/components/home/StrategyRequestForm";
@@ -745,17 +746,26 @@ export default function Home() {
             title="Affordable SEO Services USA 2026"
             sub="Founder-led SEO services USA for law firms, local businesses and online stores — published monthly pricing, a free competitor audit within 24 hours and no long-term contract."
           />
+          <style>{`
+            @keyframes svc-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+            .svc-card { animation: svc-in 0.6s ease-out both; }
+            @media (prefers-reduced-motion: reduce) { .svc-card { animation: none; } }
+          `}</style>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {SERVICES.map((s) => (
+            {SERVICES.map((s, i) => (
               <Link
                 key={s.href}
                 href={s.href}
-                className="group flex flex-col rounded-3xl border border-slate-200 bg-white p-6 transition hover:-translate-y-0.5 hover:border-neutral-900 hover:shadow-md"
+                data-service-hotspot={s.title.split(":")[0]}
+                style={{ animationDelay: `${i * 90}ms` }}
+                className="svc-card group relative flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 transition duration-300 hover:-translate-y-1.5 hover:border-transparent hover:shadow-2xl hover:shadow-emerald-900/10"
               >
-                <h3 className={`${H} mt-4 text-lg text-neutral-950`}>{s.title}</h3>
+                <span aria-hidden className="absolute inset-x-0 top-0 h-1 origin-left scale-x-0 bg-gradient-to-r from-emerald-500 via-sky-500 to-[#b22234] transition-transform duration-500 group-hover:scale-x-100" />
+                <span aria-hidden className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-emerald-100/0 transition duration-500 group-hover:bg-emerald-100/70" />
+                <h3 className={`${H} relative mt-4 text-lg text-neutral-950`}>{s.title}</h3>
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">{s.body}</p>
                 <span className="mt-4 flex items-center justify-between gap-2">
-                  <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-bold text-neutral-900">{s.price}</span>
+                  <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-bold text-neutral-900 transition group-hover:bg-neutral-950 group-hover:text-white">{s.price}</span>
                   <ArrowRight className="h-4 w-4 text-neutral-900 transition group-hover:translate-x-1" aria-hidden />
                 </span>
               </Link>
@@ -765,21 +775,8 @@ export default function Home() {
           {/* INDUSTRIES — the trades and practices with their own pages. */}
           <div className="mt-12">
             <h3 className={`${H} text-center text-xl text-neutral-950`}>Industries we work in</h3>
-            <div className="mt-5 grid gap-4 md:grid-cols-3">
-              {INDUSTRY_GROUPS.map((g) => (
-                <div key={g.label} className="rounded-2xl border border-slate-200 bg-white p-5">
-                  <p className="text-xs font-bold uppercase tracking-wider text-emerald-800">{g.label}</p>
-                  <ul className="mt-3 flex flex-wrap gap-2">
-                    {g.links.map((l) => (
-                      <li key={l.href}>
-                        <Link href={l.href} className="inline-block rounded-full border border-slate-200 px-3 py-1.5 text-sm text-slate-700 hover:border-neutral-900 hover:text-neutral-950">
-                          {l.name} SEO
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+            <div className="mt-6">
+              <IndustryMarquee groups={INDUSTRY_GROUPS} />
             </div>
             <p className="mt-5 text-center">
               <Link href="/industries" className="inline-flex items-center gap-1 text-sm font-bold text-neutral-900 hover:underline">
