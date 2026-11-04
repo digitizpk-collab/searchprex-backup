@@ -1049,18 +1049,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4 · FREE DOMAIN AUTHORITY & TECHNICAL SEO HEALTH CHECKER (NicheSEO Pro Replicated) */}
-      <section id="free-da-checker" className="border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white px-4 py-20 sm:px-6">
-        <div className="mx-auto max-w-5xl">
-          <Heading
-            eyebrow="Free tool"
-            title="Free Domain Authority Checker: How Strong Is Your Site?"
-            sub="Check your website's domain authority and technical health in seconds. No sign-up, no email needed."
-          />
-          <FreeDomainAuthorityChecker variant="home" />
-        </div>
-      </section>
-
       {/* USA MAP — where SearchPrex works, with a market card per pin. */}
       <ServiceUsaMapAndMarkets
         serviceName="SEO Services"
@@ -1118,10 +1106,7 @@ export default function Home() {
               className="group flex flex-col justify-between rounded-3xl border border-slate-200 bg-white p-6 transition-all hover:border-neutral-900 hover:shadow-md"
             >
               <div>
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-100 text-neutral-900">
-                  <Newspaper className="h-5 w-5" aria-hidden />
-                </span>
-                <p className="mt-4 text-xs font-bold uppercase tracking-widest text-neutral-600">News Desk</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-neutral-600">News Desk</p>
                 <h3 className={`${H} mt-1 text-lg text-neutral-950 group-hover:text-neutral-700`}>
                   SEO &amp; Industry News
                 </h3>
@@ -1139,10 +1124,7 @@ export default function Home() {
               className="group flex flex-col justify-between rounded-3xl border border-slate-200 bg-white p-6 transition-all hover:border-neutral-900 hover:shadow-md"
             >
               <div>
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-100 text-neutral-900">
-                  <Wrench className="h-5 w-5" aria-hidden />
-                </span>
-                <p className="mt-4 text-xs font-bold uppercase tracking-widest text-neutral-600">Code Playbooks</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-neutral-600">Code Playbooks</p>
                 <h3 className={`${H} mt-1 text-lg text-neutral-950 group-hover:text-neutral-700`}>
                   Issues &amp; Solutions Library
                 </h3>
@@ -1160,10 +1142,7 @@ export default function Home() {
               className="group flex flex-col justify-between rounded-3xl border border-slate-200 bg-white p-6 transition-all hover:border-neutral-900 hover:shadow-md"
             >
               <div>
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-100 text-neutral-900">
-                  <GraduationCap className="h-5 w-5" aria-hidden />
-                </span>
-                <p className="mt-4 text-xs font-bold uppercase tracking-widest text-neutral-600">Curriculum</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-neutral-600">Curriculum</p>
                 <h3 className={`${H} mt-1 text-lg text-neutral-950 group-hover:text-neutral-700`}>
                   Interactive Learning Hub
                 </h3>
@@ -1181,10 +1160,7 @@ export default function Home() {
               className="group flex flex-col justify-between rounded-3xl border border-slate-200 bg-white p-6 transition-all hover:border-neutral-900 hover:shadow-md"
             >
               <div>
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-100 text-neutral-900">
-                  <Settings className="h-5 w-5" aria-hidden />
-                </span>
-                <p className="mt-4 text-xs font-bold uppercase tracking-widest text-neutral-600">Utilities</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-neutral-600">Utilities</p>
                 <h3 className={`${H} mt-1 text-lg text-neutral-950 group-hover:text-neutral-700`}>
                   Free SEO Tools Suite
                 </h3>
@@ -1204,10 +1180,22 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 4 · FREE DOMAIN AUTHORITY & TECHNICAL SEO HEALTH CHECKER (NicheSEO Pro Replicated) */}
+      <section id="free-da-checker" className="border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white px-4 py-20 sm:px-6">
+        <div className="mx-auto max-w-5xl">
+          <Heading
+            eyebrow="Free tool"
+            title="Free Domain Authority Checker: How Strong Is Your Site?"
+            sub="Check your website's domain authority and technical health in seconds. No sign-up, no email needed."
+          />
+          <FreeDomainAuthorityChecker variant="home" />
+        </div>
+      </section>
+
       {/* 11 · FAQ */}
       <section className="px-4 py-20 sm:px-6 lg:py-24">
         <div className="mx-auto max-w-3xl">
-          <Heading eyebrow="FAQ" title="SEO questions business owners ask before hiring me" />
+          <Heading eyebrow="Questions" title="FAQs" />
           <FaqAccordion faqs={FAQS} />
           <p className="mt-6 text-center">
             <Link href="/faq" className="inline-flex items-center gap-1 text-sm font-bold text-neutral-900 hover:underline">
