@@ -56,7 +56,6 @@ import { SITE, founderRef, organizationRef, websiteRef } from "@/lib/site-schema
 import AudienceTabs, { type AudienceTab } from "@/components/home/AudienceTabs";
 import FaqAccordion from "@/components/home/FaqAccordion";
 import PillForm from "@/components/home/PillForm";
-import ServiceUsaMapAndMarkets from "@/components/service-wireframe/ServiceUsaMapAndMarkets";
 
 // Title, H1 and description use the same broad small-business SEO agency
 // positioning. Specialist phrases belong on the linked service pages.
@@ -729,9 +728,9 @@ export default function Home() {
       <section className="border-t border-slate-200 px-4 py-20 sm:px-6 lg:py-24">
         <div className="mx-auto max-w-6xl">
           <Heading
-            eyebrow="Specialized Verticals · AEO Direct Answer"
-            title="Which US businesses does SearchPrex work with?"
-            sub="Three kinds of business: law firms and attorneys, local contractors and small businesses, and Shopify and WooCommerce stores. As a founder-led SEO company USA clients trust, we take one client per city so we never work for your competitor."
+            eyebrow="Who I help"
+            title="Which businesses does SearchPrex help?"
+            sub="Three kinds of US business: law firms, local trades and small businesses, and online stores. Pick yours to see the problem I solve and how. One client per city, so I never work for your competitor."
           />
           <AudienceTabs tabs={TABS} />
         </div>
@@ -1108,18 +1107,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* USA MAP — where SearchPrex works, with a market card per pin. */}
-      <ServiceUsaMapAndMarkets
-        serviceName="SEO Services"
-        answerCapsule={`SearchPrex works with law firms, local businesses and online stores across the US, with city pages in ${LOCATION_STATES.length} states and ${LOCATION_CITY_COUNT} cities. Pick a pin to see the market.`}
-      />
-
       {/* 10 · COVERAGE — every state and city page, compact */}
       <section className="border-y border-slate-200 bg-slate-50 px-4 py-16 sm:px-6">
         <div className="mx-auto max-w-6xl">
-          <p className="mb-6 text-center text-sm font-bold uppercase tracking-[0.14em] text-slate-500">
-            Every state and city we serve
-          </p>
+          <Heading
+            eyebrow="Where I work"
+            title={`SEO for businesses in ${LOCATION_STATES.length} US states and ${LOCATION_CITY_COUNT} cities`}
+            sub="Law firms, local trades and online stores from coast to coast. Each state and city has its own page, written for that market."
+          />
+          <div className="mb-10 overflow-hidden rounded-3xl border border-slate-200 bg-white">
+            <iframe
+              title="Map of the United States, where SearchPrex works"
+              src="https://maps.google.com/maps?q=United%20States&z=4&output=embed"
+              className="h-64 w-full sm:h-80 lg:h-96"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
           <StateMarquee
             states={LOCATION_STATES.map((st) => ({ name: st.name, hubHref: st.hubHref, img: STATE_IMAGES[st.slug]?.src ?? "/images/locations/texas-legal-district.webp", alt: STATE_IMAGES[st.slug]?.alt ?? st.name, cities: st.cities.map((c) => ({ name: c.name, href: c.href })) }))}
           />
@@ -1135,9 +1139,9 @@ export default function Home() {
       <section className="bg-white px-4 py-20 sm:px-6 lg:py-24">
         <div className="mx-auto max-w-6xl">
           <Heading
-            eyebrow="Free to use"
-            title="Free SEO tools, playbooks and diagnostics"
-            sub="Free tools, guides and dated SEO news. Use them yourself, no email needed."
+            eyebrow="Free resources"
+            title="Free SEO tools and guides to help you grow"
+            sub="Fix things yourself with the same tools, guides and dated SEO news I use. Free, no email needed."
           />
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             <Link
@@ -1145,7 +1149,7 @@ export default function Home() {
               className="group flex flex-col justify-between rounded-3xl border border-slate-200 bg-white p-6 transition-all hover:border-neutral-900 hover:shadow-md"
             >
               <div>
-                <p className="text-xs font-bold uppercase tracking-widest text-neutral-600">News Desk</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-neutral-600">News</p>
                 <h3 className={`${H} mt-1 text-lg text-neutral-950 group-hover:text-neutral-700`}>
                   SEO &amp; Industry News
                 </h3>
@@ -1163,12 +1167,12 @@ export default function Home() {
               className="group flex flex-col justify-between rounded-3xl border border-slate-200 bg-white p-6 transition-all hover:border-neutral-900 hover:shadow-md"
             >
               <div>
-                <p className="text-xs font-bold uppercase tracking-widest text-neutral-600">Code Playbooks</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-neutral-600">Fixes</p>
                 <h3 className={`${H} mt-1 text-lg text-neutral-950 group-hover:text-neutral-700`}>
                   Issues &amp; Solutions Library
                 </h3>
                 <p className="mt-2 text-xs leading-relaxed text-slate-600">
-                  Step-by-step root-cause diagnostics and production code fixes for GSC &ldquo;Crawled - Not Indexed&rdquo;, GBP suspensions, and Core Web Vitals.
+                  Step-by-step fixes for pages not indexed, suspended Business Profiles and slow pages.
                 </p>
               </div>
               <span className="mt-5 inline-flex items-center gap-1 text-xs font-bold text-neutral-950 group-hover:underline">
@@ -1181,7 +1185,7 @@ export default function Home() {
               className="group flex flex-col justify-between rounded-3xl border border-slate-200 bg-white p-6 transition-all hover:border-neutral-900 hover:shadow-md"
             >
               <div>
-                <p className="text-xs font-bold uppercase tracking-widest text-neutral-600">Curriculum</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-neutral-600">Learn</p>
                 <h3 className={`${H} mt-1 text-lg text-neutral-950 group-hover:text-neutral-700`}>
                   Interactive Learning Hub
                 </h3>
@@ -1199,7 +1203,7 @@ export default function Home() {
               className="group flex flex-col justify-between rounded-3xl border border-slate-200 bg-white p-6 transition-all hover:border-neutral-900 hover:shadow-md"
             >
               <div>
-                <p className="text-xs font-bold uppercase tracking-widest text-neutral-600">Utilities</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-neutral-600">Tools</p>
                 <h3 className={`${H} mt-1 text-lg text-neutral-950 group-hover:text-neutral-700`}>
                   Free SEO Tools Suite
                 </h3>
