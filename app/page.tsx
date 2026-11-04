@@ -20,6 +20,8 @@
 // proof components or lib/pricing — never typed here.
 
 import type { Metadata } from "next";
+import GuideMagnet from "@/components/GuideMagnet";
+import { ECOMMERCE_PLAYBOOK_GUIDE, GBP_CHECKLIST_GUIDE, LAW_CHECKLIST_GUIDE } from "@/lib/guides";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -579,6 +581,22 @@ export default function Home() {
               Tell me your goal <ArrowRight className="h-4 w-4" aria-hidden />
             </a>
           </p>
+        </div>
+      </section>
+
+      {/* FREE STRATEGIES — the three playbooks, free for an email. */}
+      <section className="border-y border-slate-200 bg-slate-50 px-4 py-20 sm:px-6 lg:py-24">
+        <div className="mx-auto max-w-6xl">
+          <Heading
+            eyebrow="Free SEO strategies"
+            title="Download a free SEO strategy for your business"
+            sub="The same playbooks I use with clients, free for now. Pick yours, add your email, and it opens straight away."
+          />
+          <div className="grid gap-5 lg:grid-cols-3">
+            <GuideMagnet guide={GBP_CHECKLIST_GUIDE} source="homepage-strategies" eyebrow="For local businesses" />
+            <GuideMagnet guide={LAW_CHECKLIST_GUIDE} source="homepage-strategies" eyebrow="For law firms" />
+            <GuideMagnet guide={ECOMMERCE_PLAYBOOK_GUIDE} source="homepage-strategies" eyebrow="For online stores" />
+          </div>
         </div>
       </section>
 
