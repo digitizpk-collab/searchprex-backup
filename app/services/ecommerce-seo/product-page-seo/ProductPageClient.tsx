@@ -329,7 +329,7 @@ export default function ProductPageClient() {
       {/* TOPIC BLOG TEASER */}
       <ServiceBlogTeaser topic="ecommerce" />
 
-      <FaqBand title="Product page SEO questions, answered">
+      <FaqBand title="Frequently Asked Questions">
         <FaqList faqs={[...CAPSULES, ...FAQS]} name="product-page-seo-faq" />
       </FaqBand>
 

@@ -542,7 +542,7 @@ export default function TechnicalSEOClient() {
       <ServiceBlogTeaser topic="technical" />
 
       {/* FAQ — page.tsx builds the FAQPage schema from the same arrays */}
-      <FaqBand title="USA Technical SEO, Indexing & AI Crawler questions, answered">
+      <FaqBand title="Frequently Asked Questions">
         <FaqList faqs={[...CAPSULES, ...FAQS]} name="technical-seo-faq" />
       </FaqBand>
 

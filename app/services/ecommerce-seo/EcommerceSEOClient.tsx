@@ -576,7 +576,7 @@ export default function EcommerceSEOClient({ linkedinUrl, guide: _guide }: { lin
       <ServiceBlogTeaser topic="ecommerce" />
 
       {/* FAQ — page.tsx builds the FAQPage schema from the same arrays */}
-      <FaqBand title="USA Ecommerce SEO, AEO & GEO questions, answered">
+      <FaqBand title="Frequently Asked Questions">
         <FaqList faqs={[...CAPSULES, ...FAQS]} name="ecommerce-seo-faq" />
       </FaqBand>
 

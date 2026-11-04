@@ -274,7 +274,7 @@ export default function SuspendedClient() {
       {/* TOPIC BLOG TEASER */}
       <ServiceBlogTeaser topic="local" />
 
-      <FaqBand title="Suspended profile questions, answered">
+      <FaqBand title="Frequently Asked Questions">
         <FaqList faqs={[...CAPSULES, ...FAQS]} name="gbp-suspended-faq" />
       </FaqBand>
 

@@ -225,8 +225,7 @@ export default function LawGbpClient() {
                 <Link
                   key={p.slug}
                   href={`/services/law-firm-seo/${p.slug}`}
-                  className="rounded-full border px-4 py-2 text-sm font-bold text-white transition hover:bg-white/10"
-                  style={{ borderColor: "rgba(185,179,245,0.45)" }}
+                  className="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-neutral-900 transition hover:border-neutral-900 hover:bg-slate-50"
                 >
                   {p.name} SEO
                 </Link>
@@ -335,7 +334,7 @@ export default function LawGbpClient() {
       {/* TOPIC BLOG TEASER */}
       <ServiceBlogTeaser topic="law-firm" />
 
-      <FaqBand title="Law firm Google Business Profile questions, answered">
+      <FaqBand title="Frequently Asked Questions">
         <FaqList faqs={[...CAPSULES, ...FAQS]} name="law-firm-gbp-faq" />
       </FaqBand>
 

@@ -386,7 +386,7 @@ export default function IndustryClient({ slug, guide: _guide }: { slug: string; 
       {/* TOPIC BLOG TEASER */}
       <ServiceBlogTeaser topic="ecommerce" />
 
-      <FaqBand title={`${industry.name} SEO questions, answered`}>
+      <FaqBand title="Frequently Asked Questions">
         <FaqList faqs={[...industry.capsules, ...industry.faqs]} name={`ecommerce-seo-${industry.slug}-faq`} />
       </FaqBand>
 

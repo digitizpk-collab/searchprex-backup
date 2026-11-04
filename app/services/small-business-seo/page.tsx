@@ -294,7 +294,7 @@ export default function SmallBusinessSeoPage() {
       {/* FAQ */}
       <section className="border-t border-slate-200 bg-slate-50 px-4 py-16 sm:px-6">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-center text-3xl font-black tracking-tight sm:text-4xl">Small business SEO questions</h2>
+          <h2 className="text-center text-3xl font-black tracking-tight sm:text-4xl">Frequently Asked Questions</h2>
           <div className="mt-8 space-y-3">
             {FAQS.map((f) => (
               <details key={f.q} className="group rounded-2xl border border-slate-200 bg-white p-5">

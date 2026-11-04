@@ -360,7 +360,7 @@ export default function LawFirmSEOClient({ guide: _guide }: { guide: Guide }) {
       <section id="faqs" className="bg-white py-16 sm:py-24 font-sans">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-center text-3xl font-black leading-tight tracking-tight text-neutral-950 sm:text-4xl">
-            Law firm SEO FAQs
+            Frequently Asked Questions
           </h2>
           <div className="mt-10">
             <FaqList faqs={[...CAPSULES, ...FAQS]} name="law-firm-seo-faq" />

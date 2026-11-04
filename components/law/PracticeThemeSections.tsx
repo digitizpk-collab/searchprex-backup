@@ -108,7 +108,7 @@ export function PracticeLongTails({ theme, name }: { theme: PracticeTheme; name:
       <div className="mx-auto max-w-5xl">
         <h2 className="text-center text-3xl font-black tracking-tight text-neutral-950 sm:text-4xl">The {name.toLowerCase()} searches we target</h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-[15px] leading-relaxed text-slate-600">
-          Beyond <strong>{theme.focusKeyword}</strong>, these are the specific searches that bring the right clients, and the page that answers each one.
+          Beyond the main search, these are the specific searches that bring the right clients, and the page that answers each one.
         </p>
         <ul className="mt-8 divide-y divide-slate-100 rounded-3xl border border-slate-200 bg-white">
           {theme.longTails.map((l) => (
@@ -133,7 +133,7 @@ export function PracticeFounderSpotlight({ theme, slug }: { theme: PracticeTheme
   return (
     <section className="bg-neutral-950 px-4 py-20 text-white sm:px-6">
       <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-        <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-3xl border border-white/10">
+        <div className="relative mx-auto w-full max-w-[280px] overflow-hidden rounded-3xl border border-white/10 sm:max-w-sm lg:max-w-md">
           <div className="relative aspect-[4/5]">
             <Image src="/images/mubashar-sharif.jpg" alt="Mubashar Sharif, founder of SearchPrex and SEO expert for law firms" fill sizes="(max-width: 1024px) 90vw, 440px" className="object-cover" />
           </div>

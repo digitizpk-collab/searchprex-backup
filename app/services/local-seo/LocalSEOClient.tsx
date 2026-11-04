@@ -571,7 +571,7 @@ export default function LocalSEOClient({ guide: _guide }: { guide: Guide }) {
       <ServiceBlogTeaser topic="local" />
 
       {/* FAQ — page.tsx builds the FAQPage schema from the same arrays */}
-      <FaqBand title="USA Local SEO, Map Pack & AI Overview questions, answered">
+      <FaqBand title="Frequently Asked Questions">
         <FaqList faqs={[...CAPSULES, ...FAQS]} name="local-seo-faq" />
       </FaqBand>
 

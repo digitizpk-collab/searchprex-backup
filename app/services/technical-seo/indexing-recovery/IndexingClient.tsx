@@ -319,7 +319,7 @@ export default function IndexingClient() {
       {/* TOPIC BLOG TEASER */}
       <ServiceBlogTeaser topic="technical" />
 
-      <FaqBand title="Indexing questions, answered">
+      <FaqBand title="Frequently Asked Questions">
         <FaqList faqs={[...CAPSULES, ...FAQS]} name="indexing-recovery-faq" />
       </FaqBand>
 

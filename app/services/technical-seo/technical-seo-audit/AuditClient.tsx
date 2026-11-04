@@ -322,7 +322,7 @@ export default function AuditClient() {
       {/* TOPIC BLOG TEASER */}
       <ServiceBlogTeaser topic="technical" />
 
-      <FaqBand title="Technical SEO audit questions, answered">
+      <FaqBand title="Frequently Asked Questions">
         <FaqList faqs={[...CAPSULES, ...FAQS]} name="technical-seo-audit-faq" />
       </FaqBand>
 

@@ -33,7 +33,7 @@ export const PRACTICE_THEMES: Record<string, PracticeTheme> = {
     secondaryKeyword: "SEO for divorce lawyers",
     metaTitle: "Family Law SEO for Divorce & Custody Lawyers | From $1,200",
     metaDescription: "Family law SEO for divorce and custody firms: county pages, a strong Business Profile and private, privacy-safe tracking. Report every Monday, 7-day trial.",
-    gap: "Most family law SEO guides skip privacy. People searching for a divorce lawyer often hide it from a partner, so every page, form and tracking tag has to respect that.",
+    gap: "Most agency guides skip privacy. People searching for a divorce lawyer often hide it from a partner, so every page, form and tracking tag has to respect that.",
     images: [
       { src: U("1544027993-37dbfe43562a"), alt: "Two hands reaching toward each other between tall concrete walls", caption: "Most people research divorce quietly, often late at night, before they tell anyone." },
       { src: U("1511895426328-dc8714191300"), alt: "A large family holding hands on a beach at sunset", caption: "What they want is a calm next step for their children and their family." },

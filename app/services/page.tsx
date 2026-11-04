@@ -698,7 +698,7 @@ export default function ServicesPage() {
       />
 
       <Section width="reading">
-        <SectionHeading variant="center" eyebrow="FAQ" title="SEO services questions, answered" />
+        <SectionHeading variant="center" eyebrow="FAQ" title="Frequently Asked Questions" />
         <FaqList faqs={faqs} name="services-faq" />
       </Section>
 

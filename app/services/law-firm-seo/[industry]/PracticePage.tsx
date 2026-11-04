@@ -117,7 +117,7 @@ function FamilyLawIncluded() {
   ];
   return (
     <Band id="included">
-      <BandIntro eyebrow="Family law SEO services" title="What does family law SEO include?" lead="A practical plan for divorce and custody firms combines useful matter pages, local profile work, private tracking and a weekly review. It is built around your practice, your counties and how much your attorneys can review." />
+      <BandIntro eyebrow="What you get" title="What does family law SEO include?" lead="A practical plan for divorce and custody firms combines useful matter pages, local profile work, private tracking and a weekly review. It is built around your practice, your counties and how much your attorneys can review." />
       <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {items.map((item, i) => <article key={item.title} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><p className="text-xs font-black tracking-[0.14em] text-slate-400">0{i + 1}</p><h3 className="mt-3 text-lg font-black text-slate-950">{item.title}</h3><p className="mt-2 text-sm leading-relaxed text-slate-600">{item.body}</p></article>)}
       </div>
@@ -184,7 +184,7 @@ export default function PracticePage({ page }: { page: IndustryPage }) {
       />
 
       <SpokeEssentials
-        keyword={theme ? theme.focusKeyword.charAt(0).toUpperCase() + theme.focusKeyword.slice(1) : `${page.name} SEO`}
+        keyword="Our plan"
         answer={`builds the practice-area and county pages, Business Profile and reviews that bring ${page.name.toLowerCase()} enquiries, within bar advertising rules. From ${page.priceRange.min.toLocaleString("en-US")} a month, one firm per city, done by the founder.`}
       />
 
@@ -481,7 +481,7 @@ export default function PracticePage({ page }: { page: IndustryPage }) {
       </Band>
 
       {page.slug !== "family-law" ? <ServiceBlogTeaser topic="law-firm" /> : null}
-      <FaqBand title={`${page.name} SEO questions, answered`}>
+      <FaqBand title="Frequently Asked Questions">
         <FaqList faqs={[...page.capsules, ...page.faqs]} name={`law-firm-seo-${page.slug}-faq`} />
       </FaqBand>
 
