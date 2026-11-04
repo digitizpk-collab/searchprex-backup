@@ -19,17 +19,20 @@ export type MarqueeState = {
 
 function Card({ s, hidden }: { s: MarqueeState; hidden?: boolean }) {
   return (
-    <div className="relative h-80 w-64 shrink-0 overflow-hidden rounded-3xl sm:w-72" aria-hidden={hidden || undefined}>
-      <Image src={s.img} alt={hidden ? "" : s.alt} fill sizes="288px" className="object-cover" />
-      <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/90 via-neutral-950/35 to-transparent" />
-      <div className="absolute inset-x-0 bottom-0 p-5 text-white">
+    <div className="relative flex h-80 w-60 shrink-0 flex-col overflow-hidden rounded-3xl bg-neutral-950 sm:w-72" aria-hidden={hidden || undefined}>
+      {/* Photo on top, text on a solid panel below, so the state name stays
+          readable whatever is in the picture. */}
+      <div className="relative min-h-0 flex-1">
+        <Image src={s.img} alt={hidden ? "" : s.alt} fill sizes="(max-width: 640px) 240px, 288px" className="object-cover" />
+      </div>
+      <div className="p-5 text-white">
         {(() => {
           const name = s.hubHref ? (
             <Link href={s.hubHref} tabIndex={hidden ? -1 : undefined} className="hover:underline">{s.name}</Link>
           ) : s.name;
-          return hidden ? <p className="text-2xl font-black">{name}</p> : <h3 className="text-2xl font-black">{name}</h3>;
+          return hidden ? <p className="text-xl font-black sm:text-2xl">{name}</p> : <h3 className="text-xl font-black sm:text-2xl">{name}</h3>;
         })()}
-        <p className="mt-2 flex flex-wrap gap-x-2 gap-y-1 text-sm text-white/85">
+        <p className="mt-1.5 flex flex-wrap gap-x-3 gap-y-1 text-sm text-white/80">
           {s.cities.map((c) => (
             <Link key={c.href} href={c.href} tabIndex={hidden ? -1 : undefined} className="hover:text-white hover:underline">{c.name}</Link>
           ))}

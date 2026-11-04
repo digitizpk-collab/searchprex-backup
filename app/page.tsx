@@ -603,8 +603,7 @@ export default function Home() {
                 href={p.href}
                 className="group rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:border-emerald-300/60 hover:bg-white/10"
               >
-                <p.icon className="h-6 w-6 text-emerald-300" aria-hidden />
-                <h3 className={`${H} mt-4 text-lg text-white`}>{p.q}</h3>
+                <h3 className={`${H} text-lg text-white`}>{p.q}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-white/70">{p.a}</p>
                 <span className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-emerald-300">
                   Read the fix <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" aria-hidden />
