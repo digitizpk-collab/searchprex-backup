@@ -342,6 +342,14 @@ const AI_PROOF = [
   { client: "Remit Choice", tag: "International · Fintech", line: "Named in the AI Overview for a money transfer search.", href: "/case-studies/fintech/remit-choice" },
 ];
 
+const PACKAGE_STEPS = [
+  { when: "Within 24 hours", t: "Free SEO audit", d: "Your site and your top competitors, checked by me. You see what is holding you back." },
+  { when: "Within 3 days", t: "Free SEO strategy", d: "A plan built on your real goal: which pages, which searches, which fixes first." },
+  { when: "7 days", t: "Free SEO trial", d: "I start on the work, free, so you can judge it before you pay anything." },
+  { when: "Then", t: "Your custom package", d: "Priced for your goal and budget, month to month, with a report every Monday." },
+];
+const SEO_TOOLS = ["Google Search Console", "Google Analytics 4", "Semrush", "Screaming Frog", "Lighthouse", "Local Falcon", "BrightLocal", "NicheSEO Pro"];
+
 const INDUSTRY_GROUPS = [
   { label: "Law firms", links: [
     { name: "Personal injury", href: "/services/law-firm-seo/personal-injury" },
@@ -535,6 +543,42 @@ export default function Home() {
               Let me take the stress off you <ArrowRight className="h-4 w-4" aria-hidden />
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* CUSTOM PACKAGE — the offer path, step by step, and the tools behind it. */}
+      <section className="px-4 py-20 sm:px-6 lg:py-24">
+        <div className="mx-auto max-w-6xl">
+          <Heading
+            eyebrow="Your goal, your package"
+            title="Tell me what you want. I'll build an SEO package around your real goal."
+            sub="More calls, more cases, more online sales: every plan starts from your goal and your budget, not a fixed bundle. Affordable SEO services in the USA, with the first steps free."
+          />
+          <ol className="grid gap-4 md:grid-cols-4">
+            {PACKAGE_STEPS.map((p, i) => (
+              <li key={p.t} className="rounded-3xl border border-slate-200 bg-white p-6">
+                <p className="text-sm font-black text-emerald-700">Step {i + 1} · {p.when}</p>
+                <h3 className={`${H} mt-2 text-lg text-neutral-950`}>{p.t}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-600">{p.d}</p>
+              </li>
+            ))}
+          </ol>
+          <div className="mt-10 rounded-3xl bg-slate-50 p-6 sm:p-8">
+            <p className="text-center text-sm font-bold uppercase tracking-[0.14em] text-slate-500">The tools behind every strategy</p>
+            <ul className="mt-5 flex flex-wrap justify-center gap-2">
+              {SEO_TOOLS.map((t) => (
+                <li key={t} className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-neutral-900">{t}</li>
+              ))}
+            </ul>
+            <p className="mx-auto mt-5 max-w-2xl text-center text-sm leading-relaxed text-slate-600">
+              Each strategy is shaped by how your customers think and search: local homeowners, online shoppers or people looking for a lawyer. Message us any time on chat or WhatsApp.
+            </p>
+          </div>
+          <p className="mt-8 text-center">
+            <a href="#get-started" className="inline-flex items-center gap-2 rounded-full bg-neutral-950 px-6 py-3.5 text-sm font-bold text-white hover:bg-neutral-800">
+              Tell me your goal <ArrowRight className="h-4 w-4" aria-hidden />
+            </a>
+          </p>
         </div>
       </section>
 
