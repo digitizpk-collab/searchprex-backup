@@ -12,6 +12,7 @@
 // first audit free.
 
 import { Search } from "lucide-react";
+import { SpokeEssentials, SpokeWhyAndAi } from "@/components/service-wireframe/SpokeSections";
 
 import ArticleLeadMagnet from "@/components/ArticleLeadMagnet";
 import ServiceBlogTeaser from "@/components/ServiceBlogTeaser";
@@ -129,6 +130,8 @@ export default function AuditClient() {
       />
 
       <TrustStrap />
+
+      <SpokeEssentials keyword={"A technical SEO audit"} answer={"checks crawling, indexing, Core Web Vitals, schema and site structure, then gives you a ranked fix list your developer can start on Monday. The tear-down is free within 24 hours; fixes are quoted per project."} />
 
       {/* SIGNS */}
       <Band>
@@ -295,6 +298,12 @@ export default function AuditClient() {
           />
         </div>
       </Band>
+
+      <SpokeWhyAndAi
+        service={"a technical SEO audit"}
+        rows={[["What you get","A ranked fix list","A tool export","Often a 200-page PDF"],["Who audits","The founder","You and a tool","Often a junior"],["Fixes","Done by the same person, if you want","Your developer","Often extra"],["Proof","MSO: ≈3,000 → 11,549 indexed pages","n/a","Often none"],["Cost to start","Free 24-hour tear-down","Tool fees","Often paid up front"]]}
+        aiLine={"AI crawlers like GPTBot need pages they can reach and read. The audit checks robots rules, rendering and schema, so AI tools can cite your pages too."}
+      />
 
       {/* RELATED */}
       <Band dark>

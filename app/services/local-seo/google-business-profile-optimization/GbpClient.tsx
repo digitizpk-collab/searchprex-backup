@@ -14,6 +14,7 @@
 // price and the guarantee.
 
 import Link from "next/link";
+import { SpokeEssentials, SpokeWhyAndAi } from "@/components/service-wireframe/SpokeSections";
 import { MapPin } from "lucide-react";
 
 import ArticleLeadMagnet from "@/components/ArticleLeadMagnet";
@@ -143,6 +144,8 @@ export default function GbpClient() {
       />
 
       <TrustStrap />
+
+      <SpokeEssentials keyword={"Google Business Profile optimization"} answer={"covers categories, services, photos, reviews, posts and watching for unwanted edits, so Maps views turn into calls. It is part of the local SEO plan, from $800 a month, month to month."} />
 
       {/* THE PROBLEM */}
       <Band>
@@ -339,6 +342,12 @@ export default function GbpClient() {
           />
         </div>
       </Band>
+
+      <SpokeWhyAndAi
+        service={"Google Business Profile optimization"}
+        rows={[["Who does it","The founder","You, when you find time","Often a junior"],["Unwanted edits","Watched and fixed","Often missed","Varies"],["Competitor check","Your profile vs the top 3 above you","Guesswork","Often skipped"],["Contract","Month to month","None","Often 6 to 12 months"],["Reporting","Calls and views, every Monday","n/a","Often rankings only"]]}
+        aiLine={"Google AI Overviews and ChatGPT lean on your Business Profile, reviews and website when they recommend a local business. Doll's Cleaning was named first in an AI Overview."}
+      />
 
       {/* RELATED */}
       <Band dark>

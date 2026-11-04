@@ -6,6 +6,7 @@
 // layout. Copy and FAQ live in ./data.ts.
 
 import Link from "next/link";
+import { SpokeEssentials, SpokeWhyAndAi } from "@/components/service-wireframe/SpokeSections";
 import { ShoppingCart } from "lucide-react";
 
 import ArticleLeadMagnet from "@/components/ArticleLeadMagnet";
@@ -122,6 +123,8 @@ export default function ProductPageClient() {
       />
 
       <TrustStrap />
+
+      <SpokeEssentials keyword={"Product page SEO"} answer={"gives every product a unique description, a clear title, Product schema, good images and links from its category, at catalog scale, so Google indexes it and shoppers buy. It is part of the ecommerce plan, from $1,500 a month."} />
 
       {/* THE PROBLEM */}
       <Band>
@@ -302,6 +305,12 @@ export default function ProductPageClient() {
           />
         </div>
       </Band>
+
+      <SpokeWhyAndAi
+        service={"product page SEO"}
+        rows={[["Who writes the pages","The founder, batch by batch","You, one product at a time","Often a template or AI dump"],["Thousands of products","Written in batches, checked","Rarely finished","Often thin copy"],["Proof","SMK Store: +227% net sales","n/a","Often logos only"],["Contract","Month to month","None","Often 6 to 12 months"],["Reporting","Every Monday","n/a","Often monthly"]]}
+        aiLine={"AI shopping answers pull product names, prices, ratings and specs from well-marked product pages. Product schema and clear copy give them something accurate to quote."}
+      />
 
       {/* RELATED */}
       <Band dark>

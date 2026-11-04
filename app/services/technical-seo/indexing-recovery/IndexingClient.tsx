@@ -6,6 +6,7 @@
 // ServiceBands layout. Copy and FAQ live in ./data.ts.
 
 import { Search } from "lucide-react";
+import { SpokeEssentials, SpokeWhyAndAi } from "@/components/service-wireframe/SpokeSections";
 
 import ArticleLeadMagnet from "@/components/ArticleLeadMagnet";
 import ServiceBlogTeaser from "@/components/ServiceBlogTeaser";
@@ -126,6 +127,8 @@ export default function IndexingClient() {
       />
 
       <TrustStrap />
+
+      <SpokeEssentials keyword={"Indexing recovery"} answer={"finds why Google won't index your pages, shown as \"Crawled\" or \"Discovered – currently not indexed\" in Search Console, and fixes the cause at the template, then proves it in Search Console. The diagnosis is free within 24 hours."} />
 
       {/* STATUSES */}
       <Band id="statuses">
@@ -292,6 +295,12 @@ export default function IndexingClient() {
           />
         </div>
       </Band>
+
+      <SpokeWhyAndAi
+        service={"indexing recovery"}
+        rows={[["Approach","Fix the cause at the template","Request indexing page by page","Often submit and wait"],["Who does it","The founder","You","Often a junior"],["Proof","MSO: ≈3,000 → 11,549 indexed pages","n/a","Often none"],["Shortcuts","None: no Indexing API tricks","Tempting","Some use them"],["Cost to start","Free 24-hour diagnosis","Free","Often paid up front"]]}
+        aiLine={"A page Google won't index can't appear in AI Overviews either. Getting pages indexed is the first step to being quoted by AI search."}
+      />
 
       {/* RELATED */}
       <Band dark>

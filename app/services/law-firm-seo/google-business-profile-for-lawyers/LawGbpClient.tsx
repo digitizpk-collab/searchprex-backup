@@ -10,6 +10,7 @@
 // city pages — not clients.
 
 import Link from "next/link";
+import { SpokeEssentials, SpokeWhyAndAi } from "@/components/service-wireframe/SpokeSections";
 import { Scale } from "lucide-react";
 
 import ArticleLeadMagnet from "@/components/ArticleLeadMagnet";
@@ -128,6 +129,8 @@ export default function LawGbpClient() {
       />
 
       <TrustStrap />
+
+      <SpokeEssentials keyword={"Google Business Profile for lawyers"} answer={"means the right practice categories, a listing for each attorney where Google allows it, reviews gathered within bar advertising rules, and protection from suspension. It sits inside the law firm plan, from $1,200 a month, one firm per city."} />
 
       {/* THE PROBLEM */}
       <Band>
@@ -308,6 +311,12 @@ export default function LawGbpClient() {
           />
         </div>
       </Band>
+
+      <SpokeWhyAndAi
+        service={"Google Business Profile for lawyers"}
+        rows={[["Who does it","The founder","You, between cases","Often a junior"],["Bar rules on reviews","Checked before anything goes live","Easy to get wrong","Often templated"],["Suspension risk","Profile checked against Google rules first","Found out after a suspension","Varies"],["Contract","Month to month","None","Often 6 to 12 months"],["Your competitors","One firm per city","n/a","May work for a rival firm"]]}
+        aiLine={"When someone asks an AI tool for a lawyer near them, it leans on Business Profile details, reviews and clear practice pages. I keep all three consistent so your firm can be named."}
+      />
 
       {/* RELATED */}
       <Band dark>

@@ -11,6 +11,7 @@
 // instead of a number, and with Google's own rules.
 
 import { AlertTriangle } from "lucide-react";
+import { SpokeEssentials, SpokeWhyAndAi } from "@/components/service-wireframe/SpokeSections";
 
 import ArticleLeadMagnet from "@/components/ArticleLeadMagnet";
 import ServiceBlogTeaser from "@/components/ServiceBlogTeaser";
@@ -92,6 +93,8 @@ export default function SuspendedClient() {
       </Band>
 
       <TrustStrap />
+
+      <SpokeEssentials keyword={"A suspended Google Business Profile"} answer={"usually has a specific cause. I find the real violation, fix the profile, match your evidence to it and appeal once. The review is free within 24 hours. No one can guarantee a reinstatement, and I won't pretend to."} />
 
       {/* CAUSES */}
       <Band id="causes">
@@ -250,6 +253,12 @@ export default function SuspendedClient() {
           />
         </div>
       </Band>
+
+      <SpokeWhyAndAi
+        service={"Business Profile reinstatement"}
+        rows={[["First step","Find the real cause","Appeal straight away","Often a generic appeal"],["Evidence","Matched to the violation","Whatever you have","Often a template"],["Repeat appeals","One careful appeal","Several, often rejected","Varies"],["Honesty","No guarantee promised","n/a","Some promise reinstatement"],["Cost to start","Free 24-hour review","Free","Often paid up front"]]}
+        aiLine={"While a profile is suspended, AI answers and Maps can't show it. Once it's back, a clean profile and consistent details help AI tools name you again."}
+      />
 
       {/* RELATED */}
       <Band dark>
