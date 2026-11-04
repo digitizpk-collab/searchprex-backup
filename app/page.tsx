@@ -662,10 +662,10 @@ export default function Home() {
             title="Download a free SEO strategy for your business"
             sub="The same playbooks I use with clients, free for now. Pick yours, add your email, and it opens straight away."
           />
-          <div className="grid gap-5 lg:grid-cols-3">
-            <GuideMagnet guide={GBP_CHECKLIST_GUIDE} source="homepage-strategies" eyebrow="For local businesses" />
-            <GuideMagnet guide={LAW_CHECKLIST_GUIDE} source="homepage-strategies" eyebrow="For law firms" />
-            <GuideMagnet guide={ECOMMERCE_PLAYBOOK_GUIDE} source="homepage-strategies" eyebrow="For online stores" />
+          <div className="grid gap-5 md:grid-cols-3">
+            <GuideMagnet variant="card" guide={GBP_CHECKLIST_GUIDE} source="homepage-strategies" eyebrow="Local businesses" stat="23 checks" headline="Google Business Profile checklist" />
+            <GuideMagnet variant="card" guide={LAW_CHECKLIST_GUIDE} source="homepage-strategies" eyebrow="Law firms" stat="40 checks" headline="Law firm SEO audit checklist" />
+            <GuideMagnet variant="card" guide={ECOMMERCE_PLAYBOOK_GUIDE} source="homepage-strategies" eyebrow="Online stores" stat="8 steps" headline="35,000-product indexing playbook" />
           </div>
         </div>
       </section>

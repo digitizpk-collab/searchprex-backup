@@ -29,12 +29,18 @@ export default function GuideMagnet({
   source,
   eyebrow = "Free download",
   headline,
+  variant = "wide",
+  stat,
 }: {
   guide: Guide;
   /** Page identifier, e.g. "law-firm-seo/personal-injury". */
   source: string;
   eyebrow?: string;
   headline?: string;
+  /** "card": stacked layout for a grid of three; "wide": text and form side by side. */
+  variant?: "wide" | "card";
+  /** Card only: one bold figure for the top of the card, e.g. "23 checks". */
+  stat?: string;
 }) {
   const [email, setEmail] = useState("");
   const [website, setWebsite] = useState("");
@@ -76,6 +82,63 @@ export default function GuideMagnet({
     } catch {
       setStatus("fallback");
     }
+  }
+
+  if (variant === "card") {
+    return (
+      <div className="not-prose flex h-full flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:shadow-lg">
+        <div className="bg-neutral-950 px-6 py-6 text-white">
+          <div className="flex items-center justify-between">
+            <p className="text-xs font-bold uppercase tracking-[0.14em] text-emerald-300">{eyebrow}</p>
+            <span className="rounded-md bg-white/10 px-2 py-0.5 text-[11px] font-black">PDF</span>
+          </div>
+          {stat ? <p className="mt-4 text-4xl font-black tracking-tight">{stat}</p> : null}
+          <p className="mt-2 text-lg font-black leading-snug">{headline ?? guide.title}</p>
+        </div>
+        <div className="flex flex-1 flex-col p-6">
+          <ul className="flex-1 space-y-2">
+            {guide.points.slice(0, 2).map((p) => (
+              <li key={p} className="flex items-start gap-2 text-sm leading-relaxed text-slate-700">
+                <CheckCircle className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-600" aria-hidden />
+                {p}
+              </li>
+            ))}
+          </ul>
+          {status === "done" || status === "fallback" ? (
+            <a
+              href={guide.href}
+              download={guide.fileName}
+              className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-emerald-600 px-6 py-3.5 text-sm font-bold text-white hover:bg-emerald-700"
+            >
+              <Download className="h-4 w-4" aria-hidden /> Download the PDF
+            </a>
+          ) : (
+            <form onSubmit={submit} className="mt-6 flex flex-col gap-2.5">
+              <label className="sr-only" htmlFor={`guide-${guide.id}-${source}-email`}>Your email</label>
+              <input
+                id={`guide-${guide.id}-${source}-email`}
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Your email"
+                autoComplete="email"
+                className="w-full rounded-full border border-slate-300 bg-white px-5 py-3 text-sm text-neutral-950 outline-none focus:border-neutral-900 focus:ring-2 focus:ring-neutral-900/20"
+              />
+              <button
+                type="submit"
+                disabled={status === "sending"}
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-neutral-950 px-6 py-3.5 text-sm font-bold text-white transition-colors hover:bg-neutral-800 disabled:opacity-70"
+              >
+                {status === "sending" ? "Preparing…" : "Get the free PDF"} {status === "sending" ? null : <Download className="h-4 w-4" aria-hidden />}
+              </button>
+              <p className={`text-center text-xs ${hint ? "font-semibold text-[#b8123a]" : "text-slate-500"}`} role={hint ? "alert" : undefined}>
+                {hint || "Instant download. No newsletter."}
+              </p>
+            </form>
+          )}
+        </div>
+      </div>
+    );
   }
 
   return (
