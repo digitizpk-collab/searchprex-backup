@@ -243,7 +243,7 @@ export default function LawFirmSEOClient({ guide: _guide }: { guide: Guide }) {
       {/* 6. INTERACTIVE GEMINI AI DIAGNOSTIC BAR + CARE REPRESENTATIVE + LIGHT-BLUE/WHITE 7-DAY FREE TRIAL FORM */}
       <ServiceAiDiagnosisAndTrial
         serviceType="law-firm-seo"
-        heading="We Know You Are Stressed by Rising Ad Costs & Quiet Phones — Diagnose Your Law Firm SEO Here"
+        heading="Paying for clicks that never call? Diagnose your law firm SEO"
         answerCapsule="Our interactive USA Law Firm SEO diagnostic engine evaluates why your practice is missing Google Map Pack calls and AI Overview citations across Family Law, Criminal Defense, and Personal Injury searches, then prescribes a verifiable fix you can test with our 7-Day Free Trial."
         placeholder="e.g. Our Family Law or Criminal Defense firm in Cleveland or Sugar Land isn't in the Map Pack Top 3..."
         painChips={[

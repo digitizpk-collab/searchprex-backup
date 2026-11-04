@@ -15,6 +15,7 @@
 //     case study reports it.
 
 import { trackLead } from "@/lib/track";
+import { SpokeEssentials, SpokeWhyAndAi } from "@/components/service-wireframe/SpokeSections";
 import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
@@ -68,7 +69,6 @@ import {
 import ServiceTaglineReliefBar from "@/components/service-wireframe/ServiceTaglineReliefBar";
 import ServiceQuickAnswerBox from "@/components/service-wireframe/ServiceQuickAnswerBox";
 import ServiceAiDiagnosisAndTrial from "@/components/service-wireframe/ServiceAiDiagnosisAndTrial";
-import ServiceExhaustedByAgencies from "@/components/service-wireframe/ServiceExhaustedByAgencies";
 import ServiceSemanticClusterAndLinks from "@/components/service-wireframe/ServiceSemanticClusterAndLinks";
 
 import { CAPSULES, FAQS } from "./data";
@@ -342,7 +342,7 @@ export default function EcommerceSEOClient({ linkedinUrl, guide: _guide }: { lin
       {/* INTERACTIVE GEMINI AI DIAGNOSTIC BAR + "TELL US WHAT YOU ARE LOOKING FOR" + 7-DAY FREE TRIAL FORM */}
       <ServiceAiDiagnosisAndTrial
         serviceType="ecommerce-seo"
-        heading="We Know You Are Frustrated by Unindexed Products & Rising Ad CAC — Diagnose Your Store Here"
+        heading="Products not indexed? Diagnose your store"
         answerCapsule="Enter your Shopify or WooCommerce challenge below to see why Google Search Console flags your products as 'Crawled – currently not indexed' and how our template-level engineering unlocks organic US revenue—backed by our 7-Day Free Trial."
         placeholder="e.g. 8,000 WooCommerce or Shopify products stuck in 'Crawled - currently not indexed'..."
         painChips={[
@@ -418,9 +418,10 @@ export default function EcommerceSEOClient({ linkedinUrl, guide: _guide }: { lin
       />
 
       {/* EXHAUSTED BY PREVIOUS SEO AGENCIES? SEE HOW WE ARE DIFFERENT */}
-      <ServiceExhaustedByAgencies
-        serviceLabel="USA Ecommerce SEO"
-        answerCapsule="Store owners leave traditional ecommerce SEO agencies because of partial monthly PDFs, junior account managers who never touch Shopify Liquid or WooCommerce templates, and meaningless Domain Authority (DA/PA) link packages. SearchPrex delivers direct founder execution (5+ years mastery), weekly Monday GSC & net-sales reviews, and a 7-Day Free Trial."
+      <SpokeWhyAndAi
+        service={"ecommerce SEO services"}
+        rows={[["Who does the work","The founder","You, after hours","Often a junior"],["Large catalogs","Fixed at the template, thousands at once","One product at a time","Often thin AI copy"],["Contract","Month to month","None","Often 6 to 12 months"],["Reporting","Every Monday, in plain English","n/a","Often monthly, rankings only"],["Risk","7-day free trial, 90-day money-back","Your time","Rarely a guarantee"]]}
+        aiLine=""
       />
 
       {/* THE PROBLEM */}

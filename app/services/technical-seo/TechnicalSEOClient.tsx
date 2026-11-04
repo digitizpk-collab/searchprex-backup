@@ -15,6 +15,7 @@
 //     +83% US organic clicks by July, as the case study reports them.
 
 import Link from "next/link";
+import { SpokeEssentials, SpokeWhyAndAi } from "@/components/service-wireframe/SpokeSections";
 import { Search, Settings, FileText, Wrench } from "lucide-react";
 
 import ArticleLeadMagnet from "@/components/ArticleLeadMagnet";
@@ -44,7 +45,6 @@ import {
 import ServiceTaglineReliefBar from "@/components/service-wireframe/ServiceTaglineReliefBar";
 import ServiceQuickAnswerBox from "@/components/service-wireframe/ServiceQuickAnswerBox";
 import ServiceAiDiagnosisAndTrial from "@/components/service-wireframe/ServiceAiDiagnosisAndTrial";
-import ServiceExhaustedByAgencies from "@/components/service-wireframe/ServiceExhaustedByAgencies";
 import ServiceSemanticClusterAndLinks from "@/components/service-wireframe/ServiceSemanticClusterAndLinks";
 
 import { CAPSULES, FAQS, SYMPTOMS } from "./data";
@@ -289,7 +289,7 @@ export default function TechnicalSEOClient() {
       {/* INTERACTIVE GEMINI AI DIAGNOSTIC BAR + "TELL US WHAT YOU ARE LOOKING FOR" + 7-DAY FREE TRIAL FORM */}
       <ServiceAiDiagnosisAndTrial
         serviceType="technical-seo"
-        heading="We Know You Are Stressed by Traffic Drops & Unindexed URLs — Diagnose Your Technical SEO Here"
+        heading="Traffic dropped? Diagnose your technical SEO"
         answerCapsule="Enter your Google Search Console exclusion status, Core Web Vitals failure, or post-migration drop below, and our diagnostic engine will pinpoint the template bottleneck and how we fix it—starting with our 7-Day Free Trial."
         placeholder="e.g. 12,000 URLs stuck in 'Crawled - currently not indexed' or poor mobile INP after redesign..."
         painChips={[
@@ -371,9 +371,10 @@ export default function TechnicalSEOClient() {
       />
 
       {/* EXHAUSTED BY PREVIOUS SEO AGENCIES? SEE HOW WE ARE DIFFERENT */}
-      <ServiceExhaustedByAgencies
-        serviceLabel="USA Technical SEO"
-        answerCapsule="Engineering and marketing leaders leave traditional SEO agencies because they send automated Screaming Frog PDFs, push meaningless Domain Authority (DA/PA) backlink metrics, and never touch actual code or templates. SearchPrex delivers direct founder execution (5+ years mastery), weekly Monday Search Console indexing reports, and a 7-Day Free Trial."
+      <SpokeWhyAndAi
+        service={"technical SEO services"}
+        rows={[["Who does the work","The founder","You, after hours","Often a junior"],["What you get","Fixes shipped, not just a report","A tool export","Often a long PDF"],["Contract","Month to month","None","Often 6 to 12 months"],["Reporting","Every Monday, in plain English","n/a","Often monthly, rankings only"],["Risk","7-day free trial, 90-day money-back","Your time","Rarely a guarantee"]]}
+        aiLine=""
       />
 
       {/* THE PROBLEM */}

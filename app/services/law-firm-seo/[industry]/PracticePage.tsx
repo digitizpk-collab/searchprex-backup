@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SpokeEssentials, SpokeWhyAndAi } from "@/components/service-wireframe/SpokeSections";
 import Image from "next/image";
 import { ArrowRight, MapPin } from "lucide-react";
 
@@ -177,6 +178,11 @@ export default function PracticePage({ page }: { page: IndustryPage }) {
             />
           </div>
         }
+      />
+
+      <SpokeEssentials
+        keyword={`${page.name} SEO`}
+        answer={`builds the practice-area and county pages, Business Profile and reviews that bring ${page.name.toLowerCase()} enquiries, within bar advertising rules. From $${page.priceRange.min.toLocaleString("en-US")} a month, one firm per city, done by the founder.`}
       />
 
       <section id="quick-answer" className="border-b border-slate-200 bg-white px-4 py-8 sm:px-6 lg:px-8">

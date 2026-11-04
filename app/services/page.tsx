@@ -5,6 +5,7 @@
 // founder E-E-A-T strip, repeated single CTA, floating Reality Check.
 
 import type { Metadata } from "next";
+import { SpokeEssentials, SpokeWhyAndAi } from "@/components/service-wireframe/SpokeSections";
 import Link from "next/link";
 import {
   ArrowRight, Scale, ShoppingCart, MapPin, Wrench, Sparkles, Store,
@@ -408,6 +409,11 @@ export default function ServicesPage() {
       </section>
 
       {/* ── 5 CORE SERVICES ── */}
+      <SpokeEssentials
+        keyword="SEO services in the USA"
+        answer="from SearchPrex cover law firm, local, small business, ecommerce, technical and AI search SEO, each with a published price, from $800 a month, and proof from clients' own dashboards. Tired of paying for clicks? Start with a free audit."
+      />
+
       <Section>
         <SectionHeading
           variant="center"
@@ -678,6 +684,13 @@ export default function ServicesPage() {
       </Section>
 
       {/* ── FAQ ── */}
+      <SpokeWhyAndAi
+        service="SEO services"
+        title="SEO services USA: SearchPrex vs the alternatives"
+        rows={[["Who does the work","The founder","You, after hours","Often a junior"],["Price","Published on every service","Your time","Usually after a sales call"],["Proof","Clients' own dashboards","n/a","Often logos and claims"],["Contract","Month to month","None","Often 6 to 12 months"],["Risk","7-day free trial, 90-day money-back","Your time","Rarely a guarantee"]]}
+        aiLine="Every plan includes the work that gets you named in ChatGPT, Gemini and Google AI Overviews: direct answers, schema and consistent business details."
+      />
+
       <Section width="reading">
         <SectionHeading variant="center" eyebrow="FAQ" title="SEO services questions, answered" />
         <FaqList faqs={faqs} name="services-faq" />

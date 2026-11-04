@@ -9,6 +9,7 @@
 // timeline is promised.
 
 import Link from "next/link";
+import { SpokeEssentials, SpokeWhyAndAi } from "@/components/service-wireframe/SpokeSections";
 import { ArrowRight, MapPin, FileText, ShieldCheck } from "lucide-react";
 
 import ArticleLeadMagnet from "@/components/ArticleLeadMagnet";
@@ -47,7 +48,6 @@ import {
 import ServiceTaglineReliefBar from "@/components/service-wireframe/ServiceTaglineReliefBar";
 import ServiceQuickAnswerBox from "@/components/service-wireframe/ServiceQuickAnswerBox";
 import ServiceAiDiagnosisAndTrial from "@/components/service-wireframe/ServiceAiDiagnosisAndTrial";
-import ServiceExhaustedByAgencies from "@/components/service-wireframe/ServiceExhaustedByAgencies";
 import ServiceSemanticClusterAndLinks from "@/components/service-wireframe/ServiceSemanticClusterAndLinks";
 
 import { CAPSULES, FAQS, PROBLEMS } from "./data";
@@ -295,7 +295,7 @@ export default function LocalSEOClient({ guide: _guide }: { guide: Guide }) {
       {/* INTERACTIVE GEMINI AI DIAGNOSTIC BAR + "TELL US WHAT YOU ARE LOOKING FOR" + 7-DAY FREE TRIAL FORM */}
       <ServiceAiDiagnosisAndTrial
         serviceType="local-seo"
-        heading="We Know You Are Tired of Quiet Phones & Idle Crews — Diagnose Your Local SEO Here"
+        heading="Quiet phones? Diagnose your local SEO problem"
         answerCapsule="Describe your Google Business Profile or local ranking problem below to discover why competitors are taking your 'near me' phone calls and how we move your business into the Map Pack Top 3 and AI Overviews—starting with a 7-Day Free Trial."
         placeholder="e.g. Our local service business is buried at #8 in Google Maps and not showing in AI Overviews..."
         painChips={[
@@ -379,9 +379,10 @@ export default function LocalSEOClient({ guide: _guide }: { guide: Guide }) {
       />
 
       {/* EXHAUSTED BY PREVIOUS SEO AGENCIES? SEE HOW WE ARE DIFFERENT */}
-      <ServiceExhaustedByAgencies
-        serviceLabel="USA Local SEO"
-        answerCapsule="Local business owners leave traditional SEO agencies because of automated citation software, partial monthly PDFs that hide call counts, and useless Domain Authority (DA/PA) backlink metrics. SearchPrex gives you direct access to Founder Mubashar Sharif (5+ years of hands-on SEO), weekly Monday call and Map Pack reports, and a 7-Day Free Trial."
+      <SpokeWhyAndAi
+        service={"local SEO services"}
+        rows={[["Who does the work","The founder","You, after hours","Often a junior"],["Map Pack work","Profile, reviews and city pages together","Profile only, when you find time","Often citations software"],["Contract","Month to month","None","Often 6 to 12 months"],["Reporting","Every Monday, in plain English","n/a","Often monthly, rankings only"],["Risk","7-day free trial, 90-day money-back","Your time","Rarely a guarantee"]]}
+        aiLine=""
       />
 
       {/* THE PROBLEM */}

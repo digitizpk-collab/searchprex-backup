@@ -40,6 +40,7 @@ export function SpokeWhyAndAi({
 }: {
   service: string;
   rows: CompareRow[];
+  /** Empty string skips the AI block on pages that already have one. */
   aiLine: string;
   /** Overrides the comparison heading where the page already has a "why choose" section. */
   title?: string;
@@ -79,6 +80,7 @@ export function SpokeWhyAndAi({
         </div>
       </section>
 
+      {aiLine ? (
       <section className="px-4 pb-16 sm:px-6">
         <div className="mx-auto flex max-w-5xl flex-col gap-5 rounded-3xl bg-neutral-950 p-7 text-white sm:p-9 md:flex-row md:items-center md:justify-between">
           <div className="max-w-2xl">
@@ -91,6 +93,7 @@ export function SpokeWhyAndAi({
           </Link>
         </div>
       </section>
+      ) : null}
     </>
   );
 }
