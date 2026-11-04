@@ -73,7 +73,7 @@ const TOPIC_CONFIG: Record<
     eyebrow: "TECHNICAL SEO & INDEXING ARCHITECTURE",
     defaultTitle: "Related Technical SEO Guides",
     defaultSubtitle:
-      "Field-tested engineering guides on crawl budget optimization, faceted navigation, Core Web Vitals, and indexing recovery.",
+      "Practical guides on crawling, filter pages, page speed and getting pages indexed.",
     slugs: [
       "fix-faceted-navigation-ecommerce-seo",
       "crawl-budget-optimization-guide",

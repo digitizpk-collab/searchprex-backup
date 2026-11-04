@@ -40,7 +40,7 @@ export const FAQS: QA[] = [
   },
   {
     q: "My site has 10,000+ pages — can you handle large-scale indexing recovery?",
-    a: "Yes. Large catalogues and high-page-count sites are where most of our work has been done: Michigan Outdoor Sports went from about 3,000 to 11,549 indexed pages (+285%) between May and July 2026, and Remit Choice generated 113K organic clicks and 5.76M impressions in 2024—both verified in Google Search Console.",
+    a: "Yes. Most of my work is on big sites. Michigan Outdoor Sports went from about 3,000 to 11,549 indexed pages between May and July 2026. Remit Choice got 113K clicks and 5.76M impressions in 2024. Both are shown in Search Console.",
   },
   {
     q: "What are Core Web Vitals (INP, LCP, CLS) and how do you fix them?",
@@ -77,7 +77,7 @@ export const SYMPTOMS: Array<{ status: string; means: string; costs: string }> =
   },
   {
     status: "Duplicate without user-selected canonical",
-    means: "Several URLs render the same content and none declares which is the authoritative canonical.",
+    means: "Several URLs show the same page, and none tells Google which one is the main one.",
     costs: "When you do not set a canonical, Google picks one, often the wrong URL, and your ranking strength is split across copies.",
   },
   {

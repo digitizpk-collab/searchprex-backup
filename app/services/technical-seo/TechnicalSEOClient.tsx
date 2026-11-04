@@ -79,8 +79,8 @@ const crawlChecks = [
 
 const process = [
   { when: "Days 1–7", title: "7-Day Free Trial & Tear-Down", body: "Your URL in, a written diagnosis within 24 hours — the three technical bottlenecks costing you the most traffic, plus 7 days of initial fixes." },
-  { when: "Week 1", title: "Full crawl & GSC diff", body: "Every URL crawled, sitemaps diffed against Search Console, every issue mapped and ranked by revenue impact." },
-  { when: "Weeks 2–4", title: "Template fixes live", body: "Indexation blocks, canonicals, redirect chains and template-level INP/LCP speed fixes first; then schema and internal links." },
+  { when: "Week 1", title: "Full crawl & GSC diff", body: "Every URL crawled, your sitemap checked against Search Console, and every issue ranked by what it costs you." },
+  { when: "Weeks 2–4", title: "Template fixes live", body: "Indexing blocks, canonicals, redirects and slow templates are fixed first. Then schema and internal links." },
   { when: "Every Monday", title: "Full Stat & Crawl Report", body: "No partial reporting: indexed pages, crawl stats, Core Web Vitals and clicks — what moved, what did not, and what is next." },
 ];
 
@@ -107,7 +107,7 @@ const TECHNICAL_SEMANTIC_CLUSTERS = [
   {
     tabName: "Indexing Recovery & Crawl Budget",
     coreEntities:
-      "Crawled – Currently Not Indexed · Discovered – Currently Not Indexed · Sitemap-to-GSC Diffing · Parameter & Facet Disallow Rules · Orphan Page Internal Linking",
+      "Pages not indexed · Sitemap checks · Filter URLs blocked · Orphan pages linked",
     lowHangingKeywords: [
       "fix crawled currently not indexed google search console",
       "discovered currently not indexed ecommerce & wordpress fix",
