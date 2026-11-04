@@ -249,41 +249,6 @@ export default function EcommerceSEOClient({ linkedinUrl, guide: _guide }: { lin
         }
       />
 
-      {/* 2026 CONFIRMED ECOMMERCE TELEMETRY & PLAYBOOK BADGE — ZERO EMOJIS */}
-      <section className="border-b bg-emerald-50/70 px-4 py-4 sm:px-6 lg:px-8" style={{ borderColor: "#a7f3d0" }}>
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-600 text-white">
-              <Zap className="h-4 w-4" aria-hidden />
-            </span>
-            <div>
-              <p className="text-xs font-black uppercase tracking-wider text-emerald-950">
-                Confirmed 2026 USA Ecommerce Telemetry
-              </p>
-              <p className="text-sm font-semibold text-emerald-900">
-                Google Merchant Center Return Policy Schema Mandate &amp; Multi-SKU Crawl Trap Elimination
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-wrap items-center gap-3">
-            <Link
-              href="/resources/news/google-merchant-center-sitewide-return-policy-schema-mandate"
-              className="inline-flex items-center gap-1.5 rounded-full border border-emerald-300 bg-white px-3.5 py-1.5 text-xs font-bold text-emerald-950 shadow-sm transition-all hover:border-emerald-500"
-            >
-              <FileText className="h-3.5 w-3.5" aria-hidden />
-              <span>Read News Breakdown &rarr;</span>
-            </Link>
-            <Link
-              href="/resources/solutions"
-              className="inline-flex items-center gap-1.5 rounded-full bg-emerald-900 px-3.5 py-1.5 text-xs font-bold text-white shadow-sm transition-all hover:bg-neutral-900"
-            >
-              <Wrench className="h-3.5 w-3.5" aria-hidden />
-              <span>View Faceted Nav Playbook &rarr;</span>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* AI OVERVIEW / GEO / CHATGPT QUICK ANSWER BOX */}
       <ServiceQuickAnswerBox
         eyebrow="Answer Engine (AEO) & Generative Engine Optimization (GEO) Summary"
@@ -339,91 +304,6 @@ export default function EcommerceSEOClient({ linkedinUrl, guide: _guide }: { lin
         complianceBadge="Shopify · WooCommerce · Custom Catalogs"
       />
 
-      {/* INTERACTIVE GEMINI AI DIAGNOSTIC BAR + "TELL US WHAT YOU ARE LOOKING FOR" + 7-DAY FREE TRIAL FORM */}
-      <ServiceAiDiagnosisAndTrial
-        serviceType="ecommerce-seo"
-        heading="Products not indexed? Diagnose your store"
-        answerCapsule="Describe your Shopify or WooCommerce problem below. You will see why Google is not indexing your products and how I fix it, starting with a 7-day free trial."
-        placeholder="e.g. 8,000 WooCommerce or Shopify products stuck in 'Crawled - currently not indexed'..."
-        painChips={[
-          "Thousands of SKUs stuck in 'Crawled - currently not indexed'",
-          "Faceted filters (?color=, ?size=, ?sort=) wasting crawl budget",
-          "Duplicate Shopify /collections/*/products/* URLs splitting rank",
-          "Missing MerchantReturnPolicy & Product price/review snippets",
-          "Thin manufacturer product copy across 5,000+ SKUs",
-          "Burned by a previous agency selling useless DA/PA backlinks",
-        ]}
-        lookingForOptions={[
-          "WooCommerce High-SKU Indexing Recovery",
-          "Shopify Collection & Canonical SEO",
-          "Programmatic Product Page Content at Scale",
-          "Category Buying Guides & Commercial Rankings",
-          "MerchantReturnPolicy & Rich Product Schema",
-          "Core Web Vitals (INP / LCP) Speed Optimization",
-          "AI Overviews & ChatGPT Shopping Citations",
-          "7-Day Free Trial & Full Store Tear-Down",
-        ]}
-        initialItems={[
-          {
-            n: "1. Mass 'Crawled – Currently Not Indexed' Catalog Bloat",
-            why: "Google crawls thousands of copied product pages and filter combinations, decides they are low value, and drops your best products from search.",
-            fix: "I check daily which pages Google has indexed, block useless filter URLs, and improve product and category templates in batches. That is how Michigan Sports and Outdoor went from about 3,000 to 11,549 indexed pages.",
-            tool: "Sitemap-to-GSC Diffing + Canonical Rules",
-          },
-          {
-            n: "2. Missing MerchantReturnPolicy & AI Shopping Schema",
-            why: "Without product schema, your listings lose price and stock details in Google, and ChatGPT Shopping skips them.",
-            fix: "I add schema markup to your templates, tied to your live stock, prices, shipping and returns.",
-            tool: "Schema Generator + Merchant Center Sync",
-          },
-          {
-            n: "3. Thin Collection Grids Failing Commercial Buyers",
-            why: "A collection page with only a product grid and an H1 gives Google and AI Overviews zero topical context to rank for high-volume commercial queries.",
-            fix: "I turn your best category pages into buying guides, with short answers, tables and buyer questions.",
-            tool: "Category Buying Guides + Internal Link Graph",
-          },
-        ]}
-        initialRecommendation="Do not keep paying for Google Shopping clicks on products your organic catalog should already rank for. Test our Sitemap-to-GSC indexing recovery with a 7-Day Free Trial."
-        trialDeliverablesLeft={[
-          "Complete Sitemap-to-Search-Console indexing diff across your product & category URLs",
-          "Root-cause breakdown of 'Crawled – currently not indexed' & faceted crawl waste",
-          "Shopify Liquid or WooCommerce template canonical & internal-link audit",
-          "Live Product, Offer & MerchantReturnPolicy JSON-LD prepared for your top template",
-        ]}
-        trialDeliverablesRight={[
-          "45–60 word AI Overview buying-guide capsule drafted for your #1 revenue collection",
-          "Core Web Vitals (INP & LCP) bottleneck diagnosis on mobile product templates",
-          "Direct 1-on-1 roadmap review with Founder Mubashar Sharif (5+ years mastery)",
-          "Full Monday Search Console & revenue baseline report — yours to keep",
-        ]}
-      />
-
-      <ServiceProofStrip
-        id="proof"
-        title="An outdoor store's US clicks, before and after the rebuild"
-        moreHref="/case-studies/ecommerce/michigan-outdoor-sports"
-        moreLabel="Read the Michigan Sports & Outdoor case study"
-        shots={[
-          {
-            src: "/images/clicks-comaprsion-after-run-mso-autopilot.PNG",
-            alt: "Google Search Console comparison for michigansportsoutdoor.com, United States only: 322 clicks from 13 June to 29 August 2026 against 224 clicks from 1 April to 12 June 2026.",
-            width: 1366,
-            height: 520,
-            figure: "224 → 322",
-            figureLabel: "US organic clicks",
-            delta: "+44%",
-            caption: "Michigan Sports & Outdoor — Search Console, United States only: 1 Apr–12 Jun vs 13 Jun–29 Aug 2026.",
-          },
-        ]}
-      />
-
-      {/* EXHAUSTED BY PREVIOUS SEO AGENCIES? SEE HOW WE ARE DIFFERENT */}
-      <SpokeWhyAndAi
-        service={"ecommerce SEO services"}
-        rows={[["Who does the work","The founder","You, after hours","Often a junior"],["Large catalogs","Fixed at the template, thousands at once","One product at a time","Often thin AI copy"],["Contract","Month to month","None","Often 6 to 12 months"],["Reporting","Every Monday, in plain English","n/a","Often monthly, rankings only"],["Risk","7-day free trial, 90-day money-back","Your time","Rarely a guarantee"]]}
-        aiLine=""
-      />
-
       {/* THE PROBLEM */}
       <Band>
         <BandIntro
@@ -450,6 +330,32 @@ export default function EcommerceSEOClient({ linkedinUrl, guide: _guide }: { lin
           ))}
         </RuleGrid>
       </Band>
+
+      <ServiceProofStrip
+        id="proof"
+        title="An outdoor store's US clicks, before and after the rebuild"
+        moreHref="/case-studies/ecommerce/michigan-outdoor-sports"
+        moreLabel="Read the Michigan Sports & Outdoor case study"
+        shots={[
+          {
+            src: "/images/clicks-comaprsion-after-run-mso-autopilot.PNG",
+            alt: "Google Search Console comparison for michigansportsoutdoor.com, United States only: 322 clicks from 13 June to 29 August 2026 against 224 clicks from 1 April to 12 June 2026.",
+            width: 1366,
+            height: 520,
+            figure: "224 → 322",
+            figureLabel: "US organic clicks",
+            delta: "+44%",
+            caption: "Michigan Sports & Outdoor — Search Console, United States only: 1 Apr–12 Jun vs 13 Jun–29 Aug 2026.",
+          },
+        ]}
+      />
+
+      {/* EXHAUSTED BY PREVIOUS SEO AGENCIES? SEE HOW WE ARE DIFFERENT */}
+      <SpokeWhyAndAi
+        service={"ecommerce SEO services"}
+        rows={[["Who does the work","The founder","You, after hours","Often a junior"],["Large catalogs","Fixed at the template, thousands at once","One product at a time","Often thin AI copy"],["Contract","Month to month","None","Often 6 to 12 months"],["Reporting","Every Monday, in plain English","n/a","Often monthly, rankings only"],["Risk","7-day free trial, 90-day money-back","Your time","Rarely a guarantee"]]}
+        aiLine=""
+      />
 
       {/* WHAT'S INCLUDED */}
       <Band dark>

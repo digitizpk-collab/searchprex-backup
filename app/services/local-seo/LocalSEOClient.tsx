@@ -199,44 +199,6 @@ export default function LocalSEOClient({ guide: _guide }: { guide: Guide }) {
         }
       />
 
-      {/* 2026 CONFIRMED LOCAL SEARCH & GBP TELEMETRY BADGE — ZERO EMOJIS */}
-      <section className="border-b bg-emerald-50/70 px-4 py-4 sm:px-6 lg:px-8" style={{ borderColor: "#a7f3d0" }}>
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-600 text-white">
-              <MapPin className="h-4 w-4" aria-hidden />
-            </span>
-            <div>
-              <p className="text-xs font-black uppercase tracking-wider text-emerald-950">
-                Confirmed 2026 USA Local Search Telemetry
-              </p>
-              <p className="text-sm font-semibold text-emerald-900">
-                US Regional Local Pack Proximity Volatility &amp; Google Business Profile Video Verification Re-Audits
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-wrap items-center gap-3">
-            <Link
-              href="/resources/news/us-regional-seo-map-pack-proximity-compression-metro-volatility"
-              className="inline-flex items-center gap-1.5 rounded-full border border-emerald-300 bg-white px-3.5 py-1.5 text-xs font-bold text-emerald-950 shadow-sm transition-all hover:border-emerald-500"
-            >
-              <FileText className="h-3.5 w-3.5" aria-hidden />
-              <span>Read Proximity Volatility Study &rarr;</span>
-            </Link>
-            <Link
-              href="/services/local-seo/google-business-profile-suspended"
-              className="inline-flex items-center gap-1.5 rounded-full bg-emerald-950 px-3.5 py-1.5 text-xs font-bold text-white shadow-sm transition-all hover:bg-neutral-900"
-            >
-              <ShieldCheck className="h-3.5 w-3.5" aria-hidden />
-              <span>GBP Suspension Recovery Guide &rarr;</span>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* HALLOWEEN 2026 — hides itself after 31 October (lib/halloween-offer.ts) */}
-      <HalloweenOfferCard className="py-10" />
-
       {/* AI OVERVIEW / GEO / CHATGPT QUICK ANSWER BOX */}
       <ServiceQuickAnswerBox
         eyebrow="Answer Engine (AEO) & Generative Engine Optimization (GEO) Summary"
@@ -292,64 +254,37 @@ export default function LocalSEOClient({ guide: _guide }: { guide: Guide }) {
         complianceBadge="Google Maps 3-Pack & AI Overview Standard"
       />
 
-      {/* INTERACTIVE GEMINI AI DIAGNOSTIC BAR + "TELL US WHAT YOU ARE LOOKING FOR" + 7-DAY FREE TRIAL FORM */}
-      <ServiceAiDiagnosisAndTrial
-        serviceType="local-seo"
-        heading="Quiet phones? Diagnose your local SEO problem"
-        answerCapsule="Describe your Business Profile or ranking problem below. You will see why competitors get your calls, and how I move you into the Map Pack top 3. It starts with a 7-day free trial."
-        placeholder="e.g. Our local service business is buried at #8 in Google Maps and not showing in AI Overviews..."
-        painChips={[
-          "Buried outside the Google Maps Top 3 for 'near me' searches",
-          "Google Business Profile suspended or stuck in video verification",
-          "Not ranking in surrounding affluent suburbs outside our main city",
-          "Competitors getting cited in Google AI Overviews & ChatGPT",
-          "Inconsistent NAP citations & slow customer review velocity",
-          "Burned by a previous agency sending partial reports & vanity metrics",
-        ]}
-        lookingForOptions={[
-          "Google Business Profile & Map Pack Top 3",
-          "GBP Suspension Recovery & Reinstatement",
-          "Suburb & Service-Area Page Expansion",
-          "Local AI Overviews & ChatGPT Citations (AEO/GEO)",
-          "Review Velocity & US Citation Cleanup",
-          "Home Services SEO (HVAC, Roofing, Cleaning, Garage)",
-          "Law Firm & Medical Clinic Local SEO",
-          "7-Day Free Trial & Full Local Tear-Down",
-        ]}
-        initialItems={[
-          {
-            n: "1. GBP Primary Category & Proximity Compression",
-            why: "Your Business Profile has a vague category, no listed services, or different details on Apple Maps, Yelp and BBB. That drops you below the top 3.",
-            fix: "I copy what works for the top 3 businesses in your city: their categories. Then I fix your listings so every detail matches, and help you get steady, real reviews.",
-            tool: "GBP Category Audit + Citation Sync",
-          },
-          {
-            n: "2. Missing Suburb & Service-Area Landing Pages",
-            why: "One homepage cannot rank in 10 nearby towns, because Google shows the closest businesses first.",
-            fix: "I build a separate page for each town, with real jobs, directions and schema markup.",
-            tool: "Suburb Silo Architecture + LocalBusiness JSON-LD",
-          },
-          {
-            n: "3. Invisible in Local AI Overviews & ChatGPT",
-            why: "When homeowners ask AI engines 'who offers free estimates in [city]' or 'best contractor near me', thin pages without structured Answer Capsules are skipped.",
-            fix: "I add a short, direct answer under each question on your pages, plus schema markup. This is how our Michigan and California clients got named in AI Overviews.",
-            tool: "AEO Answer Capsules + Schema Generator",
-          },
-        ]}
-        initialRecommendation="Your crews and phones should not sit idle while competitors with worse service rank above you in Google Maps. Test our local Map Pack engineering with a 7-Day Free Trial."
-        trialDeliverablesLeft={[
-          "Complete 23-point Google Business Profile audit benchmarked against your Top 3 local competitors",
-          "Primary & secondary GBP category + service-tree optimization blueprint",
-          "US directory NAP consistency check (Google, Apple Maps, Bing, Yelp, BBB)",
-          "Live LocalBusiness, ServiceArea & FAQPage JSON-LD prepared for your site",
-        ]}
-        trialDeliverablesRight={[
-          "45–60 word AI Overview Answer Capsule written for your primary service page",
-          "Suburb & service-area keyword gap roadmap for your surrounding US cities",
-          "Direct 1-on-1 strategy session with Founder Mubashar Sharif",
-          "Full Monday Search Console & local rank baseline report — yours to keep",
-        ]}
-      />
+      {/* THE PROBLEM */}
+      <Band>
+        <BandIntro
+          center={false}
+          eyebrow="The problem"
+          title="Why US local businesses lose the Google Map Pack"
+          lead="Four things you can check yourself in the next ten minutes. If any of them fails, it is costing you phone calls today."
+        />
+        <RealityBanner
+          src="/images/audiences/local-contractor-garage.webp"
+          alt="Local contractor and garage repair business owner waiting for incoming phone calls with idle service vans"
+          tag="The Reality · Silent Dispatch"
+          quote="“Three service vans parked inside and payroll running, while the map pack sends calls to competitors.”"
+          body="When someone's garage door breaks, heating stops, or roof leaks, they call one of the top three in the local pack. If you're buried at #7, your crews stay idle while worse competitors stay booked out."
+        />
+        <RuleGrid columns={2}>
+          {PROBLEMS.map((p) => (
+            <RuleItem
+              key={p.title}
+              icon={<MapPin className="h-5 w-5 flex-shrink-0 text-[#b8123a]" aria-hidden />}
+              title={p.title}
+              body={
+                <>
+                  <p className="text-[#374151]"><strong>Check:</strong> {p.check}</p>
+                  <p className="mt-1">{p.costs}</p>
+                </>
+              }
+            />
+          ))}
+        </RuleGrid>
+      </Band>
 
       <ServiceProofStrip
         id="proof"
@@ -384,38 +319,6 @@ export default function LocalSEOClient({ guide: _guide }: { guide: Guide }) {
         rows={[["Who does the work","The founder","You, after hours","Often a junior"],["Map Pack work","Profile, reviews and city pages together","Profile only, when you find time","Often citations software"],["Contract","Month to month","None","Often 6 to 12 months"],["Reporting","Every Monday, in plain English","n/a","Often monthly, rankings only"],["Risk","7-day free trial, 90-day money-back","Your time","Rarely a guarantee"]]}
         aiLine=""
       />
-
-      {/* THE PROBLEM */}
-      <Band>
-        <BandIntro
-          center={false}
-          eyebrow="The problem"
-          title="Why US local businesses lose the Google Map Pack"
-          lead="Four things you can check yourself in the next ten minutes. If any of them fails, it is costing you phone calls today."
-        />
-        <RealityBanner
-          src="/images/audiences/local-contractor-garage.webp"
-          alt="Local contractor and garage repair business owner waiting for incoming phone calls with idle service vans"
-          tag="The Reality · Silent Dispatch"
-          quote="“Three service vans parked inside and payroll running, while the map pack sends calls to competitors.”"
-          body="When someone's garage door breaks, heating stops, or roof leaks, they call one of the top three in the local pack. If you're buried at #7, your crews stay idle while worse competitors stay booked out."
-        />
-        <RuleGrid columns={2}>
-          {PROBLEMS.map((p) => (
-            <RuleItem
-              key={p.title}
-              icon={<MapPin className="h-5 w-5 flex-shrink-0 text-[#b8123a]" aria-hidden />}
-              title={p.title}
-              body={
-                <>
-                  <p className="text-[#374151]"><strong>Check:</strong> {p.check}</p>
-                  <p className="mt-1">{p.costs}</p>
-                </>
-              }
-            />
-          ))}
-        </RuleGrid>
-      </Band>
 
       {/* WHAT'S INCLUDED */}
       <Band dark>

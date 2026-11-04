@@ -196,41 +196,6 @@ export default function TechnicalSEOClient() {
         }
       />
 
-      {/* 2026 CONFIRMED TECHNICAL SEO & INDEXING TELEMETRY BADGE — ZERO EMOJIS */}
-      <section className="border-b bg-cyan-50/70 px-4 py-4 sm:px-6 lg:px-8" style={{ borderColor: "#a5f3fc" }}>
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-cyan-600 text-white">
-              <Settings className="h-4 w-4" aria-hidden />
-            </span>
-            <div>
-              <p className="text-xs font-black uppercase tracking-wider text-cyan-950">
-                Confirmed 2026 USA Technical SEO &amp; Indexing Telemetry
-              </p>
-              <p className="text-sm font-semibold text-cyan-900">
-                Googlebot Rendering Budget Optimization, Speculative Rules API &amp; INP Deferral Architecture
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-wrap items-center gap-3">
-            <Link
-              href="/resources/news/technical-seo-news-2026"
-              className="inline-flex items-center gap-1.5 rounded-full border border-cyan-300 bg-white px-3.5 py-1.5 text-xs font-bold text-cyan-950 shadow-sm transition-all hover:border-cyan-500"
-            >
-              <FileText className="h-3.5 w-3.5" aria-hidden />
-              <span>Read INP &amp; Speculation Study &rarr;</span>
-            </Link>
-            <Link
-              href="/resources/solutions"
-              className="inline-flex items-center gap-1.5 rounded-full bg-cyan-950 px-3.5 py-1.5 text-xs font-bold text-white shadow-sm transition-all hover:bg-neutral-900"
-            >
-              <Wrench className="h-3.5 w-3.5" aria-hidden />
-              <span>View GSC Indexing Fixes &rarr;</span>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* AI OVERVIEW / GEO / CHATGPT QUICK ANSWER BOX */}
       <ServiceQuickAnswerBox
         eyebrow="Answer Engine (AEO) & Generative Engine Optimization (GEO) Summary"
@@ -286,64 +251,37 @@ export default function TechnicalSEOClient() {
         complianceBadge="GSC Indexing · Core Web Vitals · AI Crawlers"
       />
 
-      {/* INTERACTIVE GEMINI AI DIAGNOSTIC BAR + "TELL US WHAT YOU ARE LOOKING FOR" + 7-DAY FREE TRIAL FORM */}
-      <ServiceAiDiagnosisAndTrial
-        serviceType="technical-seo"
-        heading="Traffic dropped? Diagnose your technical SEO"
-        answerCapsule="Describe your Search Console problem, slow pages or traffic drop below. You will see what is causing it and how I fix it, starting with a 7-day free trial."
-        placeholder="e.g. 12,000 URLs stuck in 'Crawled - currently not indexed' or poor mobile INP after redesign..."
-        painChips={[
-          "Thousands of URLs in 'Crawled - currently not indexed'",
-          "Pages stuck in 'Discovered - currently not indexed' (crawl budget)",
-          "Duplicate without user-selected canonical & parameter bloat",
-          "Failing Core Web Vitals (INP > 200ms, slow LCP, layout shift)",
-          "Traffic dropped after website redesign or platform migration",
-          "Previous agency sent a 100-page PDF audit and fixed nothing",
-        ]}
-        lookingForOptions={[
-          "Indexing Recovery ('Crawled / Discovered Not Indexed')",
-          "Crawl Budget & Faceted Parameter Cleanup",
-          "Core Web Vitals (INP, LCP, CLS) Template Speed Fix",
-          "JSON-LD Schema Graph & /llms.txt AI Crawler Setup",
-          "Website Redesign / Migration Traffic Recovery",
-          "Canonical, Redirect Chain & 404 Architecture Fix",
-          "Full Technical SEO Audit & Developer Ticket Roadmap",
-          "7-Day Free Trial & 24-Hour Technical Tear-Down",
-        ]}
-        initialItems={[
-          {
-            n: "1. 'Crawled / Discovered – Currently Not Indexed' Exclusions",
-            why: "Google wastes its time on filter URLs, duplicate sort pages and redirects, then drops the pages that make you money.",
-            fix: "I compare your sitemap with what Google has indexed, block crawl traps, fix canonicals, and make sure important pages are a few clicks from the homepage.",
-            tool: "GSC Indexing Recovery + Crawl Budget Rules",
-          },
-          {
-            n: "2. Core Web Vitals (INP > 200ms & LCP Bottlenecks)",
-            why: "Heavy scripts and jumping layouts make your pages fail Google speed tests on phones and desktops.",
-            fix: "I delay scripts that are not needed, preload the next page, and fix slow loading and layout jumps in your templates.",
-            tool: "Template-Level INP & CrUX Engineering",
-          },
-          {
-            n: "3. Broken Schema Graphs & AI Crawler Invisibility",
-            why: "Broken schema and content hidden behind JavaScript stop AI Overviews, ChatGPT and Perplexity from quoting your pages.",
-            fix: "I add connected schema markup, make pages load as plain HTML, and set up an llms.txt file.",
-            tool: "Schema Generator + llms.txt Builder",
-          },
-        ]}
-        initialRecommendation="Stop paying agencies for 100-page automated PDF reports that sit in your inbox. Let us diagnose your Search Console exclusions and ship real template fixes during your 7-Day Free Trial."
-        trialDeliverablesLeft={[
-          "Full Sitemap-to-Search-Console indexing exclusion diff ('Crawled' vs 'Discovered')",
-          "Crawl budget waste, redirect chain & canonical loop diagnostic across your templates",
-          "Core Web Vitals (INP, LCP, CLS) real-user CrUX bottleneck analysis",
-          "Live connected @graph JSON-LD schema + /llms.txt file prepared for your domain",
-        ]}
-        trialDeliverablesRight={[
-          "Prioritized developer ticket list (or direct implementation on your staging/live site)",
-          "AI crawler accessibility check (Googlebot, OAI-SearchBot, GPTBot, PerplexityBot)",
-          "Direct 1-on-1 engineering review with Founder Mubashar Sharif (5+ years mastery)",
-          "Full Monday Search Console & crawl baseline report — yours to keep",
-        ]}
-      />
+      {/* THE PROBLEM */}
+      <Band>
+        <BandIntro
+          center={false}
+          eyebrow="The problem"
+          title="The Search Console statuses that mean Google is dropping your pages"
+          lead="If you have seen one of these in your own Pages report, this is where your US organic traffic is going."
+        />
+        <RealityBanner
+          src="/images/audiences/technical-seo-indexing-crisis.webp"
+          alt="Engineering lead and technical SEO specialist analyzing sudden organic traffic drop and crawl budget alerts in Google Search Console"
+          tag="The Reality · The Indexing Cliff"
+          quote="“Traffic dropped 60% after our redesign, and Google flagged 14,000 product pages as ‘Crawled - Currently Not Indexed’.”"
+          body="You spent months on content and links. But if your canonicals loop, filters create endless duplicate URLs, or scripts slow everything down, Google gives up before it judges your pages."
+        />
+        <RuleGrid columns={2}>
+          {SYMPTOMS.map((s) => (
+            <RuleItem
+              key={s.status}
+              icon={<Search className="h-5 w-5 flex-shrink-0 text-[#b8123a]" aria-hidden />}
+              title={s.status}
+              body={
+                <>
+                  <p className="text-[#374151]">{s.means}</p>
+                  <p className="mt-1">{s.costs}</p>
+                </>
+              }
+            />
+          ))}
+        </RuleGrid>
+      </Band>
 
       <ServiceProofStrip
         id="proof"
@@ -376,38 +314,6 @@ export default function TechnicalSEOClient() {
         rows={[["Who does the work","The founder","You, after hours","Often a junior"],["What you get","Fixes shipped, not just a report","A tool export","Often a long PDF"],["Contract","Month to month","None","Often 6 to 12 months"],["Reporting","Every Monday, in plain English","n/a","Often monthly, rankings only"],["Risk","7-day free trial, 90-day money-back","Your time","Rarely a guarantee"]]}
         aiLine=""
       />
-
-      {/* THE PROBLEM */}
-      <Band>
-        <BandIntro
-          center={false}
-          eyebrow="The problem"
-          title="The Search Console statuses that mean Google is dropping your pages"
-          lead="If you have seen one of these in your own Pages report, this is where your US organic traffic is going."
-        />
-        <RealityBanner
-          src="/images/audiences/technical-seo-indexing-crisis.webp"
-          alt="Engineering lead and technical SEO specialist analyzing sudden organic traffic drop and crawl budget alerts in Google Search Console"
-          tag="The Reality · The Indexing Cliff"
-          quote="“Traffic dropped 60% after our redesign, and Google flagged 14,000 product pages as ‘Crawled - Currently Not Indexed’.”"
-          body="You spent months on content and links. But if your canonicals loop, filters create endless duplicate URLs, or scripts slow everything down, Google gives up before it judges your pages."
-        />
-        <RuleGrid columns={2}>
-          {SYMPTOMS.map((s) => (
-            <RuleItem
-              key={s.status}
-              icon={<Search className="h-5 w-5 flex-shrink-0 text-[#b8123a]" aria-hidden />}
-              title={s.status}
-              body={
-                <>
-                  <p className="text-[#374151]">{s.means}</p>
-                  <p className="mt-1">{s.costs}</p>
-                </>
-              }
-            />
-          ))}
-        </RuleGrid>
-      </Band>
 
       {/* WHAT'S INCLUDED */}
       <Band dark>
