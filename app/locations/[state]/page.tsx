@@ -31,6 +31,7 @@ import { findPracticePage, getDynamicStateHubSlugs, getLocationState, joinNames 
 import { SITE, websiteRef } from "@/lib/site-schema";
 import ArticleLeadMagnet from "@/components/ArticleLeadMagnet";
 import WhySearchPrex from "@/components/WhySearchPrex";
+import { SpokeEssentials, SpokeWhyAndAi } from "@/components/service-wireframe/SpokeSections";
 import { getStateHub, type StateHub } from "@/lib/state-hubs";
 import { caseStudies, detailUrl } from "@/app/case-studies/data";
 
@@ -144,6 +145,11 @@ export default async function StateHubPage({ params }: { params: Promise<{ state
             icon: <ArrowRight className="h-4 w-4" aria-hidden />,
           }}
           secondaryCta={{ href: "/services/law-firm-seo", label: "How law firm SEO works" }}
+        />
+
+        <SpokeEssentials
+          keyword={`Law firm SEO in ${state.name}`}
+          answer={`means practice-area and city pages that state ${state.name} law correctly, a Google Business Profile that wins the map pack, and reviews gathered within bar rules. SearchPrex covers ${cities.length} ${state.name} ${cities.length === 1 ? "city" : "cities"}, one firm per city, from $1,200 a month.`}
         />
 
         {hub ? (
@@ -288,6 +294,28 @@ export default async function StateHubPage({ params }: { params: Promise<{ state
           </CardGrid>
         </Section>
 
+        {/* ── MAP ── where the city pages are. */}
+        <Section tight>
+          <SectionHeading eyebrow="Where we work" title={`Map: law firm SEO markets in ${state.name}`} className="mb-6" />
+          <div className="overflow-hidden rounded-3xl border border-slate-200">
+            <iframe
+              title={`Map of ${state.name} showing the cities SearchPrex covers`}
+              src={`https://maps.google.com/maps?q=${encodeURIComponent(cities.map((c) => `${c.city}, ${c.stateAbbr}`).join(" | ") || state.name)}&z=6&output=embed`}
+              className="h-[360px] w-full"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+          <p className="mt-3 text-center text-sm text-slate-600">
+            {cities.map((c, i) => (
+              <span key={c.citySlug}>
+                <Link href={`/locations/${c.stateSlug}/${c.citySlug}`} className="font-semibold text-neutral-950 underline underline-offset-2">{c.city}</Link>
+                {i < cities.length - 1 ? " · " : ""}
+              </span>
+            ))}
+          </p>
+        </Section>
+
         {/* ── COURTS ── */}
         <Section tone="surface" tight>
           <SectionHeading eyebrow="Local relevance" title={`${state.name} courts our city pages reference`} className="mb-6" />
@@ -348,6 +376,19 @@ export default async function StateHubPage({ params }: { params: Promise<{ state
         ) : null}
 
         <WhySearchPrex variant="law" service={`law firm SEO in ${state.name}`} tone={clients.length > 0 ? "surface" : "white"} />
+
+        <SpokeWhyAndAi
+          service={`law firm SEO in ${state.name}`}
+          title={`${state.name} law firm SEO: SearchPrex vs the alternatives`}
+          rows={[
+            ["Who does the work", "The founder", "You, between cases", "Often a junior"],
+            [`${state.name} law on your pages`, "Checked and sourced", "Easy to get wrong", "Often generic copy"],
+            ["Your competitors", "One firm per city", "n/a", "May work for a rival firm"],
+            ["Contract", "Month to month", "None", "Often 6 to 12 months"],
+            ["Risk", "7-day free trial, 90-day money-back", "Your time", "Rarely a guarantee"],
+          ]}
+          aiLine={`People in ${state.name} now ask ChatGPT and Google's AI Overviews for a lawyer. Clear practice pages, schema and a consistent Business Profile give those tools a firm they can name.`}
+        />
 
         {hub ? (
           <Section width="reading">

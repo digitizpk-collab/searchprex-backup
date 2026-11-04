@@ -36,17 +36,20 @@ export function SpokeWhyAndAi({
   service,
   rows,
   aiLine,
+  title,
 }: {
   service: string;
   rows: CompareRow[];
   aiLine: string;
+  /** Overrides the comparison heading where the page already has a "why choose" section. */
+  title?: string;
 }) {
   return (
     <>
       <section className="px-4 py-16 sm:px-6">
         <div className="mx-auto max-w-5xl">
           <h2 className="text-center text-3xl font-black tracking-tight text-neutral-950 sm:text-4xl">
-            Why choose SearchPrex for {service}?
+            {title ?? `Why choose SearchPrex for ${service}?`}
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-center text-[15px] leading-relaxed text-slate-600">
             The founder does the work, prices are published, there&apos;s no contract, and you can try it free for 7 days.
