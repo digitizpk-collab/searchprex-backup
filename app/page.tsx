@@ -20,6 +20,7 @@
 // proof components or lib/pricing — never typed here.
 
 import type { Metadata } from "next";
+import StateMarquee from "@/components/home/StateMarquee";
 import StrategyPopup from "@/components/home/StrategyPopup";
 import StrategyRequestForm from "@/components/home/StrategyRequestForm";
 import GuideMagnet from "@/components/GuideMagnet";
@@ -345,6 +346,45 @@ const AI_PROOF = [
   { client: "HVAC Services Team", tag: "Local · Simi Valley, CA", line: "Named in the AI Overview for an AC installation search.", href: "/case-studies/hvac/local-hvac-services" },
   { client: "Remit Choice", tag: "International · Fintech", line: "Named in the AI Overview for a money transfer search.", href: "/case-studies/fintech/remit-choice" },
 ];
+
+const STATE_IMAGES: Record<string, { src: string; alt: string }> = {
+ "texas": {
+  "src": "/images/locations/texas-legal-district.webp",
+  "alt": "A legal district street in Texas"
+ },
+ "kansas": {
+  "src": "https://images.unsplash.com/photo-1700408388474-09b19b6c72ba?auto=format&fit=crop&w=600&q=70",
+  "alt": "Aerial view of the river and bridges in Wichita, Kansas"
+ },
+ "michigan": {
+  "src": "/images/locations/detroit-legal-district.webp",
+  "alt": "A legal district street in Detroit, Michigan"
+ },
+ "louisiana": {
+  "src": "/images/locations/baton-rouge-legal-district.webp",
+  "alt": "A legal district street in Baton Rouge, Louisiana"
+ },
+ "arizona": {
+  "src": "/images/locations/scottsdale-legal-district.webp",
+  "alt": "A legal district street in Scottsdale, Arizona"
+ },
+ "california": {
+  "src": "/images/locations/san-jose-legal-district.webp",
+  "alt": "A legal district street in San Jose, California"
+ },
+ "new-mexico": {
+  "src": "/images/locations/albuquerque-legal-district.webp",
+  "alt": "A legal district street in Albuquerque, New Mexico"
+ },
+ "ohio": {
+  "src": "/images/locations/cleveland-legal-district.webp",
+  "alt": "A legal district street in Cleveland, Ohio"
+ },
+ "pennsylvania": {
+  "src": "/images/locations/philadelphia-legal-district.webp",
+  "alt": "A legal district street in Philadelphia, Pennsylvania"
+ }
+};
 
 const USA_PHOTOS = [
  {
@@ -702,7 +742,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl">
           <Heading
             eyebrow="Services"
-            title="Affordable SEO Services USA: Clear Prices, No Contract"
+            title="Affordable SEO Services USA 2026"
             sub="Founder-led SEO services USA for law firms, local businesses and online stores — published monthly pricing, a free competitor audit within 24 hours and no long-term contract."
           />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -712,9 +752,6 @@ export default function Home() {
                 href={s.href}
                 className="group flex flex-col rounded-3xl border border-slate-200 bg-white p-6 transition hover:-translate-y-0.5 hover:border-neutral-900 hover:shadow-md"
               >
-                <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-800">
-                  <s.icon className="h-5 w-5" aria-hidden />
-                </span>
                 <h3 className={`${H} mt-4 text-lg text-neutral-950`}>{s.title}</h3>
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">{s.body}</p>
                 <span className="mt-4 flex items-center justify-between gap-2">
@@ -1072,31 +1109,11 @@ export default function Home() {
       <section className="border-y border-slate-200 bg-slate-50 px-4 py-16 sm:px-6">
         <div className="mx-auto max-w-6xl">
           <p className="mb-6 text-center text-sm font-bold uppercase tracking-[0.14em] text-slate-500">
-            Every state and city page
+            Every state and city we serve
           </p>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {LOCATION_STATES.map((s) => (
-              <div key={s.slug} className="rounded-2xl border border-slate-200 bg-white px-5 py-4">
-                <h3 className="text-sm font-bold text-neutral-950">
-                  {s.hubHref ? (
-                    <Link href={s.hubHref} className="hover:underline">{s.name}</Link>
-                  ) : (
-                    s.name
-                  )}
-                </h3>
-                <p className="mt-1.5 text-sm leading-relaxed">
-                  {s.cities.map((c, i) => (
-                    <span key={c.href}>
-                      <Link href={c.href} className="text-slate-600 hover:text-neutral-950 hover:underline">
-                        {c.name}
-                      </Link>
-                      {i < s.cities.length - 1 ? <span className="text-slate-300"> · </span> : null}
-                    </span>
-                  ))}
-                </p>
-              </div>
-            ))}
-          </div>
+          <StateMarquee
+            states={LOCATION_STATES.map((st) => ({ name: st.name, hubHref: st.hubHref, img: STATE_IMAGES[st.slug]?.src ?? "/images/locations/texas-legal-district.webp", alt: STATE_IMAGES[st.slug]?.alt ?? st.name, cities: st.cities.map((c) => ({ name: c.name, href: c.href })) }))}
+          />
           <p className="mt-6 text-center">
             <Link href="/locations" className="inline-flex items-center gap-1 text-sm font-bold text-neutral-900 hover:underline">
               All locations <ArrowRight className="h-4 w-4" aria-hidden />
