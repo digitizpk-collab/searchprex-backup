@@ -157,7 +157,7 @@ export default function LawFirmSEOClient({ guide: _guide }: { guide: Guide }) {
       {/* 5. UPLIFTED VERIFIED CASE STUDIES & PROOF STRIP */}
       <ServiceProofStrip
         id="proof"
-        title="Verified Local & AI Overview Case Study Results Behind Our Law Firm Method"
+        title="Results behind our law firm method"
         moreHref="/case-studies"
         moreLabel="See every verified case study"
         shots={[
@@ -195,7 +195,7 @@ export default function LawFirmSEOClient({ guide: _guide }: { guide: Guide }) {
         <div className="grid gap-12 lg:grid-cols-2 lg:items-start pt-6">
           <div>
             <Eyebrow>Transparent Pricing &amp; Exclusivity</Eyebrow>
-            <H2>Law Firm SEO Pricing ($1,200–$2,500/Mo) &amp; One-Firm-Per-City Exclusivity</H2>
+            <H2>Law firm SEO pricing: $1,200–$2,500 a month, one firm per city</H2>
             <Lead>
               You work directly with Founder Mubashar Sharif—who builds your practice-area pages, writes your LegalService schema, and manages your Google Business Profile. Every recommendation is engineered for your county court venue and caseload goals.
             </Lead>

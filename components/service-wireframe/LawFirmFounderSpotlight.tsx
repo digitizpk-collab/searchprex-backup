@@ -61,7 +61,7 @@ export default function LawFirmFounderSpotlight() {
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-neutral-950 leading-tight">
-              Engineered by Founder Mubashar Sharif — Not Junior Account Managers
+              Your SEO expert: Mubashar Sharif, not a junior
             </h2>
 
             <div className="space-y-3.5 text-sm sm:text-base text-slate-600 leading-relaxed">
