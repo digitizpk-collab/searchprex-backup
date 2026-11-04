@@ -36,6 +36,69 @@ export interface StaticNewsSpoke {
 
 export const staticNewsSpokes: StaticNewsSpoke[] = [
   {
+    "slug": "google-updates-crawled-currently-not-indexed-guidance",
+    "category": "SEO News — Technical",
+    "subcategory": "Google Search & Indexing",
+    "title": "Google Rewrites Its \"Crawled – Currently Not Indexed\" Guidance",
+    "metaTitle": "Google Updates Crawled – Currently Not Indexed Guidance",
+    "metaDescription": "Google rewrote its Crawled – currently not indexed help text on Nov 3, 2026. What changed, what it means, and what to check on important pages.",
+    "excerpt": "On November 3, 2026, Google rewrote the help text for the \"Crawled – currently not indexed\" status. It now says the status is common and not always a problem, and points to URL Inspection for important pages.",
+    "readTime": "4-minute read",
+    "date": "2026-11-04",
+    "dateModified": "2026-11-04T12:00:00.000Z",
+    "author": {
+      "name": "Mubashar Sharif",
+      "role": "Founder & SEO Strategist",
+      "bio": "Founder & SEO Strategist at SearchPrex, covering indexing, technical SEO and AI search.",
+      "linkedIn": "https://www.linkedin.com/in/mubashar-sharif-senior-seo-analyst/"
+    },
+    "featured": true,
+    "heroImage": "/images/audiences/technical-seo-indexing-crisis.webp",
+    "tags": [
+      "Google Search Console",
+      "Indexing",
+      "Technical SEO"
+    ],
+    "stat": null,
+    "toc": [],
+    "content": "## Key takeaways\n\n- Google **rewrote the help text** for the \"Crawled – currently not indexed\" status in the Search Console Page indexing report. [Search Engine Roundtable reported it on November 3, 2026](https://www.seroundtable.com/google-updates-crawled-currently-not-indexed-42450.html).\n- The new text says Google \"doesn't index all pages across the web,\" so the status is common and \"doesn't necessarily indicate an issue that needs attention.\"\n- For **important pages**, Google now points to the URL Inspection tool to check for blocks, and to a form for reporting site-wide indexing bugs.\n- The old line saying the page \"may or may not be indexed in the future; no need to resubmit this URL\" is gone.\n\n## What changed\n\nThe change is on Google's [Page indexing report help page](https://support.google.com/webmasters/answer/7440203?hl=en), in the \"Crawled – currently not indexed\" section. You can compare it with the [archived version from October 26, 2026](https://web.archive.org/web/20261026041832/https://support.google.com/webmasters/answer/7440203?hl=en).\n\n| | Before | Now |\n| --- | --- | --- |\n| Main message | Crawled, not indexed; may be indexed later | Crawled, not indexed; Google does not index every page |\n| Resubmitting | No need to resubmit | Not mentioned |\n| Is it a problem? | Not stated | Common, not always a problem |\n| What to do | Nothing stated | Check important pages with URL Inspection; report site-wide bugs |\n\nSearch Engine Roundtable also noted that the new text **does not mention page quality**, even though Google has named quality as a factor for this status before.\n\n## What it means for your site\n\nA handful of URLs in this status is normal. Thousands of product or service pages in it is not. That usually points to thin or duplicate templates, filter URLs eating crawl time, or pages that are hard to reach from the rest of the site.\n\n## What to do\n\n1. **Sort the list by value.** Ignore filter URLs and thin tag pages. Focus on the pages that make you money.\n2. **Inspect a sample** of those pages with URL Inspection, as Google now suggests. Look for blocks, the wrong canonical or a noindex.\n3. **Look for a pattern.** If most of them share one template, fix the template, not the pages one by one.\n4. **Measure in batches.** Resubmit a batch, then watch the indexed count before moving on.\n\nWe used this method to take one WooCommerce store from about 3,000 to 11,549 indexed pages. See our [indexing recovery service](/services/technical-seo/indexing-recovery), our [technical SEO services](/services/technical-seo), or the [GSC regex library](/resources/gsc-regex-library) to filter these URLs in Search Console.\n\n## Sources\n\n- [Google Updates Crawled – Currently Not Indexed Details](https://www.seroundtable.com/google-updates-crawled-currently-not-indexed-42450.html) — Search Engine Roundtable, November 3, 2026.\n- [Page indexing report](https://support.google.com/webmasters/answer/7440203?hl=en) — Google Search Console Help.\n- [Archived version, October 26, 2026](https://web.archive.org/web/20261026041832/https://support.google.com/webmasters/answer/7440203?hl=en) — Internet Archive.\n\n_Last verified: November 4, 2026._",
+    "canonicalUrl": "https://www.searchprex.com/resources/news/google-updates-crawled-currently-not-indexed-guidance",
+    "schemaType": "NewsArticle"
+  },
+  {
+    "slug": "openai-chatgpt-search-volume-20-percent-of-google",
+    "category": "SEO News — AI Visibility",
+    "subcategory": "Google Search & AI Content",
+    "title": "OpenAI Says ChatGPT Handles About 20% of Google's Search Volume",
+    "metaTitle": "OpenAI: ChatGPT Search Volume Is 20% of Google",
+    "metaDescription": "An OpenAI product lead says ChatGPT search-like queries are about one fifth of Google volume. The claim, the caveats, and what it means for SEO.",
+    "excerpt": "OpenAI's Adam Fry says ChatGPT's search-like queries are now about one fifth of Google's volume, and weekly users grew from 1 billion to 1.2 billion in two months. The measure is broad, so read it with care.",
+    "readTime": "4-minute read",
+    "date": "2026-11-04",
+    "dateModified": "2026-11-04T12:00:00.000Z",
+    "author": {
+      "name": "Mubashar Sharif",
+      "role": "Founder & SEO Strategist",
+      "bio": "Founder & SEO Strategist at SearchPrex, covering indexing, technical SEO and AI search.",
+      "linkedIn": "https://www.linkedin.com/in/mubashar-sharif-senior-seo-analyst/"
+    },
+    "featured": false,
+    "heroImage": "/images/news/openai-chatgpt-search-official-launch-geo-oai-searchbot-guide.webp",
+    "tags": [
+      "ChatGPT",
+      "AI Search",
+      "GEO"
+    ],
+    "stat": {
+      "value": "~20%",
+      "label": "of Google query volume, by OpenAI's own definition"
+    },
+    "toc": [],
+    "content": "## Key takeaways\n\n- **Adam Fry**, ChatGPT consumer product lead at OpenAI, said in [an interview with Alex Kantrowitz](https://www.bigtechnology.com/p/openai-chatgpt-search-is-about-20) that ChatGPT's \"volume of search-like queries is now roughly one-fifth the volume of queries of Google.\"\n- He also said ChatGPT went \"from one billion to 1.2 in just the last two months,\" which [Glenn Gabe reads as 1.2 billion weekly users](https://x.com/glenngabe/status/2117676909056102876).\n- The definition is broad: \"Every time you ask a question and go search the web, that's a search.\"\n- [Search Engine Roundtable reported it on November 4, 2026](https://www.seroundtable.com/chatgpt-20-percent-google-42451.html) and called the claim \"surprising,\" since Google says its own search volume is at an all-time high.\n\n## Read the number with care\n\nThis is OpenAI's own figure, using OpenAI's own definition of a search. It was not explained how the volume was measured or compared with Google's data. Treat it as a direction, not an exact share.\n\nStill, the direction matters. Fry said people increasingly ask ChatGPT about people, places and things that need current information, and that finance and health questions trigger web searches.\n\n## What it means for businesses\n\nIf even part of this is right, a large share of buying research now happens inside AI answers. Those answers quote pages that:\n\n- answer the question directly, near the top\n- use schema markup so the AI knows who you are\n- keep business details the same everywhere online\n- are easy for AI crawlers to load and read\n\n## What to do\n\n1. **Check your AI visibility.** Ask ChatGPT the questions your customers ask, and see who it names.\n2. **Add short, direct answers** under the questions on your key pages.\n3. **Make sure AI crawlers can reach you.** Check robots.txt for GPTBot and OAI-SearchBot, and keep pages fast.\n\nSee how we approach this on our [AI search optimization page](/ai-search), or start with our [technical SEO services](/services/technical-seo).\n\n## Sources\n\n- [OpenAI: ChatGPT Search Is About 20% of Google](https://www.bigtechnology.com/p/openai-chatgpt-search-is-about-20) — Big Technology, interview with Adam Fry.\n- [OpenAI Says ChatGPT Is At 20% Of Google Search Volume](https://www.seroundtable.com/chatgpt-20-percent-google-42451.html) — Search Engine Roundtable, November 4, 2026.\n- [Glenn Gabe on X](https://x.com/glenngabe/status/2117676909056102876).\n\n_Last verified: November 4, 2026._",
+    "canonicalUrl": "https://www.searchprex.com/resources/news/openai-chatgpt-search-volume-20-percent-of-google",
+    "schemaType": "NewsArticle"
+  },
+  {
     "slug": "google-business-profile-government-id-verification-test",
     "category": "SEO News — Local",
     "subcategory": "Google Business Profile",
