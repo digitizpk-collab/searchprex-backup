@@ -16,6 +16,7 @@
 // unaffected.
 
 import type { Metadata } from "next";
+import CityGbpChecklistStrip from "@/components/location-wireframe/CityGbpChecklistStrip";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -179,6 +180,7 @@ export default async function CityPage({
         />
         <main>
           <DetroitWireframeView page={page} />
+          <CityGbpChecklistStrip city={page.city} />
         </main>
       </>
     );
@@ -199,6 +201,7 @@ export default async function CityPage({
         />
         <main>
           <GrandRapidsWireframeView page={page} />
+          <CityGbpChecklistStrip city={page.city} />
         </main>
       </>
     );
@@ -219,6 +222,7 @@ export default async function CityPage({
         />
         <main>
           <ClevelandWireframeView page={page} />
+          <CityGbpChecklistStrip city={page.city} />
         </main>
       </>
     );
@@ -239,6 +243,7 @@ export default async function CityPage({
         />
         <main>
           <PhiladelphiaWireframeView page={page} />
+          <CityGbpChecklistStrip city={page.city} />
         </main>
       </>
     );
@@ -259,6 +264,7 @@ export default async function CityPage({
         />
         <main>
           <AlbuquerqueWireframeView page={page} />
+          <CityGbpChecklistStrip city={page.city} />
         </main>
       </>
     );
@@ -278,6 +284,7 @@ export default async function CityPage({
         />
         <main>
           <DentonWireframeView page={page} />
+          <CityGbpChecklistStrip city={page.city} />
         </main>
       </>
     );
@@ -297,6 +304,7 @@ export default async function CityPage({
         />
         <main>
           <KatyWireframeView page={page} />
+          <CityGbpChecklistStrip city={page.city} />
         </main>
       </>
     );
@@ -316,6 +324,7 @@ export default async function CityPage({
         />
         <main>
           <SugarLandWireframeView page={page} />
+          <CityGbpChecklistStrip city={page.city} />
         </main>
       </>
     );
@@ -335,6 +344,7 @@ export default async function CityPage({
         />
         <main>
           <WoodlandsWireframeView page={page} />
+          <CityGbpChecklistStrip city={page.city} />
         </main>
       </>
     );
@@ -354,6 +364,7 @@ export default async function CityPage({
         />
         <main>
           <PlanoWireframeView page={page} />
+          <CityGbpChecklistStrip city={page.city} />
         </main>
       </>
     );
@@ -373,6 +384,7 @@ export default async function CityPage({
         />
         <main>
           <TempeWireframeView page={page} />
+          <CityGbpChecklistStrip city={page.city} />
         </main>
       </>
     );
@@ -392,6 +404,7 @@ export default async function CityPage({
         />
         <main>
           <ScottsdaleWireframeView page={page} />
+          <CityGbpChecklistStrip city={page.city} />
         </main>
       </>
     );
@@ -411,6 +424,7 @@ export default async function CityPage({
         />
         <main>
           <SanJoseWireframeView page={page} />
+          <CityGbpChecklistStrip city={page.city} />
         </main>
       </>
     );
@@ -430,6 +444,7 @@ export default async function CityPage({
         />
         <main>
           <BatonRougeWireframeView page={page} />
+          <CityGbpChecklistStrip city={page.city} />
         </main>
       </>
     );
@@ -449,6 +464,7 @@ export default async function CityPage({
         />
         <main>
           <ShreveportWireframeView page={page} />
+          <CityGbpChecklistStrip city={page.city} />
         </main>
       </>
     );

@@ -1,5 +1,6 @@
 // app/locations/kansas/[city]/page.tsx
 import type { Metadata } from "next";
+import CityGbpChecklistStrip from "@/components/location-wireframe/CityGbpChecklistStrip";
 import { notFound } from "next/navigation";
 import { getCityBySlug, getAllCitySlugs } from "@/lib/kansas-cities";
 import { organizationRef } from "@/lib/site-schema";
@@ -93,6 +94,7 @@ export default async function KansasCityPage({
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <KansasCityModernView city={city} />
+      <CityGbpChecklistStrip city={city.name} />
     </main>
   );
 }

@@ -1,5 +1,6 @@
 // app/locations/kansas/wichita/page.tsx
 import type { Metadata } from "next";
+import CityGbpChecklistStrip from "@/components/location-wireframe/CityGbpChecklistStrip";
 import { notFound } from "next/navigation";
 import { getCityBySlug } from "@/lib/kansas-cities";
 import { getPageSEO } from "@/lib/admin-seo";
@@ -89,6 +90,7 @@ export default async function WichitaPage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <KansasCityModernView city={city} />
+      <CityGbpChecklistStrip city={city.name} />
     </main>
   );
 }
