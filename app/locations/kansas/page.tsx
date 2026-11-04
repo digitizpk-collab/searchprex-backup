@@ -25,6 +25,15 @@ import { getPageSEO } from "@/lib/admin-seo";
 import TaglinePainBand from "@/components/location-wireframe/TaglinePainBand";
 import LocationLocalCaseStudies from "@/components/location-wireframe/LocationLocalCaseStudies";
 import ArticleLeadMagnet from "@/components/ArticleLeadMagnet";
+import { SpokeEssentials, SpokeWhyAndAi } from "@/components/service-wireframe/SpokeSections";
+
+const KANSAS_FAQS = [
+  { q: "How much does law firm SEO cost in Kansas?", a: "From $1,200 to $2,500 a month, depending on practice areas and cities. It is month to month, starts with a 7-day free trial, and is backed by a 90-day money-back guarantee." },
+  { q: "Which Kansas cities do you cover?", a: "Wichita, Overland Park, Kansas City, Topeka, Lawrence, Shawnee, Lenexa and Manhattan, each with its own page." },
+  { q: "Do you work with more than one firm in the same city?", a: "No. One firm per city and practice area, so I never work for your direct competitor." },
+  { q: "How long does law firm SEO take in Kansas?", a: "Early movement usually shows in 60 to 90 days. Competitive practice areas in Wichita or the Kansas City metro take longer. Every Monday report shows what moved." },
+  { q: "Who does the work?", a: "I do, Mubashar Sharif. No sales team and no juniors. You get a plain-English report every Monday." },
+];
 
 // ── Metadata ────────────────────────────────────────────────────────────────
 const baseMetadata: Metadata = {
@@ -56,6 +65,11 @@ export async function generateMetadata(): Promise<Metadata> {
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.searchprex.com/locations/kansas#faq",
+      mainEntity: KANSAS_FAQS.map((q) => ({ "@type": "Question", name: q.q, acceptedAnswer: { "@type": "Answer", text: q.a } })),
+    },
     {
       "@type": "Service",
       "@id": "https://www.searchprex.com/locations/kansas#service",
@@ -231,6 +245,11 @@ export default function KansasHubPage() {
       {/* ── 2. TAGLINE PAIN BAND ── */}
       <TaglinePainBand />
 
+      <SpokeEssentials
+        keyword="Law firm SEO in Kansas"
+        answer="means practice-area and city pages for Wichita, Overland Park, Kansas City, Topeka and four more cities, a Google Business Profile that wins the map pack, and reviews gathered within bar rules. One firm per city, from $1,200 a month."
+      />
+
       {/* ── 3. KANSAS STATUTORY & LEGAL FRAMEWORK ── */}
       <section className="py-16 md:py-20 bg-slate-50 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -239,7 +258,7 @@ export default function KansasHubPage() {
               JURISDICTIONAL EXPERTISE
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-neutral-950 tracking-tight">
-              Understanding the Kansas Legal Landscape
+              Law firm SEO in Kansas: the market
             </h2>
             <p className="mt-2.5 text-sm sm:text-base text-slate-600">
               Generic SEO agencies fail in Kansas because they copy-paste California or Texas content templates. Winning top Google rankings and AI citations requires integrating Kansas statutory realities.
@@ -275,7 +294,7 @@ export default function KansasHubPage() {
               LOCAL MARKET DIRECTORY
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-neutral-950 tracking-tight">
-              Select Your Kansas Legal Market
+              Where we work in Kansas: 8 city pages
             </h2>
             <p className="mt-2.5 text-sm sm:text-base text-slate-600">
               Each city features a dedicated, locally researched strategy built around the courts, judicial districts, and high-intent search patterns of that market.
@@ -334,7 +353,7 @@ export default function KansasHubPage() {
               </span>
 
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-neutral-950 tracking-tight leading-tight">
-                Kansas Is Not One Legal Market — It Is Several
+                How Kansas markets differ for law firms
               </h2>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -384,7 +403,7 @@ export default function KansasHubPage() {
               SPECIALIZED SERVICE LINES
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-neutral-950 tracking-tight">
-              Engineered for Law Firms That Need Signed Cases
+              What Kansas law firm SEO includes
             </h2>
             <p className="mt-2.5 text-sm sm:text-base text-slate-600">
               Every campaign is built around your specific practice areas and target cities — no recycled templates, no generic directory backlinks.
@@ -429,7 +448,7 @@ export default function KansasHubPage() {
               WHY SEARCHPREX
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-neutral-950 tracking-tight">
-              Why Kansas Managing Partners Partner With Us
+              Why choose SearchPrex for law firm SEO in Kansas
             </h2>
           </div>
 
@@ -444,6 +463,34 @@ export default function KansasHubPage() {
                   <p className="text-xs sm:text-sm leading-relaxed text-slate-600">{p.body}</p>
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <SpokeWhyAndAi
+        service="law firm SEO in Kansas"
+        title="Kansas law firm SEO: SearchPrex vs the alternatives"
+        rows={[
+          ["Who does the work", "The founder", "You, between cases", "Often a junior"],
+          ["Kansas law on your pages", "Checked and sourced", "Easy to get wrong", "Often generic copy"],
+          ["Your competitors", "One firm per city", "n/a", "May work for a rival firm"],
+          ["Contract", "Month to month", "None", "Often 6 to 12 months"],
+          ["Risk", "7-day free trial, 90-day money-back", "Your time", "Rarely a guarantee"],
+        ]}
+        aiLine="People in Kansas now ask ChatGPT and Google's AI Overviews for a lawyer. Clear practice pages, schema and a consistent Business Profile give those tools a firm they can name."
+      />
+
+      {/* FAQ — the FAQPage schema is built from KANSAS_FAQS. */}
+      <section className="bg-slate-50 px-4 py-16 sm:px-6">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-center text-3xl font-black tracking-tight text-neutral-950 sm:text-4xl">Law firm SEO in Kansas: questions, answered</h2>
+          <div className="mt-8 space-y-3">
+            {KANSAS_FAQS.map((q) => (
+              <details key={q.q} className="rounded-2xl border border-slate-200 bg-white p-5">
+                <summary className="cursor-pointer font-bold text-neutral-950">{q.q}</summary>
+                <p className="mt-3 text-sm leading-relaxed text-slate-700">{q.a}</p>
+              </details>
             ))}
           </div>
         </div>
@@ -559,7 +606,7 @@ export default function KansasHubPage() {
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight">
-            Ready to Dominate Search in Your Kansas City?
+            Get a free Kansas law firm SEO audit
           </h2>
 
           <p className="text-sm sm:text-base text-slate-300 max-w-xl mx-auto leading-relaxed">
