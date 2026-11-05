@@ -526,9 +526,9 @@ export const CITY_PAGES: CityPage[] = [
     state: "Texas",
     stateAbbr: "TX",
     county: "Fort Bend County",
-    metaTitle: "Law Firm SEO Sugar Land, TX | From $1,200/mo",
+    metaTitle: "Law Firm SEO Sugar Land, TX | One Firm Per City, Free Audit",
     metaDescription:
-      "Law firm SEO in Sugar Land and Fort Bend County: Map Pack, AI answers and local pages that compete with Houston firms. 7-day free trial.",
+      "I work with one Sugar Land firm per practice area: Fort Bend pages, Map Pack and AI answers to compete with Houston. From $1,200/mo, 7-day free trial.",
     h1: "Law Firm SEO in Sugar Land, Texas: Rescue Your Practice From Houston's Ad Auction",
     heroSub:
       "Fort Bend families search for a lawyer they can trust close to home. We lift your firm out of Houston's shadow and out of the click-by-click spending race.",
@@ -781,9 +781,9 @@ export const CITY_PAGES: CityPage[] = [
     state: "Texas",
     stateAbbr: "TX",
     county: "Harris, Fort Bend & Waller Counties",
-    metaTitle: "Law Firm SEO Katy, TX | From $1,200/mo",
+    metaTitle: "Law Firm SEO Katy, TX | One Firm Per City, Free Audit",
     metaDescription:
-      "Law firm SEO in Katy: county-correct pages for Harris, Fort Bend and Waller, plus Map Pack and AI answers. Month-to-month, 7-day free trial.",
+      "I work with one Katy firm per practice area: county-correct pages, Map Pack and AI answers. From $1,200/mo, 7-day free trial, free audit in 24 hours.",
     h1: "Law Firm SEO in Katy, Texas: Be the Firm at the Crossroads",
     heroSub:
       "Harris, Fort Bend and Waller counties meet in Katy. Clients search for a lawyer close to home and nobody tells them which courthouse is theirs. We make your firm the one that does.",
@@ -866,9 +866,9 @@ export const CITY_PAGES: CityPage[] = [
     state: "Texas",
     stateAbbr: "TX",
     county: "Montgomery County",
-    metaTitle: "Law Firm SEO The Woodlands, TX | From $1,200/mo",
+    metaTitle: "Law Firm SEO The Woodlands, TX | One Firm Per City",
     metaDescription:
-      "Law firm SEO in The Woodlands: Montgomery and Harris County pages, reviews and AI answers. Month-to-month, 7-day free trial, free audit in 24 hours.",
+      "I work with one Woodlands firm per practice area: Montgomery County pages, reviews and AI answers. From $1,200/mo, 7-day free trial, free 24-hour audit.",
     h1: "Law Firm SEO in The Woodlands, Texas: Be the Name Your Clients Already Hear",
     heroSub:
       "Behind every estate plan, probate and divorce search is a family trying to protect what matters. We make sure that when they check you out on Google or ask an AI, your firm earns their trust and their call.",

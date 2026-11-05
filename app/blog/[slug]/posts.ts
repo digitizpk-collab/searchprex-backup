@@ -1548,12 +1548,13 @@ function searchprex_enrich_product_schema( $markup, $product ) {
     exitOffer:   { headline: "Want me to go through your profile instead?", sub: "Most Maps drops trace back to the profile rather than an algorithm — but finding which part means going through it line by line. Send me your site and I’ll do that and send back what I find. Free, within 24 hours." },
     category:    "Local SEO",
     subcategory: "Google Business Profile",
-    metaTitle:       "Google Maps Ranking Dropped? How to Check and Fix It",
-    metaDescription: "Your Google Maps ranking dropped? Check whether the drop is real, then work through suspensions, edits, reviews, competitors and updates, in that order.",
+    metaTitle:       "Google Maps Ranking Dropped? 7 Checks to Find the Cause",
+    metaDescription: "Dropped in Google Maps or lost Business Profile rankings? Check if the drop is real, then work through suspensions, edits, reviews and competitors, in order.",
     title:       "Why Did My Google Maps Ranking Drop? How to Check and Fix It",
     excerpt:     "Most Maps ranking drops trace back to the profile, not an algorithm. Here is the order to check things in, where to look, and what not to do while you fix it.",
     readTime:    "11-minute read",
     date:        "October 2, 2026",
+    updated:     "November 6, 2026",
     tags:        ["google maps ranking", "map pack", "google business profile", "local seo"],
     stat:        { value: "7", label: "Checks, in order" },
     /* Unsplash — paper map with pins */
@@ -1562,6 +1563,7 @@ function searchprex_enrich_product_schema( $markup, $product ) {
     bodyVisual: { src: "/images/blog/body/google-maps-ranking-drop.webp", alt: "Local search result evidence for Mammoth Roofing in Texas, shown as a market-specific ranking example.", caption: "Map visibility changes by searcher location and query, so compare the same grid points and search terms over time." },
     toc: [
       "The short answer",
+      "What your symptom points to",
       "First, check the drop is real",
       "Check 1 — Is the profile suspended?",
       "Check 2 — Did someone else change your profile?",
@@ -1578,6 +1580,21 @@ function searchprex_enrich_product_schema( $markup, $product ) {
       <h2>The short answer</h2>
       <div class="callout"><strong>Short answer:</strong> when a business drops in Google Maps, the cause is usually on the profile itself — a suspension, an edit someone else made, a change you made, or a change in your reviews — rather than an algorithm update. Google ranks local results on three things: relevance, distance and prominence. Check the drop is real first, then work through the profile, the reviews, your competitors, the update calendar and your website, in that order.</div>
       <p>Google's own help page names the three factors. Relevance is "how well a Business Profile matches what someone is searching for". Distance is "how far each business is from the customer who's searching". Prominence is "how well-known a business is", which Google says is also based on things like how many websites link to you and how many reviews you have. Every check below maps back to one of those three. The same page is also clear that "there's no way to request or pay for a better local ranking on Google".</p>
+
+      <h2>What your symptom points to</h2>
+      <p>Start with what you can actually see. These are the likely causes to check first, not a diagnosis.</p>
+      <table>
+        <thead><tr><th>What you see</th><th>Check first</th></tr></thead>
+        <tbody>
+          <tr><td>The profile has gone from Maps completely</td><td>A suspension. See <a href="/services/local-seo/google-business-profile-suspended">help with a suspended Business Profile</a>.</td></tr>
+          <tr><td>Your category, hours or phone number look different</td><td>A suggested edit or a Google update (check 2).</td></tr>
+          <tr><td>The drop started right after you edited the profile</td><td>Your own change (check 3).</td></tr>
+          <tr><td>Your review count fell</td><td>Removed reviews (check 4).</td></tr>
+          <tr><td>A new name now sits above you</td><td>A competitor (check 5).</td></tr>
+          <tr><td>Many local businesses moved on the same date</td><td>A Google update (check 6). Compare it with our <a href="/resources/news/local-seo-updates">dated local SEO news</a>.</td></tr>
+          <tr><td>Maps held steady, but your website dropped in Google</td><td>The website (check 7) and our <a href="/services/technical-seo/indexing-recovery">indexing recovery guide</a>.</td></tr>
+        </tbody>
+      </table>
 
       <h2>First, check the drop is real</h2>
       <p>Map pack results change with the searcher's location, because distance is one of the three factors. If you searched your main keyword from your office last month and from home this week, you will see different results, and that tells you nothing about a drop. Searching on your own phone is the least reliable test there is.</p>
@@ -1652,6 +1669,8 @@ function searchprex_enrich_product_schema( $markup, $product ) {
       <h2>Frequently asked questions</h2>
       <h3>How long does it take to recover a Google Maps ranking?</h3>
       <p>It depends on the cause. Fixing a wrong field can show results once the edit is published. A suspension takes as long as the appeal takes, and Google gives no fixed time. Drops caused by reviews or competitors take longest, because you are rebuilding prominence. Be wary of anyone who gives you a date.</p>
+      <h3>Why did my Google Business Profile rankings drop overnight?</h3>
+      <p>A sudden drop usually points to something that changed on one date: a suspension, an edit to your category or address, or removed reviews. Check those first, in that order. A slow slide over several weeks points more often to stronger competitors or fewer new reviews. If you would rather not check it yourself, <a href="/services/local-seo/google-business-profile-optimization">Business Profile optimization</a> starts with this same review.</p>
       <h3>Why did my map ranking drop when my website ranking stayed the same?</h3>
       <p>They are different systems. The map pack depends on your Business Profile, the searcher's location and your reviews. Organic results depend on your website. A drop in one and not the other usually points to the profile: check for suspensions, edits and review changes first.</p>
       <h3>Does running Google Ads affect my Maps ranking?</h3>
@@ -2887,13 +2906,13 @@ ${faqHtml(LAW_GUIDE_FAQS)}
     slug:        "how-long-does-law-firm-seo-take",
     category:    "Content Strategy",
     subcategory: "Law Firms",
-    metaTitle:       "How Long Does Law Firm SEO Take? A Realistic Timeline",
+    metaTitle:       "How Long Does Law Firm SEO Take? First Movement: 60–90 Days",
     metaDescription: "Most law firms see the first measurable movement from SEO within 60 to 90 days; competitive terms take longer. A month-by-month timeline and what speeds it up.",
     title:       "How Long Does Law Firm SEO Take to Work?",
     excerpt:     "Most law firms see the first measurable movement within 60 to 90 days; competitive terms take longer. A month-by-month timeline, what speeds it up, what slows it down, and what to measure.",
     readTime:    "8-minute read",
     date:        "October 14, 2026",
-    updated:     "October 14, 2026",
+    updated:     "November 6, 2026",
     tags:        ["how long does law firm seo take", "law firm seo timeline", "seo for lawyers", "legal seo results"],
     stat:        { value: "60–90 days", label: "First measurable movement, typically" },
     heroImage:   "/images/blog/covers/how-long-does-law-firm-seo-take.webp",
@@ -2903,6 +2922,7 @@ ${faqHtml(LAW_GUIDE_FAQS)}
       "The short answer",
       "A month-by-month timeline",
       "What makes it faster or slower",
+      "How the timing changes by firm",
       "Why some practice areas take longer",
       "What to measure in the first 90 days",
       "Red flags in timeline promises",
@@ -2942,6 +2962,19 @@ ${faqHtml(LAW_GUIDE_FAQS)}
 </tbody>
 </table>
 <p>A suspended Business Profile is the biggest single brake: until it is reinstated, the firm cannot appear in Maps at all. See <a href="/blog/google-business-profile-suspended">how to get a suspended profile reinstated</a>.</p>
+
+<h2>How the timing changes by firm</h2>
+<p>The 60 to 90 days is when you should see first movement, not the finish line. Where your firm starts changes what comes next. These are general patterns, not promises.</p>
+<table>
+<thead><tr><th>Your situation</th><th>What usually moves first</th><th>What takes longer</th></tr></thead>
+<tbody>
+<tr><td>Small firm in a suburb or smaller city</td><td>City and practice-area searches, Map Pack</td><td>Searches for the nearest big metro</td></tr>
+<tr><td>Firm in a big metro</td><td>Specific matters and neighborhood searches</td><td>Broad terms like "personal injury lawyer [city]"</td></tr>
+<tr><td>New website</td><td>Getting pages indexed</td><td>Everything else, because there is no history yet</td></tr>
+<tr><td>Established site with thin pages</td><td>Better pages for searches you already nearly rank for</td><td>New practice areas</td></tr>
+</tbody>
+</table>
+<p>Want to see the pace for your own market? Check what it would be worth with the <a href="/case-calculator">case value calculator</a>, read <a href="/blog/law-firm-seo-cost">what law firm SEO costs</a>, or see <a href="/services/law-firm-seo">how our law firm SEO services work</a>.</p>
 
 <h2>Why some practice areas take longer</h2>
 <p>Competition is the main reason. Personal injury and criminal defense in big cities are among the most heavily advertised searches, with established firms that have years of content, reviews and links. Estate planning and family law in a smaller city usually face fewer, less entrenched competitors. Mass tort searches compete nationally rather than city by city.</p>
