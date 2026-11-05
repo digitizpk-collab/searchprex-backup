@@ -59,12 +59,16 @@ export const KANSAS_SEO_CITIES: KansasSeoCity[] = [
     slug: "lenexa",
     name: "Lenexa",
     county: "Johnson County",
-    metaTitle: "SEO Company in Lenexa, KS | Local SEO & More",
+    metaTitle: "Lenexa SEO Services | Local SEO Agency in Johnson County, KS",
     metaDescription:
-      "SEO for Lenexa and Johnson County businesses: Google Business Profile, local service pages, ecommerce and technical SEO. Founder-led, month to month.",
+      "SEO services for Lenexa and Johnson County businesses: Business Profile, local service pages, ecommerce and technical SEO. Founder-led, month to month.",
     heroSub:
       "For trades, B2B firms and online stores in Lenexa and the rest of Johnson County. Your Business Profile, your pages and your site, fixed in the order that brings calls.",
     market: [
+      {
+        heading: "Choosing a local SEO agency in Lenexa",
+        body: "Look at who does the work and what you will see each week. SearchPrex is one founder, not a Lenexa office: I work remotely on US hours, publish my prices, and send a plain report every Monday. Ask any local SEO agency in Johnson County the same questions, and ask to see results in the client's own dashboards.",
+      },
       {
         heading: "Johnson County searches cross city lines",
         body: "A homeowner in Lenexa searching \"plumber near me\" sees businesses from Overland Park, Shawnee and Olathe in the same map pack. Google ranks local results on relevance, distance and prominence, so a Lenexa business is competing with the whole county, not just its own city.",
@@ -111,6 +115,10 @@ export const KANSAS_SEO_CITIES: KansasSeoCity[] = [
     faqs: withCost(
       [
         NO_OFFICE("Lenexa"),
+        {
+          q: "What do local SEO services in Lenexa include?",
+          a: "Your Google Business Profile, a page for each service and each area you cover in Johnson County, steady real reviews, and technical fixes on your site. It starts with a free audit within 24 hours.",
+        },
         {
           q: "Should my pages say Lenexa or Shawnee Mission?",
           a: "Use the address on your Business Profile everywhere, exactly as written there. Then mention Lenexa, Shawnee Mission and the other areas you serve in your page copy where it is true, so you match both ways people search.",

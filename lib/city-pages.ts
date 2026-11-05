@@ -268,9 +268,9 @@ export const CITY_PAGES: CityPage[] = [
     state: "Ohio",
     stateAbbr: "OH",
     county: "Cuyahoga County",
-    metaTitle: "Law Firm SEO Cleveland, OH | From $1,200/mo",
+    metaTitle: "Law Firm SEO Services Cleveland, OH | Attorney SEO, $1,200+",
     metaDescription:
-      "Law firm SEO in Cleveland: Map Pack, AI answers and Cuyahoga County pages. $1,200–$2,500/mo, month-to-month, 7-day free trial.",
+      "Law firm and attorney SEO services in Cleveland: Map Pack, AI answers and Cuyahoga County pages. $1,200–$2,500/mo, month-to-month, 7-day free trial.",
     h1: "Law Firm SEO in Cleveland, Ohio: Predictable Leads, Measured in Signed Cases",
     heroSub:
       "Cleveland attorneys do not buy hype. We build search and AI visibility that earns signed cases, then show every number behind it.",

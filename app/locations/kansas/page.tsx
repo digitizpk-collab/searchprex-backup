@@ -28,6 +28,8 @@ import ArticleLeadMagnet from "@/components/ArticleLeadMagnet";
 import { SpokeEssentials, SpokeWhyAndAi } from "@/components/service-wireframe/SpokeSections";
 
 const KANSAS_FAQS = [
+  { q: "What does a Kansas attorney SEO consultant do?", a: "I find the searches your clients make, build practice-area and city pages for them, manage your Google Business Profile and fix technical problems. One person does all of it, so you always know who is responsible." },
+  { q: "Are you based in Kansas?", a: "No. SearchPrex has no Kansas office and no Kansas clients yet. I work remotely on US business hours, and the Kansas pages are written from public court and market information." },
   { q: "How much does law firm SEO cost in Kansas?", a: "From $1,200 to $2,500 a month, depending on practice areas and cities. It is month to month, starts with a 7-day free trial, and is backed by a 90-day money-back guarantee." },
   { q: "Which Kansas cities do you cover?", a: "Wichita, Overland Park, Kansas City, Topeka, Lawrence, Shawnee, Lenexa and Manhattan, each with its own page." },
   { q: "Do you work with more than one firm in the same city?", a: "No. One firm per city and practice area, so I never work for your direct competitor." },
@@ -37,9 +39,9 @@ const KANSAS_FAQS = [
 
 // ── Metadata ────────────────────────────────────────────────────────────────
 const baseMetadata: Metadata = {
-  title: "Kansas Law Firm SEO: Wichita & Overland Park | Free Audit",
+  title: "Kansas Law Firm SEO Consultant | Wichita, Overland Park, KC",
   description:
-    "Founder-led law firm SEO for Kansas attorneys in family law, personal injury and criminal defense — Wichita, Overland Park, Kansas City, Topeka and more.",
+    "Law firm SEO consultant for Kansas attorneys in family law, personal injury and criminal defense: Wichita, Overland Park, Kansas City, Topeka and more.",
   alternates: { canonical: "https://www.searchprex.com/locations/kansas" },
   openGraph: {
     title: "Law Firm SEO Across Kansas | SearchPrex",
@@ -204,7 +206,7 @@ export default function KansasHubPage() {
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-neutral-950 leading-[1.1] max-w-4xl mx-auto mb-6">
-            Law Firm &amp; Family Law SEO Across Kansas
+            Kansas Law Firm SEO Consultant for Attorneys Across the State
           </h1>
 
           <p className="text-base sm:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto mb-8">
@@ -448,7 +450,7 @@ export default function KansasHubPage() {
               WHY SEARCHPREX
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-neutral-950 tracking-tight">
-              Why choose SearchPrex for law firm SEO in Kansas
+              Why Kansas attorneys choose an SEO consultant over an agency
             </h2>
           </div>
 
