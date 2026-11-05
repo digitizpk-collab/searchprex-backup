@@ -203,6 +203,8 @@ export default function Nav() {
 
   return (
     <>
+      {/* Same height as the announcement bar, so the bar never covers the top of a page. */}
+      {!showLocalSeoNewsSubscription ? <div aria-hidden className="h-8" /> : null}
       <header
         data-local-seo-news-header={showLocalSeoNewsSubscription ? "true" : undefined}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b ${
@@ -215,7 +217,7 @@ export default function Nav() {
             founder. Shown at the top of the page only, so it never sits over
             content while reading; the local news hub has its own bar. */}
         {!showLocalSeoNewsSubscription && !isScrolled && (
-          <div className="bg-neutral-950 px-4 py-1.5 text-center text-[12px] font-semibold text-white sm:text-[13px]">
+          <div className="flex h-8 items-center justify-center whitespace-nowrap bg-neutral-950 px-4 text-[12px] font-semibold text-white sm:text-[13px]">
             <span className="text-emerald-300">Free 7-day trial</span>
             <span className="mx-2 text-white/40" aria-hidden>·</span>
             <a href="https://wa.me/923059158010" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-emerald-200">
