@@ -1549,7 +1549,7 @@ function searchprex_enrich_product_schema( $markup, $product ) {
     category:    "Local SEO",
     subcategory: "Google Business Profile",
     metaTitle:       "Google Maps Ranking Dropped? 7 Checks to Find the Cause",
-    metaDescription: "Dropped in Google Maps or lost Business Profile rankings? Check if the drop is real, then work through suspensions, edits, reviews and competitors, in order.",
+    metaDescription: "Lost your Google Maps or Business Profile rankings? Confirm the drop is real, then work through 7 checks to find the cause and fix it.",
     title:       "Why Did My Google Maps Ranking Drop? How to Check and Fix It",
     excerpt:     "Most Maps ranking drops trace back to the profile, not an algorithm. Here is the order to check things in, where to look, and what not to do while you fix it.",
     readTime:    "11-minute read",
