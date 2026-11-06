@@ -1557,10 +1557,9 @@ function searchprex_enrich_product_schema( $markup, $product ) {
     updated:     "November 6, 2026",
     tags:        ["google maps ranking", "map pack", "google business profile", "local seo"],
     stat:        { value: "7", label: "Checks, in order" },
-    /* Unsplash — paper map with pins */
     heroImage:   "/images/blog/covers/google-maps-ranking-drop.webp",
-    heroImageAlt: "Smartphone showing map navigation for a local business visit.",
-    bodyVisual: { src: "/images/blog/body/google-maps-ranking-drop.webp", alt: "Local search result evidence for Mammoth Roofing in Texas, shown as a market-specific ranking example.", caption: "Map visibility changes by searcher location and query, so compare the same grid points and search terms over time." },
+    heroImageAlt: "Phone on a car dashboard showing Google Maps, where local business rankings decide who gets found.",
+    bodyVisual: { src: "/images/blog/figures/google-maps-ranking-factors-relevance-distance-prominence.webp", alt: "Diagram of the three Google Maps ranking factors: relevance, distance and prominence, with what feeds each one.", caption: "The three local ranking factors Google names, and what feeds each one. Every check below traces back to one of them." },
     toc: [
       "The short answer",
       "What your symptom points to",
@@ -1595,15 +1594,18 @@ function searchprex_enrich_product_schema( $markup, $product ) {
           <tr><td>Maps held steady, but your website dropped in Google</td><td>The website (check 7) and our <a href="/services/technical-seo/indexing-recovery">indexing recovery guide</a>.</td></tr>
         </tbody>
       </table>
+      <figure class="my-8" style="margin:2rem 0"><img src="/images/blog/figures/google-maps-ranking-drop-7-checks.webp" alt="Checklist of the order to diagnose a Google Maps ranking drop: confirm the drop is real, then seven checks from suspension to website." width="1200" height="1040" loading="lazy" decoding="async" /><figcaption class="mt-2 text-sm leading-6 text-slate-600">If a symptom does not point to one clear cause, work through the checks in this order.</figcaption></figure>
 
       <h2>First, check the drop is real</h2>
       <p>Map pack results change with the searcher's location, because distance is one of the three factors. If you searched your main keyword from your office last month and from home this week, you will see different results, and that tells you nothing about a drop. Searching on your own phone is the least reliable test there is.</p>
+      <figure class="my-8" style="margin:2rem 0"><img src="/images/blog/figures/google-maps-rank-grid-example.webp" alt="Illustrative Google Maps rank grid showing one business ranking first near its office and twentieth at the edge of its service area." width="1200" height="900" loading="lazy" decoding="async" /><figcaption class="mt-2 text-sm leading-6 text-slate-600">An illustrative grid, not real data. One search can return a different position at every point around a business.</figcaption></figure>
       <p>Use data instead:</p>
       <ul>
         <li><strong>Business Profile Performance report.</strong> It shows views on Search and Maps, the search terms people used to find you, and calls, direction requests and website clicks. Compare the same length of time before and after the drop you think you saw. If calls and direction requests held steady, the drop may be smaller than it looks, or limited to a few searches.</li>
         <li><strong>Search Console.</strong> Filter to the page your profile links to. If clicks to that page fell at the same time, the problem may be on the website, or it may be both.</li>
         <li><strong>A grid rank tracker.</strong> These tools check your position from a grid of points around your location. They are the only fair way to compare rankings over time, because they search from the same places every time.</li>
       </ul>
+      <figure class="my-8" style="margin:2rem 0"><img src="/images/blog/figures/google-business-profile-performance-report-comparison.webp" alt="Google Business Profile Performance report showing 490 interactions for April to May 2025, down 4.9% against the same months in 2024." width="600" height="284" loading="lazy" decoding="async" /><figcaption class="mt-2 text-sm leading-6 text-slate-600">A real client report: 490 interactions in April to May 2025, down 4.9% on the same months of 2024. Comparing like with like shows the true size of a dip.</figcaption></figure>
       <p>Write down the date the drop started. Almost every check below depends on it.</p>
 
       <h2>Check 1 — Is the profile suspended?</h2>
@@ -1613,6 +1615,7 @@ function searchprex_enrich_product_schema( $markup, $product ) {
       <h2>Check 2 — Did someone else change your profile?</h2>
       <p>Anyone can suggest an edit to a Business Profile: hours, phone number, category, website, even the address. Google also updates profiles itself from information it finds elsewhere. A changed primary category or a wrong address hits relevance and distance directly, and it can happen without you noticing.</p>
       <p>Since September 2026, Google's help documentation says owners have <strong>four days</strong> to accept or reject a suggested edit after being notified. If nobody answers, Google may publish the edit itself if other public information, such as your website, supports it. Some edits are applied with no notice at all. We covered the change in <a href="/resources/news/google-business-profile-four-days-suggested-edits">Google gives you four days to reject a suggested edit</a>.</p>
+      <figure class="my-8" style="margin:2rem 0"><img src="/images/blog/figures/google-business-profile-suggested-edit-four-days.webp" alt="Timeline of the four-day window to accept or reject a suggested edit on a Google Business Profile before Google may publish it." width="1200" height="660" loading="lazy" decoding="async" /><figcaption class="mt-2 text-sm leading-6 text-slate-600">Based on Google's help documentation. Make sure notifications reach someone who reads them.</figcaption></figure>
       <p>Open the profile and compare every field with what it should be: name, primary and secondary categories, address or service area, phone, website link and hours. Check that notifications go to someone who actually reads them.</p>
 
       <h2>Check 3 — Did you change something?</h2>
@@ -1644,7 +1647,7 @@ function searchprex_enrich_product_schema( $markup, $product ) {
       <p>For spam listings, use <strong>Suggest an edit</strong> on the listing and report the problem. Keep it factual and point to the guideline it breaks. It is slow and not guaranteed, but legitimate businesses do get spam removed this way.</p>
 
       <h2>Check 6 — Does the date match a Google update?</h2>
-      <p>Only now is it worth checking the update calendar. Compare the date the drop started with the <a href="/resources/news/google-algorithm-updates">confirmed Google update timeline</a>. In 2026 Google confirmed core updates in March and May and spam updates in March, June, August and September. The <a href="/resources/news/google-september-2026-spam-update">September 2026 spam update</a> was still rolling out on October 1.</p>
+      <p>Only now is it worth checking the update calendar. Compare the date the drop started with the <a href="/resources/news/google-algorithm-updates">confirmed Google update timeline</a>. In 2026 Google confirmed core updates in March and May and spam updates in March, June, August and September. The <a href="/resources/news/google-september-2026-spam-update">September 2026 spam update</a> ran from September 24 to October 8.</p>
       <p>Two cautions. First, Google has not announced a separate local algorithm update in 2026, so there is no "local update" to blame. Second, spam updates act on web search: they are most likely to hit your website's city and service pages, especially near-identical city pages that only swap the place name. If the dates match, read Google's <a href="https://developers.google.com/search/docs/essentials/spam-policies" target="_blank" rel="noopener noreferrer">spam policies</a> against your site honestly, and judge the impact after the rollout finishes, not during it.</p>
 
       <h2>Check 7 — Is the website still doing its job?</h2>
@@ -1671,6 +1674,7 @@ function searchprex_enrich_product_schema( $markup, $product ) {
       <p>It depends on the cause. Fixing a wrong field can show results once the edit is published. A suspension takes as long as the appeal takes, and Google gives no fixed time. Drops caused by reviews or competitors take longest, because you are rebuilding prominence. Be wary of anyone who gives you a date.</p>
       <h3>Why did my Google Business Profile rankings drop overnight?</h3>
       <p>A sudden drop usually points to something that changed on one date: a suspension, an edit to your category or address, or removed reviews. Check those first, in that order. A slow slide over several weeks points more often to stronger competitors or fewer new reviews. If you would rather not check it yourself, <a href="/services/local-seo/google-business-profile-optimization">Business Profile optimization</a> starts with this same review.</p>
+      <figure class="my-8" style="margin:2rem 0"><img src="/images/blog/figures/google-maps-sudden-vs-slow-ranking-drop.webp" alt="Two illustrative line charts comparing a sudden Google Maps ranking drop with a slow slide, and the causes to check first for each." width="1200" height="800" loading="lazy" decoding="async" /><figcaption class="mt-2 text-sm leading-6 text-slate-600">Illustrative shapes, not real data. These are starting points, not a diagnosis.</figcaption></figure>
       <h3>Why did my map ranking drop when my website ranking stayed the same?</h3>
       <p>They are different systems. The map pack depends on your Business Profile, the searcher's location and your reviews. Organic results depend on your website. A drop in one and not the other usually points to the profile: check for suspensions, edits and review changes first.</p>
       <h3>Does running Google Ads affect my Maps ranking?</h3>

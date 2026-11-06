@@ -401,17 +401,17 @@ export default function PostClient({
       return {
         bannerCopy: {
           eyebrow: `LOCAL PACK & GBP IMPACT CHECK · ${cat.toUpperCase()}`,
-          headline: `Did "${shortTitle}" Impact Your Google Maps & Local Pack Rankings?`,
-          sub: `Send me your website URL and I'll audit your Google Business Profile, local citations, and service-area pages against this update — free, personally reviewed within 24 hours.`,
+          headline: `Is This Hurting Your Google Maps & Local Pack Rankings?`,
+          sub: `Send me your website URL and I'll audit your Google Business Profile, local citations, and service-area pages for you — free, personally reviewed within 24 hours.`,
         },
         bannerBtn: "Check My Local Pack Impact →",
         sidebarCopy: {
           headline: `Free Local SEO & GBP Teardown`,
-          sub: `Find out how "${shortTitle}" affects your local map pack rankings and calls.`,
+          sub: `Send me your site and I'll show you what is holding back your map pack rankings and calls.`,
         },
         sidebarBtn: "Audit My Local Presence →",
         bottomCopy: {
-          headline: `Protect & Grow Your Google Maps Rankings After "${shortTitle}"`,
+          headline: `Protect & Grow Your Google Maps Rankings`,
           sub: `Enter your website URL and email below. I'll inspect your Google Business Profile, local competitors, and city pages and send you a step-by-step fix list within 24 hours.`,
         },
         bottomBtn: "Get My Free Local SEO Audit →",
