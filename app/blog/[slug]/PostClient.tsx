@@ -197,6 +197,7 @@ export type ArticlePost = {
   content: string;
   readTime: string;
   date: string;
+  dateModified?: string;
   heroImage: string;
   heroImageAlt?: string;
   bodyVisual?: { src: string; alt: string; caption: string };
@@ -237,7 +238,12 @@ export default function PostClient({
   const tags = post.tags ?? [];
   const toc =
     post.toc && post.toc.length > 0 ? post.toc : extractArticleToc(post.content);
-  const displayDate = formatPostDate(post.date);
+  // The local hub shows when its log last changed. That date comes from the
+  // newest dated entry, so it moves only when there is a real update.
+  const displayDate =
+    post.slug === "local-seo-updates" && post.dateModified
+      ? `Updated ${formatPostDate(post.dateModified.slice(0, 10))}`
+      : formatPostDate(post.date);
   const related: Array<Record<string, any>> =
     relatedOverride ?? getRelated(post.slug, post.category);
   const [copied, setCopied] = useState(false);
