@@ -58,16 +58,12 @@ async function getPostData(rawSlug: string) {
   if (staticPillar) {
     if (slug === "local-seo-updates") {
       const updated = localNewsLastUpdated();
-      const month = new Date(updated).toLocaleString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
       return {
         ...staticPillar,
-        // "news" and "updates" are both searched. The month is the last real
-        // update, shown only while it is the current month; otherwise the
-        // title falls back to the year so it never reads as stale.
-        metaTitle:
-          new Date(updated).toISOString().slice(0, 7) === new Date().toISOString().slice(0, 7)
-            ? `Local SEO News & Updates, ${month}: Google Maps & GBP`
-            : `Local SEO News & Updates ${new Date(updated).getUTCFullYear()}: Google Maps & GBP`,
+        // "news" and "updates" are both searched. Held without a month since
+        // November 2026 at the owner's request, so new log entries don't
+        // change the title while the page's other changes are being measured.
+        metaTitle: `Local SEO News & Updates ${new Date(updated).getUTCFullYear()}: Google Maps & GBP`,
         dateModified: updated,
         heroImage: "/images/news/local-business-owner-storefront.webp",
         content: getStaticLocalSeoNewsContent(),

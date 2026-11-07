@@ -16,6 +16,24 @@ Reverse chronological. Every entry carries a date, a source, and a label saying 
 
 <div class="callout"><strong>How to read the labels.</strong> <strong>Confirmed</strong> — Google announced or stated it. <strong>Observed</strong> — the SEO community documented it and Google has not commented. <strong>Independent testing</strong> — a third party published its own methodology and results. Nothing enters this log without a date and a named source.</div>
 
+### November 6, 2026 — Google Maps adds a Message button beside Call
+
+**Confirmed.** Search Engine Roundtable reported on November 6 that Google has expanded messaging on Google Maps for Android and iOS, with a Message button next to Call. Lisa Landsman shared the change in the Google Business Help Forums, and Barry Schwartz saw the button on his own listing in the iOS app. November 6 is the report date; the report does not give the date of the forum post.
+
+- **What changed:** Customers can start a message from the main profile view without scrolling far down the listing. Messages can route to channels such as WhatsApp or SMS, depending on what the business has linked.
+- **Who's affected:** Local businesses whose customers contact them through Maps.
+- **What to do:** Check [which messaging channel is linked to your profile](https://support.google.com/business/answer/15013580?hl=en) and make sure someone answers it. The report does not mention any ranking effect.
+- **Source:** [Search Engine Roundtable](https://www.seroundtable.com/google-maps-messaging-android-ios-42472.html).
+
+### November 6, 2026 — Google publishes a help document for managing offers
+
+**Confirmed.** Google's help page, [Manage offers on your Business Profile](https://support.google.com/business/answer/18888417?hl=en), explains how offers such as discounts can appear on a profile in Search. Search Engine Roundtable reported the new document on November 6. The page itself carries no publication date, and it does not announce a wider rollout.
+
+- **What changed:** Offers can come from authorized third-party partners, or from promotions you create or link through social media. There is now a documented way to remove one that is wrong.
+- **Who's affected:** Businesses in the regions and languages where offers are available. Google says the feature is "available only in select regions and languages".
+- **What to do:** Check your profile for offers you did not create. To remove one, contact Business Profile Support, who can connect you with the provider. The provider then has 5 business days, and you can file a violation report if it does not act.
+- **Source:** [Google Business Profile Help](https://support.google.com/business/answer/18888417?hl=en), reported by [Search Engine Roundtable](https://www.seroundtable.com/google-business-profiles-manage-offers-42471.html).
+
 ### October 8, 2026 — The September 2026 spam update has concluded
 
 **Confirmed.** Google updated the Search Status Dashboard to confirm that the September 2026 spam update completed its rollout on October 8 after 14 days (it began September 24). It is the fourth confirmed spam update of 2026. Full coverage: [Google September 2026 Spam Update Concluded](/resources/news/google-september-2026-spam-update).
@@ -167,6 +185,9 @@ The short version is below. For the full diagnosis — suspensions, edits, revie
 
 ## Sources
 
+- <a href="https://www.seroundtable.com/google-maps-messaging-android-ios-42472.html" target="_blank" rel="noopener noreferrer">Google Expands Business Messaging To Google Maps On iOS &amp; Android — Search Engine Roundtable</a>
+- <a href="https://support.google.com/business/answer/18888417?hl=en" target="_blank" rel="noopener noreferrer">Manage offers on your Business Profile — Google Business Profile Help</a>
+- <a href="https://www.seroundtable.com/google-business-profiles-manage-offers-42471.html" target="_blank" rel="noopener noreferrer">Google Business Profiles Manage Offers Help Document — Search Engine Roundtable</a>
 - <a href="https://status.search.google.com/incidents/XhUDXP7A67iHCD2kmbVu" target="_blank" rel="noopener noreferrer">September 2026 spam update — Google Search Status Dashboard, October 8, 2026</a>
 - <a href="https://www.seroundtable.com/google-local-panel-whatsapp-button-42230.html" target="_blank" rel="noopener noreferrer">Google Local Panel Gains WhatsApp Button — Search Engine Roundtable, October 7, 2026</a>
 - <a href="https://www.seroundtable.com/google-maps-account-reviews-42186.html" target="_blank" rel="noopener noreferrer">Google Maps Now Requires Sign In To Read All Reviews & More — Search Engine Roundtable, September 30, 2026</a>

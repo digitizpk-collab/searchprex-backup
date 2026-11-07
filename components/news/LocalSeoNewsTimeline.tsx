@@ -13,6 +13,32 @@ export type LocalSeoNewsUpdate = {
 
 export const localSeoNewsUpdates: LocalSeoNewsUpdate[] = [
   {
+    date: "November 6, 2026",
+    status: "Confirmed",
+    title: "Google Maps adds a Message button beside Call on Android and iOS",
+    summary:
+      "Search Engine Roundtable reports that Lisa Landsman shared the change in the Google Business Help Forums. Messages can route to channels such as WhatsApp or SMS, depending on what the business has linked. The report does not mention a ranking effect. Check which channel your profile uses and who answers it.",
+    href: "https://www.seroundtable.com/google-maps-messaging-android-ios-42472.html",
+    source: "Search Engine Roundtable",
+    topics: ["Google Maps", "Google Business Profile"],
+    trending: true,
+    image: "/images/local/google-business-profile-local-intent.webp",
+    imageAlt: "A customer checking a local business listing on a phone outside a neighborhood storefront",
+  },
+  {
+    date: "November 6, 2026",
+    status: "Confirmed",
+    title: "Google publishes a help document for managing offers on Business Profiles",
+    summary:
+      "The document explains how offers can appear on a profile in Search, including offers from authorized third parties. To remove a wrong third-party offer, contact Business Profile Support; the provider then has 5 business days to take it down. Google says the feature is only in select regions and languages.",
+    href: "https://support.google.com/business/answer/18888417?hl=en",
+    source: "Google Business Profile Help",
+    topics: ["Google Business Profile"],
+    trending: true,
+    image: "/images/news/local-business-owner-storefront.webp",
+    imageAlt: "A local business owner standing outside a neighborhood storefront",
+  },
+  {
     date: "October 23, 2026",
     status: "Reported test",
     title: "Google is testing expanded Business Profile performance reports",
