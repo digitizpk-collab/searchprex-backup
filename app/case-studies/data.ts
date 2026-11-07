@@ -165,13 +165,15 @@ export const caseStudies: CaseStudy[] = [
     client: "Mammoth Roofing",
     // Was "+210 monthly clicks": 210 is the 28-day total (197 the 28 days
     // before). The real movement in the GSC comparison is impressions.
-    period: "28 days to October 2024",
+    period: "October 2024 – March 2025",
     seoTitle: "Roofing SEO Case Study, Texas: +167% Impressions",
-    verifiedVia: "Google Search Console",
+    // Calls are from the Feb vs Mar 2025 GMB report tables; its screenshots show
+    // interactions only, so calls are not claimed as screenshot-verified.
+    verifiedVia: "Google Search Console, Business Profile Performance and the GMB report",
     seoType: "Local SEO",
     industry: "Roofing",
     location: "Texas",
-    headline: "Impressions up 167% in 28 days, and a top-6 position for a competitive Texas roofing term.",
+    headline: "Impressions up 167% in 28 days, then calls from 18 to 41 in a month after local SEO across four Business Profiles.",
     badgeColor: "#ea580c",
     badgeBg: "#fef3c7",
     image: "/images/mammoth-roofing-gsc.JPG",
@@ -180,13 +182,13 @@ export const caseStudies: CaseStudy[] = [
     challenge:
       "In Texas's hyper-competitive roofing market, Mammoth Roofing was stuck beyond page one for every revenue keyword, with thin service pages and weak local signals.",
     solution:
-      "We mapped keywords across roofing services, built location-targeted landing pages, fixed technical SEO issues, and published content aligned with what Texas homeowners actually search for.",
+      "We mapped keywords across roofing services, built location-targeted landing pages, fixed technical SEO issues, and published content aligned with what Texas homeowners actually search for. Clicks barely moved, so we then added local SEO across four Google Business Profiles: about 50 posts, about 20 business listings, and better categories, services and images.",
     outcome:
-      "Over 28 days to October 2024, impressions rose from 16.9K to 45.2K (+167%) and clicks from 197 to 210, and the site ranked #6 for \"copper roofing company in Texas\". Verified in Google Search Console.",
+      "Over 28 days to October 2024, impressions rose from 16.9K to 45.2K (+167%) and clicks from 197 to 210, and the site ranked #6 for \"copper roofing company in Texas\". From February to March 2025, calls across the four profiles rose from 18 to 41 and profile interactions from 233 to 350. Results were uneven: San Antonio went from 4 calls to 22, Marble Falls stayed at 1, Austin was still down 52.4% on March 2024, and March is a longer month.",
     metrics: [
       { v: "+167%", l: "Impressions, 28 days" },
-      { v: "45.2K", l: "Impressions" },
-      { v: "Top 6", l: "Position" },
+      { v: "18 → 41", l: "Calls, Feb → Mar 2025" },
+      { v: "233 → 350", l: "Profile interactions" },
     ],
   },
   {
