@@ -111,7 +111,7 @@ Google publishes no "completeness score" and has never confirmed one as a rankin
 
 No. Google confirmed in December 2025 that Q&A is being replaced by Ask, an AI answer layer inside Maps, and the rollout continued through 2026. You can no longer seed your own questions and answers. Ask draws on your profile, your reviews and your website instead.
 
-## Why this page is careful about what it claims
+## How we verify local SEO news
 
 Local SEO has a sourcing problem. Google does not publish local-specific algorithm announcements the way it does core and spam updates, so the gap fills with confident claims — internal "completeness scores", exact proximity radii, precise review-velocity thresholds — that trace to no primary source.
 
@@ -133,7 +133,7 @@ This matters disproportionately in local because the classic local spam tactics 
 
 February's Discover core update stated an aim of showing users more locally relevant content from websites based in their own country. For local publishers and service businesses that produce local content, Discover is now a surface to report on separately from Search.
 
-## What we recommend — and why, stated as our own practice
+## What we recommend for local businesses
 
 None of the following is a documented Google ranking factor. It is what we do for local clients because it is consistent with Google's published guidance and with what we observe. Treat it accordingly.
 

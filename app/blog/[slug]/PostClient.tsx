@@ -5,6 +5,7 @@
 // owns metadata and JSON-LD.
 
 import Link from "next/link";
+import { LOCAL_NEWS_EXTRA_SLUGS } from "@/lib/local-news-slugs";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -318,7 +319,7 @@ export default function PostClient({
   const leadSource = `article:${section.href}/${post.slug}`;
   const isMubasharAuthor = post.author.name.toLowerCase().includes("mubashar");
   const isLocalUpdates = post.slug === "local-seo-updates";
-  const isLocalNewsSpoke = section.href === "/resources/news" && !isLocalUpdates && (post.category || "").toLowerCase().includes("local");
+  const isLocalNewsSpoke = section.href === "/resources/news" && !isLocalUpdates && ((post.category || "").toLowerCase().includes("local") || LOCAL_NEWS_EXTRA_SLUGS.has(post.slug));
 
   useEffect(() => {
     if (!isLocalUpdates) return;

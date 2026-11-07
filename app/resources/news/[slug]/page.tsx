@@ -236,7 +236,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: metaDescription,
     keywords: post.tags,
     authors: [{ name: post.author.name }],
-    alternates: { canonical },
+    alternates: {
+      canonical,
+      ...(post.slug === "local-seo-updates"
+        ? { types: { "application/rss+xml": [{ url: "https://www.searchprex.com/feed.xml?category=Local", title: "SearchPrex Local SEO News" }] } }
+        : {}),
+    },
     openGraph: {
       title: ogTitle,
       description: ogDesc,

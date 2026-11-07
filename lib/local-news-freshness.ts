@@ -3,11 +3,12 @@
 import { staticNewsSpokes } from "@/lib/static-news-spokes";
 import { NEWS_FALLBACK_ARTICLES } from "@/lib/news-fallback";
 import { localSeoNewsUpdates } from "@/components/news/LocalSeoNewsTimeline";
+import { LOCAL_NEWS_EXTRA_SLUGS } from "@/lib/local-news-slugs";
 
 /** Local news articles the hub lists: committed spokes plus repo-kept CMS articles. */
 export function localNewsArticles() {
   const spokes = staticNewsSpokes
-    .filter((s) => s.category.toLowerCase().includes("local") && s.slug !== "local-seo-updates")
+    .filter((s) => (s.category.toLowerCase().includes("local") || LOCAL_NEWS_EXTRA_SLUGS.has(s.slug)) && s.slug !== "local-seo-updates")
     .map((s) => ({ slug: s.slug, title: s.title, excerpt: s.excerpt, date: s.date, readTime: s.readTime }));
   const archived = NEWS_FALLBACK_ARTICLES
     .filter((a) => a.category.toLowerCase().includes("local") && !spokes.some((s) => s.slug === a.slug))
