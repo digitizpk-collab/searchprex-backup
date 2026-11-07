@@ -9,7 +9,31 @@ export type LocalSeoNewsUpdate = {
   trending?: boolean;
   image: string;
   imageAlt: string;
+  /** One clause for the hub's "In short" box. Entries without one stay out of it. */
+  brief?: string;
+  /** What a business should do now, shown when this is the newest entry. */
+  action?: string;
 };
+
+/**
+ * The hub's "In short" box, built from the log so its date and content can't
+ * drift apart: the newest day's entries, then up to three older ones.
+ */
+export function localSeoNewsBrief(updates: LocalSeoNewsUpdate[]) {
+  const shortDate = (date: string) =>
+    new Date(`${date} 12:00:00 UTC`).toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
+  const dated = updates
+    .filter((u) => u.brief)
+    .sort((a, b) => Date.parse(`${b.date} 12:00:00 UTC`) - Date.parse(`${a.date} 12:00:00 UTC`));
+  if (dated.length === 0) return null;
+  const newest = dated[0].date;
+  return {
+    asOf: newest,
+    latest: dated.filter((u) => u.date === newest).map((u) => u.brief as string),
+    earlier: dated.filter((u) => u.date !== newest).slice(0, 3).map((u) => `${u.brief} (${shortDate(u.date)})`),
+    action: dated.find((u) => u.action)?.action,
+  };
+}
 
 export const localSeoNewsUpdates: LocalSeoNewsUpdate[] = [
   {
@@ -24,6 +48,8 @@ export const localSeoNewsUpdates: LocalSeoNewsUpdate[] = [
     trending: true,
     image: "/images/local/google-business-profile-local-intent.webp",
     imageAlt: "A customer checking a local business listing on a phone outside a neighborhood storefront",
+    brief: "Google Maps now shows a Message button beside Call on Android and iOS",
+    action: "check which messaging channel your profile uses, and who answers it.",
   },
   {
     date: "November 6, 2026",
@@ -37,6 +63,7 @@ export const localSeoNewsUpdates: LocalSeoNewsUpdate[] = [
     trending: true,
     image: "/images/news/local-business-owner-storefront.webp",
     imageAlt: "A local business owner standing outside a neighborhood storefront",
+    brief: "Google published a help document on managing offers",
   },
   {
     date: "October 23, 2026",
@@ -50,10 +77,12 @@ export const localSeoNewsUpdates: LocalSeoNewsUpdate[] = [
     trending: true,
     image: "/images/about/founder-hands-on-strategy-desk.webp",
     imageAlt: "SEO strategist reviewing a local business search performance report at a desk",
+    brief: "Google was reported testing expanded performance reports",
   },
   {
     date: "October 22, 2026",
     status: "Reported test",
+    brief: "a new local panel layout was seen in testing",
     title: "Google is testing a different local panel layout",
     summary:
       "The observed design swaps the position of business photos and key profile details. The report does not establish a ranking or conversion effect, so check how your own profile appears on desktop and mobile rather than changing assets based on the test alone.",
@@ -67,6 +96,7 @@ export const localSeoNewsUpdates: LocalSeoNewsUpdate[] = [
   {
     date: "October 19, 2026",
     status: "Reported test",
+    brief: "Posts were seen higher in some panels",
     title: "Google Posts may appear higher in some local panels",
     summary:
       "Local-search observers report that the Posts section has moved up and down in some panels. This is an interface observation, not a confirmed rollout or ranking change. Keep profile posts current for customers, but do not expect posting alone to improve local rankings.",

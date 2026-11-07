@@ -1,9 +1,9 @@
-<div class="callout"><strong>Accuracy note:</strong> every date and figure on this page is taken from the primary announcement or from established trade coverage, linked in Sources at the foot of the article. Last verified October 11, 2026. Where a number could not be traced to a named source, it is not published here.</div>
-
-**Latest local SEO news (October 2026):** Google gave Business Profile owners four days to reject suggested edits (Sep 23). The September 2026 spam update has concluded after a 14-day rollout. Maps now asks for sign-in to read all reviews (observed Sep 30, not confirmed by Google). No local-specific algorithm update has been confirmed in 2026.
+<div class="callout"><strong>Accuracy note:</strong> every date and figure on this page is taken from the primary announcement or from established trade coverage, linked in Sources at the foot of the article. Log last updated November 7, 2026. Where a number could not be traced to a named source, it is not published here.</div>
 
 | Date | Update | Impact | Action |
 |------|--------|--------|--------|
+| Nov 6 | Message button beside Call on Google Maps | Low-Medium | Check your linked messaging channel and who answers it |
+| Nov 6 | Google help document on managing offers | Low | Check your profile for offers you did not create |
 | Oct 8 | Spam update concluded | Medium | Check Search Console for manual actions |
 | Oct 7 | WhatsApp button in local search panels (observed) | Low-Medium | Verify GBP WhatsApp number and response times |
 | Sep 30 | Maps asks sign-in to read all reviews (observed, unconfirmed) | Low-Medium | Monitor review visibility; don't change review strategy yet |

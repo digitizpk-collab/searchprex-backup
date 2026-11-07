@@ -66,6 +66,9 @@ async function getPostData(rawSlug: string) {
         metaTitle: `Local SEO News & Updates ${new Date(updated).getUTCFullYear()}: Google Maps & GBP`,
         dateModified: updated,
         heroImage: "/images/news/local-business-owner-storefront.webp",
+        // Empty so the table of contents comes from this article's real headings,
+        // not the generic guide outline the links would not match.
+        toc: [],
         content: getStaticLocalSeoNewsContent(),
       };
     }

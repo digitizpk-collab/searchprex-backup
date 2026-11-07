@@ -20,7 +20,7 @@ import { renderArticle, extractArticleToc } from "@/lib/render-article";
 import ArticleLeadMagnet from "@/components/ArticleLeadMagnet";
 import ArticleExitOffer from "@/components/ArticleExitOffer";
 import NewsDiscussionSection from "@/components/news/NewsDiscussionSection";
-import { localSeoNewsUpdates } from "@/components/news/LocalSeoNewsTimeline";
+import { localSeoNewsBrief, localSeoNewsUpdates } from "@/components/news/LocalSeoNewsTimeline";
 import LocalSeoNewsActions from "@/components/news/LocalSeoNewsActions";
 import LocalSeoResearchNote from "@/components/news/LocalSeoResearchNote";
 import LocalSeoNewsExplorer from "@/components/news/LocalSeoNewsExplorer";
@@ -319,6 +319,7 @@ export default function PostClient({
   const leadSource = `article:${section.href}/${post.slug}`;
   const isMubasharAuthor = post.author.name.toLowerCase().includes("mubashar");
   const isLocalUpdates = post.slug === "local-seo-updates";
+  const newsBrief = post.slug === "local-seo-updates" ? localSeoNewsBrief(localSeoNewsUpdates) : null;
   const isLocalNewsSpoke = section.href === "/resources/news" && !isLocalUpdates && ((post.category || "").toLowerCase().includes("local") || LOCAL_NEWS_EXTRA_SLUGS.has(post.slug));
 
   useEffect(() => {
@@ -967,10 +968,14 @@ export default function PostClient({
                 feed below with its source), then the feed, then the promo. */}
             {post.slug === "local-seo-updates" && (
               <div className="mb-8 rounded-2xl border border-emerald-200 bg-emerald-50/60 p-5 sm:p-6">
-                <p className="text-xs font-bold uppercase tracking-[0.15em] text-emerald-800">In short · as of October 31, 2026</p>
+                <p className="text-xs font-bold uppercase tracking-[0.15em] text-emerald-800">In short · as of {newsBrief?.asOf}</p>
                 <p className="mt-2 text-base leading-7 text-slate-800">
-                  <strong>The latest local search news:</strong> Google added a WhatsApp button to some local panels (Oct 7), and is testing Google Posts higher in panels (Oct 19), a new local panel layout (Oct 22) and expanded Business Profile performance reports (Oct 23). In September it set a four-day review window for certain suggested edits. None is a confirmed ranking change.
+                  <strong>The latest local search news:</strong> {newsBrief?.latest.join(", and ")}.
+                  {newsBrief?.earlier.length ? ` Earlier: ${newsBrief.earlier.join("; ")}.` : ""} None is a confirmed ranking change.
                 </p>
+                {newsBrief?.action ? (
+                  <p className="mt-2 text-base leading-7 text-slate-800"><strong>Do this now:</strong> {newsBrief.action}</p>
+                ) : null}
               </div>
             )}
 
