@@ -912,7 +912,7 @@ export default function PostClient({
                   src="/images/mubashar-sharif.jpg"
                   alt={`${post.author.name} — ${post.author.role}`}
                   fill
-                  sizes="44px"
+                  sizes="96px"
                   className="object-cover object-top"
                 />
               </Link>
@@ -1122,7 +1122,7 @@ export default function PostClient({
                     src="/images/mubashar-sharif.jpg"
                     alt={`${post.author.name}, ${post.author.role} at SearchPrex`}
                     fill
-                    sizes="(max-width: 639px) 96px, 112px"
+                    sizes="256px"
                     className="scale-[1.08] object-cover object-[center_18%]"
                   />
                 </div>
