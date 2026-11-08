@@ -9,6 +9,8 @@ import { lawFirmAiOverviewFaqs, lawFirmAiOverviewsContent } from "../law-firm-ai
 import { lawFirmGoogleMapsRankingContent } from "../law-firm-google-maps-ranking-content";
 import { usElectionEconomyFaqs, usElectionEconomyContent } from "../us-election-economy-content";
 import { lawFirmSchemaMarkupFaqs, lawFirmSchemaMarkupContent } from "../law-firm-schema-markup-content";
+import { seoForPersonalInjuryLawyersFaqs, seoForPersonalInjuryLawyersContent } from "../seo-for-personal-injury-lawyers-content";
+
 
 
 
@@ -235,6 +237,45 @@ const ECOMMERCE_INDEXING_FAQS: PostFaq[] = [
 ];
 
 export const posts = [
+  {
+    slug: "seo-for-personal-injury-lawyers",
+    category: "Legal SEO",
+    subcategory: "Practice Area SEO & High-Intent Acquisition",
+    metaTitle: "SEO for Personal Injury Lawyers: Keywords That Actually Sign Cases",
+    metaDescription: "Master personal injury lawyer SEO: discover the high-intent keywords that sign cases, bypass $450+ PPC auctions, and dominate the Google Maps 3-Pack.",
+    title: "SEO for Personal Injury Lawyers: Keywords That Actually Sign Cases (2026 Guide)",
+    excerpt: "Discover the high-intent keywords, Google Maps 3-Pack tactics, and under-5-minute intake workflows that top personal injury law firms use to sign cases each month without burning money on paid ads.",
+    readTime: "10-minute read",
+    date: "November 9, 2026",
+    tags: [
+      "SEO for personal injury lawyers",
+      "personal injury lawyer SEO",
+      "personal injury SEO keywords",
+      "car accident lawyer SEO",
+      "law firm SEO case acquisition",
+      "Google Maps 3-Pack for lawyers"
+    ],
+    heroImage: "/images/blog/covers/seo-for-personal-injury-lawyers.webp",
+    heroImageAlt: "SEO for Personal Injury Lawyers Guide showing high-intent keywords, Google Maps 3-pack strategy, and signed retainer acquisition",
+    toc: [
+      "The real cost of personal injury marketing in 2026",
+      "The personal injury keyword intent hierarchy: What signs cases?",
+      "Real client data: What our audits show across 50 injury firms",
+      "The 4 essential pillars of winning personal injury SEO",
+      "The silent killer of SEO ROI: Slow intake response time",
+      "Frequently asked questions about personal injury SEO",
+      "Next steps: Build your personal injury case engine",
+    ],
+    faqs: seoForPersonalInjuryLawyersFaqs,
+    content: seoForPersonalInjuryLawyersContent,
+    author: {
+      name: "Mubashar Sharif",
+      role: "Founder & SEO Analyst",
+      bio: "Mubashar Sharif is the founder of SearchPrex, specializing in high-converting legal SEO architecture, map pack rankings, and client acquisition for U.S. injury firms."
+    },
+    featured: true,
+  },
+
   {
     slug: "law-firm-schema-markup",
     category: "Technical SEO",

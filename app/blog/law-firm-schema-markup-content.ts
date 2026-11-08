@@ -349,6 +349,6 @@ ${faqHtml}
 <p>Want to see how your website compares to top firms in your market? Take our free <a href="/law-firm-scorecard">Law Firm SEO Scorecard</a> to test your site. Or check our full <a href="/services/law-firm-seo">Law Firm SEO Services</a> to have our team build a custom entity graph for your firm.</p>
 
 <div class="callout">
-  <strong>Recommended Next Read:</strong> See how organic search compares to paid ads in <a href="/blog/law-firm-seo-vs-ppc">Law Firm SEO vs. PPC: Cost Per Signed Case Compared</a>, and discover how to measure case intake in <a href="/blog/track-signed-cases-from-seo">How to Track Signed Cases From SEO</a>.
+  <strong>Recommended Next Read:</strong> If you practice injury law, read our high-intent keyword guide: <a href="/blog/seo-for-personal-injury-lawyers">SEO for Personal Injury Lawyers</a>, see how organic search compares to paid ads in <a href="/blog/law-firm-seo-vs-ppc">Law Firm SEO vs. PPC</a>, and discover how to track case intake in <a href="/blog/track-signed-cases-from-seo">How to Track Signed Cases From SEO</a>.
 </div>
 `;

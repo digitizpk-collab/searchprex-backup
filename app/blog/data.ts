@@ -30,6 +30,22 @@ export interface Post {
  
 const ALL_POSTS: Post[] = [
   {
+    slug: "seo-for-personal-injury-lawyers",
+    category: "Legal SEO",
+    subcategory: "Practice Area SEO & High-Intent Acquisition",
+    title: "SEO for Personal Injury Lawyers: Keywords That Actually Sign Cases (2026 Guide)",
+    excerpt: "Discover the high-intent keywords, Google Maps 3-Pack tactics, and under-5-minute intake workflows that top personal injury law firms use to sign cases each month without burning money on paid ads.",
+    readTime: "10-minute read",
+    date: "2026-11-09",
+    author: {
+      name: "Mubashar Sharif",
+      role: "Founder & SEO Analyst",
+    },
+    featured: true,
+    heroImage: "/images/blog/covers/seo-for-personal-injury-lawyers.webp",
+  },
+
+  {
     slug: "law-firm-schema-markup",
     category: "Technical SEO",
     subcategory: "Legal SEO & Structured Data",
