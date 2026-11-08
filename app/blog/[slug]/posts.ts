@@ -259,7 +259,7 @@ export const posts = [
       "Part 1 — The legal sector: Regulatory shifts, tort climate, and ad auction inflation",
       "Part 2 — E-commerce & online retailers: Tariffs, landed costs, and margin preservation",
       "Part 3 — Local businesses & home services: Interest rates and the 'Repair vs. Replace' pivot",
-      "SearchPrex field telemetry: Proprietary analysis across 50+ U.S. client accounts",
+      "Real client data: What really happens to 50+ small businesses after an election",
       "State-by-state economic telemetry: Regional impacts across SearchPrex service corridors",
       "The 4-step strategic defense playbook: Protecting margins and capturing market share",
       "Frequently asked questions",

@@ -154,18 +154,34 @@ export const usElectionEconomyContent = `
 
 <p>Contractors whose websites only promote expensive full-system replacements see their lead pipeline dry up. Meanwhile, competitors who optimize their Google Business Profiles and localized service pages for high-urgency repair queries capture high-margin, immediate cash-flow jobs. See our guide on <a href="/blog/get-more-calls-from-google-business-profile">Getting More Calls from Google Business Profile</a>.</p>
 
-<h2>SearchPrex field telemetry: Proprietary analysis across 50+ U.S. client accounts</h2>
+<h2>Real client data: What really happens to 50+ small businesses after an election</h2>
 
-<p>At SearchPrex, we manage organic search, Google Maps pack rankings, and technical architecture for over 50 client organizations across Texas, Florida, California, New York, and the Midwest. Here is what our proprietary telemetry reveals about surviving post-election economic turbulence:</p>
+<p>At SearchPrex, we track organic search traffic, Google Maps call volumes, and actual signed revenue for over 50 client businesses across Texas, Florida, California, New York, and the Midwest. When an election shakes up the economy, here is what our live client telemetry actually shows — and what it means for your business:</p>
 
-<div style="background:#0a0f2e;color:#ffffff;padding:2rem;border-radius:14px;margin:2rem 0">
-  <h3 style="color:#38bdf8;margin-top:0">SearchPrex Field Telemetry: Key Empirical Findings</h3>
-  <ul style="line-height:1.8;padding-left:1.25rem">
-    <li><strong>Metric 1 — The PPC Auction Inflation Index:</strong> During election quarters, average Google Ads CPCs across our legal and home service tracking cohorts surged by <strong>+41.8%</strong> compared to non-election quarters. Independent businesses that relied 100% on paid ads saw their cost per lead nearly double within 60 days.</li>
-    <li><strong>Metric 2 — Organic Channel Lead Stability:</strong> Clients anchored in the Google Maps Local 3-Pack and core practice-area organic hubs experienced <strong>zero drop in qualified phone calls</strong>. In fact, organic inquiry volume rose +14% as price-conscious searchers actively skipped paid "Sponsored" ads to find verified local businesses with authentic reviews.</li>
-    <li><strong>Metric 3 — The 5-Minute Intake Factor:</strong> In a cautious economy, searchers contact multiple service providers. Our CRM telemetry shows that law firms and service businesses responding within <strong>5 minutes</strong> signed <strong>78% of their consultations</strong>, whereas firms responding after 30 minutes lost the case to a competitor 82% of the time.</li>
-    <li><strong>Metric 4 — AI Overview Citation Value:</strong> Pages structured with clean JSON-LD schema, clear entity definitions, and factual data points captured <strong>3.2x more citations in Google AI Overviews and Gemini</strong> than unoptimized text, generating premium, high-intent traffic without media cost.</li>
-  </ul>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;margin:2rem 0">
+  <div style="background:#ffffff;border:1px solid #e2e8f0;border-top:4px solid #0284c7;border-radius:12px;padding:1.5rem;box-shadow:0 4px 12px rgba(0,0,0,0.04)">
+    <div style="display:inline-block;background:#e0f2fe;color:#0369a1;font-size:0.75rem;font-weight:700;padding:4px 8px;border-radius:6px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.75rem">Google Ads Alert</div>
+    <div style="font-size:1.85rem;font-weight:900;color:#0a0f2e;line-height:1.1;margin-bottom:0.5rem">+41.8% Ad Cost Surge</div>
+    <p style="font-size:0.95rem;color:#475569;line-height:1.6;margin:0">During election quarters, legal and home service ad auctions flood with political campaign cash. Average cost-per-click jumped 41.8%, doubling client acquisition costs for businesses that relied purely on Google Ads.</p>
+  </div>
+
+  <div style="background:#ffffff;border:1px solid #e2e8f0;border-top:4px solid #059669;border-radius:12px;padding:1.5rem;box-shadow:0 4px 12px rgba(0,0,0,0.04)">
+    <div style="display:inline-block;background:#d1fae5;color:#047857;font-size:0.75rem;font-weight:700;padding:4px 8px;border-radius:6px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.75rem">Organic Stability</div>
+    <div style="font-size:1.85rem;font-weight:900;color:#0a0f2e;line-height:1.1;margin-bottom:0.5rem">0% Drop (+14% Calls)</div>
+    <p style="font-size:0.95rem;color:#475569;line-height:1.6;margin:0">Clients ranking in the Google Maps Local 3-Pack and organic search saw zero decline in leads. In fact, organic calls rose 14% as price-conscious buyers intentionally skipped sponsored ads to call verified local providers.</p>
+  </div>
+
+  <div style="background:#ffffff;border:1px solid #e2e8f0;border-top:4px solid #d97706;border-radius:12px;padding:1.5rem;box-shadow:0 4px 12px rgba(0,0,0,0.04)">
+    <div style="display:inline-block;background:#fef3c7;color:#b45309;font-size:0.75rem;font-weight:700;padding:4px 8px;border-radius:6px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.75rem">Speed to Lead</div>
+    <div style="font-size:1.85rem;font-weight:900;color:#0a0f2e;line-height:1.1;margin-bottom:0.5rem">78% Win Rate Under 5 Min</div>
+    <p style="font-size:0.95rem;color:#475569;line-height:1.6;margin:0">In a nervous economy, prospects contact multiple firms. Law firms and contractors responding within 5 minutes signed 78% of consultations. Those waiting 30+ minutes lost 82% of prospects to faster competitors.</p>
+  </div>
+
+  <div style="background:#ffffff;border:1px solid #e2e8f0;border-top:4px solid #7c3aed;border-radius:12px;padding:1.5rem;box-shadow:0 4px 12px rgba(0,0,0,0.04)">
+    <div style="display:inline-block;background:#ede9fe;color:#6d28d9;font-size:0.75rem;font-weight:700;padding:4px 8px;border-radius:6px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.75rem">AI Search Advantage</div>
+    <div style="font-size:1.85rem;font-weight:900;color:#0a0f2e;line-height:1.1;margin-bottom:0.5rem">3.2x More AI Citations</div>
+    <p style="font-size:0.95rem;color:#475569;line-height:1.6;margin:0">Websites structured with clean schema markup and factual entity data earned 3.2x more citations in Google AI Overviews and Gemini than standard blogs, driving premium traffic without paying for ad clicks.</p>
+  </div>
 </div>
 
 <h2>State-by-state economic telemetry: Regional impacts across SearchPrex service corridors</h2>
