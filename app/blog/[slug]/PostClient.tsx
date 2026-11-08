@@ -1079,7 +1079,7 @@ export default function PostClient({
                     const { src, alt, width, height } = domNode.attribs;
                     const normalizedSrc = (src || "").replace(/^https?:\/\/(www\.)?searchprex\.com/i, "");
                     return (
-                      <span className="block relative w-full h-auto overflow-hidden rounded-xl border border-[#e5e7eb] bg-[#f8fafc]">
+                      <span className="group block relative w-full h-auto overflow-hidden rounded-xl border border-[#e5e7eb] bg-[#f8fafc] cursor-zoom-in my-6">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                           src={normalizedSrc}
@@ -1088,7 +1088,7 @@ export default function PostClient({
                           height={height ? Number(height) : undefined}
                           loading="lazy"
                           decoding="async"
-                          className="w-full h-auto object-cover block"
+                          className="w-full h-auto object-cover block transition-transform duration-500 ease-out group-hover:scale-[1.04]"
                         />
                       </span>
                     );

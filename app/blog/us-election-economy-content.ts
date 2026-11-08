@@ -32,7 +32,20 @@ export const usElectionEconomyFaqs = [
 ];
 
 const faqHtml = usElectionEconomyFaqs
-  .map((faq) => `<h3>${faq.q}</h3><p>${faq.a}</p>`)
+  .map(
+    (faq, i) => `
+<div style="background:#ffffff;border:1px solid #e2e8f0;border-left:4px solid #0a0f2e;border-radius:12px;padding:1.5rem;margin:1.25rem 0;box-shadow:0 2px 8px rgba(0,0,0,0.04)">
+  <div style="display:flex;align-items:flex-start;gap:0.85rem">
+    <span style="display:inline-flex;align-items:center;justify-content:center;min-width:32px;height:32px;border-radius:8px;background:#0a0f2e;color:#ffffff;font-size:0.85rem;font-weight:800;flex-shrink:0;margin-top:2px">
+      ${String(i + 1).padStart(2, "0")}
+    </span>
+    <div>
+      <h3 style="font-size:1.15rem;font-weight:800;color:#0a0f2e;margin:0 0 0.5rem;line-height:1.4"><span style="color:#0284c7;margin-right:6px">Q${i + 1}:</span>${faq.q}</h3>
+      <p style="font-size:0.95rem;color:#475569;margin:0;line-height:1.65">${faq.a}</p>
+    </div>
+  </div>
+</div>`
+  )
   .join("\n");
 
 export const usElectionEconomyContent = `
@@ -48,9 +61,11 @@ export const usElectionEconomyContent = `
 
 <p>To understand why a change in the White House directly affects a contractor in Phoenix or an e-commerce brand in Atlanta, we look at the transmission mechanisms through classic macroeconomic models and peer-reviewed political science.</p>
 
-<figure style="margin:2.5rem 0">
-  <img src="/images/blog/body/post-election-macroeconomic-transmission.webp" alt="Macroeconomic transmission flowchart showing how US election policy shifts create ad auction inflation and landed cost friction before reaching US law firms, ecommerce, and local businesses" width="1400" height="800" loading="lazy" style="display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 6px 18px rgba(0,0,0,0.18)"/>
-  <figcaption style="margin-top:0.75rem;color:#64748b;font-size:0.95rem;text-align:center">The four-phase transmission model: From federal policy directives to sector-level profit squeeze, and the corresponding organic search defense.</figcaption>
+<figure style="margin:2.5rem 0;border-radius:14px;box-shadow:0 6px 18px rgba(0,0,0,0.18);overflow:hidden">
+  <div style="overflow:hidden;border-radius:14px;cursor:zoom-in">
+    <img src="/images/blog/body/post-election-macroeconomic-transmission.webp" alt="Macroeconomic transmission flowchart showing how US election policy shifts create ad auction inflation and landed cost friction before reaching US law firms, ecommerce, and local businesses" width="1400" height="800" loading="lazy" style="display:block;width:100%;height:auto;transition:transform 0.5s ease-out" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+  </div>
+  <figcaption style="margin-top:0.75rem;color:#64748b;font-size:0.95rem;text-align:center">The four-phase transmission model: From federal policy directives to sector-level profit squeeze, and the corresponding organic search defense. (Hover to zoom)</figcaption>
 </figure>
 
 <div style="overflow-x:auto;margin:2rem 0">
@@ -207,9 +222,11 @@ export const usElectionEconomyContent = `
 
 <p>Economic history proves a fundamental truth: businesses that invest in organic infrastructure during economic transitions emerge as market leaders during the subsequent expansion. Here is the operational playbook to insulate your enterprise right now:</p>
 
-<figure style="margin:2.5rem 0">
-  <img src="/images/blog/body/post-election-defense-playbook-matrix.webp" alt="SearchPrex Sector Defense Matrix showing comparative vulnerabilities and organic SEO mitigation strategies for US law firms, ecommerce retailers, and local contractors" width="1400" height="800" loading="lazy" style="display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 6px 18px rgba(0,0,0,0.18)"/>
-  <figcaption style="margin-top:0.75rem;color:#64748b;font-size:0.95rem;text-align:center">SearchPrex Sector Defense Matrix: Countering PPC inflation, tariff shocks, and consumer hesitation through owned digital infrastructure.</figcaption>
+<figure style="margin:2.5rem 0;border-radius:14px;box-shadow:0 6px 18px rgba(0,0,0,0.18);overflow:hidden">
+  <div style="overflow:hidden;border-radius:14px;cursor:zoom-in">
+    <img src="/images/blog/body/post-election-defense-playbook-matrix.webp" alt="SearchPrex Sector Defense Matrix showing comparative vulnerabilities and organic SEO mitigation strategies for US law firms, ecommerce retailers, and local contractors" width="1400" height="800" loading="lazy" style="display:block;width:100%;height:auto;transition:transform 0.5s ease-out" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+  </div>
+  <figcaption style="margin-top:0.75rem;color:#64748b;font-size:0.95rem;text-align:center">SearchPrex Sector Defense Matrix: Countering PPC inflation, tariff shocks, and consumer hesitation through owned digital infrastructure. (Hover to zoom)</figcaption>
 </figure>
 
 <h3>Step 1: Shift capital from rented ad auctions to owned digital equity</h3>
