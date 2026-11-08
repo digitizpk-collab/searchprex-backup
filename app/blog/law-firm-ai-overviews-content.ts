@@ -76,7 +76,7 @@ export const lawFirmAiOverviewsContent = `
 
 <h2>Do schema, FAQs, or llms.txt create a shortcut?</h2>
 <p>No. Google says no special schema.org markup, AI text file, or new machine-readable file is needed for AI Overviews. Add structured data only when it accurately describes information people can see on the page. It can help systems interpret eligible content, but it does not guarantee a citation or ranking.</p>
-<p>The same caution applies to <code>llms.txt</code>. A firm may choose to publish one for other tools to consume, but Google does not require it for AI Overviews or AI Mode. Do not sell, buy, or prioritize it as a proven Google citation lever. Our <a href="/tools/schema-generator">schema generator</a> is for accurate structured data, not a promise of AI visibility.</p>
+<p>The same caution applies to <code>llms.txt</code>. A firm may choose to publish one for other tools to consume, but Google does not require it for AI Overviews or AI Mode. Do not sell, buy, or prioritize it as a proven Google citation lever. Our <a href="/tools/schema-generator">schema generator</a> and <a href="/blog/law-firm-schema-markup">law firm schema markup guide</a> explain how to connect LegalService, Person, and FAQPage nodes for accurate structured data, not a promise of AI visibility.</p>
 <p>Likewise, an FAQ section can help answer real questions, but adding FAQ markup solely to influence AI selection is not a supported shortcut. Avoid padding a legal article with repetitive questions whose answers add no value.</p>
 
 <h2>Keep local SEO and AI Overview work distinct</h2>

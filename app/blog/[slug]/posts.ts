@@ -8,6 +8,8 @@ import { proofBoxHtml } from "@/lib/proof-box";
 import { lawFirmAiOverviewFaqs, lawFirmAiOverviewsContent } from "../law-firm-ai-overviews-content";
 import { lawFirmGoogleMapsRankingContent } from "../law-firm-google-maps-ranking-content";
 import { usElectionEconomyFaqs, usElectionEconomyContent } from "../us-election-economy-content";
+import { lawFirmSchemaMarkupFaqs, lawFirmSchemaMarkupContent } from "../law-firm-schema-markup-content";
+
 
 
 /* ── posts data ── */
@@ -233,6 +235,47 @@ const ECOMMERCE_INDEXING_FAQS: PostFaq[] = [
 ];
 
 export const posts = [
+  {
+    slug: "law-firm-schema-markup",
+    category: "Technical SEO",
+    subcategory: "Legal SEO & Structured Data",
+    metaTitle: "Law Firm Schema Markup: Person, Attorney & LegalService Guide",
+    metaDescription: "Practical guide to law firm schema markup: connect LegalService, Person (Attorney), and FAQPage JSON-LD code to win Google rich results and AI citations.",
+    title: "Law Firm Schema Markup Guide: Person, Attorney & LegalService JSON-LD",
+    excerpt: "A practical, copy-paste guide to law firm schema markup: how to connect LegalService, Attorney (Person), and FAQPage JSON-LD to earn Google rich results and AI Overview citations.",
+    readTime: "9-minute read",
+    date: "November 9, 2026",
+    tags: [
+      "law firm schema markup",
+      "attorney schema markup",
+      "LegalService JSON-LD",
+      "lawyer structured data",
+      "legal SEO schema",
+      "Google AI Overview schema"
+    ],
+    heroImage: "/images/blog/covers/law-firm-schema-markup.webp",
+    heroImageAlt: "Law Firm Schema Markup Guide showing interconnected LegalService, Person Attorney, and FAQPage JSON-LD architecture",
+    toc: [
+      "What is schema markup, and why should attorneys care?",
+      "Why law firms need schema markup in 2026",
+      "The 3 schema types every law firm website needs",
+      "Real client data: What our audits found across 50 law firms",
+      "Copy-paste schema templates for your law firm",
+      "How to set up and test your schema in 3 easy steps",
+      "4 big schema mistakes law firms make",
+      "Frequently asked questions about law firm schema markup",
+      "Next steps: Upgrade your law firm's technical SEO",
+    ],
+    faqs: lawFirmSchemaMarkupFaqs,
+    content: lawFirmSchemaMarkupContent,
+    author: {
+      name: "Mubashar Sharif",
+      role: "Founder & SEO Analyst",
+      bio: "Mubashar Sharif is the founder of SearchPrex, specializing in technical architecture, legal schema graphs, and local search dominance for U.S. law firms."
+    },
+    featured: true,
+  },
+
   {
     slug: "us-election-economic-impact-small-business",
     category: "Content Strategy",

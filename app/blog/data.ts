@@ -29,6 +29,22 @@ export interface Post {
 }
  
 const ALL_POSTS: Post[] = [
+  {
+    slug: "law-firm-schema-markup",
+    category: "Technical SEO",
+    subcategory: "Legal SEO & Structured Data",
+    title: "Law Firm Schema Markup Guide: Person, Attorney & LegalService JSON-LD",
+    excerpt: "A practical, copy-paste guide to law firm schema markup: how to connect LegalService, Attorney (Person), and FAQPage JSON-LD to earn Google rich results and AI Overview citations.",
+    readTime: "9-minute read",
+    date: "2026-11-09",
+    author: {
+      name: "Mubashar Sharif",
+      role: "Founder & SEO Analyst",
+    },
+    featured: true,
+    heroImage: "/images/blog/covers/law-firm-schema-markup.webp",
+  },
+
   { slug: "us-election-economic-impact-small-business", category: "Content Strategy", subcategory: "Macroeconomics & Business Strategy", title: "Post-US Election Economy: Macroeconomic Analysis for Law Firms, Ecommerce & Local Businesses", excerpt: "Federal policy shifts, tariff pressures, and regulatory changes post-election impact US businesses across California, Texas, Florida, and New York. Here is the macroeconomic evidence, theoretical framework, and the organic search playbook to protect margins and acquire clients.", readTime: "14-minute read", date: "2026-11-08", author: { name: "Mubashar Sharif", role: "Founder & SEO Analyst" }, authorBio: "Mubashar Sharif is the founder of SearchPrex and an SEO analyst focused on technical search, macro analytics, and local search for U.S. businesses.", featured: true, heroImage: "/images/blog/covers/us-election-economic-impact-small-business.webp" },
   { slug: "law-firm-ai-overview-citations", category: "Content Strategy", subcategory: "Law Firms & AI Search", title: "How to Get a Law Firm Cited in Google AI Overviews (2026)", excerpt: "A practical, source-led guide to AI Overview eligibility, attorney-reviewed legal content, jurisdiction-specific sources, Search Console measurement, and what firms cannot control.", readTime: "12-minute read", date: "2026-11-02", author: { name: "Mubashar Sharif", role: "Founder & SEO Analyst" }, authorBio: "Mubashar Sharif is the founder of SearchPrex and an SEO analyst focused on technical and local search for U.S. businesses.", featured: true },
   { slug: "law-firm-google-maps-ranking", category: "Local SEO", subcategory: "Law Firms", title: "Law Firm Google Maps Ranking: How to Rank in the Maps Pack (2026)", excerpt: "A practical guide to law firm Google Maps ranking: Business Profile eligibility, categories, genuine reviews, local pages, prominence, and measurement.", readTime: "12-minute read", date: "2026-11-01", author: { name: "Mubashar Sharif", role: "Founder & SEO Analyst" }, authorBio: "Mubashar Sharif is the founder of SearchPrex and an SEO analyst focused on local and technical SEO for U.S. businesses.", featured: true },
