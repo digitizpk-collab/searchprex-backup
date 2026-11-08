@@ -7,6 +7,8 @@
 import { proofBoxHtml } from "@/lib/proof-box";
 import { lawFirmAiOverviewFaqs, lawFirmAiOverviewsContent } from "../law-firm-ai-overviews-content";
 import { lawFirmGoogleMapsRankingContent } from "../law-firm-google-maps-ranking-content";
+import { usElectionEconomyFaqs, usElectionEconomyContent } from "../us-election-economy-content";
+
 
 /* ── posts data ── */
 /* ── FAQs for posts that carry FAQPage schema ──
@@ -231,6 +233,45 @@ const ECOMMERCE_INDEXING_FAQS: PostFaq[] = [
 ];
 
 export const posts = [
+  {
+    slug: "us-election-economic-impact-small-business",
+    category: "Content Strategy",
+    subcategory: "Macroeconomics & Business Strategy",
+    metaTitle: "Post-US Election Economy: Small Business & Firm Analysis",
+    metaDescription: "Evidence-based macroeconomic analysis on how US election shifts influence law firms, ecommerce, and local businesses, and how to avoid financial loss.",
+    title: "Post-US Election Economy: Macroeconomic Analysis for Law Firms, Ecommerce & Local Businesses",
+    excerpt: "Federal policy shifts, tariff pressures, and regulatory changes post-election impact US businesses across California, Texas, Florida, and New York. Here is the macroeconomic evidence, theoretical framework, and the organic search playbook to protect margins and acquire clients.",
+    readTime: "14-minute read",
+    date: "November 8, 2026",
+    tags: [
+      "US Election Economy",
+      "Law Firm Marketing",
+      "Ecommerce Tariffs",
+      "Local SEO Strategy",
+      "Macroeconomics for Small Business",
+      "Google AI Overviews"
+    ],
+    heroImage: "/images/blog/covers/us-election-economic-impact-small-business.webp",
+    heroImageAlt: "High-end editorial illustration of US Capitol silhouette with macroeconomic trend charts and SearchPrex Intelligence branding",
+    toc: [
+      "Theoretical economic foundations: How policy changes ripple through commerce",
+      "Part 1 — The legal sector: Regulatory shifts, tort climate, and ad auction inflation",
+      "Part 2 — E-commerce & online retailers: Tariffs, landed costs, and margin preservation",
+      "Part 3 — Local businesses & home services: Interest rates and the 'Repair vs. Replace' pivot",
+      "State-by-state economic telemetry: Regional impacts across SearchPrex service corridors",
+      "The 4-step strategic defense playbook: Protecting margins and capturing market share",
+      "Frequently asked questions",
+      "Sources and authoritative references"
+    ],
+    faqs: usElectionEconomyFaqs,
+    content: usElectionEconomyContent,
+    author: {
+      name: "Mubashar Sharif",
+      role: "Founder & SEO Analyst",
+      bio: "Mubashar Sharif is the founder of SearchPrex and an SEO analyst focused on technical search, macro analytics, and local search for U.S. businesses."
+    },
+    featured: true,
+  },
   {
     slug: "law-firm-ai-overview-citations",
     category: "Content Strategy",

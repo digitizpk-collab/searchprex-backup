@@ -21,7 +21,7 @@
 
 import { db } from "@/lib/db";
 import { caseStudies, detailUrl } from "../case-studies/data";
-import { posts as blogPosts } from "../blog/data";
+import { posts as publishedBlogPosts } from "../blog/[slug]/posts";
 import { staticNewsSpokes } from "@/lib/static-news-spokes";
 
 export const dynamic = "force-dynamic";
@@ -89,7 +89,9 @@ export async function GET() {
   addImages(`${SITE}/`, HOMEPAGE_PROOF);
 
   for (const cs of caseStudies) addImages(`${SITE}${detailUrl(cs)}`, [cs.image]);
-  for (const post of blogPosts) addImages(`${SITE}/blog/${post.slug}`, [(post as any).heroImage]);
+  for (const post of publishedBlogPosts) {
+    addImages(`${SITE}/blog/${post.slug}`, [post.heroImage, ...imagesInBody(post.content)]);
+  }
   for (const post of staticNewsSpokes) {
     const pageUrl = post.canonicalUrl || `${SITE}/resources/news/${post.slug}`;
     addImages(pageUrl, [post.heroImage, ...imagesInBody(post.content)]);
