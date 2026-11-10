@@ -11,6 +11,7 @@ import { RETAINER_PLANS } from "@/lib/pricing";
 import { ECOMMERCE_PLAYBOOK_GUIDE } from "@/lib/guides";
  
 import { getPageSEO } from "@/lib/admin-seo";
+import SeoFixSchema from "@/components/SeoFixSchema";
 const SITE = "https://www.searchprex.com";
 const PAGE_URL = `${SITE}/services/ecommerce-seo`;
 // No OG_IMAGE constant. This pointed at /images/og-ecommerce-seo.jpg, a file
@@ -140,6 +141,7 @@ export default function Page() {
 
   return (
     <>
+      <SeoFixSchema path="/services/ecommerce-seo" />
       <script id="ld-ecommerce-seo" type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* Required prop that was never passed, so the AuthorCard rendered without

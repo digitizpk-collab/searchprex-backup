@@ -17,6 +17,7 @@ import {
 import { getPageSEO } from "@/lib/admin-seo";
 import ArticleLeadMagnet from "@/components/ArticleLeadMagnet";
 import { LOWEST_RETAINER, RETAINER_PLANS, formatUsd } from "@/lib/pricing";
+import SeoFixSchema from "@/components/SeoFixSchema";
 
 // The 90-day money-back guarantee, as /terms section 4 states it and the
 // founder confirmed in Sept 2026: no measurable progress in 90 days → the
@@ -111,6 +112,7 @@ export default function PricingPage() {
 
   return (
     <>
+      <SeoFixSchema path="/pricing" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

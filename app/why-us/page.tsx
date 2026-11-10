@@ -15,6 +15,7 @@ import Link from "next/link";
 import Image from "next/image";
  
 import { getPageSEO } from "@/lib/admin-seo";
+import SeoFixSchema from "@/components/SeoFixSchema";
 const baseMetadata: Metadata = {
   title: "Why Choose Us — Founder-Led USA SEO Agency",
   description:
@@ -103,6 +104,7 @@ export default function WhyUsPage() {
  
   return (
     <>
+      <SeoFixSchema path="/why-us" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
