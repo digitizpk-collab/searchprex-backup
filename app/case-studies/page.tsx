@@ -19,6 +19,7 @@ import { posts as hardcodedBlogPosts } from "@/app/blog/data";
 import { getPageSEO } from "@/lib/admin-seo";
 import { db } from "@/lib/db";
 import { SITE, organizationRef, websiteRef } from "@/lib/site-schema";
+import SeoFixSchema from "@/components/SeoFixSchema";
 
 const PAGE_URL = `${SITE}/case-studies`;
 const LINKEDIN_URL = "https://www.linkedin.com/in/mubashar-sharif-senior-seo-analyst/";
@@ -154,6 +155,7 @@ export default async function Page() {
 
   return (
     <>
+      <SeoFixSchema path="/case-studies" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }} />
       <CaseStudiesClient
         linkedinUrl={LINKEDIN_URL}

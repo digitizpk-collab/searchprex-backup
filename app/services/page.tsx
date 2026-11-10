@@ -32,6 +32,7 @@ import { getPageSEO } from "@/lib/admin-seo";
 import ProofImage from "@/components/ProofImage";
 import ArticleLeadMagnet from "@/components/ArticleLeadMagnet";
 import { RETAINER_PLANS, formatRange } from "@/lib/pricing";
+import SeoFixSchema from "@/components/SeoFixSchema";
 const SITE = "https://www.searchprex.com";
 
 const baseMetadata: Metadata = {
@@ -326,6 +327,7 @@ export default function ServicesPage() {
 
   return (
     <main>
+      <SeoFixSchema path="/services" />
       {[breadcrumbSchema, itemListSchema, professionalServiceSchema, faqSchema].map((schema, i) => (
         <script key={i} type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />

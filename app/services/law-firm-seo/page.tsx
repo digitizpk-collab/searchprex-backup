@@ -6,6 +6,7 @@ import { RETAINER_PLANS } from "@/lib/pricing";
 import { LAW_CHECKLIST_GUIDE } from "@/lib/guides";
 
 import { getPageSEO } from "@/lib/admin-seo";
+import SeoFixSchema from "@/components/SeoFixSchema";
 const PAGE_URL = "https://www.searchprex.com/services/law-firm-seo";
 
 const SEO_TITLE = "Law Firm SEO Services USA | $1,200/Mo & 7-Day Free Trial";
@@ -292,6 +293,7 @@ export default function LawFirmSEOPage() {
 
   return (
     <>
+      <SeoFixSchema path="/services/law-firm-seo" />
       <script
         id="ld-law-firm-seo"
         type="application/ld+json"

@@ -56,6 +56,8 @@ import { SITE, founderRef, organizationRef, websiteRef } from "@/lib/site-schema
 import AudienceTabs, { type AudienceTab } from "@/components/home/AudienceTabs";
 import FaqAccordion from "@/components/home/FaqAccordion";
 import PillForm from "@/components/home/PillForm";
+import { withSeoFix } from "@/lib/nicheseo-fixes";
+import SeoFixSchema from "@/components/SeoFixSchema";
 
 // Title, H1 and description use the same broad small-business SEO agency
 // positioning. Specialist phrases belong on the linked service pages.
@@ -75,7 +77,7 @@ const baseMetadata: Metadata = {
 };
 
 export async function generateMetadata(): Promise<Metadata> {
-  return baseMetadata;
+  return withSeoFix("/", baseMetadata);
 }
 
 /** When a person last reviewed this page. Hardcoded on purpose. */
@@ -556,6 +558,7 @@ export default function Home() {
 
   return (
     <>
+      <SeoFixSchema path="/" />
     <main id="main-content" className="bg-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 

@@ -17,6 +17,8 @@ import PostClient from "./PostClient";
 import { db } from "@/lib/db";
 import { FOUNDER_ID, ORGANIZATION_ID } from "@/lib/site-schema";
 import { stripBrand } from "@/lib/seo-title";
+import { withSeoFix } from "@/lib/nicheseo-fixes";
+import SeoFixSchema from "@/components/SeoFixSchema";
 
 // CMS posts render on demand and were then cached until the next deploy, so
 // unpublishing a row left it live (an autopilot test article stayed up this
@@ -129,7 +131,7 @@ export async function generateMetadata({
   const twTitle = post.twitterTitle || ogTitle;
   const twDesc = post.twitterDescription || ogDesc;
 
-  return {
+  return withSeoFix(`/blog/${post.slug}`, {
     title: stripBrand(post.metaTitle),
     description: post.metaDescription,
     keywords: post.tags,
@@ -151,7 +153,7 @@ export async function generateMetadata({
       description: twDesc,
       images: [post.heroImage],
     },
-  };
+  });
 }
 
 export default async function BlogPostPage({
@@ -228,6 +230,7 @@ export default async function BlogPostPage({
 
   return (
     <>
+      <SeoFixSchema path={`/blog/${post.slug}`} />
       {[articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])].map((schema, i) => (
         <script
           key={i}

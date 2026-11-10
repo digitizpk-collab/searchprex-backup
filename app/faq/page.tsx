@@ -9,6 +9,7 @@
 import type { Metadata } from "next";
 import { getPageSEO } from "@/lib/admin-seo";
 import FaqClient, { type FaqGroup } from "./FaqClient";
+import SeoFixSchema from "@/components/SeoFixSchema";
 
 const SITE = "https://www.searchprex.com";
 const PAGE_URL = `${SITE}/faq`;
@@ -133,6 +134,7 @@ export default function FAQPage() {
 
   return (
     <>
+      <SeoFixSchema path="/faq" />
       {[faqSchema, breadcrumbSchema].map((schema, i) => (
         <script
           key={i}

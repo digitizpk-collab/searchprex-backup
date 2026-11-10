@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { db } from "@/lib/db";
+import { withSeoFix } from "@/lib/nicheseo-fixes";
 
 /**
  * CMS-backed metadata for a public page.
@@ -62,7 +63,15 @@ function ensureOpenGraphImages(meta: Metadata, siteUrl: string, title?: string):
   return res;
 }
 
+/**
+ * A page's metadata: the admin panel's saved row over the template's, then a
+ * title and description approved in NicheSEO Pro over both (lib/nicheseo-fixes.ts).
+ */
 export async function getPageSEO(slug: string, base: Metadata): Promise<Metadata> {
+  return withSeoFix(slug, await getPageSEOBase(slug, base));
+}
+
+async function getPageSEOBase(slug: string, base: Metadata): Promise<Metadata> {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.searchprex.com";
 
   try {

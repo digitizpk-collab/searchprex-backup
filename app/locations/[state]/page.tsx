@@ -34,6 +34,8 @@ import WhySearchPrex from "@/components/WhySearchPrex";
 import { SpokeEssentials, SpokeWhyAndAi } from "@/components/service-wireframe/SpokeSections";
 import { getStateHub, type StateHub } from "@/lib/state-hubs";
 import { caseStudies, detailUrl } from "@/app/case-studies/data";
+import { withSeoFix } from "@/lib/nicheseo-fixes";
+import SeoFixSchema from "@/components/SeoFixSchema";
 
 export function generateStaticParams() {
   return getDynamicStateHubSlugs().map((state) => ({ state }));
@@ -60,7 +62,7 @@ export async function generateMetadata({
   const description =
     hub?.metaDescription ??
     `Law firm SEO for ${state.name} attorneys in ${joinNames(names)}: practice-area demand, local ranking signals and ${state.name} law, city by city.`;
-  return {
+  return withSeoFix(state.hubHref, {
     title,
     description,
     robots: { index: true, follow: true },
@@ -86,7 +88,7 @@ export async function generateMetadata({
       description,
       images: [`${SITE}/og-image.jpg`],
     },
-  };
+  });
 }
 
 export default async function StateHubPage({ params }: { params: Promise<{ state: string }> }) {
@@ -119,6 +121,7 @@ export default async function StateHubPage({ params }: { params: Promise<{ state
 
   return (
     <>
+      <SeoFixSchema path={state.hubHref!} />
       <Schema stateName={state.name} url={url} cities={cities} hub={hub} />
 
       <Breadcrumb

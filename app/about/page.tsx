@@ -5,6 +5,7 @@ import { CardGrid, Section, SectionHeading } from "@/components/layout";
 import { MapPin, Phone, Mail, Clock, Building2 } from "lucide-react";
  
 import { getPageSEO } from "@/lib/admin-seo";
+import SeoFixSchema from "@/components/SeoFixSchema";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.searchprex.com'
 const aboutUrl = `${siteUrl}/about`
  
@@ -108,6 +109,7 @@ export default function AboutPage() {
  
   return (
     <>
+      <SeoFixSchema path="/about" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
