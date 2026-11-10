@@ -67,12 +67,17 @@ export default async function Page() {
   // CMS-added case studies are extra, not essential: the ten in data.ts render
   // regardless. Without the catch, one dropped database connection turned the
   // whole hub into an error page.
-  const dbCaseStudies = await db.marketingCaseStudy
-    .findMany({ where: { published: true }, orderBy: { createdAt: "desc" } })
-    .catch((err) => {
-      console.error("[case-studies] CMS case studies unavailable:", err);
-      return [];
+  // try/await rather than .catch(): with no DATABASE_URL (a preview build) the
+  // db proxy throws as soon as it is touched, before a promise exists to catch.
+  let dbCaseStudies: Awaited<ReturnType<typeof db.marketingCaseStudy.findMany>> = [];
+  try {
+    dbCaseStudies = await db.marketingCaseStudy.findMany({
+      where: { published: true },
+      orderBy: { createdAt: "desc" },
     });
+  } catch (err) {
+    console.error("[case-studies] CMS case studies unavailable:", err);
+  }
 
   let latestBlogs: any[] = [];
   try {
