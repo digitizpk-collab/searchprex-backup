@@ -20,7 +20,7 @@ Reverse chronological. Every entry carries a date, a source, and a label saying 
 
 ### November 9, 2026 — Book Online buttons appear on some profiles without owner setup
 
-**Observed.** Search Engine Roundtable reported on November 9 that some Business Profiles show a Book Online button in Search and Maps although the owner never added a booking link. Brandon Schmidt, Joy Hawkins and Syed Amir posted about it on November 6, and Barry Schwartz found one on his own company's profile. Google has not confirmed or explained it.
+**Observed.** Search Engine Roundtable reported on November 9 that some Business Profiles show a Book Online button in Search and Maps although the owner never added a booking link. Brandon Schmidt, Joy Hawkins and Syed Amir posted about it on November 6, and Barry Schwartz found one on his own company's profile. Google has not confirmed or explained it. Full coverage: [Book Online buttons are appearing on Business Profiles](/resources/news/google-business-profile-book-online-buttons-added-automatically).
 
 - **What changed:** A booking button can appear without owner action. Where it points to Google's reserve program and the business has no booking software, some links returned a 500 error. Links for businesses with booking software reportedly work.
 - **Who's affected:** Service businesses, home services in particular, according to the reports.

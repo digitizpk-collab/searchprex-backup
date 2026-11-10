@@ -559,6 +559,10 @@ export default async function NewsSpokePage({ params }: { params: Promise<{ slug
   };
 
   const localNewsImages: Record<string, { image: string; imageAlt: string }> = {
+    "google-business-profile-book-online-buttons-added-automatically": {
+      image: "/images/news/customer-using-phone-at-cafe.webp",
+      imageAlt: "Customer checking a smartphone while seated at an outdoor cafe",
+    },
     "google-business-profile-fake-review-warnings-review-pauses-local-seo": {
       image: "/images/news/customer-using-phone-at-cafe.webp",
       imageAlt: "Customer checking a smartphone while seated at an outdoor cafe",

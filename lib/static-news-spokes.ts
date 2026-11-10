@@ -36,6 +36,37 @@ export interface StaticNewsSpoke {
 
 export const staticNewsSpokes: StaticNewsSpoke[] = [
   {
+    "slug": "google-business-profile-book-online-buttons-added-automatically",
+    "category": "SEO News — Local",
+    "subcategory": "Google Business Profile",
+    "title": "Book Online Buttons Are Appearing on Google Business Profiles Without Owner Setup",
+    "metaTitle": "Google Adds Book Online Buttons to Business Profiles",
+    "metaDescription": "Some Business Profiles now show a Book Online button the owner never added, and some links fail. See what was reported and what to check.",
+    "excerpt": "Local SEOs report Book Online buttons on Google Business Profiles that owners never set up, and some of the links return errors. Google has not confirmed it. Here is what is known and what to check on your own profile.",
+    "readTime": "4-minute read",
+    "date": "2026-11-10",
+    "dateModified": "2026-11-10T12:00:00.000Z",
+    "author": {
+      "name": "Mubashar Sharif",
+      "role": "Founder & SEO Strategist",
+      "bio": "Founder & SEO Strategist at SearchPrex, covering Google Business Profile, local search and practical organic growth.",
+      "linkedIn": "https://www.linkedin.com/in/mubashar-sharif-senior-seo-analyst/"
+    },
+    "featured": true,
+    "heroImage": "/images/news/customer-using-phone-at-cafe.webp",
+    "tags": [
+      "Google Business Profile",
+      "Local SEO",
+      "Booking links",
+      "Google Maps"
+    ],
+    "stat": null,
+    "toc": [],
+    "content": "## Key takeaways\n\n- Some Google Business Profiles now show a **Book Online** button that the owner never added. [Search Engine Roundtable reported it](https://www.seroundtable.com/google-business-profiles-adding-booking-links-42477.html) on November 9, 2026, after Brandon Schmidt, Joy Hawkins and Syed Amir posted about it on November 6.\n- **Some of the links are broken.** Where the button points to Google's reserve program and the business has no booking software, the reports show a 500 error.\n- **Google has not confirmed or explained it.** It is not clear whether this is a test, a rollout or a bug.\n- Nothing in the reports points to a ranking change. The risk is a customer tapping a button that fails.\n\n## What was reported\n\nLocal SEOs noticed a Book Online button on profiles in Google Search and Google Maps where the owner had not set up a booking link. Barry Schwartz found one on his own company's profile. His link worked and led to the company's contact and scheduling page.\n\nOthers were less lucky. Joy Hawkins and Brandon Schmidt reported that when the link goes through Google's \"maps/reserve\" path and the business has no booking software connected, it returns a 500 error. Links for businesses that already use booking software reportedly work.\n\nThey also pointed out why this is new. Home service businesses could previously get this button only through an approved Reserve with Google partner. Syed Amir reported that adding a contact page in the profile's booking link field now triggers the button as well.\n\nSchwartz said he was not sure whether the errors were a temporary bug.\n\n## What Google's own help page says\n\nGoogle has not commented on these reports. Its help page on [managing local business links](https://support.google.com/business/answer/6218037?hl=en) does say that links for appointments, reservations and food orders can appear on a profile automatically through third-party partners.\n\nThe same page explains the limits of your control. You can add your own booking links and mark one as preferred. You can't delete a third-party booking link from your profile settings. You have to ask the provider to remove it, and providers are required to process that request within 5 business days.\n\n## Why it matters\n\nA booking button sits among the main actions on a profile, next to calls and directions. If it leads to an error page, the customer may simply pick the next business. And because the button can appear without you doing anything, you may not know it is there.\n\nIt is the same lesson as other recent changes we logged in our [local SEO news and updates](/resources/news/local-seo-updates), such as the Message button on Maps: Google keeps adding ways for customers to reach you, and each one needs to work.\n\n## What to do\n\n1. **Search for your business on Google** and look at your profile as a customer would, on a phone and on desktop.\n2. **Tap any Book Online or Schedule button.** Check it opens the right page.\n3. **If the link is yours and wrong,** open the booking section of your profile, fix the address, and set the correct one as preferred.\n4. **If the link comes from a third party,** contact that provider and ask for it to be removed. If it is still there after 5 business days, report it to Google.\n5. **If you want real online booking,** Google's help page on [setting up bookings through a provider](https://support.google.com/business/answer/7475773?hl=en) explains how supported providers connect.\n6. **Check again in a week.** These buttons can appear without notice.\n\n## Quick answers\n\n### Did Google announce automatic Book Online buttons?\nNo. As of November 10, 2026, this comes from reports by local SEOs and Search Engine Roundtable. Google has not confirmed it.\n\n### Will a Book Online button help my ranking?\nNothing in the reports or in Google's help page says so. Treat it as a customer experience issue, not a ranking factor.\n\n### Can I remove a booking link I did not add?\nIf you added it, yes, in your profile's booking section. If a third-party provider added it, Google says you must ask that provider, which has 5 business days to act.\n\n## Sources\n\n- [Google Adding Booking Links To Business Profiles Automatically?](https://www.seroundtable.com/google-business-profiles-adding-booking-links-42477.html) — Search Engine Roundtable, November 9, 2026.\n- [Manage your local business links](https://support.google.com/business/answer/6218037?hl=en) — Google Business Profile Help.\n- [Set up bookings through a provider](https://support.google.com/business/answer/7475773?hl=en) — Google Business Profile Help.\n\n_Last verified: 10 November 2026._",
+    "canonicalUrl": "https://www.searchprex.com/resources/news/google-business-profile-book-online-buttons-added-automatically",
+    "schemaType": "NewsArticle"
+  },
+  {
     "slug": "google-november-2026-search-ranking-volatility",
     "category": "SEO News — Technical",
     "subcategory": "Google Search & Algorithm Updates",
