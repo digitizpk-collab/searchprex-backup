@@ -1,7 +1,9 @@
-<div class="callout"><strong>Accuracy note:</strong> every date and figure on this page is taken from the primary announcement or from established trade coverage, linked in Sources at the foot of the article. Log last updated November 7, 2026. Where a number could not be traced to a named source, it is not published here.</div>
+<div class="callout"><strong>Accuracy note:</strong> every date and figure on this page is taken from the primary announcement or from established trade coverage, linked in Sources at the foot of the article. Log last updated November 10, 2026. Where a number could not be traced to a named source, it is not published here.</div>
 
 | Date | Update | Impact | Action |
 |------|--------|--------|--------|
+| Nov 9 | Book Online buttons on some profiles without owner setup (observed) | Low-Medium | Click the button on your profile; fix or remove a link that fails |
+| Nov 6 | Gemini Business Profile tools reaching Workspace accounts | Low | Optional: ask your Workspace admin to enable Gemini |
 | Nov 6 | Message button beside Call on Google Maps | Low-Medium | Check your linked messaging channel and who answers it |
 | Nov 6 | Google help document on managing offers | Low | Check your profile for offers you did not create |
 | Oct 8 | Spam update concluded | Medium | Check Search Console for manual actions |
@@ -15,6 +17,24 @@
 Reverse chronological. Every entry carries a date, a source, and a label saying how well established it is.
 
 <div class="callout"><strong>How to read the labels.</strong> <strong>Confirmed</strong> — Google announced or stated it. <strong>Observed</strong> — the SEO community documented it and Google has not commented. <strong>Independent testing</strong> — a third party published its own methodology and results. Nothing enters this log without a date and a named source.</div>
+
+### November 9, 2026 — Book Online buttons appear on some profiles without owner setup
+
+**Observed.** Search Engine Roundtable reported on November 9 that some Business Profiles show a Book Online button in Search and Maps although the owner never added a booking link. Brandon Schmidt, Joy Hawkins and Syed Amir posted about it on November 6, and Barry Schwartz found one on his own company's profile. Google has not confirmed or explained it.
+
+- **What changed:** A booking button can appear without owner action. Where it points to Google's reserve program and the business has no booking software, some links returned a 500 error. Links for businesses with booking software reportedly work.
+- **Who's affected:** Service businesses, home services in particular, according to the reports.
+- **What to do:** Open your profile in Search and click the button. If it fails or goes to the wrong page, change or remove the link in the profile's booking section. It is not clear yet whether the errors are a temporary bug.
+- **Source:** [Search Engine Roundtable](https://www.seroundtable.com/google-business-profiles-adding-booking-links-42477.html).
+
+### November 6, 2026 — Gemini's Business Profile tools reach Workspace accounts
+
+**Confirmed.** Google's [Small Business Bulletin](https://support.google.com/business/thread/476642299?hl=en) says owners can now link a verified Business Profile through Gemini with a Workspace email, after a Workspace admin enables Gemini. Search Engine Journal reported it on November 6 and noted a conflict: Google's help page still said that day that the feature was not available for work or school accounts. Google has not said when access reaches all accounts.
+
+- **What changed:** Workspace access to the Gemini profile tools, photo and video uploads into the Gemini chat, and a "Generate hours" option that turns a plain-language schedule into hours fields, in select regions and languages.
+- **Who's affected:** Businesses that manage their profile from a Google Workspace account.
+- **What to do:** Nothing is required. If you try it, review everything Gemini drafts before it is saved to the profile. The announcement mentions no ranking effect.
+- **Source:** [Search Engine Journal](https://www.searchenginejournal.com/google-gemini-business-profile-workspace-2/596120/), citing Google's Small Business Bulletin.
 
 ### November 6, 2026 — Google Maps adds a Message button beside Call
 
@@ -185,6 +205,9 @@ The short version is below. For the full diagnosis — suspensions, edits, revie
 
 ## Sources
 
+- <a href="https://www.seroundtable.com/google-business-profiles-adding-booking-links-42477.html" target="_blank" rel="noopener noreferrer">Google Adding Booking Links To Business Profiles Automatically? — Search Engine Roundtable</a>
+- <a href="https://www.searchenginejournal.com/google-gemini-business-profile-workspace-2/596120/" target="_blank" rel="noopener noreferrer">Google Gemini Business Profile Tools Are Coming To Workspace — Search Engine Journal</a>
+- <a href="https://support.google.com/business/thread/476642299?hl=en" target="_blank" rel="noopener noreferrer">Google Small Business Bulletin — Google Business Profile Community</a>
 - <a href="https://www.seroundtable.com/google-maps-messaging-android-ios-42472.html" target="_blank" rel="noopener noreferrer">Google Expands Business Messaging To Google Maps On iOS &amp; Android — Search Engine Roundtable</a>
 - <a href="https://support.google.com/business/answer/18888417?hl=en" target="_blank" rel="noopener noreferrer">Manage offers on your Business Profile — Google Business Profile Help</a>
 - <a href="https://www.seroundtable.com/google-business-profiles-manage-offers-42471.html" target="_blank" rel="noopener noreferrer">Google Business Profiles Manage Offers Help Document — Search Engine Roundtable</a>

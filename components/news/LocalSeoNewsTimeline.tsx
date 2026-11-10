@@ -37,6 +37,34 @@ export function localSeoNewsBrief(updates: LocalSeoNewsUpdate[]) {
 
 export const localSeoNewsUpdates: LocalSeoNewsUpdate[] = [
   {
+    date: "November 9, 2026",
+    status: "Reported behavior",
+    title: "Book Online buttons are appearing on some Business Profiles without owner setup",
+    summary:
+      "Search Engine Roundtable reports that some profiles now show a Book Online button the owner did not add. Local SEOs found that some of these links return a 500 error when the business has no booking software. Google has not commented. Open your profile in Search, click the button, and fix or remove a link that fails.",
+    href: "https://www.seroundtable.com/google-business-profiles-adding-booking-links-42477.html",
+    source: "Search Engine Roundtable",
+    topics: ["Google Business Profile", "Google Maps"],
+    trending: true,
+    image: "/images/case-studies/dolls-cleaning-local-van.webp",
+    imageAlt: "A local home-service team beside its service van in a neighborhood",
+    brief: "Book Online buttons were seen on some Business Profiles without owner setup, and some links fail",
+    action: "open your profile in Search, click any Book Online button, and fix or remove a link that fails.",
+  },
+  {
+    date: "November 6, 2026",
+    status: "Confirmed",
+    title: "Gemini's Business Profile tools are rolling out to Workspace accounts",
+    summary:
+      "Google's Small Business Bulletin says owners can link a verified profile through Gemini with a Workspace email, once an admin enables Gemini. Search Engine Journal notes that Google's help page still said, on November 6, that work accounts were not supported, so access may not have reached everyone. There is no ranking effect in the announcement.",
+    href: "https://www.searchenginejournal.com/google-gemini-business-profile-workspace-2/596120/",
+    source: "Search Engine Journal",
+    topics: ["Google Business Profile"],
+    image: "/images/about/founder-hands-on-strategy-desk.webp",
+    imageAlt: "SEO strategist reviewing a local business search performance report at a desk",
+    brief: "Gemini's Business Profile tools began reaching Workspace accounts",
+  },
+  {
     date: "November 6, 2026",
     status: "Confirmed",
     title: "Google Maps adds a Message button beside Call on Android and iOS",
