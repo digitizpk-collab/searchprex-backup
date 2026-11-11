@@ -75,6 +75,11 @@ const navLinks: NavLink[] = [
     label: "Pricing",
   },
   {
+    // A direct link: the blog used to sit at the bottom of the Resources menu.
+    href: "/blog",
+    label: "Blog",
+  },
+  {
     href: "/resources",
     label: "Resources",
     hasDropdown: true,
@@ -91,7 +96,6 @@ const navLinks: NavLink[] = [
       { href: "/resources/woocommerce-seo-checklist",         label: "WooCommerce SEO Checklist" },
       { href: "/resources/google-business-profile-checklist", label: "GBP Local Checklist" },
       { href: "/guides/ecommerce-indexing-playbook.pdf",      label: "35K-Product Indexing Playbook" },
-      { href: "/blog",                                        label: "Blog" },
     ],
   },
   {
@@ -274,7 +278,7 @@ export default function Nav() {
             </Link>
  
             {/* Desktop links */}
-            <div ref={desktopNavRef} className="hidden items-center gap-6 lg:flex">
+            <div ref={desktopNavRef} className="hidden items-center gap-4 whitespace-nowrap xl:flex">
               {navLinks.map((link) => {
                 const isOpen = activeDropdown === link.label;
                 return (
@@ -371,7 +375,7 @@ export default function Nav() {
             </div>
  
             {/* Desktop right */}
-            <div className="hidden items-center gap-2 lg:flex">
+            <div className="hidden items-center gap-2 whitespace-nowrap xl:flex">
  
               {/* Get My Free Audit — primary CTA */}
               <Link
@@ -388,7 +392,7 @@ export default function Nav() {
             {/* Mobile hamburger */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="rounded-lg p-2 text-[#374151] transition-colors hover:bg-slate-50 lg:hidden"
+              className="rounded-lg p-2 text-[#374151] transition-colors hover:bg-slate-50 xl:hidden"
               aria-label="Toggle menu"
             >
               {isMobileMenuOpen
@@ -405,7 +409,7 @@ export default function Nav() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="overflow-hidden bg-white shadow-lg lg:hidden"
+              className="overflow-hidden bg-white shadow-lg xl:hidden"
             >
               <div className="space-y-1 px-4 pb-6 pt-3">
                 {navLinks.map((link) => (
